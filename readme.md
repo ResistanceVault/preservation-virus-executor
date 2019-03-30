@@ -3,7 +3,7 @@
 This is the source code of VirusExecutor, released under the GPLv3 public license for preservation.
 
 SOME FEATURES
-¯¯¯¯¯¯¯¯¯¯¯¯¯
+
 VirusExecutor is a virus killer that's meant to be easy to use. There's
 no 'advanced' options in the program that you almost never use anyway.
 This doesn't mean that VE is in the lack of power!
