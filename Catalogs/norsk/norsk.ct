@@ -1,0 +1,1819 @@
+; This Catalog Translation ".ct" file has been written using
+; ReCatIt Pro V1.00 (07.11.98) - By Fabio Rotondo
+;
+## version $VER: VirusExecutor.catalog 2.34 (04.01.04)
+## codeset 0
+## language norsk
+;
+L_NO_DISK
+Ingen diskett her.
+;No disk in this drive.
+;
+L_MESSAGE
+Beskjed
+;Message
+;
+L_OK
+Ok
+;Ok
+;
+L_READY
+Klar.
+;Ready.
+;
+L_PLEASE_WAIT
+Vennligst vent...
+;Please wait...
+;
+L_UNKNOWN_TRACKDISK0
+Trackdisk feil %ld: %s
+;Trackdisk error %ld: %s
+;
+L_UNKNOWN_TRACKDISK1
+Ukjent trackdisk feil ->%ld<-\nstasjon = %ld\nTa kontakt med meg!
+;Unknown trackdisk error ->%ld<-\nunit = %ld\nPlease contact author!
+;
+L_UNKNOWN_TRACKDISK2
+Ukjent trackdisk feil %ld!
+;Unknown trackdisk error %ld!
+;
+L_PROF_FILE
+En ProfFileSystem installert diskett.
+;A ProfFileSystem installed disk.
+;
+L_FLASHBACK
+*
+;*
+;
+L_ABACKUP
+*
+;*
+;
+L_ERROR_IN_CHECKSUM
+Feil i sjekksummen!
+;Error in checksum!
+;
+L_UNINST
+Uinstallert AmigaDOS diskett.
+;Uninstalled AmigaDOS disk.
+;
+L_INSTALLED_DOS
+Installert AmigaDOS diskett
+;Installed AmigaDOS disk
+;
+L_FMS
+Installert FMS diskett v%s.
+;Installed FMS disk v%s.
+;
+L_CHECKING_BOOTBLOCK
+Sjekker bootblocken...
+;Checking bootblock...
+;
+L_BAD_FORMAT_DISK
+En feilformattert diskett?
+;A badly formated disk?
+;
+L_VIRUS_1
+%s virus!
+;%s virus!
+;
+L_VIRUS_FOUND_IN
+%s virus funnet i %s
+;%s virus found in %s
+;
+L_KILL_VIRUS_CANCEL
+Ta bort virus|Avbryt
+;Kill virus|Cancel
+;
+L_WARNING
+ADVARSEL!
+;WARNING!
+;
+L_UTILITY_BOOT
+En nytte boot.
+;An utility boot.
+;
+L_VIRUS_KILLER
+En viruskiller boot.
+;A virus killer boot.
+;
+L_INTRO_BOOT
+En intro boot.
+;An intro boot.
+;
+L_LOADER
+En loader.
+;A loader.
+;
+L_ANALYZING
+Analyserer...
+;Analyzing...
+;
+L_NOT_A_BOOT_DISK
+Ikke en bootbar diskett.
+;Not a bootable disk.
+;
+L_RETCODE_NAME
+retkode = %ld Navn = %s
+;retcode = %ld Name = %s
+;
+L_INSTALLING_TO
+Installerer '%s' til %s
+;Installing '%s' to %s
+;
+L_INSTALLING
+Installerer %s
+;Installing %s
+;
+L_YOU_HAVE_THE_OLD
+\nDu har en gammel versjon av %s v%s\nVennligst hent %s v%s eller høyere!\n
+;\nYou have the old %s v%s\nPlease get %s v%s or later!\n
+;
+L_USING
+Bruker eksterne libraries:
+;Using external libraries:
+;
+L_KNOWS_BOOT
+*
+;*
+;
+L_KNOWS_LINK
+*
+;*
+;
+L_KNOWS_FILE
+*
+;*
+;
+L_KNOWS_DECRUNCHERS
+Kjenner %lD decruncher typer.\n\n
+;Knows %lD decrunchers types.\n\n
+;
+L_KNOWS_PATCHES
+Kjenner %lD patch verdier fra %lD programmer.\n\n
+;Knows %lD patch entries from %lD programs.\n\n
+;
+L_I_HAVE_CHECKED
+*
+;*
+;
+L_BOOTBLOCK
+bootblock
+;bootblock
+;
+L_BOOTBLOCKS
+bootblocker
+;bootblocks
+;
+L_FILE
+fil
+;file
+;
+L_FILES
+filer
+;files
+;
+L_ABOUT
+Om...
+;About...
+;
+L_LOADING_PATCH_DATA
+Henter og decrypterer patch data...
+;Loading and decrypting patch data...
+;
+L_PATCH_ERROR
+Feil: '%s' er ikke en riktig patch fil!
+;Error: '%s' is not a valid patch file!
+;
+L_ERROR_LOADING
+Feil ved henting av '%s'!
+;Error loading '%s'!
+;
+L_BB_VIRUS
+BB virus
+;BB virus
+;
+L_FILE_VIRUS
+Fil virus
+;File virus
+;
+L_NA
+N/A
+;N/A
+;
+L_NO_MEM
+Ikke nok minne!
+;Not enough memory!
+;
+L_SAVING_PREFERENCES
+Lagrer konfigurasjoner...
+;Saving preferences...
+;
+L_BOOTBLOCK_C
+Bootblock
+;Bootblock
+;
+L_LINK_C
+Link
+;Link
+;
+L_FILE_C
+Fil
+;File
+;
+L_VIRUS_LIST
+ %s virus (%lD)
+;%s virus (%lD)
+;
+L_SELECT_SCREEN_MODE
+Velg en skjermmodus:
+;Select a screen mode:
+;
+L_SMALL_SCREEN_SIZE
+VirusExecutor kan ikke kjøre med en så liten skjerm!
+;VirusExecutor can't handle this small screen size!
+;
+L_SHIT
+*
+;*
+;
+L_SCREEN_RESTART_MSG
+*
+;*
+;
+L_NO_PICK_SCREEN
+Du valgte ingen ny skjermmodus.
+;You didn't pick a screen mode.
+;
+L_VE_REQUIERS
+*
+;*
+;
+L_ERROR
+Feil!
+;Error!
+;
+L_VE_RUNNING
+*
+;*
+;
+L_VE_LIB_NEED
+VirusExecutor krever '%s' v%ld+!
+;VirusExecutor needs '%s' v%ld+!
+;
+L_XVS_MODIFIED
+Feil: xvs.library har blitt modifisert!
+;Error: xvs.library has been modified!
+;
+L_CHECKING_DRIVES
+Sjekker diskettstasjonene...
+;Checking disk drives...
+;
+L_ENTER_PW
+Tast inn passord:
+;Please enter password:
+;
+L_FILE_NAME_ERROR
+ Fil navn: %s\n\n    Error: %s
+;File name: %s\n\n    Error: %s
+;
+L_INFECTED_DELETE
+VIRUS: %s\n\nInfisert fil:\n'%s'\n\nDenne type virus kan kun slettes.
+;VIRUS: %s\n\nInfected file:\n'%s'\n\nThis type of virus can only be deleted.
+;
+L_VIRUS_WARNING
+%s VIRUS ADVARSEL!
+;%s VIRUS WARNING!
+;
+L_DELETE_FILE_AUTO
+Slett fil|Auto slett filvirus|Stopp sjekking|Fortsett
+;Delete file|Auto delete file virus|Stop checking|Continue
+;
+L_FILE_NOT_DELETED
+Kunne ikke slette '%s'!
+;File '%s' could not be deleted!
+;
+L_DATA
+DATA
+;DATA
+;
+L_VIRUS_INFECTED_ARCHIVE
+        VIRUS: %s\n\n Infisert fil: %s\n        Arkiv: %s
+;        VIRUS: %s\n\nInfected file: %s\n      Archive: %s
+;
+L_FILE_VIRUS_WARNING
+FIL VIRUS ADVARSEL!
+;FILE VIRUS WARNING!
+;
+L_FILE1
+FIL
+;FILE
+;
+L_LINK_VIRUS_WARNING
+LINK VIRUS ADVARSEL!
+;LINK VIRUS WARNING!
+;
+L_VIRUS_INFECTED_FILE
+VIRUS: %s\n\nInfisert file:\n'%s'
+;VIRUS: %s\n\nInfected file:\n'%s'
+;
+L_REMOVE_VIRUS_AUTO
+Fjern virus|Auto fjern linkvirus|Stopp sjekking|Fortsett
+;Remove virus|Auto remove link virus|Stop checking|Continue
+;
+L_VIRUS_REMOVED
+*
+;*
+;
+L_SAVE_NEW_FILE
+Lagre filen|Avbryt
+;Save new file|Cancel
+;
+L_ERROR_WRITING_FILE
+Feil ved skriving til: '%s'!
+;Error writing file: '%s'!
+;
+L_ERROR_OPENING_FILE
+Feil ved åpning av: '%s'!
+;Error opening file: '%s'!
+;
+L_ERROR_VIRUS_NOT_REMOVED
+Feil: %s\n\nViruset kan ikke fjernes!
+;Error: %s\n\nVirus could'n be removed!
+;
+L_ERROR_REMOVING_VIRUS
+KUNNE IKKE FJERNE VIRUS FRA FILEN
+;ERROR REMOVING VIRUS FROM FILE
+;
+L_DELETE_FILE_STOP
+Slett fil|Stopp sjekking|Fortsett
+;Delete file|Stop checking|Continue
+;
+L_UNLINKING_FILE
+Unlinking %s (%s)...
+;Unlinking %s (%s)...
+;
+L_ERROR_UNLINKING
+Feil ved unlinking av fil: '%s'!
+;Error unlinking file: '%s'!
+;
+L_EXTRACTING
+*
+;*
+;
+L_CHECKING
+Sjekker... '%s'
+;Checking... '%s'
+;
+L_ERROR_READING_FILE
+Kunne ikke lese fra filen '%s'!
+;Error reading file '%s'!
+;
+L_FILE_CHECK_PAUSED
+Filsjekking er pauset
+;File checking paused
+;
+L_CONTINUE_STOP
+Fortsett|Stopp sjekking
+;Continue|Stop checking
+;
+L_USER_BREAK
+Du avbrøt!
+;User break!
+;
+L_ERROR65
+FEIL: 65\nKontakt meg!
+;ERROR: 65\nContact author!
+;
+L_ERROR_LOCKING_DIR
+Kunne ikke låse skuff '%s'!
+;ERROR locking dir '%s'!
+;
+L_CHECK_FILES_VIRUS
+Sjekk filer for virus.
+;Check files for virus.
+;
+L_ERROR46
+FEIL 46! Kontakt meg...\n
+;ERROR: 46! Contact author...\n
+;
+L_FILE_SCAN_END
+*
+;*
+;
+L_DIR
+skuff
+;dir
+;
+L_DIRS
+skuffer
+;dirs
+;
+L_ARCHIVE
+arkiv
+;archive
+;
+L_ARCHIVES
+arkiv
+;archives
+;
+L_MINUTE
+minutt
+;minute
+;
+L_MINUTES
+minutter
+;minutes
+;
+L_SECOND
+sekund
+;second
+;
+L_SECONDS
+sekunder
+;seconds
+;
+L_FOUND
+\n\nFunnet %lD virus!
+;\n\nFound %lD virus!
+;
+L_NO_KNOWN
+ingen kjente
+;no known
+;
+L_FILE_CHECK_STATUS
+Filsjekk status.
+;File check status.
+;
+L_REBOOT_CANCEL
+Omstart|Avbryt
+;Reboot|Cancel
+;
+L_NO_ENTRIES_FOUND
+Listen er tom.
+;No entries found.
+;
+L_ADDRESS_NAME
+\nADRESSE    NAVN\n\n
+;\nADDRESS    NAME\n\n
+;
+L_LOOK_FOR_TEXT
+Se etter tekst: F eks VIRUS ol
+;Look for text: VIRUS etc
+;
+L_IT_MIGHT_MEMVIRUS
+\nDet kan muligens være et virus i minnet!
+;\nIt might be a virus in memory!
+;
+L_VIEW_MEMORY
+Vis minne|Nullstill vektorer|List KickMemPtr|Avbryt
+;LOCALE STRING IS NOT USED!
+;
+L_ERROR_CLR_VECTORS
+Kunne ikke nullstille vektorer!!\nDet kan være et virus i minnet!
+;Error clearing vectors!!\nIt could be a virus in memory!
+;
+L_MEM_VEC_OK
+\nMinnevektorer er ok.
+;\nMemory vectors seems ok.
+;
+L_VECTOR_CHECK
+Vektorsjekk
+;Vector check
+;
+L_VIRUS_DETECTED_IN_MEM
+%s virus funnet i minnet!\n
+;%s virus detected in memory!\n
+;
+L_VIRUS_REMOVED_MEM
+\nVirus er slettet fra minnet.
+;\nVirus removed from memory.
+;
+L_NO_KNOWN_VIRUS_MEM
+Ingen kjente virus funnet i minnet.
+;No known virus detected in memory.
+;
+L_GREAT
+Jippy!
+;Great!
+;
+L_MEMORY_CHECK
+Minnesjekk
+;Memory check
+;
+L_EXIT
+Ferdig
+;Done
+;
+L_PROJECT
+Prosjekt
+;Project
+;
+L_PREFS
+Konfigurasjon...
+;Prefs...
+;
+L_FILE_CHECK
+Filsjekking
+;File check
+;
+L_SECTOR_CHECK
+Sektorsjekking
+;Sector check
+;
+L_SELECT_SCREEN
+Velg skjermmodus...
+;Select screen mode...
+;
+L_QUIT
+Avslutt
+;Quit
+;
+L_SHOW
+Vis
+;Show
+;
+L_BOOTBLOCK_VIRUS
+Bootblock virus
+;Bootblock virus
+;
+L_LINK_VIRUS
+Link virus
+;Link virus
+;
+L_TASKS
+Tasks
+;Tasks
+;
+L_LIBRARIES
+Libraries
+;Libraries
+;
+L_DEVICES
+Devices
+;Devices
+;
+L_PATCHES
+Patcher
+;Patches
+;
+L_INSTALL
+Installer
+;Install
+;
+L_BOOTBLOCK_DATABASE
+Bootblock database
+;Bootblock database
+;
+L_RECORD
+Legg til
+;Record
+;
+L_VIEW
+Vis
+;View
+;
+L_EDIT_NAME
+Endre navn
+;Edit name
+;
+L_MERGE
+Flette
+;Merge
+;
+L_DELETE_ONE
+Slett en
+;Delete one
+;
+L_DELETE_ALL
+Slett alle
+;Delete all
+;
+L_SAVE
+Lagre
+;Save
+;
+L_UTILITIES
+Tilleggsfunksjoner
+;Utilities
+;
+L_RENAME_PICTURES
+Endre bildenavn
+;Rename pictures
+;
+L_CONVERT_IBN
+Konverter IBN/IBM/IBMM til ISO
+;Convert IBN/IBM/IBMM to ISO
+;
+L_SAVE_ROM_TO_FILE
+Lagre ROM til fil
+;Save ROM to file
+;
+L_TRANSLATED_BY
+Oversatt til norsk av Jan Erik Olausen
+;Translated to LANGUAGE by PUT YOUR NAME HERE
+;
+L_SEEMS_TO_KICKWORK
+\n\nVirker kanskje bare under kickstart v%s!
+;\n\nSeems to work only with kickstart v%s!
+;
+L_UNKNOWN_BOOTBLOCK
+Ukjent bootblock! %ld%% mulighet for at det er et virus!
+;Unknown bootblock! %ld%% chance for a virus!
+;
+L_ANALYZE_PERCENT_VIRUS
+%s analyse: %ld prosent mulighet for at det er et virus her!
+;%s analyze: %ld percent chance for a virus here!
+;
+L_WRITES_TO_BOOTBLOCK
+*
+;*
+;
+L_WRITES_TO_UNKNOWN
+\n\nSkriver til ukjent plass på disken!
+;\n\nWrites to unknown place on disk!
+;
+L_DESTROYS_THE_DISK
+\n\nØdelegger disken!!
+;\n\nDestroys the disk!!
+;
+L_COULD_BE_FILEVIRUS
+\n\nDette kan også være et filvirus!
+;\n\nThis could also be a file virus!
+;
+L_UNKNOWN_BB
+Ukjent bootblock! Det kan være %s.
+;Unknown bootblock! It might be %s.
+;
+L_A_VIRUSKILLER
+en viruskiller
+;a viruskiller
+;
+L_A_LOADER
+en loader
+;a loader
+;
+L_A_VIRUSCHECKER
+en virussjekker
+;a virus checker
+;
+L_AN_UTILITY_INTRO
+en nytte eller en intro
+;an utility or an intro
+;
+L_CRYPTED_VIRUS
+kodet! Det kan være et virus!
+;crypted! Could be a virus!
+;
+L_HARMLESS_BB
+Ukjent bootblock! (Virker ufarlig)
+;Unknown bootblock! (Seems harmless)
+;
+L_AVAIL_CHIP_FAST
+*
+;*
+;
+L_LARGEST_CHIP_FAST
+*
+;*
+;
+L_DIRECTORIES_STAT
+*
+;*
+;
+L_CRUNCHED_DECRUNCHED
+*
+;*
+;
+L_ARCHIVED_EXTRACTED
+*
+;*
+;
+L_VIRUS_FOUND_TIME
+*
+;*
+;
+L_INSTALL_TO
+Installer til %s
+;Install to %s
+;
+L_ERROR_OPENING_WINDOW
+Feil ved åpning av vinduet!
+;Error opening window!
+;
+L_FILE_SYSTEM
+Filsystem:
+;File system:
+;
+L_INT_MODUS
+Internasjonal modus:
+;International modus:
+;
+L_DS_MODUS
+Skuff-cache:
+;Directory cache:
+;
+L_FROM_DATABASE
+Fra databasen:
+;From database:
+;
+L_DISK_INSTALLED
+Disketten er installert.
+;Disk installed.
+;
+L_WINSTALL
+Installer
+; Install
+;
+L_WCANCEL
+Avbryt
+;Cancel
+;
+L_EXEC_INTERRUPT
+Exec interrupt vektorer i RAM
+;Exec interrupt vectors in RAM
+;
+L_KICKMEM_ENTRIES
+KickMemPtr programmer:
+;KickMemPtr entries:
+;
+L_KICKSTART_AT
+Kickstart v%s fra $%08lx\n\n
+;Kickstart v%s at $%08lx\n\n
+;
+L_ERRORP500
+*
+;*
+;
+L_LIBRARY_VECTORS
+Bibliotek Vektorer i RAM
+;Library Vectors in RAM
+;
+L_PREFS_WININFO
+Konfigurasjon (BETA - Trykk 'Esc' for å avslutte)
+;Prefs (BETA - Press 'Esc' to return)
+;
+L_FILE_CHECKING
+Filsjekking:
+;File checking:
+;
+L_MISC
+Diverse:
+;Misc:
+;
+L_P1
+Dekomrimer komprimerte filer
+;Decrunch crunched files
+;
+L_P2
+Sjekk datafiler
+;Check data files
+;
+L_P3
+Pakk ut LHA arkiv
+;Extract LHA archives
+;
+L_P4
+Pakk ut LZX arkiv
+;Extract LZX archives
+;
+L_P5
+Pakk ut ZIP arkiv
+;Extract ZIP archives
+;
+L_P6
+Hopp over kodet filer
+;Skip encrypted files
+;
+L_P7
+*
+;*
+;
+L_DATABASE_EMPTY
+Databasen er tom!
+;Database is empty!
+;
+L_CHANGES_DATABASE
+Forandringer er gjort i databasen!\nLagre databasen?
+;Changes has been made to the database!\nSave database?
+;
+L_SAVE_CANCEL
+Lagre|Avbryt
+;Save|Cancel
+;
+L_DELETING_DATABASE
+Sletter databasen...
+;Deleting database...
+;
+L_DELETE_DATABASE_ALL
+Slette databasen?\nDu har lagret %lD bootblokker.\n\nDatabasen vil også bli slette fra disken din!
+;Delete database?\nYou have %lD bootblocks recorded.\n\nThe database will also be deleted from your drive!
+;
+L_DELETE_CANCEL
+Slett|Avbryt
+;Delete|Cancel
+;
+L_DELETE_DATABASE
+Slett databasen...
+;Delete database...
+;
+L_ARE_YOU_SURE
+Er du sikker???
+;Are you sure???
+;
+L_DATABASE_DELETED
+Databasen er slettet.
+;Database is deleted.
+;
+L_ERROR_DELETE_DATABASE
+Feil ved sletting av databasen fra disken!
+;Error delete database from disk!
+;
+L_NO_CHANGES_DATABASE
+Ingen forandringer i databasen!
+;No changes in the database!
+;
+L_SAVING_DATABASE
+Lagrer databasen...
+;Saving database...
+;
+L_SAVING_DATABASE_1
+Lagrer databasen... %lD
+;Saving database... %lD
+;
+L_DATABASE_SAVED
+Ferdig med å lagre databasen.
+;The database is saved.
+;
+L_ERROR_SAVING_DATABASE
+Feil ved lagring av databasen!
+;Error saving database!
+;
+L_LOADING_DATABASE
+Henter databasen...
+;Loading database...
+;
+L_LOADING_DATABASE_1
+Henter databasen... %lD
+;Loading database... %lD
+;
+L_NO_MEM_DATABASE
+Ikke nok minne til å hente hele databasen!
+;Not enough memory to load the entire database!
+;
+L_NOT_A_DATABASE
+'%s' er ikke en VirusExecutor database!
+;'%s' is not a VirusExecutor database!
+;
+L_ERROR_LOADING_DATABASE
+Feil ved henting av databasen!
+;Error loading database!
+;
+L_MERGE_DATABASE
+Flette database...
+;Merge database...
+;
+L_ERROR_MERGING
+Feil ved fletting fra '%s'
+;Error merging from '%s'
+;
+L_NO_MEM_MERGE_DATABASE
+Ikke nok minne til å flette hele databasen!
+;Not enough memory to merge the entire database!
+;
+L_MERGING
+Fletter %3lD...
+;Merging %3lD...
+;
+L_MERGE_END
+Flettet %lD %s av %lD.
+;Merged %lD %s of %lD.
+;
+L_ERROR_MERGING_DATABASE
+Feil ved sletting av databasen!
+;Error merging database!
+;
+L_RECORDED_VIEW
+Lagret:   %10lD
+;Recorded: %10lD
+;
+L_FREE_VIEW
+Ledige:   %10lD
+;Free:     %10lD
+;
+L_SELECT_BB_INSTALL
+Velg bootblock å installere...
+;Select bootblock to install...
+;
+L_CHANGE_NAME
+Endre '%s' til:
+;Change '%s' to:
+;
+L_CHANGE_TO
+Endre til:
+;Change to:
+;
+L_CHANGE_MIND
+Ombestemte du deg?
+;Did you change your mind?
+;
+L_ALLREADY_EXISTS
+'%s' eksisterer fra før!
+;'%s' allready exists!
+;
+L_CHANGED_OK
+Endret '%s' til '%s'.
+;Changed '%s' to '%s'.
+;
+L_VIEW_BB
+Vis bootblock...
+;View bootblock...
+;
+L_SELECT_BB_DELETE
+Velg den bootblocken du vil slette...
+;Select bootblock to delete...
+;
+L_DELETE_ONE_DATABASE
+\nSlette '%s' fra databasen?\n
+;\nDelete '%s' from the database?\n
+;
+L_IS_DELETED
+'%s' er slettet.
+;'%s' is deleted.
+;
+L_ERROR_DELETING_BB
+Feil ved sletting av '%s'!
+;Error deleting '%s'!
+;
+L_NO_NEED_RECORD
+Du trenger ikke å lagre denne bootblocken!
+;You don't need to record this bootblock!
+;
+L_NO_RECORD_VIRUS
+Du får ikke lov til å lagre dette viruset!
+;I wont let you record this virus!
+;
+L_GIVE_BB_NAME
+Gi bootblocken fra %s et navn...
+;Give the bootblock from %s a name...
+;
+L_NO_MEM_RECORD_BB
+Ikke nok minne til å lagre denne bootblocken!
+;Not enough memory to record this bootblock!
+;
+L_DATABASE
+Database...
+;Database...
+;
+L_NO_DISK_ANY_DRIVE
+Du må sette inn en diskett!
+;No disk in any drive!
+;
+L_SELECT_BB_RECORD
+Velg bootblock\ndu vil lagre.
+;Select bootblock\nto record.
+;
+L_RECORD_A_BB
+Lagre en bootblock.
+;Record a bootblock.
+;
+L_MERGING_DATABASE
+Fletter database...
+;Merging database...
+;
+L_DISK_IN_DRIVE_PROTECTED
+Disketten i %s er skrivebeskyttet!
+;Disk in drive %s is write protected!
+;
+L_DISK_NO_VALIDATED
+Disketten i %s er ikke validatert!
+;Disk in drive %s is not validated!
+;
+L_PLEASE_WAIT_SECTOR_CHECK
+Vennligst vent, sektor sjekking pågår...
+;Please wait, sector checking in progress...
+;
+L_CHECKING_CYLINDER
+Sjekker sylinder: %ld - %ld igjen...
+;Checking cylinder: %ld - %ld to go...
+;
+L_SECTOR_CHECKING_PAUSED
+Sektor sjekkng er pauset
+;Sector checking paused
+;
+L_CONTINUE_CANCEL
+Fortsett|Avbryt
+;Continue|Cancel
+;
+L_SECTOR_DESTROYED
+Sektor %lD er ødelagt av: %s
+;Sector %lD is destroyed with: %s
+;
+L_BLOCK_INFECTED
+Blokk %ld er infisert med: %s
+;Block %ld is infected with: %s
+;
+L_REPAIR_SECTOR_CONTINUE
+Reparer sektor|Fortsett
+;Repair sector|Continue
+;
+L_ERROR_REPAIRING
+Feil ved reparering av sektor!
+;Error repairing sector!
+;
+L_SECTORS_CHECKED
+%lD sektorer er sjekket, %lD infiserte funnet.
+;%lD sectors checked, %lD infections found.
+;
+L_SECTOR_CHECK_END
+Sektor sjekking er ferdig.
+;Sector check finished.
+;
+L_SHOWING_TASKS
+Viser programmer...
+;Showing tasks...
+;
+L_PROCESS
+Prosess
+;Process 
+;
+L_TASK
+Task
+;Task    
+;
+L_WARNING_NO_NAME
+*** ADVARSEL - INGEN NAVN ***
+;*** WARNING - NO NAME! ***
+;
+L_SHOWING_TASKS_1
+Viser programmer (%lD)...
+;Showing tasks (%lD)...
+;
+L_NAME_ADDRESS_PRI_TYPE
+Navn                                                Adresse   Pri  Type
+;Name                                                Address   Pri  Type
+;
+L_SHOWING_LIBRARIES
+Viser libraries...
+;Showing libraries...
+;
+L_SHOWING_LIBRARIES_1
+Viser libraries (%lD)...
+;Showing libraries (%lD)...
+;
+L_NAME_ADDRESS_PRI_VER
+Navn                                              Adresse   Pri  Versjon
+;Name                                              Address   Pri  Version
+;
+L_SHOWING_DEVICES
+Viser devicer...
+;Showing devices...
+;
+L_SHOWING_DEVICES_1
+Viser devicer (%lD)...
+;Showing devices (%lD)...
+;
+L_SHOWING_PATCHES
+Viser patcher...
+;Showing patches...
+;
+L_SHOWING_PATCHES_1
+Viser patcher (%lD)...
+;Showing patches (%lD)...
+;
+L_NAME
+Navn
+;Name
+;
+L_SELECT_FILE_TO_FIX
+Velg fil du vil ordne...
+;Select file to fix...
+;
+L_FIX_IT
+Ordne
+;Fix it
+;
+L_LOAD_TEXT
+Hente tekst
+;Load text
+;
+L_LOADING
+Henter '%s'...
+;Loading '%s'...
+;
+L_CONVERTING
+Konverterer...
+;Converting...
+;
+L_SAVING
+Lagere...
+;Saving...
+;
+L_FILE_IS_NOW_SMALLER
+Filen er nå %lD tegn mindre.
+;File is now %lD chars smaller.
+;
+L_ERROR_SAVING_FILE
+Feil ved lagring av filen!
+;Error saving file!
+;
+L_NOT_AN_IBN
+Ikke en IBN/IBM/IBMM tekstfil!
+;Not an IBN/IBM/IBMM text file!
+;
+L_NOT_AN_ASCII
+Ikke en ASCII-fil!
+;Not an ASCII file!
+;
+L_ERROR_LOADING_FILE
+Feil ved henting av filen!
+;Error loading file!
+;
+L_SELECT_FILE
+Velg fil...
+;Select file...
+;
+L_SAVE_ROM
+Lagre ROM
+;Save ROM
+;
+L_SAVING_ROM_TO
+Lagrer ROM (%08lx - %08lx) til '%s'
+;Saving ROM (%08lx - %08lx) to '%s'
+;
+L_PATCH_REQUIERS
+\n\nDenne versjonen av VirusExecutor trenger v%ld.%02ld+ av PatchBrain!
+;\n\nThis version of VirusExecutor needs v%ld.%02ld+ of PatchBrain!
+;
+L_VE_MODIFIED
+Feil: VirusExecutor har blitt modifisert!
+;Error: VirusExecutor has been modified!
+;
+L_KICKTAG_ENTRIES
+KickTagPtr programmer:
+;KickTagPtr entries:
+;
+L_VE_NEEDS_XFDMASTER
+%s trenger %s for å dekomprimere komprimerte filer!\nVennligst installer den siste versjonen av %s.\n\n'Decrunch crunchet filer' flagget er ikke tilgjenglig...
+;%s needs %s to decrunch crunched files!\nPlease install the latest version of %s.\n\nThe 'Decrunch crunched files' option is now disabled...
+;
+L_UNKNOWN_STARS
+*** UKJENT ***
+;*** UNKNOWN ***
+;
+L_CPU_INTERRUPT_VECTORS
+CPU interrupt vektorer i RAM (VBR: $%08lx)
+;CPU interrupt vectors in RAM (VBR: $%08lx)
+;
+L_VIEWING_MEMORY_AT
+*
+;*
+;
+L_UNKNOWN
+Ukjent
+;Unknown
+;
+L_PROGRAMS_FOUND_IN
+program(er) funnet i
+;program(s) found in
+;
+L_KNOWN
+Kjente
+;Known
+;
+L_LIST_KICKTAGPTR
+Vis KickTagPtr|
+;List KickTagPtr|
+;
+L_LIST_KICKMEMPTR
+Vis KickMemPtr|
+;List KickMemPtr|
+;
+L_RESTORE_VECS_CONTINUE
+Tilbakestill vektorer|Fortsett
+;Restore vectors|Continue
+;
+L_FOUND_A_CRUNCHED_FILE
+Funnet en komprimert fil!\n\nEr du sikker på at du vil overskrive ALLE\nkomprimerte filer med decrunch bufferen?
+;Found a crunched file!\n\nAre you sure you want to overwrite ALL\ncrunched files with the decrunched buffer?
+;
+L_DO_IT_TURN_OFF
+Gjør det!|Slå av 'Overskriv'-flagget
+;Do it!|Turn off the 'Overwrite'-flag
+;
+L_P8
+Overskrive komprimerte filer
+;Overwrite crunched files
+;
+L_CALCULATING_CPU_SPEED
+Kalkulerer prosessor hastighet...
+;Calculating processor speed...
+;
+L_SELECT_DISK_SECTOR
+Velg den stasjonen som du vil sjekke.
+;Select a drive to process the sector checking.
+;
+L_I_HAVE_CHECKED_S
+Jeg har sjekket sjekket %s %s og %s %s så langt.
+;I have checked %s %s and %s %s so far.
+;
+L_COLDREBOOT
+Kaldstart...
+;ColdReboot...
+;
+L_REBOOT_THE_MACHINE
+Kaldstarte maskinen?\n\nAlt som ligger i minnet blir TILBAKESTILT, og maskinen\nvil starte som om den var blitt slått av og på igjen.
+;Reboot the machine?\n\nAll external memory and peripherals will be RESET,\nand the machine will start its power up diagnostics.
+;
+L_CANCEL_REBOOT_CANCEL
+Avbryt|Kaldstart|Avbryt
+;Cancel|Reboot|Cancel
+;
+L_DATA_VIRUS_WARNING
+DATA VIRUS ADVARSEL!
+;DATA VIRUS WARNING!
+;
+L_P9
+*
+;*
+;
+L_P10
+Hopp over filer som er eldre enn
+;Skip files older than
+;
+L_P11
+dag(er)
+;day(s)
+;
+L_NON_STANDARD_VECTOR
+*** UKJENT VEKTOR ***
+;*** NON-STANDARD VECTOR ***
+;
+L_ADDING_TO_FILE_WATCH
+Adderer '%s' til 'Fil-overvåking'...
+;Adding '%s' to the integrity data base...
+;
+L_NO_FILES_TO_CHECK
+Det er ingen filer å sjekke!
+;No files to check!
+;
+L_FW_CHECKING
+Sjekker '%s'...
+;Checking '%s'...
+;
+L_FILE_DOESNT_EXIST
+Filen finnes ikke!\n\n'%s'
+;File doesn't exist!\n\n'%s'
+;
+L_REMOVE_FROM_LIST_CONT
+Ta bort fra listen|Fortsett
+;Remove from list|Continue
+;
+L_FILE_OLD_NEW_DIFF
+             Fil: '%s'\n\nGammel størrelse: %lD\n    Ny størrelse: %lD\n\n       Forskjell: %lD
+;    File: '%s'\n\nOld size: %lD\nNew size: %lD\n\n    Diff: %lD
+;
+L_FILE_SIZE_CHANGED
+FORANDRING I FIL-STØRRELSEN!
+;FILE SIZE HAS CHANGED!
+;
+L_ACCEPT_CHANGE_CONTINUE
+Godkjenn ny|fortsett
+;Accept change|Continue
+;
+L_FILE_CRC_OLD_NEW
+*
+;*
+;
+L_CRC_CHANGED
+*
+;*
+;
+L_EXE
+KJØRBAR
+;EXECUTABLE
+;
+L_ICON
+IKON
+;ICON
+;
+L_FW_ERROR
+ERROR???
+;ERROR???
+;
+L_FILE_NAME_SIZE_TYPE
+ Fil navn: %s\nStørrelse: %lD\n\n     Type: %s
+;File name: %s\n     Size: %lD\n\n     Type: %s
+;
+L_ADD_FILE_CANCEL_SKIP
+Legg til fil|Avbryt|Hopp over
+;Add file|Cancel|Skip file
+;
+L_SAVE_CONTINUE
+Lagre|Fortsett
+;Save|Continue
+;
+L_ADDED_FILES_TO_WATCH
+Lagt til %lD %s til 'Fil-overvåking'
+;Added %lD %s to the integrity data base
+;
+L_SELECT_A_DIRECTORY
+Velg en skuff...
+;Select a directory...
+;
+L_SAVING_WATCH
+Lagrer 'Fil-overvåking' data...
+;Saving 'File integrity' data...
+;
+L_LOADING_WATCH
+Henter 'Fil-overvåking' data...
+;Loading 'File integrity' data...
+;
+L_INCLUDE
+Ta med data-filer
+;Include data files
+;
+L_ICONS
+Eksluder ikoner
+;Exclude icons
+;
+L_CONFIRM
+Bekreft hver enkel fil
+;Confirm every file
+;
+L_ADD
+Legg til
+;Add
+;
+L_DONE
+Ferdig
+;Done
+;
+L_FILE_WATCH
+Fil-overvåking
+;File integrity
+;
+L_CHECK_NOW
+Sjekk nå!
+;Check now!
+;
+L_ADD_A_DIRECTORY
+Legg til en skuff
+;Add a directory
+;
+L_ADD_UPDATE_STARTUP
+Legg til/oppdater startup-filer
+;Add/update startup files
+;
+L_ADD_FILES_FROM
+Legg til filer fra en skuff
+;Add files from a directory
+;
+L_AVAIL_CHIP_FAST_1
+*
+;*
+;
+L_DIRECTORIES_STAT_1
+*
+;*
+;
+L_UPDATE_FILES
+Oppdater filer
+;Update files
+;
+L_WRITES_TO_BOOTBLOCK1
+\n\nSkriver til bootblokken! (%ld prosent sikker)
+;\n\nWrites to bootblock! (%ld percent sure)
+;
+L_SOCKET_ERROR
+Socket feil!
+;Socket error!
+;
+L_CONNECTION_REFUSED
+Klarte ikke å opprette forbindelse!
+;Connection refused!
+;
+L_UNKNOWN_HOST
+Ukjent host!
+;Unknown host!
+;
+L_IS_AVAILABLE
+*
+;*
+;
+L_DOWNLOAD_F_CANCEL
+*
+;*
+;
+L_CONNECTING_TO_AMINET
+*
+;*
+;
+L_CHECKING_FOR_UPDATES
+*
+;*
+;
+L_ERROR_SENDING
+Feil ved sending av host forespørsel!
+;Error sending host request!
+;
+L_README_NOT_FOUND
+*
+;*
+;
+L_ERROR_RECIVING_README
+*
+;*
+;
+L_RECIVING
+*
+;*
+;
+L_DOWNLOAD_COMPLETED
+*
+;*
+;
+L_PLEASE_SELECT
+*
+;*
+;
+L_USA
+*
+;*
+;
+L_NO_TCP
+Klarte ikke å åpne en TCP/IP stakk!
+;No TCP/IP stack seems to be running!
+;
+L_FILE_WATCH_CHANGED
+Fil-overvåknings data har blitt endret!
+;File integrity data has been changed!
+;
+L_REMOVE_FILES
+Fjern filer...
+;Remove files...
+;
+L_REMOVE_FROM_LIST
+Fjerne '%s'?
+;Remove '%s'?
+;
+L_REMOVE_CANCEL
+Fjern fil|Avbryt
+;Remove file|Cancel
+;
+L_SELECT_FILE_TO_REMOVE
+Velg filen du vil fjerne fra fil-overvåknings listen...
+;Select file to remove from the file integrity list...
+;
+L_PLEASE_ADD_FIRST
+Ingen filer å fjerne!
+;Please add some files first!
+;
+L_WATCH_CHECK_PAUSED
+Fil-overvåkning sjekk er pauset
+;File integrity checking paused
+;
+L_UP_NAME
+Navn
+;Name
+;
+L_UP_VERSION
+Versjon
+;Version
+;
+L_UP_AMINET_VERSION
+Aminet versjon
+;Aminet version
+;
+L_UPDATE_CHECK_FINISHED
+Oppdateringen er ferdig.
+;Update check finished.
+;
+L_UP_RECIVED
+Hentet %ld %s.
+;Recived %ld %s.
+;
+L_UP_UPDATE
+oppdatering
+;update
+;
+L_UP_UPDATES
+oppdateringer
+;updates
+;
+L_VE_NEEDS_XADMASTER
+%s trenger %s v%ld+ for å utpakke LhA+ arkiver!\nVennligst innstaller den siste versjonen av %s.\n\n'Pakk # arkiv' flagget er ikke tilgjengelig...
+;%s needs %s v%ld+ to extract LhA+ archive!\nPlease install the latest version of %s.\n\nThe 'Extract # archives' option is now disabled...
+;
+L_ARCHIVE_IS_CRYPTED
+ARKIVET ER KRYPTERT!\n\n'%s'
+;ARCHIVE IS CRYPTED!\n\n'%s'
+;
+L_ARCHIVE_IS_CORRUPT
+ARKIVET ER ØDELAGT!\n\n'%s'
+;ARCHIVE IS CORRUPT!\n\n'%s'
+;
+L_FILE_SCAN_END1
+Gått gjennom %lD %s og %lD %s\n\nSjekket %lD kjørbare %s (%lD komprimerte)\nSjekket %lD data %s\nSjekket %lD %s\n\nTid brukt: %s
+;Scanned %lD %s and %lD %s\n\nChecked %lD exe %s (%lD crunched)\nChecked %lD data %s\nChecked %lD %s\n\nTime used: %s 
+;
+L_VIRUS_FOUND_TIME1
+*
+;*
+;
+L_ARCHIVE_ERROR
+*
+;*
+;
+L_SAVING_FILE
+Lagrer '%s'...
+;Saving '%s'...
+;
+L_P12
+Hurtig fil-sjekking
+;Fast file checking
+;
+L_VIEWING_MEMORY_AT1
+*
+;*
+;
+L_KNOWS_DATA
+*
+;*
+;
+L_DATA_C
+Data
+;Data
+;
+L_DATA_VIRUS
+Data virus
+;Data virus
+;
+L_MEMORY_AREA
+Minne område: $%08lx-$%08lx '%s'
+;Memory area: $%08lx-$%08lx '%s'
+;
+L_MEMORY_MONITOR
+Minne monitor
+;Memory monitor
+;
+L_LOGGING
+Skriv til log-fil
+;Write to log file
+;
+L_ICONIFY
+Ikonifiser
+;Iconify
+;
+L_ICONIFY_AT_STARTUP
+Ikonifiser ved oppstart
+;Iconify at startup
+;
+L_COULDNT_CREATE_ICON
+Kunne ikke opprette ikonet!
+;Couldn't create icon!
+;
+L_NO_WB
+Workbench skjermen er ikke tilgjengelig!
+;No Workbench screen available!
+;
+L_XVS_DISABLED
+xvs.library har blitt deaktivisert!
+;xvs.library has been disabled!
+;
+L_EXEC_MODIFIED
+Feil: exec.library har blitt modifisert!
+;Error: exec.library has been modified!
+;
+L_FILE_MD5_OLD_NEW
+       Fil: '%s'\n\nGammel MD5: $%s\n    Ny MD5: $%s
+;   File: '%s'\n\nOld MD5: $%s\nNew MD5: $%s
+;
+L_MD5_CHANGED
+MD5-128 MODIFIKASJON!
+;MD5-128 CHECKSUM HAS CHANGED!
+;
+L_THIS_VERSION_REQUIRES
+Denne versjonen krever at du må slette de gamle fil-overvåknings dataene!
+;This version requires that you delete your old file integrity data!
+;
+L_SELECT_LOG_PATH
+Logg til...
+;Select log path...
+;
+L_VE_NEEDS_DIS_LIB
+%s trenger %s for å disassembler minnet!
+;%s needs %s to disassemble memory!
+;
+L_FILE_VIRUS_MENU
+Fil virus
+;File virus
+;
+L_KNOWS_VIRUS
+Kjenner %3lD virus.\n\n
+;Knows %3ld virus.\n\n
+;
+L_CHECK_VALID_VOLUMES
+Sjekk ALLE enheter
+;Check ALL valid volumes
+;
+L_SKIP_KNOWN_DATA_FILES
+*
+;*
+;
+L_EXTRACT_ARCHIVES
+Pakk ut arkiver
+;Extract archives
+;
+L_DO_FILE_CHECK_VOL
+Sjekke alle disse enheter?
+;Do file check on these volumes?
+;
+L_CONTINUE_SKIP_STOP
+Fortsett|Hopp over denne enheten|Stopp
+;Continue|Skip this volume|Stop
+;
+L_VIRUS_REMOVED_DIFF
+Viruset er tatt bort!\n\nGammel størrelse: %lD\n    Ny størrelse: %lD\n\n      Differanse: %lD
+;Virus removed!\n\nOld size: %lD\nNew size: %lD\n\n    Diff: %lD
+;
+L_HIDDEN_EXE_FOUND
+Skjult program funnet i et skript!\n\n'%s'
+;Hidden executable file found in script!\n\n'%s'
+;
+L_DECODE_CONTINUE
+Dekode skript|Fortsett
+;Decode script|Continue
+;
+L_FOUND_A_SHELL_SCRIPT
+Funnet et Shell skript i:\n\n'%s'
+;Found a Shell Script in:\n\n'%s'
+;
+L_DIRECTORIES
+Skuffer:
+;Directories:
+;
+L_CRUNCHED
+Komprimerte:
+;Crunched:
+;
+L_ARCHIVED
+Pakket:
+;Archived:
+;
+L_VIRUS_FOUND
+Virus funnet:
+;Virus found:
+;
+L_FILES_1
+Filer:
+;Files:
+;
+L_DECRUNCHED
+Dekomprimerte:
+;Decrunched:
+;
+L_EXTRACTED
+Utpakket:
+;Extracted:
+;
+L_TIME
+Tid:
+;Time:
+;
+L_CHECKED
+Sjekket:
+;Checked:
+;
+L_ERROR_X
+Error: %s
+;Error: %s
+;
+L_ARCHIVE_ERROR_1
+  Arkiv: %s\n   Type: %s\n    Fil: %s\n\n  Error: %s
+;Archive: %s\n   Type: %s\n   File: %s\n\n  Error: %s
+;
+L_CHECKING_FOR_UPDATES_1
+Sjekker for oppgraderinger (%s)...
+;Checking for updates (%s)...
+;
+L_CONNECTING_TO_SERVER
+Kobler opp mot server...
+;Connecting to server...
+;
+L_ERROR_CONNECTING_TO_SERVER
+Feil ved oppkobling mot server!
+;Error connecting to server!
+;
+L_ERROR_TALKING_TO_SERVER
+Feil ved lesing fra server!
+;Error talking to server!
+;
+L_CHECKING_VERSION
+Sjekker versjon...
+;Checking version...
+;
+L_ERROR_READING_INFO_DATA
+Feil ved lesing av info data!
+;Error reading info data!
+;
+L_INFO_DATA_IS_CURRUPT
+Info data er ødelagt!
+;Info data is currupt!
+;
+L_NEW_VERSION_FOUND
+Fant ny versjon...
+;New version found...
+;
+L_NO_NEW_VERSION
+Fant ingen ny versjon...
+;No new version...
+;
+L_DOWNLOADING_PST
+Laster ned (%3ld%%)...
+;Downloading (%3ld%%)...
+;
+L_DOWNLOADING_CPS
+Laster ned %s (%3ld%%, %lD cps)...
+;Downloading %s (%3ld%%, %lD cps)...
+;
+L_DOWNLOAD_COMPLETE
+Nedlasting er fullført.
+;Download complete.
+;
+L_CHECKSUM_ERROR
+Sjekksum ERROR!
+;Checksum ERROR!
+;
+L_PLEASE_INSTALL
+Vil du installere '%s'...
+;Please install '%s'...
+;
+L_OLD
+Gammel
+;Old
+;
+L_NEW
+Ny
+;New
+;
+L_STATUS
+Status
+;Status
+;
+L_COULDNT_FIND_FILE_ON_SERVER
+Kunne ikke lese fil fra server!
+;Couldn't read file on server!
+;
+L_FOUND_UPDATES
+Funnet %ld %s...
+;Found %ld %s...
+;
+L_INSTALL_CANCEL
+Innstallere|Avbryt
+;Install|Cancel
+;
+L_YOU_HAVE_A_SPECIAL
+Du har en spesiell AmigaOS versijn av %s\n\nEr du sikker på at du vil erstatte den med den nye shareware versjonen?
+;You have a special AmigaOS version of the %s\n\nDo you want to replace it with this new shareware version?
+;
+L_INSTALLING_1
+Innstallerer...
+;Installing...
+;
+L_FINISHED
+Ferdig!
+;Finished!
+;
+L_ABORTED
+Kansellert!
+;Aborted!
+;
+L_README_FILES_ARE_LOCATED
+.readme filene finner du i %s/\n\nDu er nødt til å restarte VirusExecutor!
+;.readme files are located in %s/\n\nYou have to restart VirusExecutor!
+;
+L_INSTALLING_2
+Innstallerer '%s'...
+;Installing '%s'...
+;
+L_START
+Start
+;Start
+;
+L_SELECT_VOLUMES_TO_CHECK
+Velg enheter du vil sjekke...
+;Select volumes to check...
+;
+L_NO_NEW_MD5
+Allerede innstallert! (MD5)
+;You have this update! (MD5)
+;
+L_THIS_OPTION_WILL_DISABLE
+Aktivering av denne funksjonen gjør at ALLE meldinger ikke vises...\nLogging vil bli utført!\n\nLoggfil: %s
+;This option will disable ALL requesters during a file scan...\nLogging is now turned on!\n\nLog-file: %s
+;
+L_YOUR_FILES_ARE_UP_TO_DATE
+Alle filene er allerede oppdatert.
+;Your files are up to date.
+;

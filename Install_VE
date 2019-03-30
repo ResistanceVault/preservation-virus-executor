@@ -1,0 +1,128 @@
+; ************************************************************************
+;
+; $VER: Install 2.25 (02.07.2002)
+; 
+; Install script for VirusExecutor v2.25+ Copyright © 2002 Jan Erik Olausen
+;
+; ************************************************************************
+
+(set old_level @user-level)
+(set @default-dest "")
+(set #wbversion 0)
+(set #wbversion (getversion "libs:version.library"))
+(set #wbversion (/ #wbversion 65536) )
+
+;=============================================================================
+; Make sure we are running under a 2.04 ROM
+
+(if (< (/ (getversion) 65536) 37)
+(
+    (abort #bad-kick)
+))
+
+(set destination
+	(tackon
+		(askdir
+			(prompt "Please select the path where you want to install\nthe VirusExecutor program.\n\nA drawer named VirusExecutor will be created there.\n")
+			(help @askdir-help)
+			(default "Work:")
+			(newpath)
+		)
+		"VirusExecutor"
+	)
+)
+(set @default-dest destination)
+
+(copyfiles
+	(source "")
+	(dest destination)
+	(pattern "VirusExecutor#?")
+	(infos)
+	
+)
+
+;************************
+;** VirusExecutor.info **
+;************************
+
+(if (< #wbversion 44)	; Not OS 3.5?
+	(copyfiles
+		(source "Icons/Standard/VirusExecutor.info")
+		(dest (destination))
+	)
+)
+(if (> #wbversion 43)	; Yes! OS 3.5
+	(copyfiles
+		(source "Icons/Glow/VirusExecutor.info")
+		(dest (destination))
+	)
+)
+
+;*********************
+;** Libraries stuff **
+;*********************
+
+(copylib
+	(prompt "This will copy the 'xvs.library' to your LIBS: directory.")
+	(source "libs/xvs.library")
+	(help "VirusExecutor uses the 'xvs.library' to find and remove virus.")
+	(confirm)
+	(dest "LIBS:")
+)
+
+;******************
+;** Locale stuff **
+;******************
+
+      (set lang
+        (askoptions
+      	(prompt "Which languages do want installed?")
+        (help "Checkmark the languages you want installed, and click Proceed.")
+      	(choices "Czech" "Dansk" "Deutsch" "Español" "Français" "Italiano" "Magyar" "Nederlands" "Norsk" "Polski" "Português" "Russian" "Slovak" "Svenska")
+      	(default 0)
+      ))
+
+      (set n 0)
+
+      (while (set language (select n "Czech" "Dansk" "Deutsch" "Español" "Français" "Italiano" "Magyar" "Nederlands" "Norsk" "Polski" "Português" "Russian" "Slovak" "Svenska" ""))
+      (
+      	(if (IN lang n)
+     		(copyfiles
+          		(source (cat "catalogs/" language "/VirusExecutor.catalog" ))
+      			(dest (cat "LOCALE:catalogs/" language ))
+      			(all)
+      		)
+      	)
+      	(set n (+ n 1))
+      ))
+
+;*****************
+;** Guide stuff **
+;*****************
+
+(set guide
+   (askoptions
+	  (prompt "What guide would you like to install?")
+	  (help
+		"This will install the VirusExecutor docs."
+	  )
+      (choices "English" "Français (Not updated!)")
+      (default 1)
+   )
+)
+
+(if (bitand 1 guide)
+	(copyfiles
+		(source "Docs/VirusExecutor.guide")
+		(dest (cat destination))
+		(infos)
+	)
+)
+
+(if (bitand 2 guide)
+	(copyfiles
+		(source "Docs/VirusExecutor_fr.guide")
+		(dest (cat destination))
+		(infos)
+	)
+)

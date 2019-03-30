@@ -1,0 +1,27 @@
+sc VE.c
+sc VE_AnalyzeWrite.c
+sc VE_Files.c
+sc VE_FileVirus.c
+sc VE_List.c
+sc VE_Mem.c
+sc VE_Pack_files.c
+sc VE_PatchWindow.c
+sc VE_Record.c
+sc VE_ShowStuff.c
+sc VE_Update.c
+sc VE_Window.c
+sc PrefsWindow.c
+sc VE_Analyze.c
+sc VE_fd.c
+sc VE_FileStat.c
+sc VE_Install.c
+sc VE_log.c
+sc VE_OtherBoots.c
+sc VE_Patches.c
+sc VE_Prefs.c
+sc VE_Sector.c
+sc VE_ShowWindow.c
+sc VE_Utilities.c
+sc VE_Watch.c
+sc VE_Version.c NOOPT
+x ve.s

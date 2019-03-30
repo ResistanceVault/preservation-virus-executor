@@ -1,0 +1,1368 @@
+Some more patches:
+
+68060.library 46.8 (2000-03-02) © 1994-2000 by Ralph Schmidt:
+(Some of the patches are recognized, but some aren't. here is the
+disassembly from 46.7)
+
+
+expansion/AddCongigDev:
+
+new_addconfigdev
+	subq.w	#4,sp			;594F
+	movem.l	d2/a3-a6,-(sp)		;48E7201E
+	move.l	(4).w,a1			;22780004
+	move.l	(ex_MMULock,a1),a3	;26690258
+	move.l	a1,($0014,sp)		;2F490014
+	move.l	a0,a5			;2A48
+	move.l	($0020,a5),a1		;226D0020
+	move.l	a6,a4			;284E
+	move.l	($0014,sp),a6		;2C6F0014
+	jsr	(_LVOTypeOfMem,a6)	;4EAEFDEA
+	tst.l	d0			;4A80
+	bne.b	lbC01726E		;6612
+	move.l	($0020,a5),d0		;202D0020
+	move.l	($0024,a5),d1		;222D0024
+	moveq	#$40,d2			;7440
+	move.l	a3,a6			;2C4B
+	jsr	(lbC017CBC)		;4EB966E8EB4C
+lbC01726E
+	move.l	a5,a0			;204D
+	move.l	(old_addconfigdev),a1	;227966E8E650
+	move.l	a4,a6			;2C4C
+	jsr	(a1)			;4E91
+	movem.l	(sp)+,d2/a3-a6		;4CDF7804
+	addq.w	#4,sp			;584F
+	rts				;4E75
+
+_makepatches
+	movem.l	a4/a6,-(sp)		;48E7000A
+	move.l	($0028,a5),a6		;2C6D0028
+	jsr	(_LVODisable,a6)	;4EAEFF88
+	move.l	(LIB_Supervisor+2,a6),(old_supervisor)	;23EEFFE466E8E640
+	move.l	#new_supervisor,(LIB_Supervisor+2,a6)	;2D7C66E8E31AFFE4
+	move.l	($0028,a5),a6		;2C6D0028
+	jsr	(_LVOCacheClearU,a6)	;4EAEFD84
+	lea	(new_cachecontrol),a0	;41F966E8E5C4
+	move.l	a0,d0			;2008
+	move.w	#_LVOCacheControl,a0	;307CFD78
+	move.l	a6,a1			;224E
+	jsr	(_LVOSetFunction,a6)	;4EAEFE5C
+	move.l	a5,a6			;2C4D
+	jsr	(-$004E,a6)		;4EAEFFB2
+	ext.l	d0			;48C0
+	subq.l	#2,d0			;5580
+	beq.b	.cs_mk			;6704
+	subq.l	#1,d0			;5380
+	bne.b	lbC0172D0		;6608
+.cs_mk	lea	(new_coldreboot_cs),a4	;49F966E8E34C
+	bra.b	lbC0172D6		;6006
+
+lbC0172D0
+	lea	(new_coldreboot_bppc),a4	;49F966E8E364
+lbC0172D6
+	move.l	($0028,a5),a1		;226D0028
+	move.l	a4,d0			;200C
+	move.w	#_LVOColdReboot,a0	;307CFD2A
+	move.l	a1,a6			;2C49
+	jsr	(_LVOSetFunction,a6)	;4EAEFE5C
+	move.l	a6,a1			;224E
+	lea	(new_addlibrary),a0	;41F966E8E3E8
+	move.l	a0,d0			;2008
+	move.w	#_LVOAddLibrary,a0	;307CFE74
+	jsr	(_LVOSetFunction,a6)	;4EAEFE5C
+	move.l	d0,(old_addlibrary)	;23C066E8E628
+	move.l	a6,a1			;224E
+	lea	(new_adddevice),a0	;41F966E8E3F6
+	move.l	a0,d0			;2008
+	move.w	#_LVOAddDevice,a0	;307CFE50
+	jsr	(_LVOSetFunction,a6)	;4EAEFE5C
+	move.l	d0,(old_adddevice)	;23C066E8E630
+	move.l	a6,a1			;224E
+	lea	(new_addresource),a0	;41F966E8E404
+	move.l	a0,d0			;2008
+	move.w	#_LVOAddResource,a0	;307CFE1A
+	jsr	(_LVOSetFunction,a6)	;4EAEFE5C
+	move.l	d0,(old_addresource)	;23C066E8E634
+	lea	(new_addtask),a0	;41F966E8E412
+	move.l	a0,d0			;2008
+	move.w	#_LVOAddTask,a0		;307CFEE6
+	move.l	a6,a1			;224E
+	jsr	(_LVOSetFunction,a6)	;4EAEFE5C
+	move.l	d0,(old_addtask)	;23C066E8E638
+	lea	(new_addintserver),a0	;41F966E8E450
+	move.l	a0,d0			;2008
+	move.w	#_LVOAddIntServer,a0	;307CFF58
+	move.l	a6,a1			;224E
+	jsr	(_LVOSetFunction,a6)	;4EAEFE5C
+	move.l	d0,(old_addintserver)	;23C066E8E63C
+	lea	(newsetintvector),a0	;41F966E8E464
+	move.l	a0,d0			;2008
+	move.w	#_LVOSetIntVector,a0	;307CFF5E
+	move.l	a6,a1			;224E
+	jsr	(_LVOSetFunction,a6)	;4EAEFE5C
+	move.l	d0,(oldsetintvector)	;23C066E8E644
+	lea	(DeviceList,a6),a0	;41EE015E
+	lea	(inputdevice.MSG,pc),a1	;43FAFE9A
+	jsr	(_LVOFindName,a6)	;4EAEFEEC
+	tst.l	d0			;4A80
+	beq.b	lbC01739E		;6718
+	lea	(new_inputdev_beginio),a0	;41F966E8E478
+	move.l	d0,a1			;2240
+	move.l	a0,d0			;2008
+	move.w	#$FFE2,a0		;307CFFE2
+	jsr	(_LVOSetFunction,a6)	;4EAEFE5C
+	move.l	d0,(old_inputdev_beginio)	;23C066E8E648
+lbC01739E
+	lea	(new_addmemlist,pc),a0	;41FB0170FFFFFE20
+	move.l	a0,d0			;2008
+	move.w	#_LVOAddMemList,a0	;307CFD96
+	move.l	a6,a1			;224E
+	jsr	(_LVOSetFunction,a6)	;4EAEFE5C
+	move.l	d0,(old_addmemlist)	;23C066E8E64C
+	lea	(expansionlibr.MSG,pc),a1	;43FAFE6A
+	moveq	#0,d0			;7000
+	jsr	(_LVOOpenLibrary,a6)	;4EAEFDD8
+	move.l	d0,a4			;2840
+	tst.l	d0			;4A80
+	beq.b	.nolib			;6720
+	lea	(new_addconfigdev,pc),a0	;41FB0170FFFFFE6C
+	move.l	a0,d0			;2008
+	move.w	#_LVOAddConfigDev,a0	;307CFFE2
+	move.l	a4,a1			;224C
+	jsr	(_LVOSetFunction,a6)	;4EAEFE5C
+	move.l	d0,(old_addconfigdev)	;23C066E8E650
+	move.l	a4,a1			;224C
+	jsr	(_LVOCloseLibrary,a6)	;4EAEFE62
+.nolib	move.l	a5,a6			;2C4D
+	jsr	(init_mmulist)		;4EB966E8FE96
+	move.l	d0,($0048,a5)		;2B400048
+	beq.b	lbC017430		;673A
+	move.l	a5,([$0028,a5],$0258)	;2B8D016200280258
+	move.l	($0028,a5),a1		;226D0028
+	lea	(new_cachepredma),a0	;41F966E8E4C6
+	move.l	a0,d0			;2008
+	move.w	#_LVOCachePreDMA,a0	;307CFD06
+	move.l	a1,a6			;2C49
+	jsr	(_LVOSetFunction,a6)	;4EAEFE5C
+	lea	(new_cachepostdma),a0	;41F966E8E498
+	move.l	a0,d0			;2008
+	move.w	#_LVOCachePostDMA,a0	;307CFD00
+	move.l	a6,a1			;224E
+	jsr	(_LVOSetFunction,a6)	;4EAEFE5C
+	move.l	($0048,a5),a1		;226D0048
+	jsr	(startmmu)		;4EB966E8E2D0
+lbC017430
+	move.l	($0028,a5),a6		;2C6D0028
+	jsr	(_LVOEnable,a6)		;4EAEFF82
+	moveq	#1,d0			;7001
+	movem.l	(sp)+,a4/a6		;4CDF5000
+	rts				;4E75
+
+
+	; exec/Supervisor patch
+
+new_supervisor
+	cmp.l	#$42A7F35F,(a5)	;0C9542A7F35F
+	bne.b	.orig			;660A
+	cmp.w	#$4E73,(4,a5)		;0C6D4E730004
+	bne.b	.orig			;6602
+	rts				;4E75
+
+.orig	move.l	(old_supervisor,pc),-(sp)	;2F3A0312
+	rts				;4E75
+
+	rts				;4E75
+
+
+	; exec/ColdReboot patches
+
+new_coldreboot_xx
+	move.w	#$4000,($00DFF09A)	;33FC400000DFF09A
+	moveq	#0,d0			;7000
+	moveq	#-1,d1			;72FF
+	jsr	(_LVOCacheControl,a6)	;4EAEFD78
+	lea	(_coldreboot_xxx,pc),a5	;4BFA007E
+	jsr	(_LVOSupervisor,a6)	;4EAEFFE2
+
+new_coldreboot_cs
+	move.w	#$4000,($00DFF09A)	;33FC400000DFF09A
+	moveq	#0,d0			;7000
+	moveq	#-1,d1			;72FF
+	jsr	(_LVOCacheControl,a6)	;4EAEFD78
+	lea	(_coldreboot_cs,pc),a5	;4BFA001E
+	jsr	(_LVOSupervisor,a6)	;4EAEFFE2
+
+new_coldreboot_bppc
+	move.w	#$4000,($00DFF09A)	;33FC400000DFF09A
+	moveq	#0,d0			;7000
+	moveq	#-1,d1			;72FF
+	jsr	(_LVOCacheControl,a6)	;4EAEFD78
+	lea	(_coldreboot_bppc,pc),a5	;4BFA002A
+	jsr	(_LVOSupervisor,a6)	;4EAEFFE2
+_coldreboot_cs
+	cpusha	dc			;F478
+	nop				;4E71
+	movec	tc,d0			;4E7A0003
+	bclr	#15,d0			;0880000F
+	movec	d0,tc			;4E7B0003
+	move.b	#$40,($00F60018)	;13FC004000F60018
+	move.b	#12,($00F60000)		;13FC000C00F60000
+	bra.b	_coldreboot_bppc	;6002
+
+	nop	;4E71
+_coldreboot_bppc
+	cpusha	dc			;F478
+	nop				;4E71
+	movec	tc,d0			;4E7A0003
+	bclr	#15,d0			;0880000F
+	movec	d0,tc			;4E7B0003
+	lea	($01000000),a0		;41F901000000
+	sub.l	(-$0014,a0),a0		;91E8FFEC
+	move.l	(4,a0),a0		;20680004
+	subq.l	#2,a0			;5588
+	reset				;4E70
+	jmp	(a0)			;4ED0
+
+_coldreboot_xxx
+	cpusha	dc			;F478
+	nop				;4E71
+	movec	tc,d0			;4E7A0003
+	bclr	#15,d0			;0880000F
+	movec	d0,tc			;4E7B0003
+	move.l	#$4E704EF9,(0).w	;21FC4E704EF90000
+	move.l	#$00F800D2,(4).w	;21FC00F800D20004
+	jmp	(0).w			;4EF80000
+
+
+	; exec/AddLibrary patch
+
+new_addlibrary
+	move.l	(old_addlibrary,pc),-(sp)	;2F3A023E
+	move.l	a1,-(sp)		;2F09
+	jsr	(_LVOCacheClearU,a6)	;4EAEFD84
+	move.l	(sp)+,a1		;225F
+	rts				;4E75
+
+
+	; exec/AddDevice patch
+
+new_adddevice
+	move.l	(old_adddevice,pc),-(sp)	;2F3A0238
+	move.l	a1,-(sp)		;2F09
+	jsr	(_LVOCacheClearU,a6)	;4EAEFD84
+	move.l	(sp)+,a1		;225F
+	rts				;4E75
+
+
+	; exec/AddResource patch
+
+new_addresource
+	move.l	(old_addresource,pc),-(sp)	;2F3A022E
+	move.l	a1,-(sp)		;2F09
+	jsr	(_LVOCacheClearU,a6)	;4EAEFD84
+	move.l	(sp)+,a1		;225F
+	rts				;4E75
+
+
+	; exec/AddTask patch
+
+new_addtask
+	pea	(.permit,pc)		;487A0014
+	move.l	(old_addtask,pc),-(sp)	;2F3A0220
+	move.l	a1,-(sp)		;2F09
+	jsr	(_LVOForbid,a6)		;4EAEFF7C
+	jsr	(_LVOCacheClearU,a6)	;4EAEFD84
+	move.l	(sp)+,a1		;225F
+	rts				;4E75
+
+.permit	movem.l	d0/d1/a0/a1,-(sp)	;48E7C0C0
+	btst	#7,(AttnFlags,a6)	;082E00070128
+	beq.b	.no060			;6712
+	tst.l	d0			;4A80
+	beq.b	.no060			;670E
+	move.l	d0,a0			;2040
+	move.l	($0036,a0),a1		;22680036
+	clr.l	-(a1)			;42A1
+	clr.l	-(a1)			;42A1
+	move.l	a1,($0036,a0)		;21490036
+.no060	jsr	(_LVOPermit,a6)		;4EAEFF76
+	movem.l	(sp)+,d0/d1/a0/a1	;4CDF0303
+	rts				;4E75
+
+
+	; exec/AddIntServer patch
+
+new_addintserver
+	move.l	(old_addintserver,pc),-(sp)	;2F3A01EA
+	movem.l	d0/a1,-(sp)		;48E78040
+	jsr	(_LVOCacheClearU,a6)	;4EAEFD84
+	movem.l	(sp)+,d0/a1		;4CDF0201
+	rts				;4E75
+
+	nop				;4E71
+
+
+	; exec/SetIntVector patch
+
+newsetintvector
+	move.l	(oldsetintvector,pc),-(sp)	;2F3A01DE
+	movem.l	d0/a1,-(sp)		;48E78040
+	jsr	(_LVOCacheClearU,a6)	;4EAEFD84
+	movem.l	(sp)+,d0/a1		;4CDF0201
+	rts				;4E75
+
+	nop	;4E71
+
+
+	; input/BeginIO patch
+
+new_inputdev_beginio
+	move.l	(old_inputdev_beginio,pc),-(sp)	;2F3A01CE
+	cmp.w	#IND_ADDHANDLER,(IO_COMMAND,a1)	;0C690009001C
+	bne.b	.orig			;6610
+	movem.l	a1/a6,-(sp)		;48E70042
+	move.l	(4).w,a6		;2C780004
+	jsr	(_LVOCacheClearU,a6)	;4EAEFD84
+	movem.l	(sp)+,a1/a6		;4CDF4200
+.orig	rts				;4E75
+
+	nop				;4E71
+
+
+	; exec/CachePostDMA patch
+
+new_cachepostdma
+	btst	#3,d0			;08000003
+	bne.w	.exit			;66000024
+	move.l	a0,d1			;2208
+	or.l	(a1),d1			;8291
+	and.b	#15,d1			;0201000F
+	beq.w	.exit			;67000018
+	movem.l	a0/a4/a5,-(sp)		;48E7008C
+	lea	(lbC017724,pc),a4	;49FA0102
+	lea	(_cachedma_sv,pc),a5	;4BFA0056
+	jsr	(_LVOSupervisor,a6)	;4EAEFFE2
+	movem.l	(sp)+,d0/a4/a5		;4CDF3001
+	rts				;4E75
+
+.exit	move.l	a0,d0			;2008
+	rts				;4E75
+
+
+	; exec/CachePreDMA patch
+
+new_cachepredma
+	movem.l	a0/a4/a5,-(sp)		;48E7008C
+	btst	#1,d0			;08000001
+	bne.w	.exit			;66000028
+	btst	#3,d0			;08000003
+	bne.w	.exit			;66000020
+	move.l	a0,d1			;2208
+	or.l	(a1),d1			;8291
+	and.b	#15,d1			;0201000F
+	beq.w	.exit			;67000014
+	lea	(lbC017710,pc),a4	;49FA00B8
+	lea	(_cachedma_sv,pc),a5	;4BFA0020
+	jsr	(_LVOSupervisor,a6)	;4EAEFFE2
+	movem.l	(sp)+,d0/a4/a5		;4CDF3001
+	rts				;4E75
+
+.exit	lea	(_pushdc_sv,pc),a5	;4BFA000C
+	jsr	(_LVOSupervisor,a6)	;4EAEFFE2
+	movem.l	(sp)+,d0/a4/a5		;4CDF3001
+	rts				;4E75
+
+_pushdc_sv
+	cpusha	dc			;F478
+	rte				;4E73
+
+	nop				;4E71
+_cachedma_sv
+	cpusha	dc			;F478
+	move.l	a0,d0			;2008
+	move.l	($0258,a6),a5		;2A6E0258
+	move.l	d2,-(sp)		;2F02
+	move.l	a0,-(sp)		;2F08
+	moveq	#-1,d2			;74FF
+	move.l	($0048,a5),a5		;2A6D0048
+	add.l	(a1),d0			;D091
+	bsr.b	lbC01769A		;6108
+	move.l	(sp)+,d0		;201F
+	bsr.b	lbC01769A		;6104
+	move.l	(sp)+,d2		;241F
+	rte				;4E73
+
+lbC01769A
+	moveq	#15,d1			;720F
+	and.l	d0,d1			;C280
+	beq.w	.exit			;6700006E
+	move.l	d0,-(sp)		;2F00
+	bfextu	d0{0:$14},d0		;E9C00014
+	cmp.l	d0,d2			;B480
+	beq.w	lbC01770C		;67000060
+	move.l	($0034,a5),d1		;222D0034
+lbC0176B2	move.l	d1,a0		;2041
+	move.l	(a0),d1			;2210
+	beq.w	lbC01770C		;67000054
+	cmp.l	(8,a0),d0		;B0A80008
+	bcs.b	lbC0176B2		;65F2
+	cmp.l	(12,a0),d0		;B0A8000C
+	bhi.b	lbC0176B2		;62EC
+	move.l	d0,d2			;2400
+	sub.l	(8,a0),d0		;90A80008
+	lea	($10,a0,d0.l*2),a1	;43F00A10
+	move.l	(sp)+,d0		;201F
+	movec	urp,a0			;4E7A8806
+	bfextu	d0{0:7},d1		;E9C01007
+	move.l	(a0,d1.l*4),d1		;22301C00
+	and.w	#$FE00,d1		;0241FE00
+	move.l	d1,a0			;2041
+	bfextu	d0{7:7},d1		;E9C011C7
+	move.l	(a0,d1.l*4),d1		;22301C00
+	clr.b	d1			;4201
+	move.l	d1,a0			;2041
+	bfextu	d0{14:6},d0		;E9C00386
+	lea	(a0,d0.l*4),a0		;41F00C00
+	move.l	(a0),d1			;2210
+	btst	#0,d1			;08010000
+	bne.w	lbC01770A		;6600000A
+	bclr	#1,d1			;08810001
+	beq.b	lbC01770A		;6702
+	move.l	d1,a0			;2041
+lbC01770A
+	jmp	(a4)			;4ED4
+
+lbC01770C
+	addq.w	#4,sp			;584F
+.exit
+	rts				;4E75
+
+lbC017710
+	move.w	(a1),d0			;3011
+	addq.w	#1,(a1)			;5251
+	tst.w	d0			;4A40
+	bne.b	lbC017722		;660A
+	pflusha		;MC68040	;F518
+	bclr	#5,(3,a0)		;08A800050003
+	nop				;4E71
+lbC017722
+	rts				;4E75
+
+lbC017724
+	subq.w	#1,(a1)			;5351
+	bne.b	lbC017732		;660A
+	pflusha		;MC68040	;F518
+	bset	#5,(3,a0)		;08E800050003
+	nop				;4E71
+lbC017732
+	rts				;4E75
+
+
+	; exec/CacheControl patch
+
+new_cachecontrol
+	movem.l	d2-d4,-(sp)		;48E73800
+	and.l	d1,d0			;C081
+	not.l	d1			;4681
+	move.l	a5,a1			;224D
+	lea	(.cachecontrol,pc),a5	;4BFA0010
+	jsr	(_LVOSupervisor,a6)	;4EAEFFE2
+	move.l	d3,d0			;2003
+	move.l	a1,a5			;2A49
+	movem.l	(sp)+,d2-d4		;4CDF001C
+	rts				;4E75
+
+.cachecontrol
+	ori.w	#$0700,sr		;007C0700
+	move.l	#$80008000,d4		;283C80008000
+	movec	cacr,d2			;4E7A2002
+	and.l	d4,d2			;C484
+	swap	d2			;4842
+	ror.w	#8,d2			;E05A
+	rol.l	#1,d2			;E39A
+	move.l	d2,d3			;2602
+	rol.l	#4,d3			;E99B
+	or.l	d3,d2			;8483
+	btst	#8,d2			;08020008
+	beq.b	.skip			;6704
+	bset	#$1F,d2			;08C2001F
+.skip	move.l	d2,d3			;2602
+	and.l	d1,d2			;C481
+	or.l	d0,d2			;8480
+	ror.l	#1,d2			;E29A
+	rol.w	#8,d2			;E15A
+	swap	d2			;4842
+	and.l	d4,d2			;C484
+	not.l	d4			;4684
+	cpusha	bc			;F4F8
+	movec	cacr,d1			;4E7A1002
+	and.l	d4,d1			;C284
+	or.l	d1,d2			;8481
+	movec	d2,cacr			;4E7B2002
+	rte				;4E73
+
+	nop				;4E71
+
+
+old_addlibrary
+	dc.l	0			;00000000
+	dc.l	0			;00000000
+old_adddevice
+	dc.l	0			;00000000
+old_addresource
+	dc.l	0			;00000000
+old_addtask
+	dc.l	0			;00000000
+old_addintserver
+	dc.l	0			;00000000
+old_supervisor
+	dc.l	0			;00000000
+oldsetintvector
+	dc.l	0			;00000000
+old_inputdev_beginio
+	dc.l	0			;00000000
+old_addmemlist
+	dc.l	0			;00000000
+old_addconfigdev
+	dc.l	0			;00000000
+
+
+
+
+powerpc.library 16.0 (2000-10-30) (patched by 'ramlib' because SetFunction()d at LibInit)
+
+Soft Int
+
+	;Hunk 0, Offset $000010CE
+_addsoftint
+	lea	(softint_is-DT,a4),a1				;43EC3E46
+	lea	(powerpclibrar.MSG-DT,a4),a0			;41EC2355
+	move.l	a0,(LN_NAME,a1)					;2348000A
+	move.l	(lbL01AB3C-DT,a4),a0				;206C3DC8
+	clr.l	(a0)						;4290
+	clr.l	(4,a0)						;42A80004
+	move.l	a0,(IS_DATA,a1)					;2348000E
+	lea	(_softint_code),a0				;41F966B70976
+	move.l	a0,(IS_CODE,a1)					;23480012
+	moveq	#2,d0						;7002
+	move.l	(execbase-DT,a4),a6				;2C6C3D6C
+	jsr	(_LVOSetIntVector,a6)				;4EAEFF5E
+	rts							;4E75
+
+
+	; ****** SOFTINT vector will point HERE ******
+	; Hunk 0, Offset $000010FE
+_softint_code
+	move.w	#INTF_SOFTINT,(_custom+intreq)			;33FC000400DFF09C
+	move.w	#INTF_SOFTINT,(_custom+intena)			;33FC000400DFF09A
+	move.l	a4,-(sp)					;2F0C
+	bsr.w	_saveds						;61000722
+	move.l	d0,a4						;2840
+	cpushl	dc,(a1)						;F469
+	tst.b	(4,a1)						;4A290004
+	beq.w	.normal_int					;670000DA
+	clr.b	(4,a1)						;42290004
+	tst.b	(7,a1)						;4A290007
+	bne.w	.notsignal1					;6600001E
+	move.b	#$FF,(5,a1)					;137C00FF0005
+	cpushl	dc,(a1)						;F469
+	move.l	(task-DT,a4),a1					;226C3DD0
+	move.l	(sigmask-DT,a4),d0				;202C3DD4
+	move.l	(execbase-DT,a4),a6				;2C6C3D6C
+	jsr	(_LVOSignal,a6)					;4EAEFEBC
+	bra.w	.normal_int					;600000B2
+
+.notsignal1
+	bmi.w	.issignal2					;6B000076
+	cmp.b	#1,(7,a1)					;0C2900010007
+	beq.w	.notmsg						;67000034
+	move.b	#$FF,(5,a1)					;137C00FF0005
+	cpushl	dc,(a1)						;F469
+	move.l	a1,-(sp)					;2F09
+	move.l	(0,a1),a5					;2A690000
+	lea	($0014,a5),a5					;4BED0014
+	move.l	($0024,a5),a1					;226D0024
+	move.l	(execbase-DT,a4),a6				;2C6C3D6C
+	jsr	(_LVOReplyMsg,a6)				;4EAEFE86
+	lea	($0024,a5),a1					;43ED0024
+	cinvl	dc,(a1)						;F449
+	move.l	(sp)+,a1					;225F
+	move.b	#$FF,(6,a1)					;137C00FF0006
+	cpushl	dc,(a1)						;F469
+	bra.w	.normal_int					;60000072
+
+.notmsg
+	move.b	#$FF,(5,a1)					;137C00FF0005
+	cpushl	dc,(a1)						;F469
+	move.l	a1,-(sp)					;2F09
+	move.l	(0,a1),a5					;2A690000
+	lea	($0014,a5),a5					;4BED0014
+	move.l	($0020,a5),a0					;206D0020
+	move.l	($0024,a5),a1					;226D0024
+	bsr.w	lbC003BD2					;61002A2E
+	lea	($0024,a5),a1					;43ED0024
+	cinvl	dc,(a1)						;F449
+	lea	($0020,a5),a1					;43ED0020
+	cinvl	dc,(a1)						;F449
+	move.l	(sp)+,a1					;225F
+	move.b	#$FF,(6,a1)					;137C00FF0006
+	cpushl	dc,(a1)						;F469
+	bra.w	.normal_int					;6000003A
+
+.issignal2
+	move.b	#$FF,(5,a1)					;137C00FF0005
+	cpushl	dc,(a1)						;F469
+	move.l	a1,-(sp)					;2F09
+	move.l	(0,a1),a5					;2A690000
+	lea	($0014,a5),a5					;4BED0014
+	move.l	($0024,a5),a1					;226D0024
+	move.l	(0,a5),d0					;202D0000
+	move.l	(execbase-DT,a4),a6				;2C6C3D6C
+	jsr	(_LVOSignal,a6)					;4EAEFEBC
+	lea	($0024,a5),a1					;43ED0024
+	cinvl	dc,(a1)						;F449
+	lea	(0,a5),a1					;43ED0000
+	cinvl	dc,(a1)						;F449
+	move.l	(sp)+,a1					;225F
+	move.b	#$FF,(6,a1)					;137C00FF0006
+	cpushl	dc,(a1)						;F469
+.normal_int
+	move.l	(sp)+,a4					;285F
+	move.w	#INTF_SOFTINT,(_custom+intreq)			;33FC000400DFF09C
+	move.w	#(INTF_SOFTINT|INTF_SETCLR),(_custom+intena)	;33FC800400DFF09A
+	bclr	#5,(SysFlags,a6)				;08AE00050124	;(SB_SINT-8) * softints allowed?
+	beq.w	.exit						;67000056
+	move.w	#INTF_SOFTINT,(_custom+intena)			;33FC000400DFF09A	;* disable softints
+	bra.b	.si_start					;6020
+
+.si_remove
+	move.w	#$2700,sr					;46FC2700	;* fast disable
+	move.l	(a0),a1						;2250
+	move.l	(a1),a5						;2A51
+	move.l	a5,(a0)						;208D
+	move.l	a0,(4,a5)					;2B480004
+	move.b	#NT_INTERRUPT,(LN_TYPE,a1)			;137C00020008
+	move.w	#$2000,sr					;46FC2000	;* open for all interrupts
+	movem.l	(IS_DATA,a1),a1/a5				;4CE92200000E
+	jsr	(a5)						;4E95
+.si_start
+	moveq	#4,d0						;7004
+	lea	(SoftInts+SH_SIZE+$00000030,a6),a0		;41EE01F2
+	move.w	#INTF_SOFTINT,(_custom+intreq)			;33FC000400DFF09C
+.si_next
+	cmp.l	(8,a0),a0					;B1E80008	;IFNOTEMPTY a0,.si_remove * do it all again
+	bne.w	.si_remove					;6600FFCC
+	lea	(-$0010,a0),a0					;41E8FFF0	;lea	-SH_SIZE(a0),a0 * next queue
+	dbra	d0,.si_next					;51C8FFF2
+	move.w	#$2100,sr					;46FC2100
+	move.w	#(INTF_SOFTINT|INTF_SETCLR),(_custom+intena)	;33FC800400DFF09A
+.exit	rts							;4E75
+
+	; Hunk 0, Offset $0000126A
+
+
+Patches to exec.library: RemTask, AddTask, OpenLibrary, OldOpenLibrary,
+Signal, ReplyMsg:
+
+_makepatch
+	movem.l	d2-d4/a2,-(sp)					;48E73820
+	move.l	(execbase-DT,a4),a6				;2C6C3D6C
+	jsr	(_LVODisable,a6)				;4EAEFF88
+	lea	(patchtable-DT,a4),a2				;45EC389C
+lbC0030EA
+	move.l	(0,a2),d2					;242A0000
+	beq.w	lbC003158					;67000068
+	tst.l	($0018,a2)					;4AAA0018
+	beq.b	lbC0030FE					;6706
+	tst.b	(lbB01B152-DT,a4)				;4A2C43DE
+	bne.b	lbC003150					;6652
+lbC0030FE
+	move.l	(4,a2),d3					;262A0004
+	move.l	d3,d0						;2003
+	sub.l	d2,d0						;9082
+	move.l	d0,d3						;2600
+	move.l	#(MEMF_PUBLIC|MEMF_CLEAR),d1			;223C00010001
+	move.l	(execbase-DT,a4),a6				;2C6C3D6C
+	jsr	(_LVOAllocVec,a6)				;4EAEFD54
+	move.l	d2,a0						;2042
+	move.l	d0,a1						;2240
+	move.l	d0,d2						;2400
+	move.l	d2,d4						;2802
+	sub.l	(0,a2),d4					;98AA0000
+	move.l	d3,d0						;2003
+	move.l	(execbase-DT,a4),a6				;2C6C3D6C
+	jsr	(_LVOCopyMem,a6)				;4EAEFD90
+	move.l	($0010,a2),a1					;226A0010
+	move.l	(a1),a1						;2251
+	move.l	($0014,a2),a0					;206A0014
+	move.l	d2,d0						;2002
+	move.l	(execbase-DT,a4),a6				;2C6C3D6C
+	jsr	(_LVOSetFunction,a6)				;4EAEFE5C
+	move.l	(8,a2),a0					;206A0008
+	move.l	d0,(a0,d4.l)					;21804800
+	move.l	(12,a2),a0					;206A000C
+	move.l	a4,(2,a0,d4.l)					;218C4802
+lbC003150
+	lea	($001C,a2),a2					;45EA001C
+	bra.w	lbC0030EA					;6000FF94
+
+lbC003158
+	move.l	(execbase-DT,a4),a6				;2C6C3D6C
+	jsr	(_LVOCacheClearU,a6)				;4EAEFD84
+	move.l	(execbase-DT,a4),a6				;2C6C3D6C
+	jsr	(_LVOEnable,a6)					;4EAEFF82
+	movem.l	(sp)+,d2-d4/a2					;4CDF041C
+	rts							;4E75
+
+
+	; exec/AddTask patch
+
+_new_addtask
+	cmp.l	#0,a3						;7FC00000000
+	bne.b	.orig						;6604
+	lea	(.remself,pc),a3				;47FA000A
+.orig
+	jsr	(0)						;4EB900000000
+_old_addtask	equ	*-4
+	rts							;4E75
+
+.remself
+	move.l	(4).w,a6					;2C780004
+	sub.l	a1,a1						;93C9
+	jsr	(_LVORemTask,a6)				;4EAEFEE0
+lbL00318C
+	dc.l	0						;00000000
+	dc.l	0						;00000000
+
+
+
+	; exec/RemTask patch
+
+_new_remtask
+	movem.l	a2/a4,-(sp)					;48E70028
+	move.l	a1,d0						;2009
+lbC00319A
+	lea	(lbL016D74),a4					;49F966E96A54
+	tst.b	(lbB01B14E-DT,a4)				;4A2C43DA
+	beq.w	.orig						;67000060
+	jsr	(lbC00231C)					;4EB966E81FFC
+	tst.l	d0						;4A80
+	beq.b	.orig						;6754
+	move.l	d0,a2						;2440
+	move.l	(14,a2),a0					;206A000E
+	cmp.b	#1,($0036,a2)					;0C2A00010036
+	bne.b	.orig						;6646
+	clr.l	(0,a0)						;42A80000
+	move.l	a1,-(sp)					;2F09
+	jsr	(_LVOCacheClearU,a6)				;4EAEFD84
+	move.l	($0026,a2),d0					;202A0026
+	move.l	($0022,a2),a0					;206A0022
+	jsr	(lbC003A54)					;4EB966E83734
+	moveq	#0,d0						;7000
+	move.b	($0037,a2),d0					;102A0037
+	move.l	(execbase-DT,a4),a6				;2C6C3D6C
+	jsr	(_LVOFreeSignal,a6)				;4EAEFEB0
+	jsr	(_LVOForbid,a6)					;4EAEFF7C
+	move.l	a2,a1						;224A
+	move.l	(a1)+,a0					;2059
+	move.l	(a1),a1						;2251
+	move.l	a1,(4,a0)					;21490004
+	move.l	a0,(a1)						;2288
+	jsr	(_LVOPermit,a6)					;4EAEFF76
+	move.l	a2,a1						;224A
+	move.l	(execbase-DT,a4),a6				;2C6C3D6C
+	jsr	(_LVOFreeVec,a6)				;4EAEFD4E
+	move.l	(sp)+,a1					;225F
+.orig
+	jsr	(0)						;4EB900000000
+_old_remtask	equ	*-4
+	movem.l	(sp)+,a2/a4					;4CDF1400
+	rts							;4E75
+
+
+	; exec/OpenLibrary patch
+
+_new_openlibrary
+	movem.l	a2/a4,-(sp)					;48E70028
+lbC003216
+	lea	(lbL016D74),a4					;49F966E96A54
+	tst.b	(lbB01B156-DT,a4)				;4A2C43E2
+	bne.b	.orig						;6620
+	cmp.b	#2,(lbB01B153-DT,a4)				;0C2C000243DF
+	beq.b	.orig						;6718
+	lea	(ppclibrary.MSG-DT,a4),a0			;41EC233C
+	move.l	a1,a2						;2449
+lbC003230
+	move.b	(a0)+,d1					;1218
+	beq.b	lbC00323A					;6706
+	cmp.b	(a2)+,d1					;B21A
+	beq.b	lbC003230					;67F8
+	bra.b	.orig						;6008
+
+lbC00323A
+	tst.b	(a2)						;4A12
+	bne.b	.orig						;6604
+	moveq	#0,d0						;7000
+	bra.b	.exit						;6006
+
+.orig
+	jsr	(0)						;4EB900000000
+_old_openlibrary	equ	*-4
+.exit
+	movem.l	(sp)+,a2/a4					;4CDF1400
+	rts							;4E75
+
+
+
+	; exec/OldOpenLibrary patch
+
+
+_new_oldopenlibrary
+	movem.l	a2/a4,-(sp)					;48E70028
+lbC003252
+	lea	(lbL016D74),a4					;49F966E96A54
+	tst.b	(lbB01B156-DT,a4)				;4A2C43E2
+	bne.b	.orig						;6620
+	cmp.b	#2,(lbB01B153-DT,a4)				;0C2C000243DF
+	beq.b	.orig						;6718
+	lea	(ppclibrary.MSG-DT,a4),a0			;41EC233C
+	move.l	a1,a2						;2449
+lbC00326C
+	move.b	(a0)+,d1					;1218
+	beq.b	lbC003276					;6706
+	cmp.b	(a2)+,d1					;B21A
+	beq.b	lbC00326C					;67F8
+	bra.b	.orig						;6008
+
+lbC003276
+	tst.b	(a2)						;4A12
+	bne.b	.orig						;6604
+	moveq	#0,d0						;7000
+	bra.b	.exit						;6006
+
+.orig
+	jsr	(0)						;4EB900000000
+_old_oldopenlibrary	equ	*-4
+.exit
+	movem.l	(sp)+,a2/a4					;4CDF1400
+	rts							;4E75
+
+
+	; exec/Signal patch
+
+_new_signal
+	move.l	a4,-(sp)					;2F0C
+	cmp.b	#$64,(8,a1)					;0C2900640008
+	bne.b	.orig						;6624
+	move.l	d0,d1						;2200
+	move.l	a1,d0						;2009
+lbC003298
+	lea	(lbL016D74),a4					;49F966E96A54
+	tst.b	(lbB01B14E-DT,a4)				;4A2C43DA
+	beq.w	.exit						;6700001A
+	jsr	(lbC0023AA)					;4EB966E8208A
+	tst.l	d0						;4A80
+	beq.b	.exit						;670E
+	move.l	d0,a0						;2040
+	move.l	($0016,a0),a1					;22680016
+	move.l	d1,d0						;2001
+.orig	jsr	(0)						;4EB900000000
+_old_signal	equ	*-4
+.exit
+	move.l	(sp)+,a4					;285F
+	rts							;4E75
+
+
+
+	; exec/ReplyMsg patch
+
+_new_replymsg
+	move.l	a4,-(sp)					;2F0C
+	cmp.b	#$67,(8,a1)					;0C2900670008
+	bne.b	.orig						;661E
+lbC0032CC
+	lea	(lbL016D74),a4					;49F966E96A54
+	tst.b	(lbB01B14E-DT,a4)				;4A2C43DA
+	beq.w	.exit						;67000018
+	tst.l	(14,a1)						;4AA9000E
+	beq.b	.exit						;6710
+	moveq	#1,d0						;7001
+	jsr	(lbC003B56)					;4EB966E83836
+	bra.b	.exit						;6006
+
+.orig	jsr	(0)						;4EB900000000
+_old_replymsg	equ	*-4
+.exit
+	move.l	(sp)+,a4					;285F
+	rts							;4E75
+
+
+Sashimi 1.6 (1999-06-20)
+
+exec/execPrivate7	Hunk 0, Offset $000002A0
+exec/execPrivate8	Hunk 0, Offset $0000062E
+exec/execPrivate9	Hunk 0, Offset $00001360
+
+exec/execPrivate7:
+
+6635A448 2F0C                   move.l  a4,-(sp)
+6635A44A 49F9 6629E150          lea     $6629E150,a4
+6635A450 285F                   movea.l (sp)+,a4
+6635A452 4E75                   rts
+6635A454 xxxxxxxx		dc.l	$xxxxxxxx,$xxxxxxxxx
+6635A45C: 24564552 3A205361 7368696D 6920312E  dc.b '$VER: Sashimi 1.'
+6635A46C: 36202832 302E362E 3939290D 0A00      dc.b '6 (20.6.99)',13,10,0
+
+exec/execPrivate8:
+
+6635A7D6 2F0C                   move.l  a4,-(sp)
+6635A7D8 7079                   moveq   #$79,d0
+6635A7DA 49F9 6629E150          lea     $6629E150,a4
+6635A7E0 285F                   movea.l (sp)+,a4
+6635A7E2 4E75                   rts
+
+exec/execPrivate9:
+
+6635B508 48E7 00C0              movem.l a0-a1,-(sp)
+6635B50C 6100 F300              bsr.w   $6635A80E
+6635B510 4CDF 0300              movem.l (sp)+,a0-a1
+6635B514 4E75                   rts
+6635B516 0000                   dc.w    $00
+6635B518 2F07                   move.l  d7,-(sp)
+6635B51A 7E00                   moveq   #$00,d7
+6635B51C 58AC 0018              addq.l  #4,$18(a4)
+6635B520 6018                   bra.b   $6635B53A
+6635B522 4A2C 00C0              tst.b   $C0(a4)
+6635B526 6604                   bne.b   $6635B52C
+6635B528 4A87                   tst.l   d7
+6635B52A 660A                   bne.b   $6635B536
+6635B52C 226C 0018              movea.l $18(a4),a1
+6635B530 2051                   movea.l (a1),a0
+6635B532 4E90                   jsr     (a0)
+6635B534 2E00                   move.l  d0,d7
+6635B536 58AC 0018              addq.l  #4,$18(a4)
+6635B53A 206C 0018              movea.l $18(a4),a0
+6635B53E 4A90                   tst.l   (a0)
+6635B540 66E0                   bne.b   $6635B522
+6635B542 197C 0001 00C0         move.b  #$01,$C0(a4)
+6635B548 2007                   move.l  d7,d0
+6635B54A 2E1F                   move.l  (sp)+,d7
+6635B54C 4E75                   rts
+
+
+Outlinefont 1.3 (2000-01-30) Nyberg,Gapen,Rotvel
+
+graphics/Text:
+
+666DA300 594F                   subq.w  #4,sp
+666DA302 48E7 273E              movem.l d2/d5-d7/a2-a6,-(sp)
+666DA306 2E00                   move.l  d0,d7
+666DA308 2648                   movea.l a0,a3
+666DA30A 2A49                   movea.l a1,a5
+666DA30C 49F9 666B3FA8          lea     $666B3FA8,a4
+666DA312 2F4E 0024              move.l  a6,$24(sp)
+666DA316 93C9                   suba.l  a1,a1
+666DA318 2C78 0004              movea.l $04,a6
+666DA31C 4EAE FEDA              jsr     -$126(a6)
+666DA320 2040                   movea.l d0,a0
+666DA322 2068 000A              movea.l $0A(a0),a0
+666DA326 7057                   moveq   #$57,d0
+666DA328 B010                   cmp.b   (a0),d0
+666DA32A 6600 014C              bne.w   $666DA478
+666DA32E 706B                   moveq   #$6B,d0
+666DA330 B028 0003              cmp.b   $03(a0),d0
+666DA334 6600 0142              bne.w   $666DA478
+666DA338 7062                   moveq   #$62,d0
+666DA33A B028 0004              cmp.b   $04(a0),d0
+666DA33E 6600 0138              bne.w   $666DA478
+666DA342 7068                   moveq   #$68,d0
+666DA344 B028 0008              cmp.b   $08(a0),d0
+666DA348 6600 012E              bne.w   $666DA478
+666DA34C 204D                   movea.l a5,a0
+666DA34E 2C6C 012C              movea.l $12C(a4),a6
+666DA352 4EAE FCA6              jsr     -$35A(a6)
+666DA356 246F 0024              movea.l $24(sp),a2
+666DA35A B0B9 663BB3F0          cmp.l   $663BB3F0,d0
+666DA360 6600 0106              bne.w   $666DA468
+666DA364 204D                   movea.l a5,a0
+666DA366 4EAE FC9A              jsr     -$366(a6)
+666DA36A 4A80                   tst.l   d0
+666DA36C 6600 00FA              bne.w   $666DA468
+666DA370 3C2D 0024              move.w  $24(a5),d6
+666DA374 48C6                   ext.l   d6
+666DA376 3A2D 0026              move.w  $26(a5),d5
+666DA37A 48C5                   ext.l   d5
+666DA37C 224D                   movea.l a5,a1
+666DA37E 2039 663BB3F4          move.l  $663BB3F4,d0
+666DA384 4EAE FEAA              jsr     -$156(a6)
+666DA388 2006                   move.l  d6,d0
+666DA38A 2239 663BB3F8          move.l  $663BB3F8,d1
+666DA390 D081                   add.l   d1,d0
+666DA392 D285                   add.l   d5,d1
+666DA394 224D                   movea.l a5,a1
+666DA396 4EAE FF10              jsr     -$F0(a6)
+
+
+cgxsystem.library 42.6 (2001-05-04) 68040 Version © by Vision Factory Development
+(some patches are not recognized)
+
+CyberGraphX has special patch format:
+
+structure cgxpatch
+{
+  ULONG           cp_id;             /* 'CYBI' / 'CYBL' / 'CYBD' / 'CYBG' / ... */
+  WORD            cp_lvo;            /* LVO of the patch */
+  UWORD           cp_minlibversion;  /* minimum library version required */
+  APTR            cp_something;      /* something, usually zero? */
+  struct Library *cp_cgxsysbase;     /* ptr to cgxsystem.library base */
+  APTR            cp_oldfunction;    /* ptr to orig. function */
+#if 0
+  UBYTE           cp_patchcode[];    /* patch code begin here */
+#endif
+};
+
+So identification is tad simple:
+
+/* addr: ptr to code to examine, must be verified to be valid memory!
+   lvo:  lvo of the function to examine, for example: -$1e (gfx/BltBitMap)
+*/
+BOOL iscgxpatch(void *addr, WORD lvo)
+{
+  struct cgxpatch *cp;
+
+  cp = ((struct cgxpatch *) addr) - 1;
+
+  return (BOOL) (((cp->cp_id >> 8) == 0x435942) && (cp->cp_lvo == lvo))
+}
+
+
+
+
+
+MCP 1.33 (1999-10-24) [020] © by ALiENDESiGN
+(at least these two patches go undetected)
+
+intuition/AutoRequest:		Hunk 1, Offset $00010718
+intuition/NewModifyProp:	Hunk 1, Offset $00016AD8
+
+INTUI_AutoRequest:
+662FB040 6010                   bra.b   $662FB052
+662FB042: 53595350 41544348 662F6538 6623CD0C  'SYSPATCHf/e8f#Í.'
+662FB052 4A3A                   tst.b   662F445A(pc)
+662FB056 6718                   beq.b   $662FB070
+662FB058 2F05                   move.l  d5,-(sp)
+662FB05A 48E7 7BFE              movem.l d1-d4/d6-d7/a0-a6,-(sp)
+662FB05E 2A7A 93F6              movea.l $662F4456(pc),a5
+662FB062 2A00                   move.l  d0,d5
+662FB064 4A89                   tst.l   a1
+662FB066 661A                   bne.b   $662FB082
+662FB068 2005                   move.l  d5,d0
+662FB06A 4CDF 7FDE              movem.l (sp)+,d1-d4/d6-d7/a0-a6
+662FB06E 2A1F                   move.l  (sp)+,d5
+662FB070 2F3A FFDC              move.l  $662FB04E(pc),-(sp)
+662FB074 4E75                   rts
+
+
+INTUI_NewModifyProp:
+66301400 6010                   bra.b   $66301412
+66301402: 53595350 41544348 662F6538 6623D27C  'SYSPATCHf/e8f#Ò|'
+66301412 52B9 662F444E          addq.l  #1,$662F444E
+66301418 4A88                   tst.l   a0
+6630141A 6700 00D2              beq.w   $663014EE
+6630141E 4AA8 0012              tst.l   $12(a0)
+66301422 6700 00CA              beq.w   $663014EE
+66301426 48E7 4080              movem.l d1/a0,-(sp)
+6630142A 2068 0012              movea.l $12(a0),a0
+6630142E 0CA8 4D435021 000A     cmpi.l  #$4D435021,$0A(a0)
+66301436 6600 00C2              bne.w   $663014FA
+6630143A 4CD7 0102              movem.l (sp),d1/a0
+6630143E 2068 0022              movea.l $22(a0),a0
+66301442 3210                   move.w  (a0),d1
+66301444 0241 0010              andi.w  #$0010,d1
+66301448 0240 0006              andi.w  #$0006,d0
+6630144C 0040 0008              ori.w   #$0008,d0
+66301450 8041                   or.w    d1,d0
+66301452 4CDF 0102              movem.l (sp)+,d1/a0
+
+
+
+multiuser.library 39.166 (1995-10-30)
+(at least these two patches go undetected)
+
+dos/CreateProc:		$8a	Hunk 0, Offset $00002E9E
+dos/CompareDates:		$2e2  Hunk 0, Offset $00002D7A,
+
+_DOS_CreateProc:
+6621CDE6 594F                   subq.w  #4,sp
+6621CDE8 48E7 0038              movem.l a2-a4,-(sp)
+6621CDEC 49F9 661FD7E8          lea     $661FD7E8,a4
+6621CDF2 2441                   movea.l d1,a2
+6621CDF4 2F41 000C              move.l  d1,$0C(sp)
+6621CDF8 2003                   move.l  d3,d0
+6621CDFA 6100 FC82              bsr.w   $6621CA7E
+6621CDFE 2640                   movea.l d0,a3
+6621CE00 4A80                   tst.l   d0
+6621CE02 670E                   beq.b   $6621CE12
+6621CE04 206C 02A0              movea.l $2A0(a4),a0
+6621CE08 2068 0114              movea.l $114(a0),a0
+6621CE0C 224B                   movea.l a3,a1
+6621CE0E 6100 12A4              bsr.w   $6621E0B4
+6621CE12 226C 02A4              movea.l $2A4(a4),a1
+6621CE16 2069 01C8              movea.l $1C8(a1),a0
+6621CE1A 2F04                   move.l  d4,-(sp)
+6621CE1C 220A                   move.l  a2,d1
+6621CE1E 4E90                   jsr     (a0)
+6621CE20 221F                   move.l  (sp)+,d1
+6621CE22 2440                   movea.l d0,a2
+6621CE24 200B                   move.l  a3,d0
+6621CE26 670C                   beq.b   $6621CE34
+6621CE28 206C 02A0              movea.l $2A0(a4),a0
+6621CE2C 2068 0114              movea.l $114(a0),a0
+6621CE30 6100 1366              bsr.w   $6621E198
+6621CE34 200A                   move.l  a2,d0
+6621CE36 4CDF 1C00              movem.l (sp)+,a2-a4
+6621CE3A 584F                   addq.w  #4,sp
+6621CE3C 4E75                   rts
+
+_DOS_CompareDates:
+6621CCC2 514F                   subq.w  #8,sp
+6621CCC4 48E7 271E              movem.l d2/d5-d7/a3-a6,-(sp)
+6621CCC8 2E08                   move.l  a0,d7
+6621CCCA 2A49                   movea.l a1,a5
+6621CCCC 49F9 661FD7E8          lea     $661FD7E8,a4
+6621CCD2 2A00                   move.l  d0,d5
+6621CCD4 7C00                   moveq   #$00,d6
+6621CCD6 2F40 0020              move.l  d0,$20(sp)
+6621CCDA 2F4E 0024              move.l  a6,$24(sp)
+6621CCDE 4A85                   tst.l   d5
+6621CCE0 6752                   beq.b   $6621CD34
+6621CCE2 2005                   move.l  d5,d0
+6621CCE4 E580                   asl.l   #2,d0
+6621CCE6 2040                   movea.l d0,a0
+6621CCE8 2068 0008              movea.l $08(a0),a0
+6621CCEC 6100 E264              bsr.w   $6621AF52
+6621CCF0 4A40                   tst.w   d0
+6621CCF2 6740                   beq.b   $6621CD34
+6621CCF4 2C6C 0154              movea.l $154(a4),a6
+6621CCF8 7202                   moveq   #$02,d1
+6621CCFA 7400                   moveq   #$00,d2
+6621CCFC 4EAE FF1C              jsr     -$E4(a6)
+6621CD00 2640                   movea.l d0,a3
+6621CD02 4A80                   tst.l   d0
+6621CD04 672E                   beq.b   $6621CD34
+6621CD06 2205                   move.l  d5,d1
+6621CD08 240B                   move.l  a3,d2
+6621CD0A 4EAE FE7A              jsr     -$186(a6)
+6621CD0E 4A40                   tst.w   d0
+6621CD10 671C                   beq.b   $6621CD2E
+6621CD12 082B 0007 0074         btst    #$07,$74(a3)
+6621CD18 6714                   beq.b   $6621CD2E
+6621CD1A 7000                   moveq   #$00,d0
+6621CD1C 302B 00E2              move.w  $E2(a3),d0
+6621CD20 7200                   moveq   #$00,d1
+6621CD22 322B 00E0              move.w  $E0(a3),d1
+6621CD26 4841                   swap    d1
+6621CD28 4241                   clr.w   d1
+6621CD2A 8280                   or.l    d0,d1
+6621CD2C 2C01                   move.l  d1,d6
+6621CD2E 7202                   moveq   #$02,d1
+6621CD30 4EAE FF16              jsr     -$EA(a6)
+6621CD34 226C 02A4              movea.l $2A4(a4),a1
+6621CD38 2069 01C0              movea.l $1C0(a1),a0
+6621CD3C 2F0A                   move.l  a2,-(sp)
+6621CD3E 2208                   move.l  a0,d1
+6621CD40 2005                   move.l  d5,d0
+6621CD42 2047                   movea.l d7,a0
+6621CD44 224D                   movea.l a5,a1
+6621CD46 2C6F 0028              movea.l $28(sp),a6
+6621CD4A 9288                   sub.l   a0,d1
+
+
+ppc.library 46.36 Emulation v0.8h by Frank Wille <frank@phoenix.owl.de>
+
+exec/FreeMem:			Hunk 0, Offset $000083C0
+exec/FreeVec:			Hunk 0, Offset $000083E0
+dos/LoadSeg:			Hunk 0, Offset $00006D94
+dos/NewLoadSeg:			Hunk 0, Offset $00006BB4
+dos/UnLoadSeg:			Hunk 0, Offset $00006F80
+
+
+_EXEC_FreeMem:
+
+663CC428 2209                   move.l  a1,d1
+663CC42A 6712                   beq.b   $663CC43E
+663CC42C 41E9 FFE0              lea     -$20(a1),a0
+663CC430 0C90 7070634D          cmpi.l  #$7070634D,(a0)
+663CC436 6606                   bne.b   $663CC43E
+663CC438 B1E8 0004              cmpa.l  $04(a0),a0
+663CC43C 6728                   beq.b   $663CC466
+663CC43E 4EF0 01F1 6636DB64     jmp     ([$6636DB64])
+663CC446 4E71                   nop
+
+
+_EXEC_FreeVec:
+663CC448 2209                   move.l  a1,d1
+663CC44A 6712                   beq.b   $663CC45E
+663CC44C 41E9 FFE0              lea     -$20(a1),a0
+663CC450 0C90 7070634D          cmpi.l  #$7070634D,(a0)
+663CC456 6606                   bne.b   $663CC45E
+663CC458 B1E8 0004              cmpa.l  $04(a0),a0
+663CC45C 6708                   beq.b   $663CC466
+663CC45E 4EF0 01F1 6636DB68     jmp     ([$6636DB68])
+663CC466 4EF9 663C4F80          jmp     ($663C4F80)
+
+
+_DOS_LoadSeg:
+663CADFC 514F                   subq.w  #8,sp
+663CADFE 48E7 3F3E              movem.l d2-d7/a2-a6,-(sp)
+663CAE02 264E                   movea.l a6,a3
+663CAE04 2841                   movea.l d1,a4
+663CAE06 2F42 002C              move.l  d2,$2C(sp)
+663CAE0A 2A43                   movea.l d3,a5
+663CAE0C 220C                   move.l  a4,d1
+663CAE0E 242F 002C              move.l  $2C(sp),d2
+663CAE12 260D                   move.l  a5,d3
+663CAE14 2C4B                   movea.l a3,a6
+663CAE16 2C79 6636DB50          movea.l $6636DB50,a6
+663CAE1C 4E96                   jsr     (a6)
+663CAE1E 2F40 0030              move.l  d0,$30(sp)
+663CAE22 52B9 6636DB60          addq.l  #1,$6636DB60
+663CAE28 4AAF 0030              tst.l   $30(sp)
+663CAE2C 6600 015C              bne.w   $663CAF8A
+663CAE30 2C4B                   movea.l a3,a6
+663CAE32 4EAE FF7C              jsr     -$84(a6)
+663CAE36 2800                   move.l  d0,d4
+663CAE38 2479 6636DB5C          movea.l $6636DB5C,a2
+663CAE3E 204C                   movea.l a4,a0
+663CAE40 2C79 6636DB5C          movea.l $6636DB5C,a6
+663CAE46 4EB9 663C5BF8          jsr     $663C5BF8
+663CAE4C 2C00                   move.l  d0,d6
+663CAE4E 6700 00DC              beq.w   $663CAF2C
+663CAE52 203C 663CB9BC          move.l  #$663CB9BC,d0
+663CAE58 90BC 663CB994          sub.l   #$663CB994,d0
+663CAE5E 2F40 002C              move.l  d0,$2C(sp)
+663CAE62 7E08                   moveq   #$08,d7
+663CAE64 DEAF 002C              add.l   $2C(sp),d7
+663CAE68 2F0A                   move.l  a2,-(sp)
+663CAE6A 2F07                   move.l  d7,-(sp)
+663CAE6C 4EB9 663CBA0C          jsr     $663CBA0C
+663CAE72 2A00                   move.l  d0,d5
+663CAE74 504F                   addq.w  #8,sp
+663CAE76 6700 0086              beq.w   $663CAEFE
+663CAE7A 2045                   movea.l d5,a0
+663CAE7C 2087                   move.l  d7,(a0)
+663CAE7E 2405                   move.l  d5,d2
+663CAE80 5882                   addq.l  #4,d2
+663CAE82 2042                   movea.l d2,a0
+663CAE84 4290                   clr.l   (a0)
+663CAE86 2605                   move.l  d5,d3
+663CAE88 5083                   addq.l  #8,d3
+663CAE8A 41F9 663CB994          lea     $663CB994,a0
+663CAE90 2243                   movea.l d3,a1
+663CAE92 202F 002C              move.l  $2C(sp),d0
+663CAE96 2C79 6636DB48          movea.l $6636DB48,a6
+663CAE9C 4EAE FD8A              jsr     -$276(a6)
+663CAEA0 2003                   move.l  d3,d0
+663CAEA2 223C 663CB994          move.l  #$663CB994,d1
+
+
+_DOS_NewLoadSeg:
+663CAC1C 594F                   subq.w  #4,sp
+663CAC1E 48E7 3F3E              movem.l d2-d7/a2-a6,-(sp)
+663CAC22 264E                   movea.l a6,a3
+663CAC24 2841                   movea.l d1,a4
+663CAC26 2A42                   movea.l d2,a5
+663CAC28 220C                   move.l  a4,d1
+663CAC2A 240D                   move.l  a5,d2
+663CAC2C 2C4B                   movea.l a3,a6
+663CAC2E 2C79 6636DB4C          movea.l $6636DB4C,a6
+663CAC34 4E96                   jsr     (a6)
+663CAC36 2A00                   move.l  d0,d5
+663CAC38 52B9 6636DB60          addq.l  #1,$6636DB60
+663CAC3E 4A85                   tst.l   d5
+663CAC40 6600 0158              bne.w   $663CAD9A
+663CAC44 2C4B                   movea.l a3,a6
+663CAC46 4EAE FF7C              jsr     -$84(a6)
+663CAC4A 2600                   move.l  d0,d3
+663CAC4C 2479 6636DB5C          movea.l $6636DB5C,a2
+663CAC52 204C                   movea.l a4,a0
+663CAC54 2C79 6636DB5C          movea.l $6636DB5C,a6
+663CAC5A 4EB9 663C5BF8          jsr     $663C5BF8
+663CAC60 2C00                   move.l  d0,d6
+663CAC62 6700 00D8              beq.w   $663CAD3C
+663CAC66 203C 663CB9BC          move.l  #$663CB9BC,d0
+663CAC6C 90BC 663CB994          sub.l   #$663CB994,d0
+663CAC72 2F40 002C              move.l  d0,$2C(sp)
+663CAC76 7E08                   moveq   #$08,d7
+663CAC78 DEAF 002C              add.l   $2C(sp),d7
+663CAC7C 2F0A                   move.l  a2,-(sp)
+663CAC7E 2F07                   move.l  d7,-(sp)
+663CAC80 4EB9 663CBA0C          jsr     $663CBA0C
+663CAC86 2800                   move.l  d0,d4
+663CAC88 504F                   addq.w  #8,sp
+663CAC8A 6700 0082              beq.w   $663CAD0E
+663CAC8E 2044                   movea.l d4,a0
+663CAC90 2087                   move.l  d7,(a0)
+663CAC92 2404                   move.l  d4,d2
+663CAC94 5882                   addq.l  #4,d2
+663CAC96 2042                   movea.l d2,a0
+663CAC98 4290                   clr.l   (a0)
+663CAC9A 2604                   move.l  d4,d3
+663CAC9C 5083                   addq.l  #8,d3
+663CAC9E 41F9 663CB994          lea     $663CB994,a0
+663CACA4 2243                   movea.l d3,a1
+663CACA6 202F 002C              move.l  $2C(sp),d0
+663CACAA 2C79 6636DB48          movea.l $6636DB48,a6
+663CACB0 4EAE FD8A              jsr     -$276(a6)
+663CACB4 2003                   move.l  d3,d0
+663CACB6 223C 663CB994          move.l  #$663CB994,d1
+663CACBC 92BC 663CB994          sub.l   #$663CB994,d1
+663CACC2 5481                   addq.l  #2,d1
+
+
+_DOS_UnLoadSeg:
+663CAFE8 48E7 303E              movem.l d2-d3/a2-a6,-(sp)
+663CAFEC 2A4E                   movea.l a6,a5
+663CAFEE 2401                   move.l  d1,d2
+663CAFF0 2679 6636DB54          movea.l $6636DB54,a3
+663CAFF6 52B9 6636DB60          addq.l  #1,$6636DB60
+663CAFFC 4A82                   tst.l   d2
+663CAFFE 676E                   beq.b   $663CB06E
+663CB000 2002                   move.l  d2,d0
+663CB002 E588                   lsl.l   #2,d0
+663CB004 2440                   movea.l d0,a2
+663CB006 588A                   addq.l  #4,a2
+663CB008 203C 663CB9AE          move.l  #$663CB9AE,d0
+663CB00E 90BC 663CB994          sub.l   #$663CB994,d0
+663CB014 41F2 0800              lea     $00(a2,d0.l),a0
+663CB018 43F9 663CB9AE          lea     $663CB9AE,a1
+663CB01E 1018                   move.b  (a0)+,d0
+663CB020 6706                   beq.b   $663CB028
+663CB022 9019                   sub.b   (a1)+,d0
+663CB024 67F8                   beq.b   $663CB01E
+663CB026 6002                   bra.b   $663CB02A
+663CB028 9011                   sub.b   (a1),d0
+663CB02A 49C0                   extb.l  d0
+663CB02C 4A80                   tst.l   d0
+663CB02E 663E                   bne.b   $663CB06E
+663CB030 2879 6636DB5C          movea.l $6636DB5C,a4
+663CB036 203C 663CB994          move.l  #$663CB994,d0
+663CB03C 90BC 663CB994          sub.l   #$663CB994,d0
+663CB042 2632 0802              move.l  $02(a2,d0.l),d3
+663CB046 4879 663CB080          pea     $663CB080
+663CB04C 2F39 6636DB5C          move.l  $6636DB5C,-(sp)
+663CB052 4EB9 663CBB70          jsr     $663CBB70
+663CB058 504F                   addq.w  #8,sp
+663CB05A 4A83                   tst.l   d3
+663CB05C 670A                   beq.b   $663CB068
+663CB05E 2043                   movea.l d3,a0
+663CB060 2C4C                   movea.l a4,a6
+663CB062 4EB9 663C5C28          jsr     $663C5C28
+663CB068 53B9 6636DB58          subq.l  #1,$6636DB58
+663CB06E 2202                   move.l  d2,d1
+663CB070 2C4D                   movea.l a5,a6
+663CB072 4E93                   jsr     (a3)
+663CB074 53B9 6636DB60          subq.l  #1,$6636DB60
+663CB07A 4CDF 7C0C              movem.l (sp)+,d2-d3/a2-a6
+663CB07E 4E75                   rts
+

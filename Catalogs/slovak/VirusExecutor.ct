@@ -1,0 +1,1368 @@
+## version $VER: virusexecutor.catalog 2.04 (23.09.2000) ©2000 Juraj MÁTEL, ATO-SK
+## language slovak
+## codeset 0
+;
+L_NO_DISK
+V zariadení nieje ùiadny disk.
+; No disk in this drive.
+;
+L_MESSAGE
+Správa
+; Message
+;
+L_OK
+Áno
+; Ok
+;
+L_READY
+Hotovo
+; Ready.
+;
+L_PLEASE_WAIT
+Prosím çakajte...
+; Please wait...
+;
+L_UNKNOWN_TRACKDISK0
+Trackdisk chyba %ld: %s
+; Trackdisk error %ld: %s
+;
+L_UNKNOWN_TRACKDISK1
+Neznáma trackdisk chyba ->%ld<-\njednotka = %ld\nProsím kontaktujte autora!
+; Unknown trackdisk error ->%ld<-\nunit = %ld\nPlease contact author!
+;
+L_UNKNOWN_TRACKDISK2
+Neznáma trackdisk chyba %ld!
+; Unknown trackdisk error %ld!
+;
+L_PROF_FILE
+Na disku je inîtalovanı ProfFileSystem.
+; A ProfFileSystem installed disk.
+;
+L_FLASHBACK
+Flashback disk çíslo: 
+; Flashback disk nr: 
+;
+L_ABACKUP
+ABackup disk çíslo: 
+; ABackup disk nr: 
+;
+L_ERROR_IN_CHECKSUM
+Chyba v kontrolnom súçte!
+; Error in checksum!
+;
+L_UNINST
+Odinîtalovanı AmigaDOS disk.
+; Uninstalled AmigaDOS disk.
+;
+L_INSTALLED_DOS
+Inîtalovanı AmigaDOS disk
+; Installed AmigaDOS disk
+;
+L_FMS
+Inîtalovanı FMS disk v%s.
+; Installed FMS disk v%s.
+;
+L_CHECKING_BOOTBLOCK
+Kontrolujem bootblock...
+; Checking bootblock...
+;
+L_BAD_FORMAT_DISK
+Zle naformátovanı disk?
+; A badly formated disk?
+;
+L_VIRUS_1
+%s vírus!
+; %s virus!
+;
+L_VIRUS_FOUND_IN
+%s vírus nájdenı v %s
+; %s virus found in %s
+;
+L_KILL_VIRUS_CANCEL
+Zniçiï vírus|Zruîiï
+; Kill virus|Cancel             
+;
+L_WARNING
+UPOZORNENIE!
+; WARNING!
+;
+L_UTILITY_BOOT
+"Nástrojovı" boot.
+; An utility boot.
+;
+L_VIRUS_KILLER
+"Virus killer" boot.
+; A virus killer boot.
+;
+L_INTRO_BOOT
+"Intro" boot.
+; An intro boot.
+;
+L_LOADER
+"Loader".
+; A loader.
+;
+L_ANALYZING
+Analyzujem...
+; Analyzing...
+;
+L_NOT_A_BOOT_DISK
+Nebootovateãnı disk.
+; Not a bootable disk.
+;
+L_RETCODE_NAME
+retkód = %ld Názov = %s
+; retcode = %ld Name = %s
+;
+L_INSTALLING_TO
+Inîtalujem '%s' to %s
+; Installing '%s' to %s
+;
+L_INSTALLING
+Inîtalujem %s
+; Installing %s
+;
+L_YOU_HAVE_THE_OLD
+\nInîtalovaná %s v%s je stará.\nNainîtalujte si %s v%s alebo novîiu!\n
+; \nYou have the old %s v%s\nPlease get %s v%s or later!\n
+;
+L_USING
+Pouùívané externé kniùnice:
+; Using external libraries:
+;
+L_KNOWS_BOOT
+Poznám %3ld boot vírusov.\n
+; Knows %3ld boot virus.\n
+;
+L_KNOWS_LINK
+Poznám %3ld link vírusov.\n
+; Knows %3ld link virus.\n
+;
+L_KNOWS_FILE
+Poznám %3ld súborovıch vírusov.\n\n
+; Knows %3ld file virus.\n\n
+;
+L_KNOWS_DECRUNCHERS
+Poznám %3ld rozpakovávacích typov.\n
+; Knows %ld decrunchers types.\n\n
+;
+L_KNOWS_PATCHES
+Známych %ld patch vstupov z %ld programov.\n\n
+; Knows %ld patch entries from %ld programs.\n\n
+;
+L_I_HAVE_CHECKED
+*
+; *
+;
+L_BOOTBLOCK
+bootblok
+; bootblock
+;
+L_BOOTBLOCKS
+bootblokov
+; bootblocks
+;
+L_FILE
+súbor
+; file
+;
+L_FILES
+súborov
+; files
+;
+L_ABOUT
+O programe...
+; About...
+;
+L_LOADING_PATCH_DATA
+Otváram a deîifrujem dáta...
+; Loading and decrypting patch data...
+;
+L_PATCH_ERROR
+Chyba: '%s' je neplatnı patch súbor!
+; Error: '%s' is not a valid patch file!
+;
+L_ERROR_LOADING
+Chyba pri otváraní '%s'!
+; Error loading '%s'!
+;
+L_BB_VIRUS
+BB vírus
+; BB virus
+;
+L_FILE_VIRUS
+Súb. vírus
+; File virus
+;
+L_NA
+N/A
+; N/A
+;
+L_NO_MEM
+Nedostatok pamäte!
+; Not enough memory!
+;
+L_SAVING_PREFERENCES
+Ukladám nastavenia...
+; Saving preferences...
+;
+L_BOOTBLOCK_C
+Bootblock
+; Bootblock
+;
+L_LINK_C
+Link
+; Link
+;
+L_FILE_C
+Súbor
+; File
+;
+L_VIRUS_LIST
+%s vírus (%ld)
+;  %s virus (%ld)
+;
+L_SELECT_SCREEN_MODE
+Zvoãte zobrazovací mód:
+; Select a screen mode:
+;
+L_SMALL_SCREEN_SIZE
+VirusExecutor nemôùe pouùiï takúto malú obrazovku!
+; VirusExecutor can't handle this small screen size!
+;
+L_SHIT
+Shit!
+; Shit!
+;
+L_SCREEN_RESTART_MSG
+Je treba reîtartovaï VirusExecutor aby\nsa prejavilo nové nastavenie.
+; You'll need to restart VirusExecutor in order\nto make your new Screen Mode settings active.
+;
+L_NO_PICK_SCREEN
+Nezvolili ste ùiadny zobrazovací mód.
+; You didn't pick a screen mode.
+;
+L_VE_REQUIERS
+\nVirusExecutor potrebuje Kickstart v37+!\nPokraçujte ãubovoãnou klávesou...
+; \nVirusExecutor requires kickstart v37+!\n\nHit any key...
+;
+L_ERROR
+Chyba!
+; Error!
+;
+L_VE_RUNNING
+VirusExecutor uù je spustenı!
+; VirusExecutor is allready running!
+;
+L_VE_LIB_NEED
+VirusExecutor potrebuje '%s' v%ld+!
+; VirusExecutor needs '%s' v%ld+!
+;
+L_XVS_MODIFIED
+Chyba: xvs.library bola pozmenená!
+; Error: xvs.library has been modyfied!
+;
+L_CHECKING_DRIVES
+Kontrolujem diskové jednotky...
+; Checking disk drives...
+;
+L_ENTER_PW
+Vloùte prosím heslo:
+; Please enter password:
+;
+L_FILE_NAME_ERROR
+Názov súboru: %s\n\n    Chyba: %s
+; File name: %s\n\n    Error: %s
+;
+L_INFECTED_DELETE
+VÍRUS: %s\n\nInfikovanı súbor:\n'%s'\n\nTento typ môùe byï len zmazanı.
+; VIRUS: %s\n\nInfected file:\n'%s'\n\nThis type of virus can only be deleted.
+;
+L_VIRUS_WARNING
+%s VÍRUS UPOZORNENIE!
+; %s VIRUS WARNING!
+;
+L_DELETE_FILE_AUTO
+Zmazaï súbor|Automaticky mazaï vírus|Zastaviï kontrolu|Pokraçovaï
+; Delete file|Auto delete file virus|Stop checking|Continue
+;
+L_FILE_NOT_DELETED
+Súbor '%s'nemôùe byï zmazanı!
+; File '%s' could not be deleted!
+;
+L_DATA
+DÁTA
+; DATA
+;
+L_VIRUS_INFECTED_ARCHIVE
+         VÍRUS: %s\n\nInfikovanı súbor: %s\n   Archív: %s
+;         VIRUS: %s\n\nInfected file: %s\n      Archive: %s
+;
+L_FILE_VIRUS_WARNING
+SÚBOROVİ VÍRUS UPOZORNENIE!
+; FILE VIRUS WARNING!
+;
+L_FILE1
+SÚBOR
+; FILE
+;
+L_LINK_VIRUS_WARNING
+LINK VÍRUS UPOZORNENIE!
+; LINK VIRUS WARNING!
+;
+L_VIRUS_INFECTED_FILE
+VÍRUS: %s\n\nInfikovanı súbor:\n'%s'
+; VIRUS: %s\n\nInfected file:\n'%s'
+;
+L_REMOVE_VIRUS_AUTO
+Zmazaï vírus|Automaticky mazaï vírus|Zastaviï kontrolu|Pokraçovaï
+; Remove virus|Auto remove link virus|Stop checking|Continue
+;
+L_VIRUS_REMOVED
+Vírus odstránenı!\n\nOld size: %ld\nNová veãkosï: %ld
+; Virus removed!\n\nOld size: %ld\nNew size: %ld
+;
+L_SAVE_NEW_FILE
+Uloùiï novı súbor|Zruîiï
+; Save new file|Cancel
+;
+L_ERROR_WRITING_FILE
+Chyba pri zapisovaní do súboru: '%s'!
+; Error writing file: '%s'!
+;
+L_ERROR_OPENING_FILE
+Chyba pri otváraní súboru: '%s'!
+; Error opening file: '%s'!
+;
+L_ERROR_VIRUS_NOT_REMOVED
+Chyba: %s\n\nVírus nemôùe byï odstránenı!
+; Error: %s\n\nVirus could'n be removed!
+;
+L_ERROR_REMOVING_VIRUS
+CHYBA PRI ODSTRANOVANÍ VÍRUSU ZO SÚBORU
+; ERROR REMOVING VIRUS FROM FILE
+;
+L_DELETE_FILE_STOP
+Zmazaï súbor|Zastaviï kontrolu|Pokraçovaï
+; Delete file|Stop checking|Continue
+;
+L_UNLINKING_FILE
+Rozpájam %s (%s)...
+; Unlinking %s (%s)...
+;
+L_ERROR_UNLINKING
+Chyba pri rozpájaní súboru: '%s'!
+; Error unlinking file: '%s'!
+;
+L_EXTRACTING
+Rozbaãujem... '%s'
+; Extracting... '%s'
+;
+L_CHECKING
+Kontrolujem... '%s'
+; Checking...   '%s'
+;
+L_ERROR_READING_FILE
+Chyba pri çítaní súboru '%s'!
+; Error reading file '%s'!
+;
+L_FILE_CHECK_PAUSED
+Kontrola súborov pozastavená
+; File checking paused
+;
+L_CONTINUE_STOP
+Pokraçovaï|Zastaviï kontrolu
+; Continue|Stop checking
+;
+L_USER_BREAK
+Preruîené uùívateãom!
+; User break!
+;
+L_ERROR65
+CHYBA: 65\nKontaktujte autora!
+; ERROR: 65\nContact author!
+;
+L_ERROR_LOCKING_DIR
+CHYBA zamknutı adresár '%s'!
+; ERROR locking dir '%s'!
+;
+L_CHECK_FILES_VIRUS
+Hãadaï vírus v súboroch.
+; Check files for virus.
+;
+L_ERROR46
+CHYBA: 46! Kontaktujte autora...\n
+; ERROR 46! Contact author...\n
+;
+L_FILE_SCAN_END
+Prehãadanıch %ld %s a %ld %s\n\nSkontrolovanıch %ld exe %s (%ld zpakovanıch)\nSkontrolovanıch %ld %s\n\nÇas: %ld %s a %ld %s.
+; Scanned %ld %s and %ld %s\n\nChecked %ld exe %s (%ld crunched)\nChecked %ld data %s\nChecked %ld %s\n\nTime used: %ld %s and %ld %s.
+;
+L_DIR
+adresár
+; dir
+;
+L_DIRS
+adresárov
+; dirs
+;
+L_ARCHIVE
+archív
+; archive
+;
+L_ARCHIVES
+archívov
+; archives
+;
+L_MINUTE
+minúty
+; minute
+;
+L_MINUTES
+minút
+; minutes
+;
+L_SECOND
+sekunda
+; second
+;
+L_SECONDS
+sekúnd
+; seconds
+;
+L_FOUND
+\n\nNájdenıch %ld vírusov!
+; \n\nFound %ld virus!
+;
+L_NO_KNOWN
+neznámy
+; no known
+;
+L_FILE_CHECK_STATUS
+Stav kontroly súborov.
+; File check status.
+;
+L_REBOOT_CANCEL
+Reîtart|Zruîiï
+; Reboot|Cancel
+;
+L_NO_ENTRIES_FOUND
+Nenájdené ùiadne vstupy.
+; No entries found.
+;
+L_ADDRESS_NAME
+\nADRESA    NÁZOV\n\n
+; \nADDRESS    NAME\n\n
+;
+L_LOOK_FOR_TEXT
+Pozeraï text: VIRUS, atğ.
+; Look for text: VIRUS etc
+;
+L_IT_MIGHT_MEMVIRUS
+\nV pamäti je moùno vírus!
+; \nIt might be a virus in memory!
+;
+L_VIEW_MEMORY
+LOKALIZOVANZ RETAZEC JE NEPOUÙITİ!
+; LOCALE STRING IS NOT USED!
+;
+L_ERROR_CLR_VECTORS
+Chyba pri çistení vektorov!!\nV pamäti je moùno vírus!
+; Error clearing vectors!!\nIt could be a virus in memory!
+;
+L_MEM_VEC_OK
+\nPamäïové vektory vyzerajú byï v poriadku. 
+; \nMemory vectors seems ok.
+;
+L_VECTOR_CHECK
+Kontrola vektorov
+; Vector check
+;
+L_VIRUS_DETECTED_IN_MEM
+%s vírus nájdenı v pamäti!\n
+; %s virus detected in memory!\n
+;
+L_VIRUS_REMOVED_MEM
+\nVírus odstránenı z pamäte.
+; \nVirus removed from memory.
+;
+L_NO_KNOWN_VIRUS_MEM
+Nájdenı neznámy vírus v pamäti.
+; No known virus detected in memory.
+;
+L_GREAT
+Vıborne!
+; Great!
+;
+L_MEMORY_CHECK
+Kontrola pamäte
+; Memory check
+;
+L_EXIT
+Dobre
+; Done
+;
+L_PROJECT
+Projekt
+; Project
+;
+L_PREFS
+Nastavenia...
+; Prefs...
+;
+L_FILE_CHECK
+Skontrolovaï súbor
+; File check
+;
+L_SECTOR_CHECK
+Skontrolovaï sektor
+; Sector check
+;
+L_SELECT_SCREEN
+Zvoliï zobrazovací mód...
+; Select screen mode...
+;
+L_QUIT
+Ukonçiï
+; Quit
+;
+L_SHOW
+Prezrieï
+; Show
+;
+L_BOOTBLOCK_VIRUS
+Bootblock vírusy
+; Bootblock virus
+;
+L_LINK_VIRUS
+Link vírusy
+; Link virus
+;
+L_TASKS
+Tasky
+; Tasks
+;
+L_LIBRARIES
+Kniùnice
+; Libraries
+;
+L_DEVICES
+Zariadenia
+; Devices
+;
+L_PATCHES
+Patche
+; Patches
+;
+L_INSTALL
+Inîtalovaï
+; Install
+;
+L_BOOTBLOCK_DATABASE
+Bootblock databáza
+; Bootblock database
+;
+L_RECORD
+Záznam
+; Record
+;
+L_VIEW
+Prezrieï
+; View
+;
+L_EDIT_NAME
+Upraviï názov
+; Edit name
+;
+L_MERGE
+Spojiï
+; Merge
+;
+L_DELETE_ONE
+Odstrániï
+; Delete one
+;
+L_DELETE_ALL
+Odstrániï vîetko
+; Delete all
+;
+L_SAVE
+Uloùiï
+; Save
+;
+L_UTILITIES
+Nástroje
+; Utilities
+;
+L_RENAME_PICTURES
+Premenovaï obrazy
+; Rename pictures
+;
+L_CONVERT_IBN
+Konvertovaï IBN/IBM/IBMM na ISO
+; Convert IBN/IBM/IBMM to ISO
+;
+L_SAVE_ROM_TO_FILE
+Uloùiï ROM do súboru
+; Save ROM to file
+;
+L_TRANSLATED_BY
+Slovenskı preklad Juraj Mátel, ATO-SK.\nEMail: amiga@pobox.sk
+; Translated to LANGUAGE by PUT YOUR NAME HERE
+;
+L_SEEMS_TO_KICKWORK
+\n\nFunguje len s kickstartom v%s!
+; \n\nSeems to work only with kickstart v%s!
+;
+L_UNKNOWN_BOOTBLOCK
+Neznámy bootblok vírus! %ld%% îanca pre vírus!
+; Unknown bootblock! %ld%% chance for a virus!
+;
+L_ANALYZE_PERCENT_VIRUS
+%s analıza: %ld percent îance pre vírus!
+; %s analyze: %ld percent chance for a virus here!
+;
+L_WRITES_TO_BOOTBLOCK
+\n\nZápis do bootbloku! %s
+; \n\nWrites to bootblock! %s
+;
+L_WRITES_TO_UNKNOWN
+\n\nZápis na neznáme miesto na disku!                   
+; \n\nWrites to unknown place on disk!
+;
+L_DESTROYS_THE_DISK
+\n\nDeîtrukcia disku!!
+; \n\nDestroys the disk!!
+;
+L_COULD_BE_FILEVIRUS
+\n\nTento vírus môùe byï aj súborovım!
+; \n\nThis could also be a file virus!
+;
+L_UNKNOWN_BB
+Neznámy bootblok! Môùe to byï %s.
+; Unknown bootblock! It might be %s.
+;
+L_A_VIRUSKILLER
+viruskiller
+; a viruskiller
+;
+L_A_LOADER
+loader
+; a loader
+;
+L_A_VIRUSCHECKER
+vírus checker
+; a virus checker
+;
+L_AN_UTILITY_INTRO
+nástroj alebo intro
+; an utility or an intro
+;
+L_CRYPTED_VIRUS
+kódovanie! Môùe to byï vírus!
+; crypted! Could be a virus!
+;
+L_HARMLESS_BB
+Neznámy bootblock! (môùe byï poîkodenı) 
+; Unknown bootblock! (Seems harmless)
+;
+L_AVAIL_CHIP_FAST
+K dispozícii (chip): %10ld    K dispozícii (fast): %10ld 
+; Available (chip): %10ld    Available (fast): %10ld 
+;
+L_LARGEST_CHIP_FAST
+*
+; *
+;
+L_DIRECTORIES_STAT
+Adresárov:   %8ld  Súborov:       %8ld  Overenıch:     %8ld
+; Directories:   %8ld  Files:       %8ld  Checked:     %8ld
+;
+L_CRUNCHED_DECRUNCHED
+Pakovanıch:     %8ld  Rozpakovanıch:  %8ld
+; Chrunched:     %8ld  Decrunched:  %8ld
+;
+L_ARCHIVED_EXTRACTED
+Archivovanıch:      %8ld  Rozarchivovanıch:   %8ld
+; Archived:      %8ld  Extracted:   %8ld
+;
+L_VIRUS_FOUND_TIME
+Nájdenı vírus:   %8ld  Ças:        00:%02ld:%02ld
+; Virus found:   %8ld  Time:        00:%02ld:%02ld
+;
+L_INSTALL_TO
+Inîtalovaï do %s
+; Install to %s
+;
+L_ERROR_OPENING_WINDOW
+Chyba pri otváraní okna!
+; Error opening window!
+;
+L_FILE_SYSTEM           
+Súb. systém:
+; File system:
+;
+L_INT_MODUS
+Medzinárodnı mód:
+; International modus:
+;
+L_DS_MODUS
+Zrıchlené adresáre:
+; Directory cache:
+;
+L_FROM_DATABASE
+Z databázy:
+; From database:
+;
+L_DISK_INSTALLED
+Disk bol nainîtalovanı.
+; Disk installed.
+;
+L_WINSTALL
+Inîtalovaï
+;  Install
+;
+L_WCANCEL
+Zruîiï
+; Cancel
+;
+L_EXEC_INTERRUPT
+"Exec" preruîenie vektorov v RAM\n\n
+; Exec interrupt vectors in RAM\n\n
+;
+L_KICKMEM_ENTRIES
+KickMemPtr vstupy:
+; KickMemPtr entries:
+;
+L_KICKSTART_AT
+Kickstart v%s na $%08lx\n\n
+; Kickstart v%s at $%08lx\n\n
+;
+L_ERRORP500
+ERROR: P500\nKontaktujte autora!
+; ERROR: P500\nContact author!
+;
+L_LIBRARY_VECTORS
+Vektor kniùnice v RAM
+; Library Vectors in RAM
+;
+L_PREFS_WININFO
+Nastavenia (BETA - Stlaçte 'Esc' pre návrat)
+; Prefs (BETA - Press 'Esc' to return)
+;
+L_FILE_CHECKING
+Kontrolovaï súbor:
+; File checking:
+;
+L_MISC
+Ostatné:
+; Misc:
+;
+L_P1
+Rozbaãovaï zbalené súbory
+; Decrunch crunched files
+;
+L_P2
+Kontrolovaï dátové súbory
+; Check data files
+;
+L_P3
+Rozbaãovaï LHA archívy
+; Extract LHA archives
+;
+L_P4
+Rozbaãovaï LZX archívy
+; Extract LZX archives
+;
+L_P5
+Rozbaãovaï ZIP archívy
+; Extract ZIP archives
+;
+L_P6
+Preskakovaï îifrované súbory
+; Skip encrypted files
+;
+L_P7
+Skryï známe patche
+; Hide known patches
+;
+L_DATABASE_EMPTY
+Databáza je prázdna!
+; Database is empty!
+;
+L_CHANGES_DATABASE
+V databáze boli vykonané zmeny!\nChcete ich uloùiï?
+; Changes has been made to the database!\nSave database?
+;
+L_SAVE_CANCEL
+Uloùiï|Zruîiï
+; Save|Cancel
+;
+L_DELETING_DATABASE
+Maùem databázu...
+; Deleting database...
+;
+L_DELETE_DATABASE_ALL
+Zmazaï databázu?\nMáte zaznamenanıch %ld bootblokov.\n\nDatabáza bude zmazaná aj z Váîho disku!
+; Delete database?\nYou have %ld bootblocks recorded.\n\nThe database will also be deleted from your drive!
+;
+L_DELETE_CANCEL
+Zmazaï|Zruîiï
+; Delete|Cancel
+;
+L_DELETE_DATABASE
+Zmazaï databázu...
+; Delete database...
+;
+L_ARE_YOU_SURE
+Ste si istı???
+; Are you sure???
+;
+L_DATABASE_DELETED
+Databáza zmazaná.
+; Database is deleted.
+;
+L_ERROR_DELETE_DATABASE
+Chyba pri mazaní databáze z disku!
+; Error delete database from disk!
+;
+L_NO_CHANGES_DATABASE
+Ùiadne zmeny v databáze!
+; No changes in the database!
+;
+L_SAVING_DATABASE
+Ukladanie databázy...
+; Saving database...
+;
+L_SAVING_DATABASE_1
+Ukladanie databázy... %ld
+; Saving database... %ld
+;
+L_DATABASE_SAVED
+Databáza bola uloùená.
+; The database is saved.
+;
+L_ERROR_SAVING_DATABASE
+Chyba pri ukladaní databázy!
+; Error saving database!
+;
+L_LOADING_DATABASE
+Otváram databázu...
+; Loading database...
+;
+L_LOADING_DATABASE_1
+Otváram databázu... %ld
+; Loading database... %ld
+;
+L_NO_MEM_DATABASE
+Nedostatok pamäte na vloùenie databázy!
+; Not enough memory to load the entire database!
+;
+L_NOT_A_DATABASE
+'%s' nieje databáza programu VirusExecutor!
+; '%s' is not a VirusExecutor database!
+;
+L_ERROR_LOADING_DATABASE
+Chyba pri otváraní databázy!
+; Error loading database!
+;
+L_MERGE_DATABASE
+Doplniï databázu...
+; Merge database...
+;
+L_ERROR_MERGING
+Chyba pri dopâñaní z '%s'
+; Error merging from '%s'
+;
+L_NO_MEM_MERGE_DATABASE
+Nedostatok pamäte na doplnenie do vloùenej databázy!
+; Not enough memory to merge the entire database!
+;
+L_MERGING
+Dopâñam %3ld...
+; Merging %3ld...
+;
+L_MERGE_END
+Doplnenıch %ld %s z %ld.
+; Merged %ld %s of %ld.
+;
+L_ERROR_MERGING_DATABASE
+Chyba pri dopâñaní databázy!
+; Error merging database!
+;
+L_RECORDED_VIEW
+Záznamov: %10ld
+; Recorded: %10ld
+;
+L_FREE_VIEW
+Voãnıch:  %10ld
+; Free:     %10ld
+;
+L_SELECT_BB_INSTALL
+Zvoãte bootblok do ktorého sa bude inîtalovaï... 
+; Select bootblock to install...
+;
+L_CHANGE_NAME
+Zmeniï '%s' na:
+; Change '%s' to:
+;
+L_CHANGE_TO
+Zmeniï na:
+; Change to:
+;
+L_CHANGE_MIND
+Chcete zmeniï Váî názor?
+; Did you change your mind?
+;
+L_ALLREADY_EXISTS
+'%s' uù existuje!
+; '%s' allready exists!
+;
+L_CHANGED_OK
+Zmenené '%s' na '%s'.
+; Changed '%s' to '%s'.
+;
+L_VIEW_BB
+Prezrieï bootblock...
+; View bootblock...
+;
+L_SELECT_BB_DELETE
+Zvoãte bootblock, ktorı chcete vymazaï...
+; Select bootblock to delete...
+;
+L_DELETE_ONE_DATABASE
+\nZmazaï '%s'z databázy?\n
+; \nDelete '%s' from the database?\n
+;
+L_IS_DELETED
+'%s' - zmazané.
+; '%s' is deleted.
+;
+L_ERROR_DELETING_BB
+Chyba pri mazaní '%s'!
+; Error deleting '%s'!
+;
+L_NO_NEED_RECORD
+Nieje treba zaznamenávaï tento bootblok!
+; You don't need to record this bootblock!
+;
+L_NO_RECORD_VIRUS
+Chcem zaznamenaï tento vírus!
+; I wont let you record this virus!
+;
+L_GIVE_BB_NAME
+Daï bootbloku z %s názov...
+; Give the bootblock from %s a name...
+;
+L_NO_MEM_RECORD_BB
+Nedostatok pamäte na zaznamenanie zvoleného bootbloku!
+; Not enough memory to record this bootblock!
+;
+L_DATABASE
+Databáza...
+; Database...
+;
+L_NO_DISK_ANY_DRIVE
+Nieje vloùenı ùiadny disk!
+; No disk in any drive!
+;
+L_SELECT_BB_RECORD
+Zvoãte bootblock\nktorı chcete zaznamenaï.
+; Select bootblock\nto record.
+;
+L_RECORD_A_BB
+Zaznamenaï bootblok.
+; Record a bootblock.
+;
+L_MERGING_DATABASE
+Dopâñam databázu...
+; Merging database...
+;
+L_DISK_IN_DRIVE_PROTECTED
+Disk v jednotke %s je chránenı proti zápisu!
+; Disk in drive %s is write protected!
+;
+L_DISK_NO_VALIDATED
+Disk v jednotke %s nieje platnı!
+; Disk in drive %s is not validated!
+;
+L_PLEASE_WAIT_SECTOR_CHECK
+Prosím çakajte, prebieha kontrola sektorov...
+; Please wait, sector checking in progress...
+;
+L_CHECKING_CYLINDER
+Kontrolujem cylinder: %ld - %ld zostáva...
+; Checking cylinder: %ld - %ld to go...
+;
+L_SECTOR_CHECKING_PAUSED
+Kontrolovanie sektoru je pozastavené
+; Sector checking paused
+;
+L_CONTINUE_CANCEL
+Pokraçovaï|Zruîiï
+; Continue|Cancel
+;
+L_SECTOR_DESTROYED
+Sektor %ld je zniçenı s: %s
+; Sector %ld is destroyed with: %s
+;
+L_BLOCK_INFECTED
+Block %ld je infikovanı s: %s
+; Block %ld is infected with: %s
+;
+L_REPAIR_SECTOR_CONTINUE
+Opraviï sektor|Pokraçovaï
+; Repair sector|Continue
+;
+L_ERROR_REPAIRING
+Chyba pri oprave sektoru!
+; Error repairing sector!
+;
+L_SECTORS_CHECKED
+%ld skontrolovanıch sektorov, %ld nájdenıch infekcií.
+; %ld sectors checked, %ld infections found.
+;
+L_SECTOR_CHECK_END
+Kontrola sektorov dokonçená.
+; Sector check finished.
+;
+L_SHOWING_TASKS
+Prezerám tasky...
+; Showing tasks...
+;
+L_PROCESS
+Process 
+; Process 
+;
+L_TASK
+Task 
+; Task    
+;
+L_WARNING_NO_NAME
+*** UPOZORNENIE - BEZ NÁZVU! ***
+; *** WARNING - NO NAME! ***
+;
+L_SHOWING_TASKS_1
+Prezerám tasky (%ld)...
+; Showing tasks (%ld)...
+;
+L_NAME_ADDRESS_PRI_TYPE
+Názov                                              Adresa    Pri  Verzia
+; Name                                                Address   Pri  Type
+;
+L_SHOWING_LIBRARIES
+Prezerám kniùnice...
+; Showing libraries...
+;
+L_SHOWING_LIBRARIES_1
+Prezerám kniùnice (%ld)...
+; Showing libraries (%ld)...
+;
+L_NAME_ADDRESS_PRI_VER
+Názov                                             Adresa   Pri  Verzia
+; Name                                              Address   Pri  Version
+;
+L_SHOWING_DEVICES
+Prezerám zariadenia...
+; Showing devices...
+;
+L_SHOWING_DEVICES_1
+Prezerám zariadenia (%ld)...
+; Showing devices (%ld)...
+;
+L_SHOWING_PATCHES
+Prezerám pache... 
+; Showing patches...
+;
+L_SHOWING_PATCHES_1
+Prezerám patche (%ld)...
+; Showing patches (%ld)...
+;
+L_NAME
+Názov
+; Name
+;
+L_SELECT_FILE_TO_FIX
+Zvoãte súbor ktorı zorganizovaï... 
+; Select file to fix...
+;
+L_FIX_IT
+Zorganizovaï
+; Fix it
+;
+L_LOAD_TEXT
+Otvoriï text
+; Load text
+;
+L_LOADING
+Otváram '%s'...
+; Loading '%s'...
+;
+L_CONVERTING
+Konvertujem...
+; Converting...
+;
+L_SAVING
+Ukladanie...
+; Saving...
+;
+L_FILE_IS_NOW_SMALLER
+Súbor je teraz o %ld znakov kratîí.
+; File is now %ld chars smaller.
+;
+L_ERROR_SAVING_FILE
+Chyba pri ukladaní súboru!
+; Error saving file!
+;
+L_NOT_AN_IBN
+Toto nieje ùiadny IBN/IBM/IBMM textovı súbor!
+; Not an IBN/IBM/IBMM text file!
+;
+L_NOT_AN_ASCII
+Toto nieje ASCII súbor!
+; Not an ASCII file!
+;
+L_ERROR_LOADING_FILE
+Chyba pri otváraní súboru!
+; Error loading file!
+;
+L_SELECT_FILE
+Zvoãte súbor...
+; Select file...
+;
+L_SAVE_ROM
+Uloùiï ROM
+; Save ROM
+;
+L_SAVING_ROM_TO
+Ukladám ROM (%08lX - %08lX) do '%s'
+; Saving ROM (%08lX - %08lX) to '%s'
+;
+L_PATCH_REQUIERS
+\n\nTáto verzia VirusExecutora potrebuje v%ld.%02ld+ PatchBrain!
+; \n\nThis version of VirusExecutor needs v%ld.%02ld+ of PatchBrain!
+;
+L_VE_MODIFIED
+Chyba: VirusExecutor bol zmenenı!
+; Error: VirusExecutor has been modyfied!
+;
+L_KICKTAG_ENTRIES
+KickTagPtr vstupy:
+; KickTagPtr entries:
+;
+L_VE_NEEDS_XFDMASTER
+%s potrebuje %s na rozbaãovanie zbalenıch súborov!\nProsím nainîtalujte poslednú verziu %s.\n\n Voãba 'Rozpracovanie spracovanıch súborov' bude teraz vypnutá...
+; %s needs %s to decrunch crunched files!\nPlease install the latest version of %s.\n\nThe 'Decrunch crunched files' option is now disabled...
+;
+L_UNKNOWN_STARS
+*** NEZNÁNY ***
+; *** UNKNOWN ***
+;
+L_CPU_INTERRUPT_VECTORS
+CPU Preruîenie Vektoru v RAM (VBR: $%08lX)\n\n
+; CPU Interrupt Vectors in RAM (VBR: $%08lX)\n\n
+;
+L_VIEWING_MEMORY_AT
+Prezerám pamäï na adrese $%08lX:
+; Viewing memory at address $%08lX:
+;
+L_UNKNOWN
+Neznámy
+; Unknown
+;
+L_PROGRAMS_FOUND_IN
+program(i) nájdené v
+; program(s) found in
+;
+L_KNOWN
+Známy
+; Known
+;
+L_LIST_KICKTAGPTR
+List KickTagPtr|
+; List KickTagPtr|
+;
+L_LIST_KICKMEMPTR
+List KickMemPtr|
+; List KickMemPtr|
+;
+L_RESTORE_VECS_CONTINUE
+Obnoviï vektory|Pokraçovaï
+; Restore vectors|Continue
+;
+L_FOUND_A_CRUNCHED_FILE
+Nájdenı spakovanı súbor!\n\nSte si istı, ùe chcete prepísaï VÎETKY\npakované súbory, rozpakovanımi zo zásobníka? 
+; Found a crunched file!\n\nAre you sure you want to overwrite ALL\ncrunched files with the decrunched buffer?
+;
+L_DO_IT_TURN_OFF
+Vykonaï!|Vypnúï 'Overwrite'-atribút
+; Do it!|Turn off the 'Overwrite'-flag
+;
+L_P8
+Prepísaï pakované súbory
+; Overwrite crunched files
+;
+L_CALCULATING_CPU_SPEED
+Poçítam rıchlosï procesora...
+; Calculating processor speed...
+;
+L_SELECT_DISK_SECTOR
+Zvoãte jednotku na ktorej chcete skontrolovaï sektory.
+; Select a drive to process the sector checking.
+;
+L_I_HAVE_CHECKED_S
+Skontrolovanıch %s %s a %s %s doteraz.
+; I have checked %s %s and %s %s so far.
+;
+L_COLDREBOOT
+Studenı reîtart...
+; ColdReboot...
+;
+L_REBOOT_THE_MACHINE
+Naozaj si prajete reîtartovaï?\n\nVîetka pamäï a obvody budú RESETOVANÉ.
+; REBOOT the machine?\n\nAll external memory and peripherals will be RESET,\nand the machine will start its power up diagnostics.
+;
+L_CANCEL_REBOOT_CANCEL
+Zruîiï|Reîtartovaï|Zruîiï
+; Cancel|Reboot|Cancel
+;
+L_DATA_VIRUS_WARNING
+DATA VÍRUS VAROVANIE!
+; DATA VIRUS WARNING!
+;
+L_P9
+Rıchly îtart
+; Fast startup
+;
+L_P10
+Preskakovaï súbory starîie ako
+; Skip files older than
+;
+L_P11
+deñ(dní)
+; day(s)
+;
+L_NON_STANDARD_VECTOR
+*** NEÎTANDARTNİ VEKTOR ***
+; *** NON-STANDARD VECTOR ***
+;
+L_ADDING_TO_FILE_WATCH
+Pridávam '%s' do 'Prezrieï súbory'...
+; Adding '%s' to 'File watch'...
+;
+L_NO_FILES_TO_CHECK
+Nie sú zvolené ùiadne súbory!
+; No files to check!
+;
+L_FW_CHECKING
+Kontrolujem '%s'...
+; Checking '%s'...
+;
+L_FILE_DOESNT_EXIST
+Súbor neexistuje!\n\n'%s'
+; File doesn't exist!\n\n'%s'
+;
+L_REMOVE_FROM_LIST_CONT
+Odstrániï z listu|Pokraçovaï
+; Remove from list|Continue
+;
+L_FILE_OLD_NEW_DIFF
+Súbor: '%s'\n\nPôvodná veãkosï: %ld\nNová veãkosï: %ld\n\n    Rozdiel: %ld
+;     File: '%s'\n\nOld size: %ld\nNew size: %ld\n\n    Diff: %ld
+;
+L_FILE_SIZE_CHANGED
+SÚBOR BOL ZMENENİ!
+; FILE SIZE HAS CHANGED!
+;
+L_ACCEPT_CHANGE_CONTINUE
+Akceptovaï zmenu|Pokraçovaï
+; Accept change|Continue
+;
+L_FILE_CRC_OLD_NEW
+Súbor: '%s'\n\nStaré CRC-32: $%08lX\nNové CRC-32: $%08lX
+;       File: '%s'\n\nOld CRC-32: $%08lX\nNew CRC-32: $%08lX
+;
+L_CRC_CHANGED
+CRC-32 BOL ZMENENİ!
+; CRC-32 HAS CHANGED!
+;
+L_EXE
+SPUSTITELNİ
+; EXECUTABLE
+;
+L_ICON
+IKONA
+; ICON
+;
+L_FW_ERROR
+CHYBA???
+; ERROR???
+;
+L_FILE_NAME_SIZE_TYPE
+Názov súboru: %s\n     Veãkosï: %ld\n\n     Typ: %s
+; File name: %s\n     Size: %ld\n\n     Type: %s
+;
+L_ADD_FILE_CANCEL_SKIP
+Pridaj súbor|Zruîiï|Preskoçiï súbor
+; Add file|Cancel|Skip file
+;
+L_SAVE_CONTINUE
+Uloùiï|Pokraçovaï
+; Save|Continue
+;
+L_ADDED_FILES_TO_WATCH
+Pridané %ld %s do 'Prezrieï súbory'
+; Added %ld %s to 'File watch'
+;
+L_SELECT_A_DIRECTORY
+Zvoãte adresár...
+; Select a directory...
+;
+L_SAVING_WATCH
+Ukladám 'Prezrieï súbory' dáta...
+; Saving 'File watch' data...
+;
+L_LOADING_WATCH
+Otváram 'Prezrieï súbory' dáta...
+; Loading 'File watch' data...
+;
+L_INCLUDE
+Vloùiï do dátového súboru
+; Include data files
+;
+L_ICONS
+Vynechaï ikony
+; Exclude icons
+;
+L_CONFIRM
+Potvrdiï kaùdı súbor
+; Confirm every file
+;
+L_ADD
+Pridaï
+; Add
+;
+L_DONE
+Dobre
+; Done
+;
+L_FILE_WATCH
+Prezrieï súbory
+; File watch
+;
+L_CHECK_NOW
+Skontrolovaï ihneğ!
+; Check now!
+;
+L_ADD_A_DIRECTORY
+Pridaï adresár
+; Add a directory
+;
+L_ADD_UPDATE_STARTUP
+Pridaï/obnoviï îtartovacie súbory
+; Add/update startup files
+;
+L_ADD_FILES_FROM
+Pridaï súbory z adresára
+; Add files from a directory
+;

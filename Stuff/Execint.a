@@ -1,0 +1,68 @@
+vc_ExecInts	movem.l	d2/d3/a2/a3/a6,-(a7)
+		lea	.HeadText(pc),a0
+		bsr	CLIPrintF
+		move.l	4.w,a6
+                moveq	#16-1,d2
+		lea	$58(a6),a2
+		lea	.NamesTable(pc),a3
+		moveq	#0,d3
+		
+.Next		move.l	(a2)+,d0
+		beq.s	.Ok
+		bmi.s	.Ok
+		lea	vc_UnknVecText(pc),a0
+		cmp.l	RomStart(a5),d0
+		blt.s	.Ram
+		cmp.l	RomEnd(a5),d0
+		bgt.s	.Ram
+.Ok		tst.b	vc_HideOkFlag-h2(a4)
+		bne.s	.HideOk
+		lea	vc_OkText(pc),a0		
+.Ram		move.l	a0,-(a7)
+		move.l	d0,-(a7)
+		move.l	a3,-(a7)
+		move.l	a7,a1
+		lea	.ExecIntText(pc),a0
+		bsr	CLIPrintF
+		lea	12(a7),a7
+		moveq	#1,d3
+
+.HideOk		addq.w	#8,a2
+		lea	12(a3),a3
+		dbf	d2,.Next
+
+		tst.w	d3
+		bne.s	.Exit
+		lea	vc_NoneText(pc),a0
+		bsr	CLIPrintF
+.Exit		movem.l	(a7)+,d2/d3/a2/a3/a6
+		rts
+
+.HeadText	dc.b	10,'Exec Interrupt Vectors in RAM',10,10,0
+.ExecIntText	dc.b	'  %s: $%08lx %s',10,0
+.NamesTable	dc.b	'Serial Out ',0
+		dc.b	'Disk Block ',0
+		dc.b	'Soft Int   ',0
+		dc.b	'CIA A      ',0
+		dc.b	'Copper     ',0
+		dc.b	'Vert. Blank',0
+		dc.b	'Blit Ready ',0
+		dc.b	'Audio Ch. 0',0
+		dc.b	'Audio Ch. 1',0
+		dc.b	'Audio Ch. 2',0
+		dc.b	'Audio Ch. 3',0
+		dc.b	'Serial In  ',0		
+		dc.b	'Disk Sync  ',0
+		dc.b	'CIA B      ',0
+		dc.b	'Int. Enable',0
+		dc.b	'NMI        ',0
+
+CLIPrintF	movem.l	d2/a6,-(a7)
+		move.l	a0,d1
+		move.l	a1,d2
+		move.l	DosBase(a5),a6
+		jsr	-954(a6)
+		movem.l	(a7)+,d2/a6
+		rts
+
+DosBase		dc.l	0

@@ -1,0 +1,82 @@
+
+$08012D20: console.device 44.8
+
+
+$0800DB0C: gameport.device 40.1
+
+
+$0800DFBC: input.device 40.1
+
+
+$0800DE44: keyboard.device 40.1
+
+
+$0800F398: ramdrive.device 39.35
+
+
+$08011104: scsi.device 43.43
+
+
+$0800DCA4: timer.device 39.4
+
+
+$0800F41C: trackdisk.device 40.1
+
+
+$080008BC: exec.library 45.20
+
+
+$080001B0: utility.library 40.1
+
+
+$08009344: graphics.library 40.24
+
+
+$0800F804: intuition.library 40.85
+   -210 (-$0D2)  :  $080ED6B2 *** UNKNOWN VECTOR ***
+  InsertPatch (INT_LIB, -210, , VE_Msg);
+   -246 (-$0F6)  :  $080ED726 *** UNKNOWN VECTOR ***
+  InsertPatch (INT_LIB, -246, , VE_Msg);
+   -252 (-$0FC)  :  $080ED718 *** UNKNOWN VECTOR ***
+  InsertPatch (INT_LIB, -252, , VE_Msg);
+   -510 (-$1FE)  :  $080ED712 *** UNKNOWN VECTOR ***
+  InsertPatch (INT_LIB, -510, , VE_Msg);
+   -552 (-$228)  :  $080ED6C0 *** UNKNOWN VECTOR ***
+  InsertPatch (INT_LIB, -552, , VE_Msg);
+
+
+$08016344: dos.library 40.3
+
+
+$080DB110: gadtools.library 40.4
+
+
+$0800DAB8: layers.library 40.1
+
+
+$080D9AFC: icon.library 40.1
+
+
+$08011FC0: mathieeesingbas.library 40.4
+
+
+$080D9B90: mathffp.library 40.1
+
+
+$0800F2C8: keymap.library 40.4
+
+
+$000046CC: expansion.library 40.2
+
+
+$080DB8C0: workbench.library 40.5
+
+
+$080DC150: reqtools.library 39.3
+
+
+$080DCCFC: asl.library 45.4
+
+ max patches = 2005/5000
+ VE_MAX_PATCHES = 251/1000
+

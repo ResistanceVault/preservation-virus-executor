@@ -1,0 +1,1090 @@
+@database VirusExecutor.guide
+
+@Node Main "VirusExecutor.guide"
+@Next "COPYRIGHT NOTE"
+
+                          VirusExecutor v2.28
+                   1992 © 2002 by @{"Jan Erik Olausen" Link "JEO"}
+                           All Rights Reserved
+
+ @{" How to install VirusExecutor       " Link "Install"}    Very easy...
+ @{" Copyright note                     " Link "Copyright note"}    Pure freeware!
+ @{" Disclaimer                         " Link "Disclaimer"}    Who pays if something goes wrong
+ @{" System requirements                " Link "System requirements"}    C64? ;)
+ @{" Features                           " Link "Features"}    What features does VirusExecutor have
+ @{" Getting started                    " Link "Getting started"}    Easy...
+ @{" To do                              " Link "To do"}    What is planned in the future
+ @{" Thanks                             " Link "Thanks"}    Who has helped, if any
+ @{" History                            " Link "History"}    What changed since the last version
+ @{" Translating a language             " Link "Locale"}    How to translate VE to your language
+@EndNode
+
+@Node "Install"
+@Next "Copyright note"
+@Prev "Main"
+@Toc "Main"
+
+HOW TO INSTALL VIRUSEXECUTOR
+
+Just start the VE_Install program and follow the instructions...
+That's it!
+
+Remember that VirusExcutor MUST be in the VirusExecutor drawer...
+If you download a new version you and runs the new version from ram: etc
+you will get 'VirusExecutor is modifyed' requester cause it checks the
+VirusExecutor:VirusExecutor file...
+Do not crunch VirusExecutor!
+
+
+@EndNode
+
+@Node "Copyright note"
+@Next "Disclaimer"
+@Prev "Install"
+@Toc "Main"
+
+COPYRIGHT NOTE
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+VirusExecutor is copyrighted 1982 © 2001 by @{"Jan Erik Olausen" Link "JEO"}.
+All rights reserved.
+
+VirusExecutor is FREEWARE. This program may be freely distributed as long as:
+   - the executable and documentation remain unchanged and are included
+     in the distribution
+
+   - no other charge is made than to cover time and copying costs
+
+@EndNode
+
+@Node "Disclaimer"
+@Next "System requirements"
+@Prev "Copyright note"
+@Toc "Main"
+
+DISCLAIMER
+¯¯¯¯¯¯¯¯¯¯
+No warranties of any kind are made as to the functionality of this
+program. You are using it ENTIRE at your own risk.
+VirusExecutor has no known bugs and no Enforcer hits!
+
+@EndNode
+
+@Node "System requirements"
+@Next "Features"
+@Prev "Disclaimer"
+@Toc "Main"
+
+SYSTEM REQUIREMENTS
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+ * All Amigas with OS 2.04 or higher
+
+ * xvs.library
+   Copyright Georg Hörmann and Alex van Niel
+   Included within this archive.
+   Used for finding and removing virus.
+   VirusExecutor will not run without it.
+
+ * xfdmaster.library
+   Copyright Georg Hörmann and Dirk Stöcker.
+   Not included within this archive.
+   Used for decrunching crunched files.
+   VirusExecutor can also run without this library, but then you can't
+   check crunched files for virus.
+
+ * xadmaster.library
+   Copyright Dirk Stöcker.
+   Not included within this archive.
+   Used for extracting archives
+   VirusExecutor can also run without this library, but then you can't
+   extract and check archives for virus.
+
+ * reqtools.library v38.11 or higher
+   Copyright Nico François.
+   Not included within this archive.
+   Used for requesters.
+   VirusExecutor will not run without it.
+
+ * disassembler.library
+   Copyright The MMU.lib development group, THOR.
+   Not included within this archive.
+   Used for disassembling memory of patches.
+   VirusExecutor can also run without this library, but then you can only
+   show memory by HEX or ASCII.
+
+
+@EndNode
+
+@Node "Features"
+@Next "Getting started"
+@Prev "System requirements"
+@Toc "Main"
+
+FEATURES
+¯¯¯¯¯¯¯¯
+VirusExecutor (VE) is a virus killer that's meant to be easy to use. There's
+no 'advanced' options in the program that you almost never use anyway.
+This doesn't mean that VE is in the lack of power!
+
+ * Easy to use (hopefully) ;)
+ * Checks and download new versions of important files from Aminet
+ * Automatically analyzes an unknown bootblock. Detects 99% of any new virus.
+ * Bootblock database for recording of utilities boots, loaders etc.
+ * Checks files inside archives (multiple)
+ * Checks memory every 3 seconds for viruses
+ * 'File watch' feature using MD5 128 bits security
+ * A huge patch brain with over 2.000 known patch entries
+ * Locale support
+ * SegTracker support
+ * disassembler.library support
+
+@EndNode
+
+@Node "Getting started"
+@Next "Buttons"
+@Prev "Features"
+@Toc "Main"
+
+GETTING STARTED
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+Try it out and ask me if there's something that you don't understand...
+This guide is very simple. I will write a better one later...
+
+ STARTING
+ ********
+ When you start VE you will see some information about VE. Versions of the
+ libraries that VE use, how many bootblocks/files VE has checked etc.
+ Press "Ok" to continue.
+
+ Next, the memory check windows will appear.
+ 
+ Next, VE loads the bootblock database, if any.
+
+ If you start VE for the first time, a prefs window will pop up.
+
+ BOOTBLOCK CHECKING
+ ******************
+ Every time you insert a floppy disk into any drive, VE will check and display
+ the bootblock from that disk.
+ A star (*) after the text DF0: - DF3: shows the bootblock which are currently
+ displayed on the screen.
+
+ Comment: Here you can install a standard AmigaDOS bootblock or a bootblock
+          from the database.
+
+
+                                  MENUS
+                                  *****
+
+ @{"Project" Link "Project"}
+ @{"File watch" Link "File watch"}
+ @{"Show" Link "Show"}
+ @{"Install" Link "Install bootblock"}
+ @{"Bootblock database" Link "Bootblock database"}
+ @{"Utilities" Link "Utilities"}
+
+                                 BUTTONS
+                                 *******
+ @{"Click me" Link "Buttons"}
+
+@EndNode
+
+@Node "Project"
+@Next "File watch"
+@Prev "Getting started"
+@Toc "Main"
+
+                           The 'Project' menu
+                           ******************
+
+@{b}About@{ub}
+  This opens a window viewing all important information like external
+  libraries in use, PatchBrain version etc...
+
+@{b}Prefs@{ub}
+  A new window is poping up where you can select some flags...
+  Press the 'Esc'-key to quit and save the new preferences.
+
+  Decrunch files
+  --------------
+  If selected, VE will decrunch all crunched files supported by
+  the xfdmaster.library. If you don't have this library this box is ghosted.
+  The latest xfdmaster.library is found on aminet. Just search for
+  xfdmaster.lha
+
+  Overwrite crunched files
+  ------------------------
+  If selected, VE automatically rewrites the decrunched file buffer over the
+  original crunched file... This is useful if you have a lot of crunched,
+  files but really don't want them to be crunched.
+  VE asks just ONE time if you want to preform this operation if a crunched
+  file is found.
+  If you check non-writable devices, like CD-ROMs etc, VE turns off this
+  selection during this check and turns it back on next time you do a file scan
+  on a writable device.
+ 
+  Skip encrypted files
+  --------------------
+  If selected, VE skips all encrypted files...
+  Those are files that requires a password to run.
+  If not selected you have to enter the right password in order to check
+  encrypted files.
+
+  Check data files
+  ----------------
+  If selected, VE checks all no-executable files as well.
+  You should only have this flag selected once in a while just to check
+  all data files.
+
+  Extract LHA, LZX, ZIP
+  ---------------------
+  When selected, VE unpacks all #?.LHA|LZX|ZIP files and check inside them.
+  If a virus is found, you have to unpack this file after the check and do
+  a new file check in order to remove the virus.
+
+  VE don't check archives in an archive! I will try to fix this later...
+  You MUST have the LHA, LZX and the UnZip programs located your C: directory.
+
+  Skip files older than [] day(s)
+  -------------------------------
+  If selected, VE don't check files that are older than # days.
+  You also have to specify how many days to skip.
+  0 = Only checks files that is new to the device TODAY.
+
+  Fast file checking
+  ------------------
+  If selected, all text output and some false xfdmaster.library errors are
+  disabled. It also turs off memory checking,
+  Checking my SYS: partion
+  Fast file checking off: 0:04:32
+  Fast file checking on:  0:03:09
+
+  Write to log file
+  -----------------
+  Here you can activate and choose which directory VE saves the log
+
+  Iconify at startup
+  ------------------
+  Just as it says
+
+@{b}Memory check@{ub}
+  Some window pops up telling some usefull stuff!
+
+  1. window (Memory check)
+  First a window pops up showing information about the kickstart version and
+  ROMUpdates. If there is a known virus in memory VE will tell you so.
+
+  2. window (Vector check)
+  Here VE tells you which program that are using the vectors for resident code
+  etc.
+  List KickTagPtr: Shows programs using the KickTag pointer. Most of the
+                   programs listed here survives a warm reboot.
+  List KickMemPtr: Shows programs using the KickMem pointer. These programs
+                   don't survive a warm reboot.
+  Restore Vectors: Resets all vectors/residents files in memory.
+                   All programs are still working in memory, but will not
+                   survive a warm reboot. If VE can't restore these vectors
+                   it might be a virus fooling around, and VE asks you if you
+                   want to do a CoolReboot.
+
+  3. window (CPU Interrupts Vectors)
+  Just shows the status of the CPU interrupts vectors.
+
+  4. window (Exec Interrupts Vectors)
+  Just shows the status of the exec interrupts vectors.
+
+  5. window (Device/library Vectors)
+  Here you can see what function that is patches by a number of programs.
+  If you click a function a new window will pop up showing an Hex/ASCII view
+  from that address. VE knows a lot of programs that patches the system using
+  the PatchBrain file (VirusExecutor.patches). For now the PatchBrain
+  recognize over 2.000 patches from over 250 programs. And the PatchBrain will
+  be updated a lot so be sure to check AmiNet or the Virus Help Denmark's
+  homepage to see if any new brain is released.
+
+  You can mouse click one of the patches to bring up the  'Memory monitor'.
+
+  Here are the short-keys used by the monitor:
+  --------------------------------------------
+  Arrow Up/Down:    One line up/down
+  Numeric 8/2:      One line up/down
+  Arrow Left/Right: Page up/down
+  Numeric 9/3:      Page up/down
+  Numeric 7:        Home
+  Help:             Switch between address/offsett listing
+  Esc:              Quits the memory monitor
+
+@{b}ColdReboot@{ub}
+  NOTE! All external memory and peripherals will be RESET!
+  And the machine will start its power up diagnostics.
+
+@{b}File check@{ub}
+  A file requester pops up and you can select which device/drawer you want
+  to be checked using the options from the prefs setings.
+  During file checking you can press the 'Esc'-key to pause/abort this check.
+  I will explain more later...
+
+@{b}Sector check@{ub}
+  Checks for virus within the sectors of a floppy disk.
+  Not fully tested. Use it on your own risk!
+
+@{b}Select screen mode@{ub}
+  Here you can select your own screen mode.
+  I will explain more later...
+  
+@{b}Quit@{ub}
+  This will quit VE and save the prefs settings.
+
+@EndNode
+
+@Node "File watch"
+@Next "Show"
+@Prev "Project"
+@Toc "Main"
+
+                            The 'File watch' menu
+                            *********************
+
+@{b}Check now@{ub}
+  Goes through all the files that you have added to the file watch data base
+  and check if there's a differens in the file size. If the file size has not
+  changed it checks the MD5-128 checksum...
+
+  If there's a differens, a requester pops up asking you if you want to
+  save these changes. If the file C:Dir has changed and you are 100% sure
+  that you haven't replaced it with a newer version etc, it might be a virus
+  somewhere. If a lot of files has changed you are probably infected!
+  Please do a file scan of that dir and send some of the changed files to
+  me if the file scan couldn't help you out.
+
+  Pressing the Esc-key aborts the file watch checking
+
+  NOTE
+  A requester pops up if a file that is in the data base has been deleted from
+  your system so you can remove it from the file watch data base.
+
+@{b}Add a directory@{ub}
+
+  Add files from a directory to the file watch data base.
+
+  A small window pops up:
+
+  'Include data files'
+  Select this flag If you want to include data files.
+
+  'Include icons (.info)'
+  Select this flag if you want to add icons to the file watch.
+  Only availible when 'Include data files' is checked.
+
+  'Confirm every file'
+  Select this flag if you want to manually confirm which files that should
+  be added to the file watch data base.
+
+  'Add'
+  Choose a directory to add files from using the file requester.
+  You can use assigns as they will be converted to their original path in
+  the data base
+  After selecting a directory the files will be added to the data base using
+  the flag settings above.
+
+  'Done'
+  Closes this window.
+
+@{b}Add/update startup files@{ub}
+
+  Scans the s:startup-sequence and s:user-startup script for files and adding
+  them to the file watch data base. Files in the WBStartUp directory will also
+  be added.
+
+@{b}Remove files@{ub}
+
+  A window with all files added to the file watch data base opens and you can
+  just click the file you want to remove from the data base.
+  
+@EndNode
+
+@Node "Show"
+@Next "Install bootblock"
+@Prev "File watch"
+@Toc "Main"
+
+                            The 'Show' menu
+                            ***************
+
+@{b}Bootblock virus@{ub}
+
+  All boot block virus known by the xvs.library will be listed.
+
+@{b}Link virus@{ub}
+
+  All link virus known by the xvs.library will be listed.
+
+@{b}File virus@{ub}
+
+  All file virus known by the xvs.library will be listed.
+
+@{b}Tasks@{ub}
+
+  All tasks (programs) running will be listed.
+
+@{b}Libraries@{ub}
+
+  All libraries in memory will be listed.
+
+@{b}Devices@{ub}
+
+  All devices in memory will be listed.
+
+@{b}Patches@{ub}
+
+  All patches known by VirusExecutors patch brain will be listed.
+
+@EndNode
+
+@Node "Install bootblock"
+@Next "Bootblock database"
+@Prev "Show"
+@Toc "Main"
+
+                           The 'Install' menu
+                           ******************
+@{b}DF0: - DF3:@{ub}
+
+  Install a bootblock to the drive DFx:
+
+  Select type of bootblock or a bootblock from the bootblock database
+  and click the 'Install' button.  
+
+@EndNode
+
+@Node "Bootblock database"
+@Next "Utilities"
+@Prev "Install bootblock"
+@Toc "Main"
+
+                      The 'Bootblock database' menu
+                      *****************************
+
+@{b}Record@{ub}
+
+  Records a bootblock from any drive to the bootblock data base.
+
+@{b}View@{ub}
+
+  A window pops up and you can click a recorded bootblock to view.
+  Press the close window button to exit.
+
+@{b}Edit name@{ub}
+
+  If you want to change the name of a recorded bootblock this might help
+  you out.
+
+@{b}Merge@{ub}
+
+  Merges another bootblock data base to your own data base.
+
+@{b}Delete one@{ub}
+
+  Deletes a recorded bootblock from the bootblock data base.
+
+@{b}Delete all@{ub}
+
+  Clears the entire bootblock data base.
+
+@{b}Save@{ub}
+
+  If changes has been made this will save the bootblock database.
+
+@EndNode
+
+@Node "Utilities"
+@Next "Buttons"
+@Prev "Bootblock database"
+@Toc "Main"
+
+                          The 'Utilities' menu
+                          ********************
+
+@{b}Rename pictures@{ub}
+
+  Just choose one image and VirusExecutor does the renaming for you...
+
+  Examples:
+  Image0  -> Image.00000
+  Image1  -> Image.00001
+  Image03 -> Image.00003
+  Image15 -> Image.00015
+
+@{b}Convert IBN/IBM/IBMM to ISO@{ub}
+
+  Converts a PC ASCII text file to plain Amiga text
+
+@{b}Save ROM to file@{ub}
+
+  Writes the entire ROM that you are using, and saves it as a file.
+  You can then use this ROM file with Amiga emulators on other platforms etc.
+
+@{b}Update files@{ub}
+
+  When you are on internet you can use this option to get the latest versions
+  of the following:
+
+  VirusExecutor main archive, VirusExecutors patch brain, xvs.library,
+  xfdmaster.library and xadmaster.library
+
+  Just select the nearest Aminet site, and if a newer version is availible
+  you can download the file from VirusExecutor. Note that the VirusExecutor
+  download files to RAM:
+
+@EndNode
+
+@Node "Buttons"
+@Next "To do"
+@Prev "Utilities"
+@Toc "Main"
+
+KEYS
+¯¯¯¯
+ * Esc         - Pauses file/watch checking and asks if you want to abort...
+
+ * Numeric 0-3 - Shows bootblock of that drive if you have more than one
+                 drive on your system.
+
+ * F5          - Quits VE. Next time you start VE it will use the WB-screen...
+                 This will be added to the prefs window later.
+@EndNode
+
+@Node "To do"
+@Next "Thanks"
+@Prev "Buttons"
+@Toc "Main"
+
+TO DO
+¯¯¯¯¯
+* Better docs
+* Better prefs
+
+@EndNode
+
+@Node "Thanks"
+@Next "History"
+@Prev "TO DO"
+@Toc "Main"
+
+THANKS
+¯¯¯¯¯¯
+Many thanks to following persons which helped to improve VirusExecutor:
+
+ Jan Andersen for sending me new virus
+
+ Georg Hörmann and Alex van Niel for the xvs.library
+ Georg Hörmann and Dirk Stöcker for the xfdmaster.library
+ Dirk Stöcker for the xadmaster.library
+ Nico Françies for the reqtools.library
+
+ And thanks to all who @{"translated" Link "Locale"} VirusExecutor...
+
+ The BETA testing crew:
+ ----------------------
+ Philip Bang, Vegar Pedersen, Robert Westad, Roar Syversen, Trond Larsen,
+ Jørn Tillnes, Rune Mindresunde, Jan Tore Sandvik, Jan Andersen,
+ Allan Sander, Anthony Becker, Brad Rogers, Craig Daines, David Rey,
+ Karlsson Mattias, Michael Jaccoud, Mike Leavitt, Orhun Kabakli,
+ Paul Qureshi, Peter Thor, Trevor Gardiner, Robert Habkirk, Shane Cracknell,
+ Shane Ponting, Srdjan Petrik, Benny Pedersen and Harry Sintonen
+
+ Special thanks to Michaela Prüß for her major beta testing of v2.01
+ and to Harry Sintonen for all his help! :)
+
+
+@EndNode
+
+@Node "History"
+@Prev "Thanks"
+@Toc "Main"
+
+HISTORY
+¯¯¯¯¯¯¯
+2.28  - Fixed bug: Removed some text output when 'Fast file checking' is set.
+      - Fixed bug: In patch view window the offset was not right if no FD:
+      - Fixed bug: Forgot to stop on one xadmaster.library error.
+        The result was an Enforcer hit.
+      - Optimized file checking a bit.
+      - The error requester for xadmaster.library now shows the archive type.
+      - Moved KickTagPtr/KickMemPtr patches to the PatchBrain.
+        Also fixed serious bug/crash from v2.25 if there was an unknown kicktag.
+        Thanks to Andreas Balke for reporting this bug.
+
+2.27  - Fixed bug: File checking eats memory.
+      - Fixed bug: Got error on some crunched data files.
+      - Fixed bug: Some error requsters of non archived files was wrong.
+      - Fixed bug: In some cases the file status text was out of line.
+      - Fixed bug: When 'Memory monitor' was set to other than HEX dump.
+
+2.26  - Fixed bug: Sometimes xfdmaster.library detects StoneCracker 4.04
+        cruncher wrong. Should fix the problem with the AmiGameBoy.key error.
+      - Added internal sound player.
+      - Fixed 'Unsupported hunk type'-bug when decrunching some files...
+        Thanks to Dirk Stöcker for finding the bug.
+      - Improved usage of the xadmaster.library.
+      - Some ASCII files are detected by the xfdmaster.library as crunchers.
+        Fixed.
+      - Added function to check ALL valid volumes in one go.
+        See the 'Project'-meny.
+        Thanks to Harry Sintonen for the GetVolData() source.
+      - Checking data files are much faster now.
+      - Cleaned up the log output a bit and added some more to it.
+      - You can now see all output when checking files on a smaller screen...
+        (283 or higher)
+      - Moved CPU/Exec-interrupts to the patch window (2 windows are gone now)
+        And tha patches are moved to the PatchBrain.
+        I had to redo the checking so you might have unknown patches there
+        that was ok before... Please let me know and I'll update the brain.
+      - Fixed bug: Internal asl.library v42.0 checking.
+      - Fixed bug: When 'Check data files'-flag is on and 'Extract archives'
+        -flag is off, VE loaded the whole archive as a data file.
+      - Fixed bug: Stupid requster asking for FD: if you don't have it.
+      - Fixed bug: Disassemble output (Memory monitor) was not always right.
+      - Checking patches are now MUCH faster on slow Amigas!
+      - Improved internal patch checking...
+      - Added internal recog for asl.library v39
+      - Fixed some memory leaks when loading FD: files.
+      - Added file name output if 'Fast file-checking'-flag is active.
+      - VE now remembers the 'Memory monitor' setting.
+
+2.25  - Added reqtools.library patch by Zeeball.
+      - Added recog to Cyb-BootPrefs0 in KickTagPtr.
+      - You can now choose where VE is writing the log file.
+      - VE is now using disassembler.library for the memory monitor.
+        Can be found on aminet: util/libs/DisLib.lha
+      - Added asl.library v42.0
+      - Fixed hit when trying to read memory name from some Blizzard cards.
+        Thanks to Mark "AxE" Ricketts for finding the hit and to
+        Harry Sintonen for the info about the Blizzard bug.
+      - VE will only run on 68020+ machines and are optimized for that.
+        The reason is that most of the patch checking are at odd addresses.
+      - Added my PGP signature with VirusExecutor.
+      - Removed internal library function names. VE is getting the function
+        names from #?.fd files that should be located in a FD: drawer.
+      - Changed shortcut to H for Iconify.
+      - Fixed bug in the text output when running VE on Workbench with a non
+        topaz8 font.
+      - Added support for SegTracker if installed.
+      - Added check for DMS bootblocks and text.
+      - 'File watch' is now 'File integrity'.
+      - Added recog for A1200_HDPatch
+
+2.24  - Minor update. Forgot to remove some debugging...
+
+2.23  - Added asl.library and reqtools.library to the patch watch.
+      - Added more commands to the memory monitor and fixed some bugs.
+      - Fixed 'Modified' message when starting VE outside the current
+        directory. Thanks to Charlene for finding this bug.
+      - Renamed execPrivate functions.
+        Thanks to Harry Sintonen for the info.
+      - Unknown patches are now highlighted.
+        Thanks to Andrew Boyarintsev for this tip.
+      - Checking updates from aminet (US) fixed.
+      - Improved patch checking... Should work with OS 3.9 (BB2).
+      - Added MD5-128 bit checksum checking for BB2 exec.library.
+      - Fixed bug, when saving KickStart to file under BB2.
+      - VirusExecutor.patches has been renamed to VirusExecutor.PatchBrain!
+      - Removed all sound. This is bacause VE used external programs to
+        produce the sound... Not very clever if those programs was infected..
+        In the future I will add internal sound support.
+      - Added MuMove4K right.
+      - Fixed bug in CPU Int. and Exec Int. ValidMem was not doing the job.
+      - Thanks to Harry Sintonen for the new GetVBR code and help.
+      - exec.library now shows the right function name under MorphOS.
+        Thanks to Harry Sintonen for the info.
+      - Added recog for AHI (paula.device) to audio 0 ch. Thanks to Harry again.
+      - Fixed bug when 'Converting IBM...' to Amiga and 'Rename pictures'
+      - Changed CRC-32 to MD5-128 checking (FileWatch).
+        Thanks to Harry Sintonen for this tip.
+      - Fixed Enforcer hit when deleting from File Watch.
+      - Fixed hits/crash when running VE under MorphOS.
+        Thanks to Harry Sintonen for the info about lib_NegSize under MorphOS
+        There's still some bugs to be fixed while running MorphOS...
+      - Fixed small bug in memory area name (Memory monitor).
+
+2.22  - Fixed bug when renaming VirusExecutor. No more modified error.
+      - If you have unknown patches, the patch window pops up twice at
+        startup. Fixed.
+      - If you have an unknown patch and then run a program with a known
+        patch, the patch window pops up with the same unknown patches.
+        No need for that. Fixed.
+      - Got some complaint about the flashy check box around the clock when
+        checking memory/patches. Fixed.
+      - Added "real" name to Shell programs in 'Show tasks'.
+        Thanks to Harry Sintonen for the code.
+      - Fixed bug in dos.library LVO-names.
+      - Added czech catalog. Thanks to Roman Brychta.
+      - Fixed small bug in the install script.
+      - Added 'Write to log file'-flag to the preferences.
+      - Added an Iconify option to the project meny. See also the
+        preferences if you want to iconify at startup.
+      - Fixed Enforcer hit when KickTagPtr was zero.
+        Thanks to Joerg Riemer for finding this hit.
+      - Added recog for hidden executable files inside installer scripts.
+      - Added hunk structure check of VirusExecutor.
+      - Fixed hit in the memory monitor when RAM has no name.
+        Thanks to Harry Sintonen for finding this hit.
+      - If the xvs.libray somehow has been disabled, VE will tell you so.
+        Thanks to Zeeball for this tip.
+
+2.21  - Fixed font problem in the memory monitor.
+      - Fixed some gfx out of range when using VE on a Workbench screen
+        with a display width < 645.
+      - Starting to write a disassemble function in the memory monitor.
+        It don't know all the commands yet, but it will ;)
+      - You can now use the arrow keys or the numeric key pad to scroll
+        in the monitor window.
+      - Added 'Show data virus' to the menu. Requires xvs.library v33.34+
+
+2.20  - VE doesn't need the VirusExecutor: assign anymore, so you can delete
+        some lines in s:user-startup.
+                                      IMPORTANT!
+        All files that comes with VE must be in the same directory where the
+        main program are located! (Not libraries and catalogs).
+      - Recoded 'View patch memory'... It's quite similar to the memory
+        monitor in VirusZ.
+      - Thanks to Harry, VE do get the right opcodes when checking for
+        patched functions.
+      - Added decoding of 4 shell-scripts.
+        The DKG-Blum and Jode Capullos virus was hiding in such scripts.
+      - Fixed some 'out of address' bugs while checking memory.
+      - Added AHI device channel 0 right.
+      - Fixed small bug in the vector check window, that could cause
+        strange characters to be displayed.
+      - Fixed bug when removing a deleted file from the watch list.
+      - Added close gadget to the prefs window.
+      - Added 'Fast file checking' to the prefs window.
+        Activating this flag will disable all text output, memory checking
+        and some error messages during file checking...
+      - When the 'Skip encrypted files'-flag are set, encrypted arhives
+        are also skipped.
+      - Added LVO names to device functions.
+      - Fixed text out of range bug when viewing memory.
+      - Fixed Enforcer hit in 'View KickMemPtr/KickMemPtr'.
+      - When VE is infected with a virus it says it is modified and quits.
+        Stupid, cause when a virus is around, VE should not quit! Fixed.
+      - Added powerpc.library recog to 'Soft Int'
+      - Added COP to memory recog.
+
+        Thanks to Harry Sintonen and Joerg Riemer for reporting bugs/hits
+        and for all suggestions and help...
+
+2.19  - Added MuMove4K right!
+      - Removed library version check for xadmaster.library.
+      - Added Amiga OS Update IDE_scsidisk right...
+      - Removed all internal virus checking as they are added in
+        xvs.library v33.25
+      - Fixed bug when running on kickstart lower than 3.0
+        Thanks to Jan Andersen for telling me...
+
+2.18  - Forgot to open window big enough for file check output from WB.
+      - Fixed Enforcer error if VirusExecutor was modified.
+      - Removed some debugging code.
+      - Fixed bug when checking for Zakahackandpatch TCP Trojan virus.
+        Should be able to recognize this virus again now...
+        Seems that i line in the sources was deleted by my mistake :(
+      - Added LoadModule to mem check
+
+2.17  - Added virus: Bastard Installer and Bastard Install Script 
+      - Improved hunk stripping while checking files...
+      - Fixed some bugs in the bootblock data base load/save/merge
+      - Fixed bug when bootblock checking text was to long.
+
+2.16  - VE can now check for archives in archives in archives ...
+      - Improved hunk checking when checking for Bobek virus.
+      - Rewritten the whole file check routine.
+      - Fixed bug if file time checking is more than 1 hour.
+      - Fixed bug from v2.13 that "freeze" the machine while decrunching
+        or extracting arhives... Should also take care of the mouse "freeze"
+        while checking for memory.
+      - Some small improvements.
+
+2.15  - Added internal removal of the new Bobek link virus
+      - Improved error output from xadmaster.library when checking
+        archives.
+      - Requiers xadmaster.library v9.0 instead of v10.0
+
+2.14  - Fixed enforcer hit when adding files from SYS:WBStartup
+      - When Enforcer or CyberGuard is running the MMU: text turns blue.
+      - Using xadmaster.library for extracting archives.
+      - Improved Bastard file checking a bit
+      - Added memory checking and file checking for Bobek link virus
+        Please wait for a new update of the xvs.library for removals of
+        the Bastard and Bobek virus...
+      - Shows only the diskdrives that you have.
+      - Removed the requester 'VirusExecutor is allready running'
+        When starting VE when VE is allready running the screen just come
+        to front and get active.
+
+2.13  - At last, fixed the font problem when running VirusExecutor from
+        Workbench... Please let me know if there still are font problems.
+      - Added some mem pointers for OXYRON Patcher v3.13 and CyberGuard
+      - Fixed $VER: string.
+      - When checking a lot of archives a file called T:VEpfh become quite
+        big. Fixed.
+      - Bug when pressing the 'Esc'-key more than one time during the file
+        checking is fixed.
+      - When pressing stop if a linked virus is found wouldn't stop. Fixed.
+      - Fixed xvs.library and xfdmaster.library check at startup.
+      - Starting VirusExecutor without the assign caused membugs. Fixed.
+      - Fixed Enforcer hit when checking memory...
+
+2.12  - Renamed the new TeamMOS TCP Trojan to Zakahackandpatch
+        and fixed small bug in the decrypting code...
+      - Added 'Bastard' link virus...
+        Thanks to Zbigniew Trzcionkowski for the great analyzes of 
+        this virus... I'm using his code to disable it from memory...
+
+2.11  - Forgot to remove 'TeamMOS HPA TCP Trojan' from memory...
+
+2.10  - Saves the VirusExecutor.prefs fil to VirusExecutor:
+        The old prefs fil in the S: dir will be deleted by VE...
+      - Added BootControl v2.1 to memcheck
+      - Added internal check for the new 'TeamMOS HPA TCP Trojan' Virus
+
+2.09  - Added OS 3.9 ROM updates.
+      - Added SystemPatch
+
+2.08  - Added a save request after a file watch scan 
+      - You can now press the Esc key to abort the file watch checking
+      - Added more text to the Aminet update if your screen height is 
+        bigger than 319 pixels
+      - The guide should be a lot better now :)
+
+2.07  - Fixed bug when reading readme file from Aminet
+      - Rewritten a lot of the boot block analyze function.
+        Just did it for fun. Who use disks anymore :)
+      - Fixed some bugs in the 'File Watch' scan and adding...
+      - Added: remove files from the file list
+
+2.06  - Fixed faulty lib versions when starting VE if the 'Fast startup'
+        flag was off.
+        Thamks to Charlene Mcnulty for telling me about it :)
+
+2.05  - VirusExecutor no longer crash when no screen mode is selected
+        at first time run.... Thanks to Per M. Iversen who reported
+        this bug.
+      - Now you can check if there is new versions of VirusExecutor, 
+        VEPatchBrain, xvs.library and xfdmaster.library from Internet.
+        If a new version is available you can download directly from VE.
+        Right Amiga-U does the trick.
+        Remember to be on the net :)
+
+2.04b - Fixed bug when closing screen at the Workbench window
+      - Added 'File watch' to the menu
+      - Displays the release date of the xvs.library in the about window
+      - Removed CPU speed... To many bugs... and not very important :)
+
+2.03  - Fixed bug: The patch window didn't pop up at startup if there
+        was unknown patches in memory
+      - Added more OS 3.5 ROM Updates to the PatchBrain
+      - Added a simple log file... See VirusExecutor.log
+        Just logs if a virus is found. Please tell me what you want
+        the log file to log! I will make some prefs options for this later
+      - Fixed bug when a data virus was found
+      - Added a 'Fast startup' flag to the prefs window.
+        When checked, MHZ-check and the about-window are disabled at
+        startup
+      - If you have OS 3.5 a VirusExecutor glow icon is used.
+        Thanks to Michaela Prüß for making this nice icon
+      - Added 'Skip files older than ##### days' to the file checking prefs
+      - Centered the prefs window...
+      - Added an option to open VirusExecutor on the WorkBench screen
+        Press F5... This will also be an option in the prefs window later :)
+      - VirusExecutor also shows the version of the ROMUpdate if found
+      - Fixed some minor bugs in KickTagPtr-checking:
+        Miami Deluxe was found as Miami and ROMUpdate 44.1 was not recogized
+      - Better guide... Don't say a thing! I'm still working on it :)
+      - Added a BUG REPORT text file...
+
+2.02  - Some virus is hidden deep inside linker-files. VE is now unlinking
+        all links and not just one...
+      - VE is now stripping hunk_name ($3e8).
+      - MEMF_LARGEST is removed during file check. Little faster now :)
+      - If you have the 'Overwrite crunched files'-flag selected, VE check
+        if the drive is writeable... If not, the flag is turned off during
+        file checking...
+      - Updated some CPU speeds..
+      - Added more patches to the PatchBrain
+      - Fixed small bug when viewing patch memory
+      - Added more devices and libraries to the patch checking
+      - Added MMU check to the main window
+      - Added 'ColdReboot' to the 'Project' menu
+      - When a new patch is detected a <-- is displayed behind it.
+        I hope :)
+      - Fixed Miami-bug in PatchBrain. Should be SetPatch.
+      - Added internal LVO-names... More to come...
+      - From now on the latest 'xvs.library' is included in the archive
+
+2.01  - Added more program to resident check
+      - Fixed bug in GFX-chip checking (hopefully)
+      - Added CPU speed in MHz. Just for fun :)
+      - Some fonts have the same ID as zip-files... Fixed
+      - Rewritten vector check routine... Should be much better now
+        (hopefully) :)
+      - Added more patches to PatchBrain
+      - Fixed bug. VE was showing the wrong FPU sometimes...
+      - VE now skips HARD- and SOFT links directories during file checking
+      - Added VirusExecutor: assign
+      - Sector checking can no be used on all 4 drives
+      - When the 'Skip encrypted files'-flag was set, no crunched files
+        was decrunched. Fixed...
+
+2.00  - Locale support: Norsk, dansk, deutsch and français
+      - Added 154 patch entries... 
+        Also added patches to gadtools.library, layers.library and
+        icon.library
+      - Fixed patch bug... ToolManager patch was screennotify.library
+      - Major upgrade of the vector checking... Added reset resident
+        programs to an internal database...
+        Please let me know which program you use so I can make an update
+        All resident programs that VE don't know, is mark *** UNKNOWN ***
+      - VirusExecutor crashed when screen mode was not available. Fixed
+      - Fixed 'empty-line' bug in the patch output window
+      - Fix small bug in 'Convert IBN...' if tekstdata ended with a '\0'
+      - Added devices to the patch checking
+      - I think all this work is worth a 2.00 version! :)
+
+1.84  - Changed VirusExecutor.patches again!
+        I forgot to include the patch names within this file :)
+      - 'Error 1200' was a typing mistake in v1.83c only. Fixed
+      - From the prefs window you can now select an option to
+        hide known patches.
+        If this option is set and you choose 'Check Memory'
+        from the menu, VirusExecutor will show all patches!
+      - Added 'SmartCrash v1.1' to the patch brain
+      - Added 'playsid.library' to Interrupt Vectors
+
+1.83c - When starting VE, windows pop up only if there's a virus in
+        memory or if an *** UNKNOWN VECTOR *** patch are detected
+      - Added a meny function to view known patches
+      - The "VirusExecutor.patches" file is now much smaller
+      - Added patch: 68060.library, CyberPatcher, SnoopDos v3.0
+
+1.83b - Improved and fixed some minor bug to the patch checking.
+      - Added a few more patches. More to come...
+      - Fix a bug when "*** UNKNOWN VECTOR ***" in CPU Interrupt checking.
+      - Fixed FPU: 68040 when it was a 68060, again :)
+      - Removed some internal viruses. Please get the xvs.library v33.19!
+
+1.83a - Added "AMOS Joshua Clone Trojan"
+      - 060FPU was showing as 040FPU. Fixed!
+        Thanx to Jarle Eidet for telling me about that.
+
+1.83  - Added "AMOS Joshua Trojan"
+      - Major upgrade on vector and patch checking. This is just a preview.
+        I had to release this version because of the new Joshua virus
+
+1.82f - Added to prefs: Skip encrypted files
+      - In encryped files, password was always wrong. Fixed 
+      - While typing password, no output is seen.
+      - Improved Zakapior file checking
+        VE is now encrypting the file...
+      - Fixed an error msg that pops up as an CLI message when VE
+        couldn't lock a directory
+      - VirusExecutor is now listed in the task window
+
+1.82e - Added sounds to VE :)
+      - Added vector check for kickstart 40.70
+      - Fixed small bug in List KickMemPtr output
+      - Added a utility to save internal ROM to a file
+      - Changed some text output
+      - When clearing vectors, interrupt was not restored. Now fixed
+      - Added DF0: sector checking
+
+1.82d - Added kickstart 40.60/40.63/40.68 in vector check
+      - When inserting a A1000 kickstart disk VE prints out
+        the kickstart version. Anyone have kick 1.0 and 1.4 beta?
+
+1.82c - VE now shows all tasks.. Sorry :)
+      - BUG: The vector window pops up only if the vectors are changed
+      - VE can now show entries using KickMemPtr
+
+1.82b - Added a prefs window (BETA).
+        VE goes directly to the prefs window when new preferences
+        has been added.
+      - Fixed the 'Error 12000' (I hope)
+      - Added vector checking. Not very good, but I'm working on it.
+      - VE can now display Tasks, libraries and devices...
+
+1.82a - VE now sorts files when scanning disks for virus
+      - Sorry, forgot to remove 'Zakapior' virus from memory, fixed!
+      - Shows only filename of the infected file within an archive
+        (Not the whole path)
+      - Added more info while scanning files if you have big
+        enough screen :)
+      - Added zip arhcive, please use:
+        UnZip 5.32 of 3 November 1997, by Info-ZIP. Maintained by Greg Roelofs.
+        (found on Aminet)
+      - Added memory scan during file checking
+
+
+1.82  - Added a 'Select Screen Mode' requester (lots of requests)
+      - Added auto remove link/file virus...
+      - Cleaned up some code...
+      - Rewritten file scan code... Much safer now.
+      - Checks files in LHA/LZX archives (more to come)
+      - Added "Zakapior Trojan" virus (internal, not xvs.library)
+
+1.81c - VE can now unlink linked files... Thanks to Jan Andersen for
+        sending me some linked files.
+      - Removed stupid requester: "Seems like you own an old VirusExecutor".
+      - And some other stuff that I don't remember :)
+
+1.81b - VE is now using xfdmaster.library for crunched files.
+      - After VE removes a link virus it now checks the file again
+        for more viruses until the file is clean.
+        
+1.81a - Rewrite analyze function of encrypted bootblocks.
+        Fix a small bug when the bootblock was a standard 1.3+.
+      - Forgot to report the error message if a link virus couldn't be
+        removed.
+      - Also forgot to ask if you want to delete a data virus
+      - Cleaned up some code and text output.
+        
+1.81  - First Aminet release.
+
+@EndNode
+
+@Node "Locale"
+@Prev "History"
+@Toc "Main"
+
+English is the build in language but VirusExecutor supports the
+locale.library. That means that you can easy translate from english
+to your language...
+
+Just email me back the translated catalog file and I will include it
+in VirusExecutors archive...
+
+Catalog writers:
+  dansk      - Jan Andersen
+  deutsch    - Michaela Prüß
+  czech      - Roman Brychta
+  français   - Jean-Marc LEROUX
+  español    - Diego CR
+  magyar     - Dósa Márton
+  italiano   - Andrea Zanellato
+  polski     - Michaî Sobieraj
+  português  - Alfredo Martins
+  norsk      - Jan Erik Olausen
+  russian    - Stanislav Piskunoff
+  slovak     - Juraj Mátel
+  svenska    - Börje
+
+@EndNode
+
+@Node "JEO"
+@Toc "Main"
+
+         Jan Erik Olausen
+         Email: virusexecutor@c2i.net
+         Norway
+
+         http://home4.inet.tele.dk/vht-dk/amiga/
+
+@EndNode

@@ -1,0 +1,1359 @@
+L_NO_DISK (0//)
+No disk in this drive.
+;
+L_MESSAGE (1//)
+Message
+;
+L_OK (2//)
+Ok
+;
+L_READY (3//)
+Ready.
+;
+L_PLEASE_WAIT (4//)
+Please wait...
+;
+L_UNKNOWN_TRACKDISK0 (5//)
+Trackdisk error %ld: %s
+;
+L_UNKNOWN_TRACKDISK1 (6//)
+Unknown trackdisk error ->%ld<-\nunit = %ld\nPlease contact author!
+;
+L_UNKNOWN_TRACKDISK2 (7//)
+Unknown trackdisk error %ld!
+;
+L_PROF_FILE (8//)
+A ProfFileSystem installed disk.
+;
+L_FLASHBACK (9//)
+*
+;
+L_ABACKUP (10//)
+*
+;
+L_ERROR_IN_CHECKSUM (11//)
+Error in checksum!
+;
+L_UNINST (12//)
+Uninstalled AmigaDOS disk.
+;
+L_INSTALLED_DOS (13//)
+Installed AmigaDOS disk
+;
+L_FMS (14//)
+Installed FMS disk v%s.
+;
+L_CHECKING_BOOTBLOCK (15//)
+Checking bootblock...
+;
+L_BAD_FORMAT_DISK (16//)
+A badly formated disk?
+;
+L_VIRUS_1 (17//)
+%s virus!
+;
+L_VIRUS_FOUND_IN (18//)
+%s virus found in %s
+;
+L_KILL_VIRUS_CANCEL (19//)
+Kill virus|Cancel
+;
+L_WARNING (20//)
+WARNING!
+;
+L_UTILITY_BOOT (21//)
+An utility boot.
+;
+L_VIRUS_KILLER (22//)
+A virus killer boot.
+;
+L_INTRO_BOOT (23//)
+An intro boot.
+;
+L_LOADER (24//)
+A loader.
+;
+L_ANALYZING (25//)
+Analyzing...
+;
+L_NOT_A_BOOT_DISK (26//)
+Not a bootable disk.
+;
+L_RETCODE_NAME (27//)
+retcode = %ld Name = %s
+;
+L_INSTALLING_TO (28//)
+Installing '%s' to %s
+;
+L_INSTALLING (29//)
+Installing %s
+;
+L_YOU_HAVE_THE_OLD (30//)
+\nYou have the old %s v%s\nPlease get %s v%s or later!\n
+;
+L_USING (31//)
+Using external libraries:
+;
+L_KNOWS_BOOT (32//)
+*
+;
+L_KNOWS_LINK (33//)
+*
+;
+L_KNOWS_FILE (34//)
+*
+;
+L_KNOWS_DECRUNCHERS (35//)
+Knows %lD decrunchers types.\n\n
+;
+L_KNOWS_PATCHES (36//)
+Knows %lD patch entries from %lD programs.\n\n
+;
+L_I_HAVE_CHECKED (37//)
+*
+;
+L_BOOTBLOCK (38//)
+bootblock
+;
+L_BOOTBLOCKS (39//)
+bootblocks
+;
+L_FILE (40//)
+file
+;
+L_FILES (41//)
+files
+;
+L_ABOUT (42//)
+About...
+;
+L_LOADING_PATCH_DATA (43//)
+Loading and decrypting patch data...
+;
+L_PATCH_ERROR (44//)
+Error: '%s' is not a valid patch file!
+;
+L_ERROR_LOADING (45//)
+Error loading '%s'!
+;
+L_BB_VIRUS (46//)
+BB virus
+;
+L_FILE_VIRUS (47//)
+File virus
+;
+L_NA (48//)
+N/A
+;
+L_NO_MEM (49//)
+Not enough memory!
+;
+L_SAVING_PREFERENCES (50//)
+Saving preferences...
+;
+L_BOOTBLOCK_C (51//)
+Bootblock
+;
+L_LINK_C (52//)
+Link
+;
+L_FILE_C (53//)
+File
+;
+L_VIRUS_LIST (54//)
+%s virus (%lD)
+;
+L_SELECT_SCREEN_MODE (55//)
+Select a screen mode:
+;
+L_SMALL_SCREEN_SIZE (56//)
+VirusExecutor can't handle this small screen size!
+;
+L_SHIT (57//)
+*
+;
+L_SCREEN_RESTART_MSG (58//)
+*
+;
+L_NO_PICK_SCREEN (59//)
+You didn't pick a screen mode.
+;
+L_VE_REQUIERS (60//)
+*
+;
+L_ERROR (61//)
+Error!
+;
+L_VE_RUNNING (62//)
+*
+;
+L_VE_LIB_NEED (63//)
+VirusExecutor needs '%s' v%ld+!
+;
+L_XVS_MODIFIED (64//)
+Error: xvs.library has been modified!
+;
+L_CHECKING_DRIVES (65//)
+Checking disk drives...
+;
+L_ENTER_PW (66//)
+Please enter password:
+;
+L_FILE_NAME_ERROR (67//)
+File name: %s\n\n    Error: %s
+;
+L_INFECTED_DELETE (68//)
+VIRUS: %s\n\nInfected file:\n'%s'\n\nThis type of virus can only be deleted.
+;
+L_VIRUS_WARNING (69//)
+%s VIRUS WARNING!
+;
+L_DELETE_FILE_AUTO (70//)
+Delete file|Auto delete file virus|Stop checking|Continue
+;
+L_FILE_NOT_DELETED (71//)
+File '%s' could not be deleted!
+;
+L_DATA (72//)
+DATA
+;
+L_VIRUS_INFECTED_ARCHIVE (73//)
+        VIRUS: %s\n\nInfected file: %s\n      Archive: %s
+;
+L_FILE_VIRUS_WARNING (74//)
+FILE VIRUS WARNING!
+;
+L_FILE1 (75//)
+FILE
+;
+L_LINK_VIRUS_WARNING (76//)
+LINK VIRUS WARNING!
+;
+L_VIRUS_INFECTED_FILE (77//)
+VIRUS: %s\n\nInfected file:\n'%s'
+;
+L_REMOVE_VIRUS_AUTO (78//)
+Remove virus|Auto remove link virus|Stop checking|Continue
+;
+L_VIRUS_REMOVED (79//)
+*
+;
+L_SAVE_NEW_FILE (80//)
+Save new file|Cancel
+;
+L_ERROR_WRITING_FILE (81//)
+Error writing file: '%s'!
+;
+L_ERROR_OPENING_FILE (82//)
+Error opening file: '%s'!
+;
+L_ERROR_VIRUS_NOT_REMOVED (83//)
+Error: %s\n\nVirus could'n be removed!
+;
+L_ERROR_REMOVING_VIRUS (84//)
+ERROR REMOVING VIRUS FROM FILE
+;
+L_DELETE_FILE_STOP (85//)
+Delete file|Stop checking|Continue
+;
+L_UNLINKING_FILE (86//)
+Unlinking %s (%s)...
+;
+L_ERROR_UNLINKING (87//)
+Error unlinking file: '%s'!
+;
+L_EXTRACTING (88//)
+*
+;
+L_CHECKING (89//)
+Checking... '%s'
+;
+L_ERROR_READING_FILE (90//)
+Error reading file '%s'!
+;
+L_FILE_CHECK_PAUSED (91//)
+File checking paused
+;
+L_CONTINUE_STOP (92//)
+Continue|Stop checking
+;
+L_USER_BREAK (93//)
+User break!
+;
+L_ERROR65 (94//)
+ERROR: 65\nContact author!
+;
+L_ERROR_LOCKING_DIR (95//)
+ERROR locking dir '%s'!
+;
+L_CHECK_FILES_VIRUS (96//)
+Check files for virus.
+;
+L_ERROR46 (97//)
+ERROR: 46! Contact author...\n
+;
+L_FILE_SCAN_END (98//)
+*
+;
+L_DIR (99//)
+dir
+;
+L_DIRS (100//)
+dirs
+;
+L_ARCHIVE (101//)
+archive
+;
+L_ARCHIVES (102//)
+archives
+;
+L_MINUTE (103//)
+minute
+;
+L_MINUTES (104//)
+minutes
+;
+L_SECOND (105//)
+second
+;
+L_SECONDS (106//)
+seconds
+;
+L_FOUND (107//)
+\n\nFound %lD virus!
+;
+L_NO_KNOWN (108//)
+no known
+;
+L_FILE_CHECK_STATUS (109//)
+File check status.
+;
+L_REBOOT_CANCEL (110//)
+Reboot|Cancel
+;
+L_NO_ENTRIES_FOUND (111//)
+No entries found.
+;
+L_ADDRESS_NAME (112//)
+\nADDRESS    NAME\n\n
+;
+L_LOOK_FOR_TEXT (113//)
+Look for text: VIRUS etc
+;
+L_IT_MIGHT_MEMVIRUS (114//)
+\nIt might be a virus in memory!
+;
+L_VIEW_MEMORY (115//)
+LOCALE STRING IS NOT USED!
+;
+L_ERROR_CLR_VECTORS (116//)
+Error clearing vectors!!\nIt could be a virus in memory!
+;
+L_MEM_VEC_OK (117//)
+\nMemory vectors seems ok.
+;
+L_VECTOR_CHECK (118//)
+Vector check
+;
+L_VIRUS_DETECTED_IN_MEM (119//)
+%s virus detected in memory!\n
+;
+L_VIRUS_REMOVED_MEM (120//)
+\nVirus removed from memory.
+;
+L_NO_KNOWN_VIRUS_MEM (121//)
+No known virus detected in memory.
+;
+L_GREAT (122//)
+Great!
+;
+L_MEMORY_CHECK (123//)
+Memory check
+;
+L_EXIT (124//)
+Done
+;
+L_PROJECT (125//)
+Project
+;
+L_PREFS (126//)
+Prefs...
+;
+L_FILE_CHECK (127//)
+File check
+;
+L_SECTOR_CHECK (128//)
+Sector check
+;
+L_SELECT_SCREEN (129//)
+Select screen mode...
+;
+L_QUIT (130//)
+Quit
+;
+L_SHOW (131//)
+Show
+;
+L_BOOTBLOCK_VIRUS (132//)
+Bootblock virus
+;
+L_LINK_VIRUS (133//)
+Link virus
+;
+L_TASKS (134//)
+Tasks
+;
+L_LIBRARIES (135//)
+Libraries
+;
+L_DEVICES (136//)
+Devices
+;
+L_PATCHES (137//)
+Patches
+;
+L_INSTALL (138//)
+Install
+;
+L_BOOTBLOCK_DATABASE (139//)
+Bootblock database
+;
+L_RECORD (140//)
+Record
+;
+L_VIEW (141//)
+View
+;
+L_EDIT_NAME (142//)
+Edit name
+;
+L_MERGE (143//)
+Merge
+;
+L_DELETE_ONE (144//)
+Delete one
+;
+L_DELETE_ALL (145//)
+Delete all
+;
+L_SAVE (146//)
+Save
+;
+L_UTILITIES (147//)
+Utilities
+;
+L_RENAME_PICTURES (148//)
+Rename pictures
+;
+L_CONVERT_IBN (149//)
+Convert IBN/IBM/IBMM to ISO
+;
+L_SAVE_ROM_TO_FILE (150//)
+Save ROM to file
+;
+L_TRANSLATED_BY (151//)
+Translated to LANGUAGE by PUT YOUR NAME HERE
+;
+L_SEEMS_TO_KICKWORK (152//)
+\n\nSeems to work only with kickstart v%s!
+;
+L_UNKNOWN_BOOTBLOCK (153//)
+Unknown bootblock! %ld%% chance for a virus!
+;
+L_ANALYZE_PERCENT_VIRUS (154//)
+%s analyze: %ld percent chance for a virus here!
+;
+L_WRITES_TO_BOOTBLOCK (155//)
+*
+;
+L_WRITES_TO_UNKNOWN (156//)
+\n\nWrites to unknown place on disk!
+;
+L_DESTROYS_THE_DISK (157//)
+\n\nDestroys the disk!!
+;
+L_COULD_BE_FILEVIRUS (158//)
+\n\nThis could also be a file virus!
+;
+L_UNKNOWN_BB (159//)
+Unknown bootblock! It might be %s.
+;
+L_A_VIRUSKILLER (160//)
+a viruskiller
+;
+L_A_LOADER (161//)
+a loader
+;
+L_A_VIRUSCHECKER (162//)
+a virus checker
+;
+L_AN_UTILITY_INTRO (163//)
+an utility or an intro
+;
+L_CRYPTED_VIRUS (164//)
+crypted! Could be a virus!
+;
+L_HARMLESS_BB (165//)
+Unknown bootblock! (Seems harmless)
+;
+L_AVAIL_CHIP_FAST (166//)
+*
+;
+L_LARGEST_CHIP_FAST (167//)
+*
+;
+L_DIRECTORIES_STAT (168//)
+*
+;
+L_CRUNCHED_DECRUNCHED (169//)
+*
+;
+L_ARCHIVED_EXTRACTED (170//)
+*
+;
+L_VIRUS_FOUND_TIME (171//)
+*
+;
+L_INSTALL_TO (172//)
+Install to %s
+;
+L_ERROR_OPENING_WINDOW (173//)
+Error opening window!
+;
+L_FILE_SYSTEM (174//)
+File system:
+;
+L_INT_MODUS (175//)
+International modus:
+;
+L_DS_MODUS (176//)
+Directory cache:
+;
+L_FROM_DATABASE (177//)
+From database:
+;
+L_DISK_INSTALLED (178//)
+Disk installed.
+;
+L_WINSTALL (179//)
+ Install
+;
+L_WCANCEL (180//)
+Cancel
+;
+L_EXEC_INTERRUPT (181//)
+Exec interrupt vectors in RAM
+;
+L_KICKMEM_ENTRIES (182//)
+KickMemPtr entries:
+;
+L_KICKSTART_AT (183//)
+Kickstart v%s at $%08lx\n\n
+;
+L_ERRORP500 (184//)
+*
+;
+L_LIBRARY_VECTORS (185//)
+Library Vectors in RAM
+;
+L_PREFS_WININFO (186//)
+Prefs (BETA - Press 'Esc' to return)
+;
+L_FILE_CHECKING (187//)
+File checking:
+;
+L_MISC (188//)
+Misc:
+;
+L_P1 (189//)
+Decrunch crunched files
+;
+L_P2 (190//)
+Check data files
+;
+L_P3 (191//)
+Extract LHA archives
+;
+L_P4 (192//)
+Extract LZX archives
+;
+L_P5 (193//)
+Extract ZIP archives
+;
+L_P6 (194//)
+Skip encrypted files
+;
+L_P7 (195//)
+*
+;
+L_DATABASE_EMPTY (196//)
+Database is empty!
+;
+L_CHANGES_DATABASE (197//)
+Changes has been made to the database!\nSave database?
+;
+L_SAVE_CANCEL (198//)
+Save|Cancel
+;
+L_DELETING_DATABASE (199//)
+Deleting database...
+;
+L_DELETE_DATABASE_ALL (200//)
+Delete database?\nYou have %lD bootblocks recorded.\n\nThe database will also be deleted from your drive!
+;
+L_DELETE_CANCEL (201//)
+Delete|Cancel
+;
+L_DELETE_DATABASE (202//)
+Delete database...
+;
+L_ARE_YOU_SURE (203//)
+Are you sure???
+;
+L_DATABASE_DELETED (204//)
+Database is deleted.
+;
+L_ERROR_DELETE_DATABASE (205//)
+Error delete database from disk!
+;
+L_NO_CHANGES_DATABASE (206//)
+No changes in the database!
+;
+L_SAVING_DATABASE (207//)
+Saving database...
+;
+L_SAVING_DATABASE_1 (208//)
+Saving database... %lD
+;
+L_DATABASE_SAVED (209//)
+The database is saved.
+;
+L_ERROR_SAVING_DATABASE (210//)
+Error saving database!
+;
+L_LOADING_DATABASE (211//)
+Loading database...
+;
+L_LOADING_DATABASE_1 (212//)
+Loading database... %lD
+;
+L_NO_MEM_DATABASE (213//)
+Not enough memory to load the entire database!
+;
+L_NOT_A_DATABASE (214//)
+'%s' is not a VirusExecutor database!
+;
+L_ERROR_LOADING_DATABASE (215//)
+Error loading database!
+;
+L_MERGE_DATABASE (216//)
+Merge database...
+;
+L_ERROR_MERGING (217//)
+Error merging from '%s'
+;
+L_NO_MEM_MERGE_DATABASE (218//)
+Not enough memory to merge the entire database!
+;
+L_MERGING (219//)
+Merging %3lD...
+;
+L_MERGE_END (220//)
+Merged %lD %s of %lD.
+;
+L_ERROR_MERGING_DATABASE (221//)
+Error merging database!
+;
+L_RECORDED_VIEW (222//)
+Recorded: %10lD
+;
+L_FREE_VIEW (223//)
+Free:     %10lD
+;
+L_SELECT_BB_INSTALL (224//)
+Select bootblock to install...
+;
+L_CHANGE_NAME (225//)
+Change '%s' to:
+;
+L_CHANGE_TO (226//)
+Change to:
+;
+L_CHANGE_MIND (227//)
+Did you change your mind?
+;
+L_ALLREADY_EXISTS (228//)
+'%s' allready exists!
+;
+L_CHANGED_OK (229//)
+Changed '%s' to '%s'.
+;
+L_VIEW_BB (230//)
+View bootblock...
+;
+L_SELECT_BB_DELETE (231//)
+Select bootblock to delete...
+;
+L_DELETE_ONE_DATABASE (232//)
+\nDelete '%s' from the database?\n
+;
+L_IS_DELETED (233//)
+'%s' is deleted.
+;
+L_ERROR_DELETING_BB (234//)
+Error deleting '%s'!
+;
+L_NO_NEED_RECORD (235//)
+You don't need to record this bootblock!
+;
+L_NO_RECORD_VIRUS (236//)
+I wont let you record this virus!
+;
+L_GIVE_BB_NAME (237//)
+Give the bootblock from %s a name...
+;
+L_NO_MEM_RECORD_BB (238//)
+Not enough memory to record this bootblock!
+;
+L_DATABASE (239//)
+Database...
+;
+L_NO_DISK_ANY_DRIVE (240//)
+No disk in any drive!
+;
+L_SELECT_BB_RECORD (241//)
+Select bootblock\nto record.
+;
+L_RECORD_A_BB (242//)
+Record a bootblock.
+;
+L_MERGING_DATABASE (243//)
+Merging database...
+;
+L_DISK_IN_DRIVE_PROTECTED (244//)
+Disk in drive %s is write protected!
+;
+L_DISK_NO_VALIDATED (245//)
+Disk in drive %s is not validated!
+;
+L_PLEASE_WAIT_SECTOR_CHECK (246//)
+Please wait, sector checking in progress...
+;
+L_CHECKING_CYLINDER (247//)
+Checking cylinder: %ld - %ld to go...
+;
+L_SECTOR_CHECKING_PAUSED (248//)
+Sector checking paused
+;
+L_CONTINUE_CANCEL (249//)
+Continue|Cancel
+;
+L_SECTOR_DESTROYED (250//)
+Sector %lD is destroyed with: %s
+;
+L_BLOCK_INFECTED (251//)
+Block %ld is infected with: %s
+;
+L_REPAIR_SECTOR_CONTINUE (252//)
+Repair sector|Continue
+;
+L_ERROR_REPAIRING (253//)
+Error repairing sector!
+;
+L_SECTORS_CHECKED (254//)
+%lD sectors checked, %lD infections found.
+;
+L_SECTOR_CHECK_END (255//)
+Sector check finished.
+;
+L_SHOWING_TASKS (256//)
+Showing tasks...
+;
+L_PROCESS (257//)
+Process 
+;
+L_TASK (258//)
+Task    
+;
+L_WARNING_NO_NAME (259//)
+*** WARNING - NO NAME! ***
+;
+L_SHOWING_TASKS_1 (260//)
+Showing tasks (%lD)...
+;
+L_NAME_ADDRESS_PRI_TYPE (261//)
+Name                                                Address   Pri  Type
+;
+L_SHOWING_LIBRARIES (262//)
+Showing libraries...
+;
+L_SHOWING_LIBRARIES_1 (263//)
+Showing libraries (%lD)...
+;
+L_NAME_ADDRESS_PRI_VER (264//)
+Name                                              Address   Pri  Version
+;
+L_SHOWING_DEVICES (265//)
+Showing devices...
+;
+L_SHOWING_DEVICES_1 (266//)
+Showing devices (%lD)...
+;
+L_SHOWING_PATCHES (267//)
+Showing patches...
+;
+L_SHOWING_PATCHES_1 (268//)
+Showing patches (%lD)...
+;
+L_NAME (269//)
+Name
+;
+L_SELECT_FILE_TO_FIX (270//)
+Select file to fix...
+;
+L_FIX_IT (271//)
+Fix it
+;
+L_LOAD_TEXT (272//)
+Load text
+;
+L_LOADING (273//)
+Loading '%s'...
+;
+L_CONVERTING (274//)
+Converting...
+;
+L_SAVING (275//)
+Saving...
+;
+L_FILE_IS_NOW_SMALLER (276//)
+File is now %lD chars smaller.
+;
+L_ERROR_SAVING_FILE (277//)
+Error saving file!
+;
+L_NOT_AN_IBN (278//)
+Not an IBN/IBM/IBMM text file!
+;
+L_NOT_AN_ASCII (279//)
+Not an ASCII file!
+;
+L_ERROR_LOADING_FILE (280//)
+Error loading file!
+;
+L_SELECT_FILE (281//)
+Select file...
+;
+L_SAVE_ROM (282//)
+Save ROM
+;
+L_SAVING_ROM_TO (283//)
+Saving ROM (%08lx - %08lx) to '%s'
+;
+L_PATCH_REQUIERS (284//)
+\n\nThis version of VirusExecutor needs v%ld.%02ld+ of PatchBrain!
+;
+L_VE_MODIFIED (285//)
+Error: VirusExecutor has been modified!
+;
+L_KICKTAG_ENTRIES (286//)
+KickTagPtr entries:
+;
+L_VE_NEEDS_XFDMASTER (287//)
+%s needs %s to decrunch crunched files!\nPlease install the latest version of %s.\n\nThe 'Decrunch crunched files' option is now disabled...
+;
+L_UNKNOWN_STARS (288//)
+*** UNKNOWN ***
+;
+L_CPU_INTERRUPT_VECTORS (289//)
+CPU interrupt vectors in RAM (VBR: $%08lx)
+;
+L_VIEWING_MEMORY_AT (290//)
+*
+;
+L_UNKNOWN (291//)
+Unknown
+;
+L_PROGRAMS_FOUND_IN (292//)
+program(s) found in
+;
+L_KNOWN (293//)
+Known
+;
+L_LIST_KICKTAGPTR (294//)
+List KickTagPtr|
+;
+L_LIST_KICKMEMPTR (295//)
+List KickMemPtr|
+;
+L_RESTORE_VECS_CONTINUE (296//)
+Restore vectors|Continue
+;
+L_FOUND_A_CRUNCHED_FILE (297//)
+Found a crunched file!\n\nAre you sure you want to overwrite ALL\ncrunched files with the decrunched buffer?
+;
+L_DO_IT_TURN_OFF (298//)
+Do it!|Turn off the 'Overwrite'-flag
+;
+L_P8 (299//)
+Overwrite crunched files
+;
+L_CALCULATING_CPU_SPEED (300//)
+Calculating processor speed...
+;
+L_SELECT_DISK_SECTOR (301//)
+Select a drive to process the sector checking.
+;
+L_I_HAVE_CHECKED_S (302//)
+I have checked %s %s and %s %s so far.
+;
+L_COLDREBOOT (303//)
+ColdReboot...
+;
+L_REBOOT_THE_MACHINE (304//)
+Reboot the machine?\n\nAll external memory and peripherals will be RESET,\nand the machine will start its power up diagnostics.
+;
+L_CANCEL_REBOOT_CANCEL (305//)
+Cancel|Reboot|Cancel
+;
+L_DATA_VIRUS_WARNING (306//)
+DATA VIRUS WARNING!
+;
+L_P9 (307//)
+*
+;
+L_P10 (308//)
+Skip files older than
+;
+L_P11 (309//)
+day(s)
+;
+L_NON_STANDARD_VECTOR (310//)
+*** NON-STANDARD VECTOR ***
+;
+L_ADDING_TO_FILE_WATCH (311//)
+Adding '%s' to the integrity data base...
+;
+L_NO_FILES_TO_CHECK (312//)
+No files to check!
+;
+L_FW_CHECKING (313//)
+Checking '%s'...
+;
+L_FILE_DOESNT_EXIST (314//)
+File doesn't exist!\n\n'%s'
+;
+L_REMOVE_FROM_LIST_CONT (315//)
+Remove from list|Continue
+;
+L_FILE_OLD_NEW_DIFF (316//)
+    File: '%s'\n\nOld size: %lD\nNew size: %lD\n\n    Diff: %lD
+;
+L_FILE_SIZE_CHANGED (317//)
+FILE SIZE HAS CHANGED!
+;
+L_ACCEPT_CHANGE_CONTINUE (318//)
+Accept change|Continue
+;
+L_FILE_CRC_OLD_NEW (319//)
+*
+;
+L_CRC_CHANGED (320//)
+*
+;
+L_EXE (321//)
+EXECUTABLE
+;
+L_ICON (322//)
+ICON
+;
+L_FW_ERROR (323//)
+ERROR???
+;
+L_FILE_NAME_SIZE_TYPE (324//)
+File name: %s\n     Size: %lD\n\n     Type: %s
+;
+L_ADD_FILE_CANCEL_SKIP (325//)
+Add file|Cancel|Skip file
+;
+L_SAVE_CONTINUE (326//)
+Save|Continue
+;
+L_ADDED_FILES_TO_WATCH (327//)
+Added %lD %s to the integrity data base
+;
+L_SELECT_A_DIRECTORY (328//)
+Select a directory...
+;
+L_SAVING_WATCH (329//)
+Saving 'File integrity' data...
+;
+L_LOADING_WATCH (330//)
+Loading 'File integrity' data...
+;
+L_INCLUDE (331//)
+Include data files
+;
+L_ICONS (332//)
+Exclude icons
+;
+L_CONFIRM (333//)
+Confirm every file
+;
+L_ADD (334//)
+Add
+;
+L_DONE (335//)
+Done
+;
+L_FILE_WATCH (336//)
+File integrity
+;
+L_CHECK_NOW (337//)
+Check now!
+;
+L_ADD_A_DIRECTORY (338//)
+Add a directory
+;
+L_ADD_UPDATE_STARTUP (339//)
+Add/update startup files
+;
+L_ADD_FILES_FROM (340//)
+Add files from a directory
+;
+L_AVAIL_CHIP_FAST_1 (341//)
+*
+;
+L_DIRECTORIES_STAT_1 (342//)
+*
+;
+L_UPDATE_FILES (343//)
+Update files
+;
+L_WRITES_TO_BOOTBLOCK1 (344//)
+\n\nWrites to bootblock! (%ld percent sure)
+;
+L_SOCKET_ERROR (345//)
+Socket error!
+;
+L_CONNECTION_REFUSED (346//)
+Connection refused!
+;
+L_UNKNOWN_HOST (347//)
+Unknown host!
+;
+L_IS_AVAILABLE (348//)
+*
+;
+L_DOWNLOAD_F_CANCEL (349//)
+*
+;
+L_CONNECTING_TO_AMINET (350//)
+*
+;
+L_CHECKING_FOR_UPDATES (351//)
+*
+;
+L_ERROR_SENDING (352//)
+Error sending host request!
+;
+L_README_NOT_FOUND (353//)
+*
+;
+L_ERROR_RECIVING_README (354//)
+*
+;
+L_RECIVING (355//)
+*
+;
+L_DOWNLOAD_COMPLETED (356//)
+*
+;
+L_PLEASE_SELECT (357//)
+*
+;
+L_USA (358//)
+*
+;
+L_NO_TCP (359//)
+No TCP/IP stack seems to be running!
+;
+L_FILE_WATCH_CHANGED (360//)
+File integrity data has been changed!
+;
+L_REMOVE_FILES (361//)
+Remove files...
+;
+L_REMOVE_FROM_LIST (362//)
+Remove '%s'?
+;
+L_REMOVE_CANCEL (363//)
+Remove file|Cancel
+;
+L_SELECT_FILE_TO_REMOVE (364//)
+Select file to remove from the file integrity list...
+;
+L_PLEASE_ADD_FIRST (365//)
+Please add some files first!
+;
+L_WATCH_CHECK_PAUSED (366//)
+File integrity checking paused
+;
+L_UP_NAME (367//)
+Name
+;
+L_UP_VERSION (368//)
+Version
+;
+L_UP_AMINET_VERSION (369//)
+Aminet version
+;
+L_UPDATE_CHECK_FINISHED (370//)
+Update check finished.
+;
+L_UP_RECIVED (371//)
+Recived %ld %s.
+;
+L_UP_UPDATE (372//)
+update
+;
+L_UP_UPDATES (373//)
+updates
+;
+L_VE_NEEDS_XADMASTER (374//)
+%s needs %s v%ld+ to extract LhA+ archive!\nPlease install the latest version of %s.\n\nThe 'Extract # archives' option is now disabled...
+;
+L_ARCHIVE_IS_CRYPTED (375//)
+ARCHIVE IS CRYPTED!\n\n'%s'
+;
+L_ARCHIVE_IS_CORRUPT (376//)
+ARCHIVE IS CORRUPT!\n\n'%s'
+;
+L_FILE_SCAN_END1 (377//)
+Scanned %lD %s and %lD %s\n\nChecked %lD exe %s (%lD crunched)\nChecked %lD data %s\nChecked %lD %s\n\nTime used: %s 
+;
+L_VIRUS_FOUND_TIME1 (378//)
+*
+;
+L_ARCHIVE_ERROR (379//)
+*
+;
+L_SAVING_FILE (380//)
+Saving '%s'...
+;
+L_P12 (381//)
+Fast file checking
+;
+L_VIEWING_MEMORY_AT1 (382//)
+*
+;
+L_KNOWS_DATA (383//)
+*
+;
+L_DATA_C (384//)
+Data
+;
+L_DATA_VIRUS (385//)
+Data virus
+;
+L_MEMORY_AREA (386//)
+Memory area: $%08lx-$%08lx '%s'
+;
+L_MEMORY_MONITOR (387//)
+Memory monitor
+;
+L_LOGGING (388//)
+Write to log file
+;
+L_ICONIFY (389//)
+Iconify
+;
+L_ICONIFY_AT_STARTUP (390//)
+Iconify at startup
+;
+L_COULDNT_CREATE_ICON (391//)
+Couldn't create icon!
+;
+L_NO_WB (392//)
+No Workbench screen available!
+;
+L_XVS_DISABLED (393//)
+xvs.library has been disabled!
+;
+L_EXEC_MODIFIED (394//)
+Error: exec.library has been modified!
+;
+L_FILE_MD5_OLD_NEW (395//)
+   File: '%s'\n\nOld MD5: $%s\nNew MD5: $%s
+;
+L_MD5_CHANGED (396//)
+MD5-128 CHECKSUM HAS CHANGED!
+;
+L_THIS_VERSION_REQUIRES (397//)
+This version requires that you delete your old file integrity data!
+;
+L_SELECT_LOG_PATH (398//)
+Select log path...
+;
+L_VE_NEEDS_DIS_LIB (399//)
+%s needs %s to disassemble memory!
+;
+L_FILE_VIRUS_MENU (400//)
+File virus
+;
+L_KNOWS_VIRUS (401//)
+Knows %3ld virus.\n\n
+;
+L_CHECK_VALID_VOLUMES (402//)
+Check ALL valid volumes
+;
+L_SKIP_KNOWN_DATA_FILES (403//)
+*
+;
+L_EXTRACT_ARCHIVES (404//)
+Extract archives
+;
+L_DO_FILE_CHECK_VOL (405//)
+Do file check on these volumes?
+;
+L_CONTINUE_SKIP_STOP (406//)
+Continue|Skip this volume|Stop
+;
+L_VIRUS_REMOVED_DIFF (407//)
+Virus removed!\n\nOld size: %lD\nNew size: %lD\n\n    Diff: %lD
+;
+L_HIDDEN_EXE_FOUND (408//)
+Hidden executable file found in script!\n\n'%s'
+;
+L_DECODE_CONTINUE (409//)
+Decode script|Continue
+;
+L_FOUND_A_SHELL_SCRIPT (410//)
+Found a Shell Script in:\n\n'%s'
+;
+L_DIRECTORIES (411//)
+Directories:
+;
+L_CRUNCHED (412//)
+Crunched:
+;
+L_ARCHIVED (413//)
+Archived:
+;
+L_VIRUS_FOUND (414//)
+Virus found:
+;
+L_FILES_1 (415//)
+Files:
+;
+L_DECRUNCHED (416//)
+Decrunched:
+;
+L_EXTRACTED (417//)
+Extracted:
+;
+L_TIME (418//)
+Time:
+;
+L_CHECKED (419//)
+Checked:
+;
+L_ERROR_X (420//)
+Error: %s
+;
+L_ARCHIVE_ERROR_1 (421//)
+Archive: %s\n   Type: %s\n   File: %s\n\n  Error: %s
+;
+L_CHECKING_FOR_UPDATES_1 (422//)
+Checking for updates (%s)...
+;
+L_CONNECTING_TO_SERVER (423//)
+Connecting to server...
+;
+L_ERROR_CONNECTING_TO_SERVER (424//)
+Error connecting to server!
+;
+L_ERROR_TALKING_TO_SERVER (425//)
+Error talking to server!
+;
+L_CHECKING_VERSION (426//)
+Checking version...
+;
+L_ERROR_READING_INFO_DATA (427//)
+Error reading info data!
+;
+L_INFO_DATA_IS_CURRUPT (428//)
+Info data is currupt!
+;
+L_NEW_VERSION_FOUND (429//)
+New version found...
+;
+L_NO_NEW_VERSION (430//)
+No new version...
+;
+L_DOWNLOADING_PST (431//)
+Downloading (%3ld%%)...
+;
+L_DOWNLOADING_CPS (432//)
+Downloading %s (%3ld%%, %lD cps)...
+;
+L_DOWNLOAD_COMPLETE (433//)
+Download complete.
+;
+L_CHECKSUM_ERROR (434//)
+Checksum ERROR!
+;
+L_PLEASE_INSTALL (435//)
+Please install '%s'...
+;
+L_OLD (436//)
+Old
+;
+L_NEW (437//)
+New
+;
+L_STATUS (438//)
+Status
+;
+L_COULDNT_FIND_FILE_ON_SERVER (439//)
+Couldn't read file on server!
+;
+L_FOUND_UPDATES (440//)
+Found %ld %s...
+;
+L_INSTALL_CANCEL (441//)
+Install|Cancel
+;
+L_YOU_HAVE_A_SPECIAL (442//)
+You have a special AmigaOS version of the %s\n\nDo you want to replace it with this new shareware version?
+;
+L_INSTALLING_1 (443//)
+Installing...
+;
+L_FINISHED (444//)
+Finished!
+;
+L_ABORTED (445//)
+Aborted!
+;
+L_README_FILES_ARE_LOCATED (446//)
+.readme files are located in %s/\n\nYou have to restart VirusExecutor!
+;
+L_INSTALLING_2 (447//)
+Installing '%s'...
+;
+L_START (448//)
+Start
+;
+L_SELECT_VOLUMES_TO_CHECK (449//)
+Select volumes to check...
+;
+L_NO_NEW_MD5 (450//)
+You have this update! (MD5)
+;
+L_THIS_OPTION_WILL_DISABLE (451//)
+This option will disable ALL requesters during a file scan...\nLogging is now turned on!\n\nLog-file: %s
+;
+L_YOUR_FILES_ARE_UP_TO_DATE (452//)
+Your files are up to date.
+;

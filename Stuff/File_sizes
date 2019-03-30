@@ -1,0 +1,45 @@
+;/*
+Delete VE_File_sizes.o quiet
+sc5 -j73 -v -y -q5e VE_File_size
+quit
+*/
+
+#include <JEO:JEO.h>
+#include <proto/dos.h>
+#include <proto/intuition.h>
+#include <proto/graphics.h>
+#include <proto/gadtools.h>
+#include <exec/memory.h>
+#include <libraries/reqtools.h>
+#include <proto/reqtools.h>
+#include <exec/lists.h>
+#include <-V:VE_Prototypes.h>
+#include <-V:VE_Window.h>
+#include <ctype.h>
+
+#include <proto/xvs.h>
+#include <proto/xfdmaster.h>
+
+typedef struct
+{
+	char Name[108];
+	int size;
+	char Future[100];
+} File_sizes;
+
+File_sizes *fs[1000] = 0;
+
+VOID Update_file_sizes (VOID)
+{
+}
+
+VOID File_sizes (BOOL mode)
+{
+	if (!fs[0])	// Har vi allokert?
+	{
+	}
+	if (mode)
+		Update_file_sizes ();
+	else
+		Check_file_sizes ();
+}

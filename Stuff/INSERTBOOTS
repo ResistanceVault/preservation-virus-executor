@@ -1,0 +1,4 @@
+  Insert_boot (i++, LOADER, 0x9d42b094, 66, "Boot");
+  Insert_boot (i++, UTILITY, 0xe638de47, 720, "MAG ");
+  Insert_boot (i++, UTILITY, 0x42f05e13, 713, "OMNI");
+  Insert_boot (i++, UTILITY, 0x964cb8fa, 784, "SCOO");

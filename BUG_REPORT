@@ -1,0 +1,112 @@
+
+                            BUG REPORT FORM
+                                  for
+                    VirusExecutor by Jan Erik Olausen
+                         (virusexecutor@c2i.net)
+
+
+
+                      THE FOLLOWING IS TESTED BY
+---------------------------------------------------------------------
+YOUR NAME:
+---------------------------------------------------------------------
+EMAIL ADDRESS:
+---------------------------------------------------------------------
+COUNTRY:
+---------------------------------------------------------------------
+
+
+Just replace my configuration examples...
+
+                           PROGRAM VERSIONS
+                           ----------------
+            VirusExecutor: 2.26
+    VirusExecutor.patches: 1.45
+    VirusExecutor.catalog: norsk 2.26
+
+         reqtools.library: 39.3
+              xvs.library: 33.38
+        xfdmaster.library: 39.14
+        xadmaster.library: 12.0
+
+
+                      YOUR MACHINE CONFIGURATION
+                      --------------------------
+
+             MACHINE TYPE: A4000T
+                CPU/CLOCK: 68060/50Mhz
+                FPU/CLOCK: 68060/50Mhz
+               MMU/STATUS: 68060/In use
+                      PPC: None
+
+        KICKSTART VERSION: 40.68 (45.57)
+        ROMUPDATE VERSION: 44.57
+        WORKBENCH VERSION: 45.3
+
+    AMOUNT OF CHIP MEMORY:  2 Mb
+    AMOUNT OF FAST MEMORY: 44 Mb
+
+         BOARDS INSTALLED: CyberSCSI, Hypercom 4Z+
+
+
+THE DETAILS OF THE FOUND BUG(S):
+--------------------------------
+
+
+
+
+
+
+
+
+The guru code number by consequence of the bug:
+
+
+
+ENFORCER TEST
+I have tested the above program with my MMU unit and I got the following
+report:
+
+
+
+
+
+
+The bug is tested with Snoopdos or program alike said the following
+before the guru:
+
+
+
+
+
+
+DOCUMENTATION
+-------------
+   I never read documentations
+
+   The documentation is ok
+
+   The documentation is too diffecult to understand
+
+   Some parts of the documentation are difficult to understand
+
+   The english spelling is ok
+
+   The english spelling is too diffecult to understand
+
+   There is wrong (old) program versions mentioned in the doc's
+
+
+Some details of the documentation to improve:
+---------------------------------------------
+(Write  a little comment concerning your opinion e.g.  correct the doc
+and  add  the  lines here ( Please use line number for every line from
+the original doc for an easy feed-back)
+
+
+
+IMPROVMENTS
+I have the following suggestions:
+
+
+

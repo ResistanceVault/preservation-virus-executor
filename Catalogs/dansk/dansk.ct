@@ -1,0 +1,934 @@
+; This Catalog Descriptor file (".cd")
+; Has been written using
+; ReCatIt Pro V1.00 (07.11.98) - By Fabio Rotondo.
+;
+L_NO_DISK (//)
+Ingen diskette i drevet
+;
+L_MESSAGE (1//)
+Besked
+;
+L_OK (2//)
+Ok
+;
+L_READY (3//)
+Parat
+;
+L_PLEASE_WAIT (4//)
+Vent venligst...
+;
+L_UNKNOWN_TRACKDISK0 (5//)
+Trackdisk fejl %ld: %s
+;
+L_UNKNOWN_TRACKDISK1 (6//)
+Ukendt trackdisk fejl ->%ld<-\nenhed = %ld\nKontakt programmøren!
+;
+L_UNKNOWN_TRACKDISK2 (7//)
+Ukendt trackdisk fejl %ld!
+;
+L_PROF_FILE (8//)
+ProfFileSystem installeret disk.
+;
+L_FLASHBACK (9//)
+Flashback disk nr:
+;
+L_ABACKUP (10//)
+ABackup disk nr:
+;
+L_ERROR_IN_CHECKSUM (11//)
+Fejl i checksum!
+;
+L_UNINST (12//)
+Uinstalleret AmigaDOS disk.
+;
+L_INSTALLED_DOS (13//)
+Installeret AmigaDOS disk
+;
+L_FMS (14//)
+Installeret FMS disk v%s.
+;
+L_CHECKING_BOOTBLOCK (15//)
+Checker bootblock...
+;
+L_BAD_FORMAT_DISK (16//)
+En dårlig formatteret diskette?
+;
+L_VIRUS_1 (17//)
+%s virus!
+;
+L_VIRUS_FOUND_IN (18//)
+%s virus fundet i %s
+;
+L_KILL_VIRUS_CANCEL (19//)
+Slet virus|Afbryd
+;
+L_WARNING (20//)
+ADVARSEL!
+;
+L_UTILITY_BOOT (21//)
+En utility bootblock.
+;
+L_VIRUS_KILLER (22//)
+En virus killer bootblock.
+;
+L_INTRO_BOOT (23//)
+En intro bootblock.
+;
+L_LOADER (24//)
+En Loader bootblock.
+;
+L_ANALYZING (25//)
+Analycerer...
+;
+L_NOT_A_BOOT_DISK (26//)
+Ikke bootklar diskette.
+;
+L_RETCODE_NAME (27//)
+retcode = %ld Navn = %s
+;
+L_INSTALLING_TO (28//)
+Installere '%s' til %s
+;
+L_INSTALLING (29//)
+Installere %s
+;
+L_YOU_HAVE_THE_OLD (30//)
+\nDu har en gammel %s v%s\nBrug %s v%s ellere højere!\nBrug %s v%s ellere højere!\n
+;
+L_USING (31//)
+Bruger externe libraryer:
+;
+L_KNOWS_BOOT (32//)
+Genkender %3ld bootblock virus.\n
+;
+L_KNOWS_LINK (33//)
+Genkender %3ld link virus.\n
+;
+L_KNOWS_FILE (34//)
+Genkender %3ld fil virus.\n\n
+;
+L_KNOWS_DECRUNCHERS (35//)
+Genkender %ld udpakker typer.\n\n
+;
+L_KNOWS_PATCHES (36//)
+Genkender %ld patch enheder fra %ld programer.\n\n
+;
+L_I_HAVE_CHECKED (37//)
+Har checket %ld %s og %ld %s indtil vidre.
+;
+L_BOOTBLOCK (38//)
+bootblock
+;
+L_BOOTBLOCKS (39//)
+bootblocks
+;
+L_FILE (40//)
+fil
+;
+L_FILES (41//)
+filer
+;
+L_ABOUT (42//)
+Omkring...
+;
+L_LOADING_PATCH_DATA (43//)
+Indlæser og decryptere patch data...
+;
+L_PATCH_ERROR (44//)
+Fejl: '%s' er ikke en sikker patch fil!
+;
+L_ERROR_LOADING (45//)
+Fejl ved indlæsning af '%s'!
+;
+L_BB_VIRUS (46//)
+BB virus
+;
+L_FILE_VIRUS (47//)
+Fil virus
+;
+L_NA (48//)
+N/A
+;
+L_NO_MEM (49//)
+Ikke nok hukommelse!
+;
+L_SAVING_PREFERENCES (50//)
+Gemmer prefs...
+;
+L_BOOTBLOCK_C (51//)
+Bootblock
+;
+L_LINK_C (52//)
+Link
+;
+L_FILE_C (53//)
+Fil
+;
+L_VIRUS_LIST (54//)
+ %s virus (%ld)
+;
+L_SELECT_SCREEN_MODE (55//)
+Vælg skærm type:
+;
+L_SMALL_SCREEN_SIZE (56//)
+VirusExecutor kan ikke klare denne lille skærm størrelse!
+;
+L_SHIT (57//)
+Lort!
+;
+L_SCREEN_RESTART_MSG (58//)
+Du bliver nød til at starte VirusExecutor igen for\nat din nye skærm type indstillinger virker.
+;
+L_NO_PICK_SCREEN (59//)
+Du har ikke valgt en skærm type.
+;
+L_VE_REQUIERS (60//)
+\nVirusExecutor skal bruge kickstart v37+!\n\nTryk på en tast...
+;
+L_ERROR (61//)
+Fejl!
+;
+L_VE_RUNNING (62//)
+VirusExecutor er opstartet!
+;
+L_VE_LIB_NEED (63//)
+VirusExecutor behøver '%s' v%ld+!
+;
+L_XVS_MODIFIED (64//)
+Fejl:: xvs.library er blevet ændret!
+;
+L_CHECKING_DRIVES (65//)
+Checker diskette drev...
+;
+L_ENTER_PW (66//)
+Indtast password:
+;
+L_FILE_NAME_ERROR (67//)
+Fil navn: %s\n\n    Fejl: %s
+;
+L_INFECTED_DELETE (68//)
+VIRUS: %s\n\nInficeret fil:\n'%s'\n\nDenne type virus kan kun slettes.
+;
+L_VIRUS_WARNING (69//)
+%s VIRUS ADVARSEL!
+;
+L_DELETE_FILE_AUTO (70//)
+Slet fil|Auto slet fil virus|Stop check|Fortsæt
+;
+L_FILE_NOT_DELETED (71//)
+Filen '%s' kunne ikke slettes!
+;
+L_DATA (72//)
+DATA
+;
+L_VIRUS_INFECTED_ARCHIVE (73//)
+        VIRUS: %s\n\nInficeret fil: %s\n      Arkiv: %s
+;
+L_FILE_VIRUS_WARNING (74//)
+FIL VIRUS ADVARSEL!
+;
+L_FILE1 (75//)
+FIL
+;
+L_LINK_VIRUS_WARNING (76//)
+LINK VIRUS ADVARSEL!
+;
+L_VIRUS_INFECTED_FILE (77//)
+VIRUS: %s\n\nInficeret fil:\n'%s'
+;
+L_REMOVE_VIRUS_AUTO (78//)
+Fjern virus|Auto fjern link virus|Stop check|Fortsæt
+;
+L_VIRUS_REMOVED (79//)
+Virus fjernet!\n\nGammel størrelse: %ld\nNy størrelse: %ld
+;
+L_SAVE_NEW_FILE (80//)
+Gem ny fil|Fortryd
+;
+L_ERROR_WRITING_FILE (81//)
+Fejl ved skrivning af fil: '%s'!
+;
+L_ERROR_OPENING_FILE (82//)
+Fejl ved åbning af fil: '%s'!
+;
+L_ERROR_VIRUS_NOT_REMOVED (83//)
+Fejl: %s\n\nVirus kunne ikke fjernes!
+;
+L_ERROR_REMOVING_VIRUS (84//)
+FEJL FJERNER VIRUS FRA FIL
+;
+L_DELETE_FILE_STOP (85//)
+Slet fil|Stop check|Fortsæt
+;
+L_UNLINKING_FILE (86//)
+Ulinker %s (%s)...
+;
+L_ERROR_UNLINKING (87//)
+Fejl ved ulinkning af fil: '%s'!
+;
+L_EXTRACTING (88//)
+Udpakker... '%s'
+;
+L_CHECKING (89//)
+Checker....   '%s'
+;
+L_ERROR_READING_FILE (90//)
+Fejl ved læsning af fil '%s'!
+;
+L_FILE_CHECK_PAUSED (91//)
+Fil check pause
+;
+L_CONTINUE_STOP (92//)
+Fortsæt|Stop check
+;
+L_USER_BREAK (93//)
+Bruger stop!
+;
+L_ERROR65 (94//)
+FEJL: 65\nKontakt programmør!
+;
+L_ERROR_LOCKING_DIR (95//)
+FEJL låser dir '%s'!
+;
+L_CHECK_FILES_VIRUS (96//)
+Check filer for virus.
+;
+L_ERROR46 (97//)
+FEJL 46! Kontakt programmør...\nFEJL 46! Kontakt programmør...\n
+;
+L_FILE_SCAN_END (98//)
+Scanned %ld %s og %ld %s\n\nChecket %ld exe %s (%ld udpakket)\nChecket %ld data %s\nChecket %ld %s\n\nTid brugt: %ld %s og %ld %s.
+;
+L_DIR (99//)
+dir
+;
+L_DIRS (100//)
+dirs
+;
+L_ARCHIVE (101//)
+arkiv
+;
+L_ARCHIVES (102//)
+arkiver
+;
+L_MINUTE (103//)
+minut
+;
+L_MINUTES (104//)
+minuter
+;
+L_SECOND (105//)
+sekund
+;
+L_SECONDS (106//)
+sekunder
+;
+L_FOUND (107//)
+\n\nFandt %ld virus!
+;
+L_NO_KNOWN (108//)
+ingen kendte
+;
+L_FILE_CHECK_STATUS (109//)
+Fil check status.
+;
+L_REBOOT_CANCEL (110//)
+Reboot|fortryd
+;
+L_NO_ENTRIES_FOUND (111//)
+Ingen entries fundet.
+;
+L_ADDRESS_NAME (112//)
+\nADRESSE    NAVN\n\n\n
+;
+L_LOOK_FOR_TEXT (113//)
+Se efter tekst: VIRUS f.eks.
+;
+L_IT_MIGHT_MEMVIRUS (114//)
+\nDer er måske en virus i hukommelsen!
+;
+L_VIEW_MEMORY (115//)
+Se hukommelsen|Slet vektore|Vis KickMemPtr|Fortryd
+;
+L_ERROR_CLR_VECTORS (116//)
+Fejl ved sletning af vektore!!\nDet kunne være en virus i hukommelsen!
+;
+L_MEM_VEC_OK (117//)
+\nHukommelse vektore ser okay ud.
+;
+L_VECTOR_CHECK (118//)
+Vektor check
+;
+L_VIRUS_DETECTED_IN_MEM (119//)
+%s virus fundet i hukommelsen!\n%s virus fundet i hukommelsen!\n
+;
+L_VIRUS_REMOVED_MEM (120//)
+\nVirus fjerner fra hukommelsen.
+;
+L_NO_KNOWN_VIRUS_MEM (121//)
+Ingen kendt virus fundet i hukommelsen.
+;
+L_GREAT (122//)
+Fint!
+;
+L_MEMORY_CHECK (123//)
+Hukommelses check
+;
+L_EXIT (124//)
+Færdig
+;
+L_PROJECT (125//)
+Project
+;
+L_PREFS (126//)
+Prefs...
+;
+L_FILE_CHECK (127//)
+Fil check
+;
+L_SECTOR_CHECK (128//)
+Sektor check
+;
+L_SELECT_SCREEN (129//)
+Vælg skærm type...
+;
+L_QUIT (130//)
+Afbryd
+;
+L_SHOW (131//)
+Vis
+;
+L_BOOTBLOCK_VIRUS (132//)
+Bootblock virus
+;
+L_LINK_VIRUS (133//)
+Link virus
+;
+L_TASKS (134//)
+Tasks
+;
+L_LIBRARIES (135//)
+Libraries
+;
+L_DEVICES (136//)
+Devices
+;
+L_PATCHES (137//)
+Patches
+;
+L_INSTALL (138//)
+Installer
+;
+L_BOOTBLOCK_DATABASE (139//)
+Bootblock database
+;
+L_RECORD (140//)
+Gem
+;
+L_VIEW (141//)
+Vis
+;
+L_EDIT_NAME (142//)
+Ret navn
+;
+L_MERGE (143//)
+Bland
+;
+L_DELETE_ONE (144//)
+Slet en
+;
+L_DELETE_ALL (145//)
+Slet alle
+;
+L_SAVE (146//)
+Gem
+;
+L_UTILITIES (147//)
+Utilities
+;
+L_RENAME_PICTURES (148//)
+Omdøb billeder
+;
+L_CONVERT_IBN (149//)
+Konvater IBN/IBM/IBMM til ISO
+;
+L_SAVE_ROM_TO_FILE (150//)
+Gem ROM til fil
+;
+L_TRANSLATED_BY (151//)
+Oversat til Dansk af Virus Help Danmark
+;
+L_SEEMS_TO_KICKWORK (152//)
+\n\nSer ud til kun at virke med kickstart v%s!
+;
+L_UNKNOWN_BOOTBLOCK (153//)
+Ukendt bootblock! %ld%% chance for en virus!
+;
+L_ANALYZE_PERCENT_VIRUS (154//)
+%s analyse: %ld procent chance for en ny virus!
+;
+L_WRITES_TO_BOOTBLOCK (155//)
+\n\nSkriver til bootblock! %s
+;
+L_WRITES_TO_UNKNOWN (156//)
+\n\nSkriver til et ukendt sted på disketten!
+;
+L_DESTROYS_THE_DISK (157//)
+\n\nØdelægger disketten!!
+;
+L_COULD_BE_FILEVIRUS (158//)
+\n\nDenne kunne også være en fil virus!
+;
+L_UNKNOWN_BB (159//)
+Ukendt bootblock! Det kan være en  %s.
+;
+L_A_VIRUSKILLER (160//)
+en viruskiller
+;
+L_A_LOADER (161//)
+en loader
+;
+L_A_VIRUSCHECKER (162//)
+en virus checker
+;
+L_AN_UTILITY_INTRO (163//)
+en utility eller en intro
+;
+L_CRYPTED_VIRUS (164//)
+Krypteret! Kan være en virus!
+;
+L_HARMLESS_BB (165//)
+Ukendt bootblock! (Ser uskyldig ud)
+;
+L_AVAIL_CHIP_FAST (166//)
+Tilgængelig (chip): %10ld    Tilgængelig (fast): %10ld
+;
+L_LARGEST_CHIP_FAST (167//)
+Største (chip):     %10ld    Største (fast):     %10ld
+;
+L_DIRECTORIES_STAT (168//)
+Skuffer:       %8ld  Filer:       %8ld  Checket:     %8ld
+;
+L_CRUNCHED_DECRUNCHED (169//)
+Pakket:        %8ld  Udpakket:    %8ld
+;
+L_ARCHIVED_EXTRACTED (170//)
+Arkiver:       %8ld  Udpakket:    %8ld
+;
+L_VIRUS_FOUND_TIME (171//)
+Virus fundet:  %8ld  Tid:         00:%02ld:%02ld
+;
+L_INSTALL_TO (172//)
+Installer til %s
+;
+L_ERROR_OPENING_WINDOW (173//)
+Fejl ved åbning af vindue!
+;
+L_FILE_SYSTEM (174//)
+Fil system:
+;
+L_INT_MODUS (175//)
+International modus:
+;
+L_DS_MODUS (176//)
+Skuffe cache:
+;
+L_FROM_DATABASE (177//)
+Fra database:
+;
+L_DISK_INSTALLED (178//)
+Disk installeret.
+;
+L_WINSTALL (179//)
+ Installer
+;
+L_WCANCEL (180//)
+Fortryd
+;
+L_EXEC_INTERRUPT (181//)
+Exec interrupt vektore i RAM\n\n\n
+;
+L_KICKMEM_ENTRIES (182//)
+KickMemPtr entries:
+;
+L_KICKSTART_AT (183//)
+Kickstart v%s på $%08lx\n\n\n
+;
+L_ERRORP500 (184//)
+FEJL: P500\nKontakt programmøren!
+;
+L_LIBRARY_VECTORS (185//)
+Library Vektore i RAM
+;
+L_PREFS_WININFO (186//)
+Prefs (BETA - Tast 'Esc' for afbryd)
+;
+L_FILE_CHECKING (187//)
+Fil checker:
+;
+L_MISC (188//)
+Misc:
+;
+L_P1 (189//)
+Udpakkede filer
+;
+L_P2 (190//)
+Check data filer
+;
+L_P3 (191//)
+Udpak LHA arkiver
+;
+L_P4 (192//)
+Udpak LZX arkiver
+;
+L_P5 (193//)
+Udpak ZIP arkiver
+;
+L_P6 (194//)
+Spring encrypted filer over
+;
+L_P7 (195//)
+Gem kendte patches
+;
+L_DATABASE_EMPTY (196//)
+Database er tom!
+;
+L_CHANGES_DATABASE (197//)
+Der er foretaget ændringer i databasen!\nGem databasen?
+;
+L_SAVE_CANCEL (198//)
+Gem|Fortryd
+;
+L_DELETING_DATABASE (199//)
+Sletter database...
+;
+L_DELETE_DATABASE_ALL (200//)
+Slette database?\nDu har gemt %ld bootblokke.\n\nDatabase vil også blive slettet fra dit drev!
+;
+L_DELETE_CANCEL (201//)
+Slet|Fortryd
+;
+L_DELETE_DATABASE (202//)
+Sletter database...
+;
+L_ARE_YOU_SURE (203//)
+Er du sikker???
+;
+L_DATABASE_DELETED (204//)
+Database er slettet.
+;
+L_ERROR_DELETE_DATABASE (205//)
+Fejl ved sletning af database fra disk!
+;
+L_NO_CHANGES_DATABASE (206//)
+Ingen ændringer i database!
+;
+L_SAVING_DATABASE (207//)
+Gem databasen...
+;
+L_SAVING_DATABASE_1 (208//)
+Gemmer databasen... %ld
+;
+L_DATABASE_SAVED (209//)
+Database er gemt.
+;
+L_ERROR_SAVING_DATABASE (210//)
+Fejl ved at gemme databasen!
+;
+L_LOADING_DATABASE (211//)
+Indlæs databasen...
+;
+L_LOADING_DATABASE_1 (212//)
+Indlæser databasen... %ld
+;
+L_NO_MEM_DATABASE (213//)
+Ikke nok hukommelse til at hente hele databasen!
+;
+L_NOT_A_DATABASE (214//)
+'%s' er ikke en VirusExecutor database!
+;
+L_ERROR_LOADING_DATABASE (215//)
+Fejl ved indlæsning af databasen!
+;
+L_MERGE_DATABASE (216//)
+Blander databasen...
+;
+L_ERROR_MERGING (217//)
+Fejl ved blanding fra '%s'
+;
+L_NO_MEM_MERGE_DATABASE (218//)
+Ikke nok hukommelse til at blande hele databasen!
+;
+L_MERGING (219//)
+Blander %3ld...
+;
+L_MERGE_END (220//)
+Blander %ld %s ud af %ld.
+;
+L_ERROR_MERGING_DATABASE (221//)
+Fejl ved blanding af databasen!
+;
+L_RECORDED_VIEW (222//)
+Gemte:    %10ld
+;
+L_FREE_VIEW (223//)
+Tomme:    %10ld
+;
+L_SELECT_BB_INSTALL (224//)
+Vælg en bootblok at installere...
+;
+L_CHANGE_NAME (225//)
+Ændret '%s' til:
+;
+L_CHANGE_TO (226//)
+Ændret til:
+;
+L_CHANGE_MIND (227//)
+Ændrede du mening?
+;
+L_ALLREADY_EXISTS (228//)
+'%s' findes i forvejen!
+;
+L_CHANGED_OK (229//)
+Ændrede '%s' til '%s'.
+;
+L_VIEW_BB (230//)
+Vis bootblok...
+;
+L_SELECT_BB_DELETE (231//)
+Vælg den bootblok du vil slette...
+;
+L_DELETE_ONE_DATABASE (232//)
+\nSlet '%s' fra databasen?\nSlet '%s' fra databasen?\n
+;
+L_IS_DELETED (233//)
+'%s' er slettet.
+;
+L_ERROR_DELETING_BB (234//)
+Fejl ved sletning af '%s'!
+;
+L_NO_NEED_RECORD (235//)
+Du behøver ikke at gemme denne bootblok!
+;
+L_NO_RECORD_VIRUS (236//)
+Du får ikke lov til at gemme denne virus!
+;
+L_GIVE_BB_NAME (237//)
+Giv bootblok fra %s et navn...
+;
+L_NO_MEM_RECORD_BB (238//)
+Ikke nok hukommelse til at gemme denne bootblok!
+;
+L_DATABASE (239//)
+Database...
+;
+L_NO_DISK_ANY_DRIVE (240//)
+Ingen disk i drevet!
+;
+L_SELECT_BB_RECORD (241//)
+Vælg bootblok\nat gemme.
+;
+L_RECORD_A_BB (242//)
+Gem en bootblok.
+;
+L_MERGING_DATABASE (243//)
+Blander databasen...
+;
+L_DISK_IN_DRIVE_PROTECTED (244//)
+Disketten i drev %s er skrivebeskyttet!
+;
+L_DISK_NO_VALIDATED (245//)
+»
+;
+L_PLEASE_WAIT_SECTOR_CHECK (246//)
+Vent venligst, sektor check i fuld gang...
+;
+L_CHECKING_CYLINDER (247//)
+Checker cylinder: %ld - %ld tilbage...
+;
+L_SECTOR_CHECKING_PAUSED (248//)
+Sektor check pause
+;
+L_CONTINUE_CANCEL (249//)
+Fortsæt|Fortryd
+;
+L_SECTOR_DESTROYED (250//)
+Sektor %ld er ødelagt af: %s
+;
+L_BLOCK_INFECTED (251//)
+Block %ld er inficeret med: %s
+;
+L_REPAIR_SECTOR_CONTINUE (252//)
+Ret sektor|Fortsæt
+;
+L_ERROR_REPAIRING (253//)
+Fejl ved at rette sektor!
+;
+L_SECTORS_CHECKED (254//)
+%ld sektore checket, %ld infictioner fundet.
+;
+L_SECTOR_CHECK_END (255//)
+Sektor check færdig.
+;
+L_SHOWING_TASKS (256//)
+Viser tasks...
+;
+L_PROCESS (257//)
+Process
+;
+L_TASK (258//)
+Task
+;
+L_WARNING_NO_NAME (259//)
+*** ADVARSEL - INTET NAVN! ***
+;
+L_SHOWING_TASKS_1 (260//)
+Viser tasks (%ld)...
+;
+L_NAME_ADDRESS_PRI_TYPE (261//)
+Navn                                                Adresse   Pri  Type
+;
+L_SHOWING_LIBRARIES (262//)
+Vis libraries...
+;
+L_SHOWING_LIBRARIES_1 (263//)
+Viser libraries (%ld)...
+;
+L_NAME_ADDRESS_PRI_VER (264//)
+Navn                                              Adresse   Pri  Version
+;
+L_SHOWING_DEVICES (265//)
+Vis devices...
+;
+L_SHOWING_DEVICES_1 (266//)
+Viser devices (%ld)...
+;
+L_SHOWING_PATCHES (267//)
+Vis patch...
+;
+L_SHOWING_PATCHES_1 (268//)
+Viser patcher (%ld)...
+;
+L_NAME (269//)
+Navn
+;
+L_SELECT_FILE_TO_FIX (270//)
+Vælg fil du vil fixe...
+;
+L_FIX_IT (271//)
+Fix den
+;
+L_LOAD_TEXT (272//)
+Indlæs tekst
+;
+L_LOADING (273//)
+Indlæser '%s'...
+;
+L_CONVERTING (274//)
+Konvatere...
+;
+L_SAVING (275//)
+Gemmer...
+;
+L_FILE_IS_NOW_SMALLER (276//)
+Filen er nu %ld tegn mindre.
+;
+L_ERROR_SAVING_FILE (277//)
+Fejl ved gemning af fil!
+;
+L_NOT_AN_IBN (278//)
+Ikke en IBN/IBM/IBMM tekst fil!
+;
+L_NOT_AN_ASCII (279//)
+Ikke en ASCII fil!
+;
+L_ERROR_LOADING_FILE (280//)
+Fejl ved indlæsning af fil!
+;
+L_SELECT_FILE (281//)
+Vælg fil...
+;
+L_SAVE_ROM (282//)
+Gem ROM
+;
+L_SAVING_ROM_TO (283//)
+Gemmer ROM (%08lX - %08lX) til '%s'
+;
+L_PATCH_REQUIERS (284//)
+\n\nDenne version af VirusExecutor skal bruge v%ld.%02ld+ af PatchBrain!
+;
+L_VE_MODIFIED (285//)
+Fejl: VirusExecutor er blevet ændret!
+;
+L_KICKTAG_ENTRIES (286//)
+KickTagPtr indgange:
+;
+L_VE_NEEDS_XFDMASTER (287//)
+%s behøver %s for at udpakke filer!\nInstaller venligst den nyeste version af %s.\n\n'Udpak pakkede filer' funktionen er blevet afbrudt...
+;
+L_UNKNOWN_STARS (288//)
+*** UKENDT ***
+;
+L_CPU_INTERRUPT_VECTORS (289//)
+CPU Interrupt Vektore i RAM (VBR: $%08lX)\n\n
+;
+L_VIEWING_MEMORY_AT (290//)
+Se hukommelsen på adressen $%08lX:
+;
+L_UNKNOWN (291//)
+ukendt
+;
+L_PROGRAMS_FOUND_IN (292//)
+program(er) fundet i
+;
+L_KNOWN (293//)
+Kendt
+;
+L_LIST_KICKTAGPTR (294//)
+Vis KickTagPtr|
+;
+L_LIST_KICKMEMPTR (295//)
+Vis KickMemPtr|
+;
+L_RESTORE_VECS_CONTINUE (296//)
+Genskab vektore|Fortsæt
+;
+L_FOUND_A_CRUNCHED_FILE (297//)
+Fandt en pakked fil!\n\nEr du sikker på at du vil erstatte ALLE\npakkede filer med den udpakkede filer?
+;
+L_DO_IT_TURN_OFF (298//)
+Gør det|Fjern 'Overskriv'-flag
+;
+L_P8 (299//)
+Erstat pakkede filer
+;
+L_CALCULATING_CPU_SPEED (300//)
+Udregner processor hastighed...
+;
+L_SELECT_DISK_SECTOR (301//)
+Vælg et drev for at starte sektor check.
+;
+L_I_HAVE_CHECKED_S (302//)
+Jeg har checket %s %s og %s %s indtil vidre.
+;
+L_COLDREBOOT (303//)
+KoldReboot...
+;
+L_REBOOT_THE_MACHINE (304//)
+Reboot computeren?\n\nAl extern hukommelse og peripherals vil blive slettet,\nog computeren vil starte den's strøm diagnostics.
+;
+L_CANCEL_REBOOT_CANCEL (305//)
+Fortryd|Reboot|Fortryd
+;
+L_DATA_VIRUS_WARNING (306//)
+DATA VIRUS WARNING!
+;
+L_P9 (307//)
+Hurtig startup
+;
+L_P10 (308//)
+Spring filer over der er ældre end
+;
+L_P11 (309//)
+dag(e)
+;

@@ -1,0 +1,6 @@
+exec.library                   -372   ramlib                       $02CD64DA
+exec.library                   -444   C:SetPatch                   $02CF2D26
+exec.library                   -444   TurboSpool                   $034ECF3E
+exec.library                   -642   ramlib                       $02CD6268
+utility.library                -198   ramlib                       $02CD6552
+utility.library                -204   ramlib                       $02CD65B0

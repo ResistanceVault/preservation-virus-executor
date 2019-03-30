@@ -1,0 +1,50 @@
+  InsertPatch (EXEC_LIB, -108, 0, 0x60105359, VE_MCPMsg);
+  InsertPatch (EXEC_LIB, -198, 0, 0x60105359, VE_MCPMsg);
+  InsertPatch (EXEC_LIB, -282, 0, 0x60105359, VE_MCPMsg);
+  InsertPatch (EXEC_LIB, -624, 0, 0x60105359, VE_MCPMsg);
+  InsertPatch (EXEC_LIB, -630, 0, 0x60105359, VE_MCPMsg);
+
+  InsertPatch (GFX_LIB, -246, 0, 0x60105359, VE_MCPMsg);
+  InsertPatch (GFX_LIB, -306, 0, 0x60105359, VE_MCPMsg);
+  InsertPatch (GFX_LIB, -606, 0, 0x60105359, VE_MCPMsg);
+
+  InsertPatch (INT_LIB,  -42, 0, 0x60105359, VE_MCPMsg);
+  InsertPatch (INT_LIB,  -60, 0, 0x60105359, VE_MCPMsg);
+  InsertPatch (INT_LIB,  -66, 0, 0x60105359, VE_MCPMsg);
+  InsertPatch (INT_LIB,  -72, 0, 0x60105359, VE_MCPMsg);
+  InsertPatch (INT_LIB,  -78, 0, 0x60105359, VE_MCPMsg);
+  InsertPatch (INT_LIB,  -90, 0, 0x60105359, VE_MCPMsg);
+  InsertPatch (INT_LIB,  -96, 0, 0x60105359, VE_MCPMsg);
+  InsertPatch (INT_LIB, -204, 0, 0x60105359, VE_MCPMsg);
+  InsertPatch (INT_LIB, -210, 0, 0x60105359, VE_MCPMsg);
+  InsertPatch (INT_LIB, -264, 0, 0x60105359, VE_MCPMsg);
+  InsertPatch (INT_LIB, -270, 0, 0x60105359, VE_MCPMsg);
+  InsertPatch (INT_LIB, -276, 0, 0x60105359, VE_MCPMsg);
+  InsertPatch (INT_LIB, -444, 0, 0x60105359, VE_MCPMsg);
+  InsertPatch (INT_LIB, -510, 0, 0x60105359, VE_MCPMsg);
+  InsertPatch (INT_LIB, -588, 0, 0x60105359, VE_MCPMsg);
+  InsertPatch (INT_LIB, -606, 0, 0x60105359, VE_MCPMsg);
+  InsertPatch (INT_LIB, -612, 0, 0x60105359, VE_MCPMsg);
+  InsertPatch (INT_LIB, -636, 0, 0x60105359, VE_MCPMsg);
+
+  InsertPatch (DOS_LIB,  -30, 0, 0x60105359, VE_MCPMsg);
+  InsertPatch (DOS_LIB,  -36, 0, 0x60105359, VE_MCPMsg);
+  InsertPatch (DOS_LIB,  -84, 0, 0x60105359, VE_MCPMsg);
+  InsertPatch (DOS_LIB, -102, 0, 0x60105359, VE_MCPMsg);
+  InsertPatch (DOS_LIB, -150, 0, 0x60105359, VE_MCPMsg);
+  InsertPatch (DOS_LIB, -258, 0, 0x60105359, VE_MCPMsg);
+
+  InsertPatch (GAD_LIB, -30, 0, 0x60105359, VE_MCPMsg);
+  InsertPatch (GAD_LIB, -36, 0, 0x60105359, VE_MCPMsg);
+
+  InsertPatch (LAY_LIB,  -36, 0, 0x60105359, VE_MCPMsg);
+  InsertPatch (LAY_LIB,  -60, 0, 0x60105359, VE_MCPMsg);
+  InsertPatch (LAY_LIB,  -66, 0, 0x60105359, VE_MCPMsg);
+  InsertPatch (LAY_LIB, -180, 0, 0x60105359, VE_MCPMsg);
+  InsertPatch (LAY_LIB, -186, 0, 0x60105359, VE_MCPMsg);
+
+  InsertPatch (MATHIEEE_LIB, -30, 0, 0x60105359, VE_MCPMsg);
+  InsertPatch (MATHIEEE_LIB, -78, 0, 0x60105359, VE_MCPMsg);
+  InsertPatch (MATHIEEE_LIB, -84, 0, 0x60105359, VE_MCPMsg);
+
+  InsertPatch (WB_LIB, -60, 0, 0x60105359, VE_MCPMsg);

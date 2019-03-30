@@ -1,0 +1,1804 @@
+## version $VER: VirusExecutor.catalog 2.33 (19.12.2003)
+## language français
+## codeset 0
+;
+L_NO_DISK
+Pas de disquette dans ce lecteur.
+; No disk in this drive.
+;
+L_MESSAGE
+Message
+; Message
+;
+L_OK
+Ok
+; Ok
+;
+L_READY
+Prêt.
+; Ready.
+;
+L_PLEASE_WAIT
+Veuillez patienter...
+; Please wait...
+;
+L_UNKNOWN_TRACKDISK0
+Erreur Trackdisk %ld : %s
+; Trackdisk error %ld: %s
+;
+L_UNKNOWN_TRACKDISK1
+Erreur Trackdisk inconnue->%ld<-\nunité = %ld\nMerci de contacter l'auteur !
+; Unknown trackdisk error ->%ld<-\nunit = %ld\nPlease contact author!
+;
+L_UNKNOWN_TRACKDISK2
+Erreur Trackdisk inconnue %ld !
+; Unknown trackdisk error %ld!
+;
+L_PROF_FILE
+Un disque PFS installé.
+; A ProfFileSystem installed disk.
+;
+L_FLASHBACK
+*
+; *
+;
+L_ABACKUP
+*
+; *
+;
+L_ERROR_IN_CHECKSUM
+Erreur du test de parité !
+; Error in checksum!
+;
+L_UNINST
+Disquette AmigaDOS non-installée.
+; Uninstalled AmigaDOS disk.
+;
+L_INSTALLED_DOS
+Disquette AmigaDOS installée.
+; Installed AmigaDOS disk
+;
+L_FMS
+Disquette FMS installée v%s.
+; Installed FMS disk v%s.
+;
+L_CHECKING_BOOTBLOCK
+Vérification du bloc d'amorçage...
+; Checking bootblock...
+;
+L_BAD_FORMAT_DISK
+Disquette défectueuse ?
+; A badly formated disk?
+;
+L_VIRUS_1
+%s virus !
+; %s virus!
+;
+L_VIRUS_FOUND_IN
+%s virus trouvé dans %s
+; %s virus found in %s
+;
+L_KILL_VIRUS_CANCEL
+Tuer le virus|Annuler
+; Kill virus|Cancel
+;
+L_WARNING
+ALERTE !
+; WARNING!
+;
+L_UTILITY_BOOT
+Un utilitaire au démarrage.
+; An utility boot.
+;
+L_VIRUS_KILLER
+Un tueur de virus au démarrage.
+; A virus killer boot.
+;
+L_INTRO_BOOT
+Une introduction de démarrage.
+; An intro boot.
+;
+L_LOADER
+Un chargeur.
+; A loader.
+;
+L_ANALYZING
+Analyse en cours...
+; Analyzing...
+;
+L_NOT_A_BOOT_DISK
+Disquette non installée.
+; Not a bootable disk.
+;
+L_RETCODE_NAME
+retcode = %ld Nom = %s
+; retcode = %ld Name = %s
+;
+L_INSTALLING_TO
+Installation « %s » de %s
+; Installing '%s' to %s
+;
+L_INSTALLING
+Installation %s
+; Installing %s
+;
+L_YOU_HAVE_THE_OLD
+\nVous avez l'ancienne %s V %s\nVeuillez récupérer la %s V %s ou plus récente !\n
+; \nYou have the old %s v%s\nPlease get %s v%s or later!\n
+;
+L_USING
+Utilise les bibliothèques externes :
+; Using external libraries:
+;
+L_KNOWS_BOOT
+*
+; *
+;
+L_KNOWS_LINK
+*
+; *
+;
+L_KNOWS_FILE
+*
+; *
+;
+L_KNOWS_DECRUNCHERS
+avec %lD sortes de décompacteurs.\n\n
+; Knows %lD decrunchers types.\n\n
+;
+L_KNOWS_PATCHES
+avec %lD correctifs provenant de %lD programmes.\n\n
+; Knows %lD patch entries from %lD programs.\n\n
+;
+L_I_HAVE_CHECKED
+*
+; *
+;
+L_BOOTBLOCK
+bloc d'amorçage
+; bootblock
+;
+L_BOOTBLOCKS
+blocs d'amorçage
+; bootblocks
+;
+L_FILE
+fichier
+; file
+;
+L_FILES
+fichiers
+; files
+;
+L_ABOUT
+À propos de...
+; About...
+;
+L_LOADING_PATCH_DATA
+Chargement et décryptage des données du correctif...
+; Loading and decrypting patch data...
+;
+L_PATCH_ERROR
+Erreur : « %s » n'est pas un fichier correctif valide !
+; Error: '%s' is not a valid patch file!
+;
+L_ERROR_LOADING
+Erreur au chargement de « %s » !
+; Error loading '%s'!
+;
+L_BB_VIRUS
+Virus BB
+; BB virus
+;
+L_FILE_VIRUS
+Virus fic.
+; File virus
+;
+L_NA
+Non détecté au démarrage...
+; N/A
+;
+L_NO_MEM
+Mémoire insuffisante !
+; Not enough memory!
+;
+L_SAVING_PREFERENCES
+Sauver les réglages...
+; Saving preferences...
+;
+L_BOOTBLOCK_C
+Bloc d'amorçage
+; Bootblock
+;
+L_LINK_C
+Lien
+; Link
+;
+L_FILE_C
+Fichier
+; File
+;
+L_VIRUS_LIST
+ %s virus (%lD)
+;  %s virus (%lD)
+;
+L_SELECT_SCREEN_MODE
+Choisir un mode d'écran :
+; Select a screen mode:
+;
+L_SMALL_SCREEN_SIZE
+VirusExecutor n'utilise pas une taille d'écran si petite !
+; VirusExecutor can't handle this small screen size!
+;
+L_SHIT
+*
+; *
+;
+L_SCREEN_RESTART_MSG
+Redémarrer VirusExecutor pour utiliser\nles nouveaux réglages de l'écran.
+; You'll need to restart VirusExecutor in order\nto make your new Screen Mode settings active.
+;
+L_NO_PICK_SCREEN
+Vous n'avez pas choisi de mode d'écran.
+; You didn't pick a screen mode.
+;
+L_VE_REQUIERS
+*
+; *
+;
+L_ERROR
+Erreur !
+; Error!
+;
+L_VE_RUNNING
+*
+; *
+;
+L_VE_LIB_NEED
+VirusExecutor utilise « %s » V%ld ou + !
+; VirusExecutor needs '%s' v%ld+!
+;
+L_XVS_MODIFIED
+Erreur : xvs.library a été modifiée !
+; Error: xvs.library has been modified!
+;
+L_CHECKING_DRIVES
+Vérification des unités de disques...
+; Checking disk drives...
+;
+L_ENTER_PW
+Veuillez entrer le mot de passe :
+; Please enter password:
+;
+L_FILE_NAME_ERROR
+Nom du fichier : %s\n\n    Erreur : %s
+; File name: %s\n\n    Error: %s
+;
+L_INFECTED_DELETE
+VIRUS : %s\n\nFichier infecté :\n'%s'\n\nCe type de virus peut seulement être effacé.
+; VIRUS: %s\n\nInfected file:\n'%s'\n\nThis type of virus can only be deleted.
+;
+L_VIRUS_WARNING
+%s ATTENTION VIRUS !
+; %s VIRUS WARNING!
+;
+L_DELETE_FILE_AUTO
+Effacer fichier|Effacer auto. fichiers infectés|Arrêter la recherche|Continuer
+; Delete file|Auto delete file virus|Stop checking|Continue
+;
+L_FILE_NOT_DELETED
+Le fichier « %s » ne peut pas être effacé !
+; File '%s' could not be deleted!
+;
+L_DATA
+DONNEES
+; DATA
+;
+L_VIRUS_INFECTED_ARCHIVE
+        VIRUS : %s\n\nFichier infecté : %s\n      Archive : %s
+;         VIRUS: %s\n\nInfected file: %s\n      Archive: %s
+;
+L_FILE_VIRUS_WARNING
+ATTENTION VIRUS FICHIER !
+; FILE VIRUS WARNING!
+;
+L_FILE1
+FICHIER
+; FILE
+;
+L_LINK_VIRUS_WARNING
+ATTENTION VIRUS LIEN !
+; LINK VIRUS WARNING!
+;
+L_VIRUS_INFECTED_FILE
+VIRUS : %s\n\nFichier infecté :\n« %s »
+; VIRUS: %s\n\nInfected file:\n'%s'
+;
+L_REMOVE_VIRUS_AUTO
+Retirer virus|Retirer automatiquement le virus lien|Arrêter la recherche|Continuer
+; Remove virus|Auto remove link virus|Stop checking|Continue
+;
+L_VIRUS_REMOVED
+*
+; *
+;
+L_SAVE_NEW_FILE
+Sauver le nouveau fichier|Annuler
+; Save new file|Cancel
+;
+L_ERROR_WRITING_FILE
+Erreur d'écriture du fichier : « %s » !
+; Error writing file: '%s'!
+;
+L_ERROR_OPENING_FILE
+Erreur d'ouverture du fichier : « %s » !
+; Error opening file: '%s'!
+;
+L_ERROR_VIRUS_NOT_REMOVED
+Erreur: %s\n\nLe virus ne pourra pas être retiré !
+; Error: %s\n\nVirus could'n be removed!
+;
+L_ERROR_REMOVING_VIRUS
+ERREUR EN SUPPRIMANT LE VIRUS DU FICHIER
+; ERROR REMOVING VIRUS FROM FILE
+;
+L_DELETE_FILE_STOP
+Effacer le fichier|Arrêter la recherche|Continuer
+; Delete file|Stop checking|Continue
+;
+L_UNLINKING_FILE
+Suppression du lien %s (%s)...
+; Unlinking %s (%s)...
+;
+L_ERROR_UNLINKING
+Erreur en supprimant le lien du fichier : « %s » !
+; Error unlinking file: '%s'!
+;
+L_EXTRACTING
+*
+; *
+;
+L_CHECKING
+Vérification en cours... « %s »
+; Checking... '%s'
+;
+L_ERROR_READING_FILE
+Erreur de lecture du fichier « %s » !
+; Error reading file '%s'!
+;
+L_FILE_CHECK_PAUSED
+Vérification des fichiers en attente
+; File checking paused
+;
+L_CONTINUE_STOP
+Continuer|Arrêter la vérification
+; Continue|Stop checking
+;
+L_USER_BREAK
+Arrêt utilisateur !
+; User break!
+;
+L_ERROR65
+ERREUR : 65\nPrendre contact avec l'auteur !
+; ERROR: 65\nContact author!
+;
+L_ERROR_LOCKING_DIR
+ERREUR de vérouillage du répertoire « %s » !
+; ERROR locking dir '%s'!
+;
+L_CHECK_FILES_VIRUS
+Chercher virus dans fichiers.
+; Check files for virus.
+;
+L_ERROR46
+ERREUR 46 ! Prendre contact avec l'auteur...\n
+; ERROR: 46! Contact author...\n
+;
+L_FILE_SCAN_END
+*
+; *
+;
+L_DIR
+répertoire
+; dir
+;
+L_DIRS
+répertoires
+; dirs
+;
+L_ARCHIVE
+archive
+; archive
+;
+L_ARCHIVES
+archives
+; archives
+;
+L_MINUTE
+minute
+; minute
+;
+L_MINUTES
+minutes
+; minutes
+;
+L_SECOND
+seconde
+; second
+;
+L_SECONDS
+secondes
+; seconds
+;
+L_FOUND
+\n\nTrouvé %lD virus !
+; \n\nFound %lD virus!
+;
+L_NO_KNOWN
+ne connaît pas
+; no known
+;
+L_FILE_CHECK_STATUS
+État des fichiers vérifiés.
+; File check status.
+;
+L_REBOOT_CANCEL
+Redémarrer|Annuler
+; Reboot|Cancel
+;
+L_NO_ENTRIES_FOUND
+Aucune entrée trouvé.
+; No entries found.
+;
+L_ADDRESS_NAME
+\nADRESSE    NOM\n\n
+; \nADDRESS    NAME\n\n
+;
+L_LOOK_FOR_TEXT
+Chercher le texte : VIRUS, etc...
+; Look for text: VIRUS etc
+;
+L_IT_MIGHT_MEMVIRUS
+\nIl se peut qu'il y a un virus en mémoire !
+; \nIt might be a virus in memory!
+;
+L_VIEW_MEMORY
+---- non utilisé
+; LOCALE STRING IS NOT USED!
+;
+L_ERROR_CLR_VECTORS
+Erreur de nettoyage des vecteurs !!\nCela pourrait-être un virus en mémoire !
+; Error clearing vectors!!\nIt could be a virus in memory!
+;
+L_MEM_VEC_OK
+\nLes vecteurs en mémoire semblent corrects.
+; \nMemory vectors seems ok.
+;
+L_VECTOR_CHECK
+Vérification des vecteurs
+; Vector check
+;
+L_VIRUS_DETECTED_IN_MEM
+%s virus détecté en mémoire !\n
+; %s virus detected in memory!\n
+;
+L_VIRUS_REMOVED_MEM
+\nVirus retiré de la mémoire.
+; \nVirus removed from memory.
+;
+L_NO_KNOWN_VIRUS_MEM
+Pas de virus connu détecté en mémoire.
+; No known virus detected in memory.
+;
+L_GREAT
+Super !
+; Great!
+;
+L_MEMORY_CHECK
+Vérifier la mémoire
+; Memory check
+;
+L_EXIT
+Terminé
+; Done
+;
+L_PROJECT
+Projet
+; Project
+;
+L_PREFS
+Réglages...
+; Prefs...
+;
+L_FILE_CHECK
+Vérifier des fichiers
+; File check
+;
+L_SECTOR_CHECK
+Vérifier les secteurs
+; Sector check
+;
+L_SELECT_SCREEN
+Choisir un mode d'écran...
+; Select screen mode...
+;
+L_QUIT
+Quitter
+; Quit
+;
+L_SHOW
+Montrer
+; Show
+;
+L_BOOTBLOCK_VIRUS
+Virus de bloc d'amorce
+; Bootblock virus
+;
+L_LINK_VIRUS
+Virus de liens
+; Link virus
+;
+L_TASKS
+Tâches 
+; Tasks
+;
+L_LIBRARIES
+Bibliothèques
+; Libraries
+;
+L_DEVICES
+Unités
+; Devices
+;
+L_PATCHES
+Correctifs
+; Patches
+;
+L_INSTALL
+Installer
+; Install
+;
+L_BOOTBLOCK_DATABASE
+Base de données BB
+; Bootblock database
+;
+L_RECORD
+Enregistrer
+; Record
+;
+L_VIEW
+Voir
+; View
+;
+L_EDIT_NAME
+Éditer le nom
+; Edit name
+;
+L_MERGE
+Fusionner
+; Merge
+;
+L_DELETE_ONE
+Effacer un seul
+; Delete one
+;
+L_DELETE_ALL
+Effacer tous
+; Delete all
+;
+L_SAVE
+Sauver
+; Save
+;
+L_UTILITIES
+Utilitaires
+; Utilities
+;
+L_RENAME_PICTURES
+Renommer images
+; Rename pictures
+;
+L_CONVERT_IBN
+Convertir IBN/IBM/IBMM en ISO
+; Convert IBN/IBM/IBMM to ISO
+;
+L_SAVE_ROM_TO_FILE
+Sauver ROM en fichier
+; Save ROM to file
+;
+L_TRANSLATED_BY
+Traduction :  Jean-Marc LEROUX <anubis.horus@online.fr>\nMise à jour : Philippe BOVIER <bovier@club-internet.fr>\nMaintenance : Hervé DUPONT <herve.dpt@free.fr>
+; Translated to LANGUAGE by PUT YOUR NAME HERE
+;
+L_SEEMS_TO_KICKWORK
+\n\nFonctionnera seulement avec le kickstart v%s !
+; \n\nSeems to work only with kickstart v%s!
+;
+L_UNKNOWN_BOOTBLOCK
+Bloc d'amorçage inconnu ! %ld%% de chance que ce soit un virus !
+; Unknown bootblock! %ld%% chance for a virus!
+;
+L_ANALYZE_PERCENT_VIRUS
+%s analyse : %ld pourcent de chance d'y avoir un virus ici !
+; %s analyze: %ld percent chance for a virus here!
+;
+L_WRITES_TO_BOOTBLOCK
+*
+; *
+;
+L_WRITES_TO_UNKNOWN
+\n\nÉcriture a un endroit inconnu du disque !
+; \n\nWrites to unknown place on disk!
+;
+L_DESTROYS_THE_DISK
+\n\nDestruction du disque !!!
+; \n\nDestroys the disk!!
+;
+L_COULD_BE_FILEVIRUS
+\n\nCela pourrait aussi être un virus programme !
+; \n\nThis could also be a file virus!
+;
+L_UNKNOWN_BB
+Bloc d'amorçage inconnu ! Cela pourrait être %s.
+; Unknown bootblock! It might be %s.
+;
+L_A_VIRUSKILLER
+un tueur de virus
+; a viruskiller
+;
+L_A_LOADER
+un chargeur
+; a loader
+;
+L_A_VIRUSCHECKER
+un analyseur de virus
+; a virus checker
+;
+L_AN_UTILITY_INTRO
+une introduction ou un utilitaire
+; an utility or an intro
+;
+L_CRYPTED_VIRUS
+crypté ! Pourrait être un virus !
+; crypted! Could be a virus!
+;
+L_HARMLESS_BB
+Bloc d'amorçage inconnu ! (Il semble inoffensif)
+; Unknown bootblock! (Seems harmless)
+;
+L_AVAIL_CHIP_FAST
+*
+; *
+;
+L_LARGEST_CHIP_FAST
+*
+; *
+;
+L_DIRECTORIES_STAT
+*
+; *
+;
+L_CRUNCHED_DECRUNCHED
+*
+; *
+;
+L_ARCHIVED_EXTRACTED
+*
+; *
+;
+L_VIRUS_FOUND_TIME
+*
+; *
+;
+L_INSTALL_TO
+Installé en %s
+; Install to %s
+;
+L_ERROR_OPENING_WINDOW
+Erreur à l'ouverture de la fenêtre !
+; Error opening window!
+;
+L_FILE_SYSTEM
+Système :
+; File system:
+;
+L_INT_MODUS
+Mode international :
+; International modus:
+;
+L_DS_MODUS
+Répertoire rapide :
+; Directory cache:
+;
+L_FROM_DATABASE
+De base de données:
+; From database:
+;
+L_DISK_INSTALLED
+Disque installé.
+; Disk installed.
+;
+L_WINSTALL
+Installer
+;  Install
+;
+L_WCANCEL
+Annuler
+; Cancel
+;
+L_EXEC_INTERRUPT
+Vecteurs d'interruption Exec en mémoire.\n\n
+; Exec interrupt vectors in RAM
+;
+L_KICKMEM_ENTRIES
+Entrées KickMemPtr :
+; KickMemPtr entries:
+;
+L_KICKSTART_AT
+Kickstart v%s de $%08lx\n\n
+; Kickstart v%s at $%08lx\n\n
+;
+L_ERRORP500
+*
+; *
+;
+L_LIBRARY_VECTORS
+Vecteurs des bibliothèques en mémoire.
+; Library Vectors in RAM
+;
+L_PREFS_WININFO
+Réglages (Appuyez sur « Esc » pour revenir)
+; Prefs (BETA - Press 'Esc' to return)
+;
+L_FILE_CHECKING
+Vérification des fichiers :
+; File checking:
+;
+L_MISC
+Divers :
+; Misc:
+;
+L_P1
+Décompacter les fichiers compactés
+; Decrunch crunched files
+;
+L_P2
+Vérifier les fichiers de données
+; Check data files
+;
+L_P3
+Extraction des archives LHA
+; Extract LHA archives
+;
+L_P4
+Extraction des archives LZX
+; Extract LZX archives
+;
+L_P5
+Extraction des archives ZIP
+; Extract ZIP archives
+;
+L_P6
+Ignorer les fichiers cryptés
+; Skip encrypted files
+;
+L_P7
+*
+; *
+;
+L_DATABASE_EMPTY
+La base de données est vide !
+; Database is empty!
+;
+L_CHANGES_DATABASE
+Des changements dans la base de données ont été\nréalisés ! Sauvegarder la base de données ?
+; Changes has been made to the database!\nSave database?
+;
+L_SAVE_CANCEL
+Sauver|Annuler
+; Save|Cancel
+;
+L_DELETING_DATABASE
+Effacement de la base de données...
+; Deleting database...
+;
+L_DELETE_DATABASE_ALL
+Effacement de la base de données ?\nVous avez enregistré %lD blocs d'amorçage.\n\nLa base de données sera aussi effacée de votre disque !
+; Delete database?\nYou have %lD bootblocks recorded.\n\nThe database will also be deleted from your drive!
+;
+L_DELETE_CANCEL
+Effacer|Annuler
+; Delete|Cancel
+;
+L_DELETE_DATABASE
+Effacement de la base de données...
+; Delete database...
+;
+L_ARE_YOU_SURE
+Êtes-vous sûr ???
+; Are you sure???
+;
+L_DATABASE_DELETED
+Base de données effacée.
+; Database is deleted.
+;
+L_ERROR_DELETE_DATABASE
+Impossible d'effacer la base de données du disque !
+; Error delete database from disk!
+;
+L_NO_CHANGES_DATABASE
+Pas de changement dans la base de données !
+; No changes in the database!
+;
+L_SAVING_DATABASE
+Sauvegarde de la base de données...
+; Saving database...
+;
+L_SAVING_DATABASE_1
+Sauvegarde de la base de données en cours... %lD
+; Saving database... %lD
+;
+L_DATABASE_SAVED
+La base de données a été sauvegardée.
+; The database is saved.
+;
+L_ERROR_SAVING_DATABASE
+Impossible de sauver la base de données !
+; Error saving database!
+;
+L_LOADING_DATABASE
+Chargement de la base de données...
+; Loading database...
+;
+L_LOADING_DATABASE_1
+Chargement de la base de données en cours... %lD
+; Loading database... %lD
+;
+L_NO_MEM_DATABASE
+Mémoire insuffisante pour charger la base de données !
+; Not enough memory to load the entire database!
+;
+L_NOT_A_DATABASE
+« %s » n'est pas une base de données de VirusExecutor !
+; '%s' is not a VirusExecutor database!
+;
+L_ERROR_LOADING_DATABASE
+Impossible de charger la base de données !
+; Error loading database!
+;
+L_MERGE_DATABASE
+Fusion de la base de données en cours...
+; Merge database...
+;
+L_ERROR_MERGING
+Erreur durant la fusion avec « %s »
+; Error merging from '%s'
+;
+L_NO_MEM_MERGE_DATABASE
+Mémoire insuffisante pour fusionner entièrement la base de données !
+; Not enough memory to merge the entire database!
+;
+L_MERGING
+Fusion en cours %3lD...
+; Merging %3lD...
+;
+L_MERGE_END
+Fusionné à %lD %s de %lD.
+; Merged %lD %s of %lD.
+;
+L_ERROR_MERGING_DATABASE
+Erreur durant la fusion de la base de données !
+; Error merging database!
+;
+L_RECORDED_VIEW
+Enregistrée : %10lD
+; Recorded: %10lD
+;
+L_FREE_VIEW
+Libre :    %10lD
+; Free:     %10lD
+;
+L_SELECT_BB_INSTALL
+Choisir un bloc d'amorçage à installer...
+; Select bootblock to install...
+;
+L_CHANGE_NAME
+Changer « %s » en :
+; Change '%s' to:
+;
+L_CHANGE_TO
+Changer en :
+; Change to:
+;
+L_CHANGE_MIND
+Avez-vous changé d'idée ?
+; Did you change your mind?
+;
+L_ALLREADY_EXISTS
+« %s » existe déjà !
+; '%s' allready exists!
+;
+L_CHANGED_OK
+Changé à « %s » de « %s ».
+; Changed '%s' to '%s'.
+;
+L_VIEW_BB
+Voir le bloc d'amorçage...
+; View bootblock...
+;
+L_SELECT_BB_DELETE
+Choisir un bloc d'amorçage à effacer...
+; Select bootblock to delete...
+;
+L_DELETE_ONE_DATABASE
+\nEfface « %s » de la base de données ?\n
+; \nDelete '%s' from the database?\n
+;
+L_IS_DELETED
+« %s » est effacé.
+; '%s' is deleted.
+;
+L_ERROR_DELETING_BB
+Erreur durant l'effacement de « %s » !
+; Error deleting '%s'!
+;
+L_NO_NEED_RECORD
+Inutile d'enregistrer ce bloc d'amorçage !
+; You don't need to record this bootblock!
+;
+L_NO_RECORD_VIRUS
+Je ne vous laisserais pas enregistrer ce virus !
+; I wont let you record this virus!
+;
+L_GIVE_BB_NAME
+Donne un nom %s au bloc d'amorçage...
+; Give the bootblock from %s a name...
+;
+L_NO_MEM_RECORD_BB
+Mémoire insuffisante pour enregistrer ce bloc d'amorçage !
+; Not enough memory to record this bootblock!
+;
+L_DATABASE
+Base de données...
+; Database...
+;
+L_NO_DISK_ANY_DRIVE
+Pas de disque dans les lecteurs !
+; No disk in any drive!
+;
+L_SELECT_BB_RECORD
+Choisir un bloc d'amorçage\nà enregistrer.
+; Select bootblock\nto record.
+;
+L_RECORD_A_BB
+Enregistrer un bloc d'amorçage.
+; Record a bootblock.
+;
+L_MERGING_DATABASE
+Fusion de la base de données en cours...
+; Merging database...
+;
+L_DISK_IN_DRIVE_PROTECTED
+Le disque dans l'unité %s est protégé en écriture !
+; Disk in drive %s is write protected!
+;
+L_DISK_NO_VALIDATED
+Le disque dans l'unité %s n'est pas validé !
+; Disk in drive %s is not validated!
+;
+L_PLEASE_WAIT_SECTOR_CHECK
+Veuillez patienter, vérification des secteurs en cours...
+; Please wait, sector checking in progress...
+;
+L_CHECKING_CYLINDER
+Vérification du cylindre : %ld - %ld restant...
+; Checking cylinder: %ld - %ld to go...
+;
+L_SECTOR_CHECKING_PAUSED
+Vérification des secteurs en attente
+; Sector checking paused
+;
+L_CONTINUE_CANCEL
+Continuer|Annuler
+; Continue|Cancel
+;
+L_SECTOR_DESTROYED
+Secteur %lD détruit par : %s
+; Sector %lD is destroyed with: %s
+;
+L_BLOCK_INFECTED
+Bloc %ld infecté par : %s
+; Block %ld is infected with: %s
+;
+L_REPAIR_SECTOR_CONTINUE
+Réparer le secteur|Continuer
+; Repair sector|Continue
+;
+L_ERROR_REPAIRING
+Erreur durant la réparation du secteur !
+; Error repairing sector!
+;
+L_SECTORS_CHECKED
+%lD secteurs vérifiés, %lD infections trouvées.
+; %lD sectors checked, %lD infections found.
+;
+L_SECTOR_CHECK_END
+Vérification des secteurs terminée.
+; Sector check finished.
+;
+L_SHOWING_TASKS
+Affichage des tâches...
+; Showing tasks...
+;
+L_PROCESS
+Processus 
+; Process 
+;
+L_TASK
+Tâche         
+; Task    
+;
+L_WARNING_NO_NAME
+*** ATTENTION - PAS DE NOM ! ***
+; *** WARNING - NO NAME! ***
+;
+L_SHOWING_TASKS_1
+Affichage des tâches (%lD)...
+; Showing tasks (%lD)...
+;
+L_NAME_ADDRESS_PRI_TYPE
+Nom des tâches                                      Adresse   Pri  Type
+; Name                                                Address   Pri  Type
+;
+L_SHOWING_LIBRARIES
+Affichage des bibliothèques...
+; Showing libraries...
+;
+L_SHOWING_LIBRARIES_1
+Affichage des bibliothèques (%lD)...
+; Showing libraries (%lD)...
+;
+L_NAME_ADDRESS_PRI_VER
+Nom des bibliothèques                              Adresse   Pri  Version
+; Name                                              Address   Pri  Version
+;
+L_SHOWING_DEVICES
+Affichage des unités...
+; Showing devices...
+;
+L_SHOWING_DEVICES_1
+Affichage des unités (%lD)...
+; Showing devices (%lD)...
+;
+L_SHOWING_PATCHES
+Affichage des correctifs...
+; Showing patches...
+;
+L_SHOWING_PATCHES_1
+Affichage des correctifs (%lD)...
+; Showing patches (%lD)...
+;
+L_NAME
+Nom des correctifs
+; Name
+;
+L_SELECT_FILE_TO_FIX
+Choisir un fichier à corriger...
+; Select file to fix...
+;
+L_FIX_IT
+Corriger fichier
+; Fix it
+;
+L_LOAD_TEXT
+Charger texte
+; Load text
+;
+L_LOADING
+Chargement de « %s »...
+; Loading '%s'...
+;
+L_CONVERTING
+Convertion...
+; Converting...
+;
+L_SAVING
+Sauvegarde...
+; Saving...
+;
+L_FILE_IS_NOW_SMALLER
+Le fichier a maintenant %lD d'octets en moins.
+; File is now %lD chars smaller.
+;
+L_ERROR_SAVING_FILE
+Erreur durant la sauvegarde du fichier !
+; Error saving file!
+;
+L_NOT_AN_IBN
+Ce n'est pas un fichier texte IBN/IBM/IBMM !
+; Not an IBN/IBM/IBMM text file!
+;
+L_NOT_AN_ASCII
+Ce n'est pas un fichier ASCII !
+; Not an ASCII file!
+;
+L_ERROR_LOADING_FILE
+Erreur durant le chargement du fichier !
+; Error loading file!
+;
+L_SELECT_FILE
+Choisir un fichier...
+; Select file...
+;
+L_SAVE_ROM
+Sauver la ROM
+; Save ROM
+;
+L_SAVING_ROM_TO
+Sauvegarde de la ROM (%08lx - %08lx) à « %s »
+; Saving ROM (%08lx - %08lx) to '%s'
+;
+L_PATCH_REQUIERS
+\n\nVirusExecutor nécessite la version %ld.%02ld ou plus de PatchBrain !
+; \n\nThis version of VirusExecutor needs v%ld.%02ld+ of PatchBrain!
+;
+L_VE_MODIFIED
+Erreur : VirusExecutor a été modifié !
+; Error: VirusExecutor has been modified!
+;
+L_KICKTAG_ENTRIES
+Entrées KickTagPtr :
+; KickTagPtr entries:
+;
+L_VE_NEEDS_XFDMASTER
+%s nécessite la %s pour décompresser un fichier compacté !\nMerci d'installer la dernière version de %s.\n\nL'option « Décompresser fichiers compactés » est maintenant désactivée...
+; %s needs %s to decrunch crunched files!\nPlease install the latest version of %s.\n\nThe 'Decrunch crunched files' option is now disabled...
+;
+L_UNKNOWN_STARS
+*** INCONNU ***
+; *** UNKNOWN ***
+;
+L_CPU_INTERRUPT_VECTORS
+Vecteurs d'interruption CPU en mémoire (VBR: $%08lx)
+; CPU interrupt vectors in RAM (VBR: $%08lx)
+;
+L_VIEWING_MEMORY_AT
+*
+; *
+;
+L_UNKNOWN
+Inconnu
+; Unknown
+;
+L_PROGRAMS_FOUND_IN
+programme(s) trouvé(s) dans
+; program(s) found in
+;
+L_KNOWN
+Connu
+; Known
+;
+L_LIST_KICKTAGPTR
+Lister KickTagPtr|
+; List KickTagPtr|
+;
+L_LIST_KICKMEMPTR
+Lister KickMemPtr|
+; List KickMemPtr|
+;
+L_RESTORE_VECS_CONTINUE
+Restaurer les vecteurs|Continuer
+; Restore vectors|Continue
+;
+L_FOUND_A_CRUNCHED_FILE
+Un fichier compacté trouvé !\n\nÊtes-vous sûr de vouloir remplacer TOUS les fichiers\ncompactés avec le tampon « décompacté » ?
+; Found a crunched file!\n\nAre you sure you want to overwrite ALL\ncrunched files with the decrunched buffer?
+;
+L_DO_IT_TURN_OFF
+Fais le !|Désactiver le drapeau « Écriture (W) »
+; Do it!|Turn off the 'Overwrite'-flag
+;
+L_P8
+Remplacer les fichiers compactés
+; Overwrite crunched files
+;
+L_CALCULATING_CPU_SPEED
+Estimation de la vitesse du processeur...
+; Calculating processor speed...
+;
+L_SELECT_DISK_SECTOR
+Choisir une unité pour procéder à la vérification du secteur.
+; Select a drive to process the sector checking.
+;
+L_I_HAVE_CHECKED_S
+J'ai vérifié %s %s et %s %s pour l'instant.
+; I have checked %s %s and %s %s so far.
+;
+L_COLDREBOOT
+Démarrage à froid...
+; ColdReboot...
+;
+L_REBOOT_THE_MACHINE
+Redémarrer l'ordinateur ?\n\nLa mémoire et les périphériques vont se ré-initialiser\net l'ordinateur commencera ses tests d'initialisation.
+; Reboot the machine?\n\nAll external memory and peripherals will be RESET,\nand the machine will start its power up diagnostics.
+;
+L_CANCEL_REBOOT_CANCEL
+Annuler|Redémarrer|Annuler
+; Cancel|Reboot|Cancel
+;
+L_DATA_VIRUS_WARNING
+ATTENTION VIRUS DE DONNÉES !
+; DATA VIRUS WARNING!
+;
+L_P9
+*
+; *
+;
+L_P10
+Ignorer les fichiers plus vieux de
+; Skip files older than
+;
+L_P11
+jour(s)
+; day(s)
+;
+L_NON_STANDARD_VECTOR
+*** VECTEURS NON STANDARD ***
+; *** NON-STANDARD VECTOR ***
+;
+L_ADDING_TO_FILE_WATCH
+Ajouter « %s » aux fichiers à examiner...
+; Adding '%s' to the integrity data base...
+;
+L_NO_FILES_TO_CHECK
+Pas de fichier à analyser !
+; No files to check!
+;
+L_FW_CHECKING
+Analyse « %s »...
+; Checking '%s'...
+;
+L_FILE_DOESNT_EXIST
+Le fichier n'existe pas !\n\n« %s »
+; File doesn't exist!\n\n'%s'
+;
+L_REMOVE_FROM_LIST_CONT
+Supprimer de la liste|Continuer
+; Remove from list|Continue
+;
+L_FILE_OLD_NEW_DIFF
+Fichier : « %s »\n\nAncienne taille : %lD\nNouvelle taille : %lD\n\n     Différence : %lD
+;     File: '%s'\n\nOld size: %lD\nNew size: %lD\n\n    Diff: %lD
+;
+L_FILE_SIZE_CHANGED
+LA TAILLE DU FICHIER A CHANGÉ !
+; FILE SIZE HAS CHANGED!
+;
+L_ACCEPT_CHANGE_CONTINUE
+Accepter changement|Continuer
+; Accept change|Continue
+;
+L_FILE_CRC_OLD_NEW
+*
+; *
+;
+L_CRC_CHANGED
+*
+; *
+;
+L_EXE
+EXÉCUTABLE
+; EXECUTABLE
+;
+L_ICON
+ICÔNE
+; ICON
+;
+L_FW_ERROR
+ERREUR ???
+; ERROR???
+;
+L_FILE_NAME_SIZE_TYPE
+Nom du fichier : %s\n        Taille : %lD\n\n          Type : %s
+; File name: %s\n     Size: %lD\n\n     Type: %s
+;
+L_ADD_FILE_CANCEL_SKIP
+Ajouter ce fichier|Annuler|Passer ce fichier
+; Add file|Cancel|Skip file
+;
+L_SAVE_CONTINUE
+Sauver|Continuer
+; Save|Continue
+;
+L_ADDED_FILES_TO_WATCH
+Ajout de %lD %s aux fichiers à examiner
+; Added %lD %s to the integrity data base
+;
+L_SELECT_A_DIRECTORY
+Sélectionner un répertoire...
+; Select a directory...
+;
+L_SAVING_WATCH
+Sauvegarde la liste des fichiers à examiner...
+; Saving 'File integrity' data...
+;
+L_LOADING_WATCH
+Chargement de la liste des fichiers à examiner...
+; Loading 'File integrity' data...
+;
+L_INCLUDE
+Inclure les fichiers de données
+; Include data files
+;
+L_ICONS
+Exclure les icônes
+; Exclude icons
+;
+L_CONFIRM
+Confirmer chaque fichier
+; Confirm every file
+;
+L_ADD
+Ajouter
+; Add
+;
+L_DONE
+Terminé
+; Done
+;
+L_FILE_WATCH
+Examiner fichiers
+; File integrity
+;
+L_CHECK_NOW
+Analyser maintenant !
+; Check now!
+;
+L_ADD_A_DIRECTORY
+Ajouter un répertoire
+; Add a directory
+;
+L_ADD_UPDATE_STARTUP
+Ajouter/maj. fichiers de démarrage
+; Add/update startup files
+;
+L_ADD_FILES_FROM
+Ajouter des fichiers d'un répertoire
+; Add files from a directory
+;
+L_AVAIL_CHIP_FAST_1
+*
+; *
+;
+L_DIRECTORIES_STAT_1
+*
+; *
+;
+L_UPDATE_FILES
+Mise à jour des fichiers
+; Update files
+;
+L_WRITES_TO_BOOTBLOCK1
+\n\nÉcriture du bloc d'amorçage (%ld pourcent effectué)
+; \n\nWrites to bootblock! (%ld percent sure)
+;
+L_SOCKET_ERROR
+Erreur socket !
+; Socket error!
+;
+L_CONNECTION_REFUSED
+Connexion refusée !
+; Connection refused!
+;
+L_UNKNOWN_HOST
+Hôte inconnu !
+; Unknown host!
+;
+L_IS_AVAILABLE
+%s V%s est disponible...\n\nLa version actuelle est %s
+; *
+;
+L_DOWNLOAD_F_CANCEL
+Transférer fichier|Continuer
+; *
+;
+L_CONNECTING_TO_AMINET
+Connexion vers Aminet...
+; *
+;
+L_CHECKING_FOR_UPDATES
+Analyse pour %s mise à jour (%s)...
+; *
+;
+L_ERROR_SENDING
+Erreur lors de l'envoi d'une requête hôte !
+; Error sending host request!
+;
+L_README_NOT_FOUND
+Erreur de lecture du fichier Readme !
+; *
+;
+L_ERROR_RECIVING_README
+Erreur à la réception du fichier Readme !
+; *
+;
+L_RECIVING
+Transfert vers RAM:%s.lha (%s octets, %lD cps)...
+; *
+;
+L_DOWNLOAD_COMPLETED
+Transfert terminé !\n\nLe fichier %s.lha est situé dans RAM:
+; *
+;
+L_PLEASE_SELECT
+Veuillez sélectionner un site Aminet
+; *
+;
+L_USA
+USA|Allemagne|UK|Italie|Suède|Annuler
+; *
+;
+L_NO_TCP
+Pas de pile TCP/IP en fonctionnement !
+; No TCP/IP stack seems to be running!
+;
+L_FILE_WATCH_CHANGED
+La liste des fichiers à examiner a été modifiée !
+; File integrity data has been changed!
+;
+L_REMOVE_FILES
+Retirer des fichiers...
+; Remove files...
+;
+L_REMOVE_FROM_LIST
+Retirer « %s » ?
+; Remove '%s'?
+;
+L_REMOVE_CANCEL
+Retirer le fichier|Annuler
+; Remove file|Cancel
+;
+L_SELECT_FILE_TO_REMOVE
+Sélectionner un fichier à retirer de la liste des fichiers à examiner...
+; Select file to remove from the file integrity list...
+;
+L_PLEASE_ADD_FIRST
+Veuillez tout d'abord ajouter des fichiers !
+; Please add some files first!
+;
+L_WATCH_CHECK_PAUSED
+Analyse des fichiers à examiner en suspend...
+; File integrity checking paused
+;
+L_UP_NAME
+Nom
+; Name
+;
+L_UP_VERSION
+Version
+; Version
+;
+L_UP_AMINET_VERSION
+Version Aminet
+; Aminet version
+;
+L_UPDATE_CHECK_FINISHED
+Mise à jour terminée.
+; Update check finished.
+;
+L_UP_RECIVED
+Reçu %ld %s.
+; Recived %ld %s.
+;
+L_UP_UPDATE
+mise à jour
+; update
+;
+L_UP_UPDATES
+mises à jour
+; updates
+;
+L_VE_NEEDS_XADMASTER
+%s nécessite %s v%ld ou + pour extraire une archive\nLhA+!!!. SVP, installez la dernière version de %s.\n\nL'option « Extraction archives » est maintenant désactivée...
+; %s needs %s v%ld+ to extract LhA+ archive!\nPlease install the latest version of %s.\n\nThe 'Extract # archives' option is now disabled...
+;
+L_ARCHIVE_IS_CRYPTED
+ARCHIVE CRYPTÉE !\n\n« %s »
+; ARCHIVE IS CRYPTED!\n\n'%s'
+;
+L_ARCHIVE_IS_CORRUPT
+ARCHIVE CORROMPUE !\n\n« %s »
+; ARCHIVE IS CORRUPT!\n\n'%s'
+;
+L_FILE_SCAN_END1
+Analysé %lD %s et %lD %s\n\nAnalysé %lD %s exécutable(s) (%lD compacté(s))\nAnalysé %lD %s de données\nAnalysé %lD %s\n\nTemps passé : %s 
+; Scanned %lD %s and %lD %s\n\nChecked %lD exe %s (%lD crunched)\nChecked %lD data %s\nChecked %lD %s\n\nTime used: %s 
+;
+L_VIRUS_FOUND_TIME1
+*
+; *
+;
+L_ARCHIVE_ERROR
+*
+; *
+;
+L_SAVING_FILE
+Sauver « %s »...
+; Saving '%s'...
+;
+L_P12
+Analyse rapide des fichiers
+; Fast file checking
+;
+L_VIEWING_MEMORY_AT1
+*
+; *
+;
+L_KNOWS_DATA
+*
+; *
+;
+L_DATA_C
+Données
+; Data
+;
+L_DATA_VIRUS
+Virus de données
+; Data virus
+;
+L_MEMORY_AREA
+Zone mémoire : $%08lx-$%08lx « %s »
+; Memory area: $%08lx-$%08lx '%s'
+;
+L_MEMORY_MONITOR
+Surveillance mémoire
+; Memory monitor
+;
+L_LOGGING
+Écrire un fichier journal
+; Write to log file
+;
+L_ICONIFY
+Icônifier
+; Iconify
+;
+L_ICONIFY_AT_STARTUP
+Icônifier au démarrage
+; Iconify at startup
+;
+L_COULDNT_CREATE_ICON
+Impossible de créer une icône !
+; Couldn't create icon!
+;
+L_NO_WB
+Pas d'écran Workbench de disponible !
+; No Workbench screen available!
+;
+L_XVS_DISABLED
+La bibliothèque « xvs.library » a été désactivée !
+; xvs.library has been disabled!
+;
+L_EXEC_MODIFIED
+Erreur : « exec.library » a été modifié !
+; Error: exec.library has been modified!
+;
+L_FILE_MD5_OLD_NEW
+   Fichier : '%s'\n\nAncien MD5 : $%s\nNouveau MD5 : $%s
+;    File: '%s'\n\nOld MD5: $%s\nNew MD5: $%s
+;
+L_MD5_CHANGED
+VALEUR AUTO-CONTROLE MD5-128 A ÉTÉ CHANGÉ !
+; MD5-128 CHECKSUM HAS CHANGED!
+;
+L_THIS_VERSION_REQUIRES
+Vous devez effacer l'ancienne liste des fichiers à examiner !
+; This version requires that you delete your old file integrity data!
+;
+L_SELECT_LOG_PATH
+Chemin du journal...
+; Select log path...
+;
+L_VE_NEEDS_DIS_LIB
+%s requiert %s pour désassembler la mémoire !
+; %s needs %s to disassemble memory!
+;
+L_FILE_VIRUS_MENU
+Virus fichier
+; File virus
+;
+L_KNOWS_VIRUS
+avec %3ld virus.\n\n
+; Knows %3ld virus.\n\n
+;
+L_CHECK_VALID_VOLUMES
+Vérifier TOUS les volumes valides
+; Check ALL valid volumes
+;
+L_SKIP_KNOWN_DATA_FILES
+*
+; *
+;
+L_EXTRACT_ARCHIVES
+Extraire les archives
+; Extract archives
+;
+L_DO_FILE_CHECK_VOL
+Vérifier les fichiers sur ces volumes ?
+; Do file check on these volumes?
+;
+L_CONTINUE_SKIP_STOP
+Continuer|Ignorer ce volume|Arrêter
+; Continue|Skip this volume|Stop
+;
+L_VIRUS_REMOVED_DIFF
+Virus retiré !\n\nAncienne taille : %lD\nNouvelle taille : %lD\n\n     Différence : %lD
+; Virus removed!\n\nOld size: %lD\nNew size: %lD\n\n    Diff: %lD
+;
+L_HIDDEN_EXE_FOUND
+Fichier exécutable caché dans le script !\n\n« %s »
+; Hidden executable file found in script!\n\n'%s'
+;
+L_DECODE_CONTINUE
+Décoder le script|Continuer
+; Decode script|Continue
+;
+L_FOUND_A_SHELL_SCRIPT
+Un script DOS trouvé dans :\n\n« %s »
+; Found a Shell Script in:\n\n'%s'
+;
+L_DIRECTORIES
+Répertoires :
+; Directories:
+;
+L_CRUNCHED
+Compacté :
+; Crunched:
+;
+L_ARCHIVED
+Archivé :
+; Archived:
+;
+L_VIRUS_FOUND
+Virus trouvés :
+; Virus found:
+;
+L_FILES_1
+Fichiers :
+; Files:
+;
+L_DECRUNCHED
+Décompacté :
+; Decrunched:
+;
+L_EXTRACTED
+Extrait :
+; Extracted:
+;
+L_TIME
+Heure :
+; Time:
+;
+L_CHECKED
+Vérifié :
+; Checked:
+;
+L_ERROR_X
+Erreur : %s
+; Error: %s
+;
+L_ARCHIVE_ERROR_1
+Archive : %s\n   Type : %s\n   Fichier : %s\n\n  Erreur : %s
+; Archive: %s\n   Type: %s\n   File: %s\n\n  Error: %s
+;
+L_CHECKING_FOR_UPDATES_1
+Recherche des mises à jour (%s)...
+; Checking for updates (%s)...
+;
+L_CONNECTING_TO_SERVER
+Connexion au serveur...
+; Connecting to server...
+;
+L_ERROR_CONNECTING_TO_SERVER
+Erreur lors de la connexion au serveur !
+; Error connecting to server!
+;
+L_ERROR_TALKING_TO_SERVER
+Error de communication avec le serveur !
+; Error talking to server!
+;
+L_CHECKING_VERSION
+Vérification de la version...
+; Checking version...
+;
+L_ERROR_READING_INFO_DATA
+Erreur de lecture des informations !
+; Error reading info data!
+;
+L_INFO_DATA_IS_CURRUPT
+Informations erronnées !
+; Info data is currupt!
+;
+L_NEW_VERSION_FOUND
+Nouvelle version trouvée.
+; New version found...
+;
+L_NO_NEW_VERSION
+Pas de nouvelle version.
+; No new version...
+;
+L_DOWNLOADING_PST
+Téléchargement (%3ld%%)...
+; Downloading (%3ld%%)...
+;
+L_DOWNLOADING_CPS
+Téléchargement %s (%3ld%%, %lD cps)...
+; Downloading %s (%3ld%%, %lD cps)...
+;
+L_DOWNLOAD_COMPLETE
+Téléchargement terminé.
+; Download complete.
+;
+L_CHECKSUM_ERROR
+Erreur de somme de contrôle !
+; Checksum ERROR!
+;
+L_PLEASE_INSTALL
+Veuillez installer « %s ».
+; Please install '%s'...
+;
+L_OLD
+Ancien
+; Old
+;
+L_NEW
+Nouveau
+; New
+;
+L_STATUS
+Statut
+; Status
+;
+L_COULDNT_FIND_FILE_ON_SERVER
+Impossible de lire le fichier sur le serveur !
+; Couldn't read file on server!
+;
+L_FOUND_UPDATES
+Trouvé : %ld %s...
+; Found %ld %s...
+;
+L_INSTALL_CANCEL
+Installer|Annuler
+; Install|Cancel
+;
+L_YOU_HAVE_A_SPECIAL
+Vous avez une version AmigaOS spéciale de %s\n\nVoulez-vous la remplacer part la nouvelle version shareware ?
+; You have a special AmigaOS version of the %s\n\nDo you want to replace it with this new shareware version?
+;
+L_INSTALLING_1
+Installation...
+; Installing...
+;
+L_FINISHED
+Terminé !
+; Finished!
+;
+L_ABORTED
+Interrompu !
+; Aborted!
+;
+L_README_FILES_ARE_LOCATED
+Les fichiers « .readme » se trouvent dans %s/\n\nVous devez redémarrer VirusExecutor !
+; .readme files are located in %s/\n\nYou have to restart VirusExecutor!
+;
+L_INSTALLING_2
+Installation de « %s »...
+; Installing '%s'...
+;
+L_START
+Démarrer
+; Start
+;
+L_SELECT_VOLUMES_TO_CHECK
+Sélectionnez les volumes à vérifier...
+; Select volumes to check...
+;

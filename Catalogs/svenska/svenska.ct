@@ -1,0 +1,1247 @@
+; This Catalog Translation ".ct" file has been written using
+; ReCatIt Pro V1.00 (07.11.98) - By Fabio Rotondo
+;
+## version $VER: VirusExecutor.catalog 1.2 (26.03.00)
+## codeset 0
+## language svenska
+;
+L_NO_DISK
+Ingen disk i driven
+;No disk in this drive.
+;
+L_MESSAGE
+Medelande
+;Message
+;
+L_OK
+Ok
+;Ok
+;
+L_READY
+Färdig
+;Ready.
+;
+L_PLEASE_WAIT
+Var god vänta...
+;Please wait...
+;
+L_UNKNOWN_TRACKDISK0
+Disk fel %ld: %s
+;Trackdisk error %ld: %s
+;
+L_UNKNOWN_TRACKDISK1
+Okänt disk fel ->%ld<-\nunit = %ld\nKontakta författaren!
+;Unknown trackdisk error ->%ld<-\nunit = %ld\nPlease contact author!
+;
+L_UNKNOWN_TRACKDISK2
+Okänt disk fel %ld!
+;Unknown trackdisk error %ld!
+;
+L_PROF_FILE
+En ProfFileSystem installerad disk.
+;A ProfFileSystem installed disk.
+;
+L_FLASHBACK
+Flashback disk nr:
+;Flashback disk nr: 
+;
+L_ABACKUP
+ABackup disk nr:
+;ABackup disk nr: 
+;
+L_ERROR_IN_CHECKSUM
+Fel i checksum!
+;Error in checksum!
+;
+L_UNINST
+Oinstallerad AmigaDOS disk.
+;Uninstalled AmigaDOS disk.
+;
+L_INSTALLED_DOS
+Installerad AmigaDOS disk
+;Installed AmigaDOS disk
+;
+L_FMS
+Installerad FMS disk v%s.
+;Installed FMS disk v%s.
+;
+L_CHECKING_BOOTBLOCK
+Kontrollerar bootblock...
+;Checking bootblock...
+;
+L_BAD_FORMAT_DISK
+En dåligt formaterad disk?
+;A badly formated disk?
+;
+L_VIRUS_1
+%s virus!
+;%s virus!
+;
+L_VIRUS_FOUND_IN
+%s virus hittat i %s
+;%s virus found in %s
+;
+L_KILL_VIRUS_CANCEL
+Ta bort virus|Avbryt
+;Kill virus|Cancel
+;
+L_WARNING
+VARNING!
+;WARNING!
+;
+L_UTILITY_BOOT
+En utility boot.
+;An utility boot.
+;
+L_VIRUS_KILLER
+En virus killer boot.
+;A virus killer boot.
+;
+L_INTRO_BOOT
+Ett intro boot.
+;An intro boot.
+;
+L_LOADER
+En loader.
+;A loader.
+;
+L_ANALYZING
+Analyserar...
+;Analyzing...
+;
+L_NOT_A_BOOT_DISK
+Inte en bootbar disk.
+;Not a bootable disk.
+;
+L_RETCODE_NAME
+retcode = %ld Namn = %s
+;retcode = %ld Name = %s
+;
+L_INSTALLING_TO
+Installerar '%s' to %s
+;Installing '%s' to %s
+;
+L_INSTALLING
+Installerar %s
+;Installing %s
+;
+L_YOU_HAVE_THE_OLD
+\nDu har ett gammalt %s v%s\nVar god skaffa %s v%s eller senare!\n
+;\nYou have the old %s v%s\nPlease get %s v%s or later!\n
+;
+L_USING
+Använder externa libraries:
+;Using external libraries:
+;
+L_KNOWS_BOOT
+Känner till %3ld boot virus.\n
+;Knows %3ld boot virus.\n
+;
+L_KNOWS_LINK
+Känner till %3ld link virus.\n
+;Knows %3ld link virus.\n
+;
+L_KNOWS_FILE
+Känner till %3ld fil virus.\n\n
+;Knows %3ld file virus.\n\n
+;
+L_KNOWS_DECRUNCHERS
+Känner till %ld uppackar typer.\n\n
+;Knows %ld decrunchers types.\n\n
+;
+L_KNOWS_PATCHES
+Känner till %ld patch entries från %ld program.\n\n
+;Knows %ld patch entries from %ld programs.\n\n
+;
+L_I_HAVE_CHECKED
+LOKAL STRÄNG ÄR INTE ANVÄND!
+;*
+;
+L_BOOTBLOCK
+bootblock
+;bootblock
+;
+L_BOOTBLOCKS
+bootblocks
+;bootblocks
+;
+L_FILE
+fil
+;file
+;
+L_FILES
+filer
+;files
+;
+L_ABOUT
+Om...
+;About...
+;
+L_LOADING_PATCH_DATA
+Laddar och dekrypterar patch data...
+;Loading and decrypting patch data...
+;
+L_PATCH_ERROR
+Fel: '%s' är inte en giltig patch fil!
+;Error: '%s' is not a valid patch file!
+;
+L_ERROR_LOADING
+Fel vid laddningen '%s'!
+;Error loading '%s'!
+;
+L_BB_VIRUS
+BB virus
+;BB virus
+;
+L_FILE_VIRUS
+Fil virus
+;File virus
+;
+L_NA
+N/A
+;N/A
+;
+L_NO_MEM
+Inte tillräckligt med minne!
+;Not enough memory!
+;
+L_SAVING_PREFERENCES
+Sparar inställningar...
+;Saving preferences...
+;
+L_BOOTBLOCK_C
+Bootblock
+;Bootblock
+;
+L_LINK_C
+Länk
+;Link
+;
+L_FILE_C
+Fil
+;File
+;
+L_VIRUS_LIST
+ %s virus (%ld)
+; %s virus (%ld)
+;
+L_SELECT_SCREEN_MODE
+Välj skärm läge:
+;Select a screen mode:
+;
+L_SMALL_SCREEN_SIZE
+VirusExecutor kan inte hantera ett så litet skärm läge!
+;VirusExecutor can't handle this small screen size!
+;
+L_SHIT
+Skit!
+;Shit!
+;
+L_SCREEN_RESTART_MSG
+Du måste starta om VirusExecutor för att\nditt nya Skärmläge skall aktiveras.
+;You'll need to restart VirusExecutor in order\nto make your new Screen Mode settings active.
+;
+L_NO_PICK_SCREEN
+Du valde inte ett skärmläge.
+;You didn't pick a screen mode.
+;
+L_VE_REQUIERS
+\nVirusExecutor kräver kickstart v37+!\n\nTryck på valfri tangent...
+;\nVirusExecutor requires kickstart v37+!\n\nHit any key...
+;
+L_ERROR
+Fel!
+;Error!
+;
+L_VE_RUNNING
+VirusExecutor är redan igång!
+;VirusExecutor is allready running!
+;
+L_VE_LIB_NEED
+VirusExecutor behöver '%s' v%ld+!
+;VirusExecutor needs '%s' v%ld+!
+;
+L_XVS_MODIFIED
+Fel: xvs.library har ändrats!
+;Error: xvs.library has been modyfied!
+;
+L_CHECKING_DRIVES
+Kontrollerar disk driven...
+;Checking disk drives...
+;
+L_ENTER_PW
+Skriv lösenord:
+;Please enter password:
+;
+L_FILE_NAME_ERROR
+Fil namn: %s\n\n     Fel: %s
+;File name: %s\n\n    Error: %s
+;
+L_INFECTED_DELETE
+VIRUS: %s\n\nInfekterad fil:\n'%s'\n\nDen här typen av virus kan bara  tas bort.
+;VIRUS: %s\n\nInfected file:\n'%s'\n\nThis type of virus can only be deleted.
+;
+L_VIRUS_WARNING
+%s VIRUS VARNING!
+;%s VIRUS WARNING!
+;
+L_DELETE_FILE_AUTO
+Ta bort fil|Auto ta bort fil virus|Stoppa undersökningen|Fortsätt
+;Delete file|Auto delete file virus|Stop checking|Continue
+;
+L_FILE_NOT_DELETED
+Filen '%s' kunde inte tas bort!
+;File '%s' could not be deleted!
+;
+L_DATA
+DATA
+;DATA
+;
+L_VIRUS_INFECTED_ARCHIVE
+         VIRUS: %s\n\nInfekterad fil: %s\n         Arkiv: %s
+;        VIRUS: %s\n\nInfected file: %s\n      Archive: %s
+;
+L_FILE_VIRUS_WARNING
+FIL VIRUS VARNING!
+;FILE VIRUS WARNING!
+;
+L_FILE1
+FIL
+;FILE
+;
+L_LINK_VIRUS_WARNING
+LINK VIRUS VARNING!
+;LINK VIRUS WARNING!
+;
+L_VIRUS_INFECTED_FILE
+VIRUS: %s\n\nInfekterad fil:\n'%s'
+;VIRUS: %s\n\nInfected file:\n'%s'
+;
+L_REMOVE_VIRUS_AUTO
+Ta bort virus|Auto ta bort link virus|Stoppa undersökningen|Fortsätt
+;Remove virus|Auto remove link virus|Stop checking|Continue
+;
+L_VIRUS_REMOVED
+Virus borttaget!\n\nGammal storlek: %ld\n    Ny storlek: %ld
+;Virus removed!\n\nOld size: %ld\nNew size: %ld
+;
+L_SAVE_NEW_FILE
+Spara ny fil|Avbrytl
+;Save new file|Cancel
+;
+L_ERROR_WRITING_FILE
+Fel vid skrivning av filen: '%s'!
+;Error writing file: '%s'!
+;
+L_ERROR_OPENING_FILE
+Fel vid öppning av filen: '%s'!
+;Error opening file: '%s'!
+;
+L_ERROR_VIRUS_NOT_REMOVED
+Fel: %s\n\nVirus kan inte tas bort!
+;Error: %s\n\nVirus could'n be removed!
+;
+L_ERROR_REMOVING_VIRUS
+FEL VID BORTTAGANDE AV VIRUS FRÅN FILEN
+;ERROR REMOVING VIRUS FROM FILE
+;
+L_DELETE_FILE_STOP
+Ta bort fil|Stopp kontroll|Fortsätt
+;Delete file|Stop checking|Continue
+;
+L_UNLINKING_FILE
+Unlinking %s (%s)...
+;Unlinking %s (%s)...
+;
+L_ERROR_UNLINKING
+Fel unlinking fil: '%s'!
+;Error unlinking file: '%s'!
+;
+L_EXTRACTING
+Packar upp... '%s'
+;Extracting... '%s'
+;
+L_CHECKING
+Kontrollera...   '%s'
+;Checking...   '%s'
+;
+L_ERROR_READING_FILE
+Fel vid läsning av filen '%s'!
+;Error reading file '%s'!
+;
+L_FILE_CHECK_PAUSED
+Fil kontroll paus
+;File checking paused
+;
+L_CONTINUE_STOP
+Fortsätt|Stopp kontroll
+;Continue|Stop checking
+;
+L_USER_BREAK
+Användar stopp!
+;User break!
+;
+L_ERROR65
+FEL: 65\nKontakta författaren!
+;ERROR: 65\nContact author!
+;
+L_ERROR_LOCKING_DIR
+FEL låsning dir '%s'!
+;ERROR locking dir '%s'!
+;
+L_CHECK_FILES_VIRUS
+Söker i filer efter virus.
+;Check files for virus.
+;
+L_ERROR46
+FEL 46! Kontakta författaren...\n
+;ERROR 46! Contact author...\n
+;
+L_FILE_SCAN_END
+Scannad %ld %s och %ld %s\n\nKontrollerat %ld exe %s (%ld packad)\nKontrollerat %ld data %s\nKontrollerat %ld %s\n\nTid använd: %ld %s och %ld %s.
+;Scanned %ld %s and %ld %s\n\nChecked %ld exe %s (%ld crunched)\nChecked %ld data %s\nChecked %ld %s\n\nTime used: %ld %s and %ld %s.
+;
+L_DIR
+dir
+;dir
+;
+L_DIRS
+dirs
+;dirs
+;
+L_ARCHIVE
+arkiv
+;archive
+;
+L_ARCHIVES
+arkiven
+;archives
+;
+L_MINUTE
+minut
+;minute
+;
+L_MINUTES
+minuter
+;minutes
+;
+L_SECOND
+sekund
+;second
+;
+L_SECONDS
+sekunder
+;seconds
+;
+L_FOUND
+\n\nHittat %ld virus!
+;\n\nFound %ld virus!
+;
+L_NO_KNOWN
+okänd
+;no known
+;
+L_FILE_CHECK_STATUS
+Fil kontroll status.
+;File check status.
+;
+L_REBOOT_CANCEL
+Starta om|Avbryt
+;Reboot|Cancel
+;
+L_NO_ENTRIES_FOUND
+Inga entries hittade.
+;No entries found.
+;
+L_ADDRESS_NAME
+\nADRESS    NAMN\n\n
+;\nADDRESS    NAME\n\n
+;
+L_LOOK_FOR_TEXT
+Leta efter text: VIRUS etc
+;Look for text: VIRUS etc
+;
+L_IT_MIGHT_MEMVIRUS
+\nIt det kan vara ett virus i minnet!
+;\nIt might be a virus in memory!
+;
+L_VIEW_MEMORY
+LOKAL STRÄNG ÄR INTE ANVÄND!
+;LOCALE STRING IS NOT USED!
+;
+L_ERROR_CLR_VECTORS
+Fel vid rensning av vektorerna!!\nIt kan vara ett virus i minnet!
+;Error clearing vectors!!\nIt could be a virus in memory!
+;
+L_MEM_VEC_OK
+\nMinnes vektorerna verkar ok.
+;\nMemory vectors seems ok.
+;
+L_VECTOR_CHECK
+Vektor kontroll
+;Vector check
+;
+L_VIRUS_DETECTED_IN_MEM
+%s virus hittat i minnet!\n
+;%s virus detected in memory!\n
+;
+L_VIRUS_REMOVED_MEM
+\nVirus borttaget från minnet.
+;\nVirus removed from memory.
+;
+L_NO_KNOWN_VIRUS_MEM
+Inga kända virus upptäckta i minnet.
+;No known virus detected in memory.
+;
+L_GREAT
+Toppen!
+;Great!
+;
+L_MEMORY_CHECK
+Minnes kontroll
+;Memory check
+;
+L_EXIT
+Färdig
+;Done
+;
+L_PROJECT
+Projekt
+;Project
+;
+L_PREFS
+Prefs...
+;Prefs...
+;
+L_FILE_CHECK
+Fil kontroll
+;File check
+;
+L_SECTOR_CHECK
+Sektor kontroll
+;Sector check
+;
+L_SELECT_SCREEN
+Välj skärm läge...
+;Select screen mode...
+;
+L_QUIT
+Sluta
+;Quit
+;
+L_SHOW
+Visa
+;Show
+;
+L_BOOTBLOCK_VIRUS
+Bootblock virus
+;Bootblock virus
+;
+L_LINK_VIRUS
+Link virus
+;Link virus
+;
+L_TASKS
+Tasks
+;Tasks
+;
+L_LIBRARIES
+Libraries
+;Libraries
+;
+L_DEVICES
+Devices
+;Devices
+;
+L_PATCHES
+Patchar
+;Patches
+;
+L_INSTALL
+Installera
+;Install
+;
+L_BOOTBLOCK_DATABASE
+Bootblock databas
+;Bootblock database
+;
+L_RECORD
+Registrera
+;Record
+;
+L_VIEW
+Visa
+;View
+;
+L_EDIT_NAME
+Editera namn
+;Edit name
+;
+L_MERGE
+Slå ihop
+;Merge
+;
+L_DELETE_ONE
+Ta bort  en
+;Delete one
+;
+L_DELETE_ALL
+Ta bort alla
+;Delete all
+;
+L_SAVE
+Spara
+;Save
+;
+L_UTILITIES
+Utilities
+;Utilities
+;
+L_RENAME_PICTURES
+Döp om bilder
+;Rename pictures
+;
+L_CONVERT_IBN
+Konverta IBN/IBM/IBMM till ISO
+;Convert IBN/IBM/IBMM to ISO
+;
+L_SAVE_ROM_TO_FILE
+Spara ROM till fil
+;Save ROM to file
+;
+L_TRANSLATED_BY
+Översatt till SVENSKA av Börje Karlsson
+;Translated to LANGUAGE by PUT YOUR NAME HERE
+;
+L_SEEMS_TO_KICKWORK
+\n\nVerkar bara fungera med kickstart v%s!
+;\n\nSeems to work only with kickstart v%s!
+;
+L_UNKNOWN_BOOTBLOCK
+Okänt bootblock! %ld%% kan vara ett virus!
+;Unknown bootblock! %ld%% chance for a virus!
+;
+L_ANALYZE_PERCENT_VIRUS
+%s analys: %ld procent chans för ett virus här!
+;%s analyze: %ld percent chance for a virus here!
+;
+L_WRITES_TO_BOOTBLOCK
+\n\nSkriver till bootblock! %s
+;\n\nWrites to bootblock! %s
+;
+L_WRITES_TO_UNKNOWN
+\n\nSkriver till okänd plats på disken!
+;\n\nWrites to unknown place on disk!
+;
+L_DESTROYS_THE_DISK
+\n\nFörstör disken!!
+;\n\nDestroys the disk!!
+;
+L_COULD_BE_FILEVIRUS
+\n\nDet här kan också vara ett fil virus!
+;\n\nThis could also be a file virus!
+;
+L_UNKNOWN_BB
+Okänt bootblock! Kan vara %s.
+;Unknown bootblock! It might be %s.
+;
+L_A_VIRUSKILLER
+en viruskiller
+;a viruskiller
+;
+L_A_LOADER
+en loader
+;a loader
+;
+L_A_VIRUSCHECKER
+en virus checker
+;a virus checker
+;
+L_AN_UTILITY_INTRO
+ett utility eller ett intro
+;an utility or an intro
+;
+L_CRYPTED_VIRUS
+krypterad! Kan vara ett virus!
+;crypted! Could be a virus!
+;
+L_HARMLESS_BB
+Okänt bootblock! (Verkar harmlöst)
+;Unknown bootblock! (Seems harmless)
+;
+L_AVAIL_CHIP_FAST
+Tillgängligt (chip): %10ld    Tillgängligt (fast): %10ld
+;Available (chip): %10ld    Available (fast): %10ld
+;
+L_LARGEST_CHIP_FAST
+Största (chip):   %10ld    Största (fast):   %10ld
+;*
+;
+L_DIRECTORIES_STAT
+Directories:   %8ld  Filer:       %8ld  Kontrollerat:%8ld
+;Directories:   %8ld  Files:       %8ld  Checked:     %8ld
+;
+L_CRUNCHED_DECRUNCHED
+Packade:       %8ld  Uppackade:   %8ld
+;Chrunched:     %8ld  Decrunched:  %8ld
+;
+L_ARCHIVED_EXTRACTED
+Arkiverat:     %8ld  Packat upp:  %8ld
+;Archived:      %8ld  Extracted:   %8ld
+;
+L_VIRUS_FOUND_TIME
+Virus hittat:  %8ld  Tid:         00:%02ld:%02ld
+;Virus found:   %8ld  Time:        00:%02ld:%02ld
+;
+L_INSTALL_TO
+Installera till %s
+;Install to %s
+;
+L_ERROR_OPENING_WINDOW
+Fel vid öppnandet av fönstret!
+;Error opening window!
+;
+L_FILE_SYSTEM
+Fil system:
+;File system:
+;
+L_INT_MODUS
+International modus:
+;International modus:
+;
+L_DS_MODUS
+Directory cache:
+;Directory cache:
+;
+L_FROM_DATABASE
+Från databas:
+;From database:
+;
+L_DISK_INSTALLED
+Disk installerad.
+;Disk installed.
+;
+L_WINSTALL
+ Installera
+; Install
+;
+L_WCANCEL
+Avbrytl
+;Cancel
+;
+L_EXEC_INTERRUPT
+Exec interrupt vektorer i RAM\n\n
+;Exec interrupt vectors in RAM\n\n
+;
+L_KICKMEM_ENTRIES
+KickMemPtr entries:
+;KickMemPtr entries:
+;
+L_KICKSTART_AT
+Kickstart v%s at $%08lx\n\n
+;Kickstart v%s at $%08lx\n\n
+;
+L_ERRORP500
+FEL: P500\nKontakta författaren!
+;ERROR: P500\nContact author!
+;
+L_LIBRARY_VECTORS
+Library Vectors i RAM
+;Library Vectors in RAM
+;
+L_PREFS_WININFO
+Prefs (BETA - Tryck 'Esc' för att återgå)
+;Prefs (BETA - Press 'Esc' to return)
+;
+L_FILE_CHECKING
+Fil kontroll:
+;File checking:
+;
+L_MISC
+Misc:
+;Misc:
+;
+L_P1
+Packa upp packade filer
+;Decrunch crunched files
+;
+L_P2
+Kontrollera data filer
+;Check data files
+;
+L_P3
+Packa upp LHA arkiv
+;Extract LHA archives
+;
+L_P4
+Packa upp LZX arkiv
+;Extract LZX archives
+;
+L_P5
+Packa upp ZIP arkiv
+;Extract ZIP archives
+;
+L_P6
+Hoppa över krypterade filer
+;Skip encrypted files
+;
+L_P7
+Göm kända patcher
+;Hide known patches
+;
+L_DATABASE_EMPTY
+Databasen är tom!
+;Database is empty!
+;
+L_CHANGES_DATABASE
+Databasen har ändrats!\nSpara databasen?
+;Changes has been made to the database!\nSave database?
+;
+L_SAVE_CANCEL
+Spara|Avbryt
+;Save|Cancel
+;
+L_DELETING_DATABASE
+Tar bort databas...
+;Deleting database...
+;
+L_DELETE_DATABASE_ALL
+Tar bort databasen?\nDu har %ld bootblocks registrerade.\n\nDatabasen kommer att tas bort ifrån driven!
+;Delete database?\nYou have %ld bootblocks recorded.\n\nThe database will also be deleted from your drive!
+;
+L_DELETE_CANCEL
+Ta bort|Avbryt
+;Delete|Cancel
+;
+L_DELETE_DATABASE
+Ta bort databasen...
+;Delete database...
+;
+L_ARE_YOU_SURE
+Är du säker???
+;Are you sure???
+;
+L_DATABASE_DELETED
+Databasen är borttagen.
+;Database is deleted.
+;
+L_ERROR_DELETE_DATABASE
+Fel vid borttagandet av databasen från disken!
+;Error delete database from disk!
+;
+L_NO_CHANGES_DATABASE
+Inga ändringar i databasen!
+;No changes in the database!
+;
+L_SAVING_DATABASE
+Spara databasen...
+;Saving database...
+;
+L_SAVING_DATABASE_1
+Spara databasen... %ld
+;Saving database... %ld
+;
+L_DATABASE_SAVED
+Databasen är sparad.
+;The database is saved.
+;
+L_ERROR_SAVING_DATABASE
+Fel vid sparandet av databasen!
+;Error saving database!
+;
+L_LOADING_DATABASE
+Laddar databasen...
+;Loading database...
+;
+L_LOADING_DATABASE_1
+Laddar databasen... %ld
+;Loading database... %ld
+;
+L_NO_MEM_DATABASE
+Inte tillräckligt med minne för att öppna databasen!
+;Not enough memory to load the entire database!
+;
+L_NOT_A_DATABASE
+'%s' är inte en VirusExecutor databas!
+;'%s' is not a VirusExecutor database!
+;
+L_ERROR_LOADING_DATABASE
+Fel vid laddning av databas!
+;Error loading database!
+;
+L_MERGE_DATABASE
+Slå ihop databaser...
+;Merge database...
+;
+L_ERROR_MERGING
+Fel vid ihopslagning från '%s'
+;Error merging from '%s'
+;
+L_NO_MEM_MERGE_DATABASE
+Inte tillräckligt med minne för att slå ihop databasen
+;Not enough memory to merge the entire database!
+;
+L_MERGING
+Ihopslagning %3ld...
+;Merging %3ld...
+;
+L_MERGE_END
+Ihopslagit %ld %s of %ld.
+;Merged %ld %s of %ld.
+;
+L_ERROR_MERGING_DATABASE
+Fel vid ihopslagning av databasen!
+;Error merging database!
+;
+L_RECORDED_VIEW
+Registrerat:%8ld
+;Recorded: %10ld
+;
+L_FREE_VIEW
+Fri:      %10ld
+;Free:     %10ld
+;
+L_SELECT_BB_INSTALL
+Välj bootblock att installera...
+;Select bootblock to install...
+;
+L_CHANGE_NAME
+Ändra '%s' till:
+;Change '%s' to:
+;
+L_CHANGE_TO
+Ändra till:
+;Change to:
+;
+L_CHANGE_MIND
+Ändrade du dig?
+;Did you change your mind?
+;
+L_ALLREADY_EXISTS
+'%s' finns redan!
+;'%s' allready exists!
+;
+L_CHANGED_OK
+Ändrat '%s' till '%s'.
+;Changed '%s' to '%s'.
+;
+L_VIEW_BB
+Visa bootblock...
+;View bootblock...
+;
+L_SELECT_BB_DELETE
+Välj bootblock att ta bort...
+;Select bootblock to delete...
+;
+L_DELETE_ONE_DATABASE
+\nTa bort '%s' från databasen?\n
+;\nDelete '%s' from the database?\n
+;
+L_IS_DELETED
+'%s' är borttagen.
+;'%s' is deleted.
+;
+L_ERROR_DELETING_BB
+Fel vid borttagandet '%s'!
+;Error deleting '%s'!
+;
+L_NO_NEED_RECORD
+Du behöver inte registrera det här bootblocket!
+;You don't need to record this bootblock!
+;
+L_NO_RECORD_VIRUS
+Du får inte registrera detta virus!
+;I wont let you record this virus!
+;
+L_GIVE_BB_NAME
+Ge bootblocket från %s ett namn...
+;Give the bootblock from %s a name...
+;
+L_NO_MEM_RECORD_BB
+Inte tillräckligt med minne för att registrera det här bootblocket!
+;Not enough memory to record this bootblock!
+;
+L_DATABASE
+Databas...
+;Database...
+;
+L_NO_DISK_ANY_DRIVE
+Ingen disk i någon drive!
+;No disk in any drive!
+;
+L_SELECT_BB_RECORD
+Välj bootblock\natt registrera.
+;Select bootblock\nto record.
+;
+L_RECORD_A_BB
+Registrera ett bootblock.
+;Record a bootblock.
+;
+L_MERGING_DATABASE
+Slå ihop databas...
+;Merging database...
+;
+L_DISK_IN_DRIVE_PROTECTED
+Disk i drive %s är skriv skyddad!
+;Disk in drive %s is write protected!
+;
+L_DISK_NO_VALIDATED
+Disk i drive %s är inte validerad!
+;Disk in drive %s is not validated!
+;
+L_PLEASE_WAIT_SECTOR_CHECK
+Var god vänta, sektor kontroll pågår...
+;Please wait, sector checking in progress...
+;
+L_CHECKING_CYLINDER
+Kontrollerar cylinder: %ld - %ld kvar...
+;Checking cylinder: %ld - %ld to go...
+;
+L_SECTOR_CHECKING_PAUSED
+Sektor kontroll pausad
+;Sector checking paused
+;
+L_CONTINUE_CANCEL
+Fortsätt|Avbryt
+;Continue|Cancel
+;
+L_SECTOR_DESTROYED
+Sektor %ld är förstörd av: %s
+;Sector %ld is destroyed with: %s
+;
+L_BLOCK_INFECTED
+Block %ld är infekterad av: %s
+;Block %ld is infected with: %s
+;
+L_REPAIR_SECTOR_CONTINUE
+Reparera sektor|Fortsätt
+;Repair sector|Continue
+;
+L_ERROR_REPAIRING
+Fel vid reparation av sektor!
+;Error repairing sector!
+;
+L_SECTORS_CHECKED
+%ld sektorer kontrollerad, %ld infekterade hittade.
+;%ld sectors checked, %ld infections found.
+;
+L_SECTOR_CHECK_END
+Sector kontroll färdig.
+;Sector check finished.
+;
+L_SHOWING_TASKS
+Visar tasks...
+;Showing tasks...
+;
+L_PROCESS
+Process
+;Process 
+;
+L_TASK
+Task
+;Task    
+;
+L_WARNING_NO_NAME
+*** VARNING - INGET NAMN! ***
+;*** WARNING - NO NAME! ***
+;
+L_SHOWING_TASKS_1
+Visar tasks (%ld)...
+;Showing tasks (%ld)...
+;
+L_NAME_ADDRESS_PRI_TYPE
+Namn                                                Adress   Pri  Typ
+;Name                                                Address   Pri  Type
+;
+L_SHOWING_LIBRARIES
+Visar libraries...
+;Showing libraries...
+;
+L_SHOWING_LIBRARIES_1
+Visar libraries (%ld)...
+;Showing libraries (%ld)...
+;
+L_NAME_ADDRESS_PRI_VER
+Namn                                              Adress   Pri  Version
+;Name                                              Address   Pri  Version
+;
+L_SHOWING_DEVICES
+Visar devices...
+;Showing devices...
+;
+L_SHOWING_DEVICES_1
+Visar devices (%ld)...
+;Showing devices (%ld)...
+;
+L_SHOWING_PATCHES
+Visar patches...
+;Showing patches...
+;
+L_SHOWING_PATCHES_1
+Visar patches (%ld)...
+;Showing patches (%ld)...
+;
+L_NAME
+Namn
+;Name
+;
+L_SELECT_FILE_TO_FIX
+Välj fil att fixa...
+;Select file to fix...
+;
+L_FIX_IT
+Fixa den
+;Fix it
+;
+L_LOAD_TEXT
+Ladda text
+;Load text
+;
+L_LOADING
+Laddar '%s'...
+;Loading '%s'...
+;
+L_CONVERTING
+Konverterar...
+;Converting...
+;
+L_SAVING
+Sparar...
+;Saving...
+;
+L_FILE_IS_NOW_SMALLER
+Filen är nu %ld tecken mindre.
+;File is now %ld chars smaller.
+;
+L_ERROR_SAVING_FILE
+Fel vid sparande av fil!
+;Error saving file!
+;
+L_NOT_AN_IBN
+Inte en IBN/IBM/IBMM text fil!
+;Not an IBN/IBM/IBMM text file!
+;
+L_NOT_AN_ASCII
+Inte en ASCII fil!
+;Not an ASCII file!
+;
+L_ERROR_LOADING_FILE
+Fel vid laddning av filen!
+;Error loading file!
+;
+L_SELECT_FILE
+Välj fil...
+;Select file...
+;
+L_SAVE_ROM
+Spara ROM
+;Save ROM
+;
+L_SAVING_ROM_TO
+Sparar ROM (%08lX - %08lX) till '%s'
+;Saving ROM (%08lX - %08lX) to '%s'
+;
+L_PATCH_REQUIERS
+\n\nDen här versionen av VirusExecutor behöver v%ld.%02ld+ av PatchBrain!
+;\n\nThis version of VirusExecutor needs v%ld.%02ld+ of PatchBrain!
+;
+L_VE_MODIFIED
+Fel: VirusExecutor har blivit modefierad!
+;Error: VirusExecutor has been modyfied!
+;
+L_KICKTAG_ENTRIES
+KickTagPtr entries:
+;KickTagPtr entries:
+;
+L_VE_NEEDS_XFDMASTER
+%s behöver %s för att packa upp packade filer!\nVar god installera den senaste versionen av %s.\n\n 'Decrunch crunched files' option är nu disabled...
+;%s needs %s to decrunch crunched files!\nPlease install the latest version of %s.\n\nThe 'Decrunch crunched files' option is now disabled...
+;
+L_UNKNOWN_STARS
+*** OKÄND ***
+;*** UNKNOWN ***
+;
+L_CPU_INTERRUPT_VECTORS
+CPU Interrupt Vectors i RAM (VBR: $%08lX)\n\n
+;CPU Interrupt Vectors in RAM (VBR: $%08lX)\n\n
+;
+L_VIEWING_MEMORY_AT
+Visar minne vid adress $%08lX:
+;Viewing memory at address $%08lX:
+;
+L_UNKNOWN
+Okänd
+;Unknown
+;
+L_PROGRAMS_FOUND_IN
+program hittade i
+;program(s) found in
+;
+L_KNOWN
+Känd
+;Known
+;
+L_LIST_KICKTAGPTR
+List KickTagPtr|
+;List KickTagPtr|
+;
+L_LIST_KICKMEMPTR
+List KickMemPtr|
+;List KickMemPtr|
+;
+L_RESTORE_VECS_CONTINUE
+Återställ vektorerna|Fortsätt
+;Restore vectors|Continue
+;
+L_FOUND_A_CRUNCHED_FILE
+Hittat en packad fil!\n\nÄr du säker att du vill skriva över ALLT\npackade filer med den uppackade buffern?
+;Found a crunched file!\n\nAre you sure you want to overwrite ALL\ncrunched files with the decrunched buffer?
+;
+L_DO_IT_TURN_OFF
+Gör det!|Stäng av  'Overwrite'-flag
+;Do it!|Turn off the 'Overwrite'-flag
+;
+L_P8
+Skriva över packade filer
+;Overwrite crunched files
+;
+L_CALCULATING_CPU_SPEED
+Beräknar processorns fart ...
+;Calculating processor speed...
+;
+L_SELECT_DISK_SECTOR
+Välj en drive för att fortsätta  sektor kontrollen.
+;Select a drive to process the sector checking.
+;
+L_I_HAVE_CHECKED_S
+Jag har kontrollerat %s %s och %s %s hittills.
+;I have checked %s %s and %s %s so far.
+;
+L_COLDREBOOT
+Kall start...
+;ColdReboot...
+;
+L_REBOOT_THE_MACHINE
+Starta om datorn?\n\nAllt yttre minne och kommer att RESETAS,\noch datorn kommer att starta  power up diagnostiken.
+;Reboot the machine?\n\nAll external memory and peripherals will be RESET,\nand the machine will start its power up diagnostics.
+;
+L_CANCEL_REBOOT_CANCEL
+Avbrytl|Boota om|Avbryt
+;Cancel|Reboot|Cancel
+;
+L_DATA_VIRUS_WARNING
+DATA VIRUS VARNING!
+;DATA VIRUS WARNING!
+;
+L_P9
+Snabb startup
+;Fast startup
+;
+L_P10
+Hoppa över filer äldre än
+;Skip files older than
+;
+L_P11
+dagar
+;day(s)
+;

@@ -1,0 +1,1527 @@
+## chunk AUTH Andrea Zanellato
+## language italiano
+## version $VER: VirusExecutor.ct 1.2 (29.4.1)
+L_NO_DISK
+Disco non presente
+;#DEF No disk in this drive.
+;#SET (0//)
+L_MESSAGE
+Messaggio
+;#DEF Message
+;#SET (1//)
+L_OK
+Ok
+;#DEF Ok
+;#SET (2//)
+L_READY
+Pronto.
+;#DEF Ready.
+;#SET (3//)
+L_PLEASE_WAIT
+Attendere prego...
+;#DEF Please wait...
+;#SET (4//)
+L_UNKNOWN_TRACKDISK0
+Errore trackdisk %ld: %s
+;#DEF Trackdisk error %ld: %s
+;#SET (5//)
+L_UNKNOWN_TRACKDISK1
+Errore trackdisk sconosciuto ->%ld<-\nunità = %ld\nContattare l'autore.
+;#DEF Unknown trackdisk error ->%ld<-\nunit = %ld\nPlease contact author!
+;#SET (6//)
+L_UNKNOWN_TRACKDISK2
+Errore trackdisk %ld sconosciuto!
+;#DEF Unknown trackdisk error %ld!
+;#SET (7//)
+L_PROF_FILE
+Disco ProfessionalFileSystem
+;#DEF A ProfFileSystem installed disk.
+;#SET (8//)
+L_FLASHBACK
+Disco Flashback n:
+;#DEF Flashback disk nr: 
+;#SET (9//)
+L_ABACKUP
+Disco ABackup n:
+;#DEF ABackup disk nr: 
+;#SET (10//)
+L_ERROR_IN_CHECKSUM
+Errore di checksum!
+;#DEF Error in checksum!
+;#SET (11//)
+L_UNINST
+Disco non avviabile AmigaDOS.
+;#DEF Uninstalled AmigaDOS disk.
+;#SET (12//)
+L_INSTALLED_DOS
+Disco avviabile AmigaDOS.
+;#DEF Installed AmigaDOS disk
+;#SET (13//)
+L_FMS
+Disco FMS v%s.
+;#DEF Installed FMS disk v%s.
+;#SET (14//)
+L_CHECKING_BOOTBLOCK
+Verifica bootblock...
+;#DEF Checking bootblock...
+;#SET (15//)
+L_BAD_FORMAT_DISK
+Disco mal formattato?
+;#DEF A badly formated disk?
+;#SET (16//)
+L_VIRUS_1
+%s virus!
+;#DEF %s virus!
+;#SET (17//)
+L_VIRUS_FOUND_IN
+%s virus trovato in %s
+;#DEF %s virus found in %s
+;#SET (18//)
+L_KILL_VIRUS_CANCEL
+Rimuovi virus|Annulla
+;#DEF Kill virus|Cancel
+;#SET (19//)
+L_WARNING
+ATTENZIONE!
+;#DEF WARNING!
+;#SET (20//)
+L_UTILITY_BOOT
+Utilità di avvio.
+;#DEF An utility boot.
+;#SET (21//)
+L_VIRUS_KILLER
+Virus killer di avvio.
+;#DEF A virus killer boot.
+;#SET (22//)
+L_INTRO_BOOT
+Intro di avvio.
+;#DEF An intro boot.
+;#SET (23//)
+L_LOADER
+Loader.
+;#DEF A loader.
+;#SET (24//)
+L_ANALYZING
+Analisi...
+;#DEF Analyzing...
+;#SET (25//)
+L_NOT_A_BOOT_DISK
+Disco non avviabile.
+;#DEF Not a bootable disk.
+;#SET (26//)
+L_RETCODE_NAME
+Codice di ritorno = %ld Nome = %s
+;#DEF retcode = %ld Name = %s
+;#SET (27//)
+L_INSTALLING_TO
+Installazione '%s' in %s
+;#DEF Installing '%s' to %s
+;#SET (28//)
+L_INSTALLING
+Installazione %s
+;#DEF Installing %s
+;#SET (29//)
+L_YOU_HAVE_THE_OLD
+\nE' presente la %s v%s\nSi consiglia di prelevare\nla %s v%s o superiore!\n
+;#DEF \nYou have the old %s v%s\nPlease get %s v%s or later!\n
+;#SET (30//)
+L_USING
+Librerie esterne in uso:
+;#DEF Using external libraries:
+;#SET (31//)
+L_KNOWS_BOOT
+Riconosce %3ld boot virus.\n
+;#DEF Knows %3ld boot virus.\n
+;#SET (32//)
+L_KNOWS_LINK
+Riconosce %3ld link virus.\n
+;#DEF Knows %3ld link virus.\n
+;#SET (33//)
+L_KNOWS_FILE
+Riconosce %3ld file virus.\n\n
+;#DEF Knows %3ld file virus.\n\n
+;#SET (34//)
+L_KNOWS_DECRUNCHERS
+Riconosce %ld tipi di decrunchers.\n\n
+;#DEF Knows %ld decrunchers types.\n\n
+;#SET (35//)
+L_KNOWS_PATCHES
+Riconosce %ld unità di patch per %ld programmi.\n\n
+;#DEF Knows %ld patch entries from %ld programs.\n\n
+;#SET (36//)
+L_I_HAVE_CHECKED
+*
+;#DEF *
+;#SET (37//)
+L_BOOTBLOCK
+bootblock
+;#DEF bootblock
+;#SET (38//)
+L_BOOTBLOCKS
+bootblocks
+;#DEF bootblocks
+;#SET (39//)
+L_FILE
+file
+;#DEF file
+;#SET (40//)
+L_FILES
+files
+;#DEF files
+;#SET (41//)
+L_ABOUT
+Informazioni
+;#DEF About...
+;#SET (42//)
+L_LOADING_PATCH_DATA
+Caricamento e decrittazione patch data...
+;#DEF Loading and decrypting patch data...
+;#SET (43//)
+L_PATCH_ERROR
+Errore: '%s' non è un valido patch file!
+;#DEF Error: '%s' is not a valid patch file!
+;#SET (44//)
+L_ERROR_LOADING
+Errore caricando '%s'!
+;#DEF Error loading '%s'!
+;#SET (45//)
+L_BB_VIRUS
+BB virus
+;#DEF BB virus
+;#SET (46//)
+L_FILE_VIRUS
+File virus
+;#DEF File virus
+;#SET (47//)
+L_NA
+N/A
+;#DEF N/A
+;#SET (48//)
+L_NO_MEM
+Memoria insufficiente!
+;#DEF Not enough memory!
+;#SET (49//)
+L_SAVING_PREFERENCES
+Salvo le preferenze...
+;#DEF Saving preferences...
+;#SET (50//)
+L_BOOTBLOCK_C
+Bootblock
+;#DEF Bootblock
+;#SET (51//)
+L_LINK_C
+Link
+;#DEF Link
+;#SET (52//)
+L_FILE_C
+File
+;#DEF File
+;#SET (53//)
+L_VIRUS_LIST
+ %s virus (%ld)
+;#DEF  %s virus (%ld)
+;#SET (54//)
+L_SELECT_SCREEN_MODE
+Seleziona un modo schermo:
+;#DEF Select a screen mode:
+;#SET (55//)
+L_SMALL_SCREEN_SIZE
+VirusExecutor non può gestire uno schermo così ristretto!
+;#DEF VirusExecutor can't handle this small screen size!
+;#SET (56//)
+L_SHIT
+*
+;#DEF *
+;#SET (57//)
+L_SCREEN_RESTART_MSG
+Per applicare la preferenza dello schermo\nè necessario riavviare VirusExecutor.
+;#DEF You'll need to restart VirusExecutor in order\nto make your new Screen Mode settings active.
+;#SET (58//)
+L_NO_PICK_SCREEN
+Non hai scelto un modo schermo.
+;#DEF You didn't pick a screen mode.
+;#SET (59//)
+L_VE_REQUIERS
+\nVirusExecutor richiede il kickstart v37+!\n\nPremere un tasto...
+;#DEF \nVirusExecutor requires kickstart v37+!\n\nHit any key...
+;#SET (60//)
+L_ERROR
+Errore!
+;#DEF Error!
+;#SET (61//)
+L_VE_RUNNING
+*
+;#DEF *
+;#SET (62//)
+L_VE_LIB_NEED
+VirusExecutor richiede la %s' v%ld+!
+;#DEF VirusExecutor needs '%s' v%ld+!
+;#SET (63//)
+L_XVS_MODIFIED
+Errore: la xvs.library è stata modificata!
+;#DEF Error: xvs.library has been modyfied!
+;#SET (64//)
+L_CHECKING_DRIVES
+Analisi dischi...
+;#DEF Checking disk drives...
+;#SET (65//)
+L_ENTER_PW
+Inserire password:
+;#DEF Please enter password:
+;#SET (66//)
+L_FILE_NAME_ERROR
+Nome file: %s\n\n    Errore: %s
+;#DEF File name: %s\n\n    Error: %s
+;#SET (67//)
+L_INFECTED_DELETE
+VIRUS: %s\n\nFile infetto:\n'%s'\n\nQuesto tipo di virus può essere solo cancellato.
+;#DEF VIRUS: %s\n\nInfected file:\n'%s'\n\nThis type of virus can only be deleted.
+;#SET (68//)
+L_VIRUS_WARNING
+ATTENZIONE %s VIRUS!
+;#DEF %s VIRUS WARNING!
+;#SET (69//)
+L_DELETE_FILE_AUTO
+Cancella file|Cancellazione automatica|Fine verifica|Continua
+;#DEF Delete file|Auto delete file virus|Stop checking|Continue
+;#SET (70//)
+L_FILE_NOT_DELETED
+Il file'%s' non può essere rimosso!
+;#DEF File '%s' could not be deleted!
+;#SET (71//)
+L_DATA
+DATA
+;#DEF DATA
+;#SET (72//)
+L_VIRUS_INFECTED_ARCHIVE
+        VIRUS: %s\n\nFile infetto: %s\n      Archivio: %s
+;#DEF         VIRUS: %s\n\nInfected file: %s\n      Archive: %s
+;#SET (73//)
+L_FILE_VIRUS_WARNING
+ATTENZIONE FILE VIRUS!
+;#DEF FILE VIRUS WARNING!
+;#SET (74//)
+L_FILE1
+FILE
+;#DEF FILE
+;#SET (75//)
+L_LINK_VIRUS_WARNING
+ATTENZIONE LINK VIRUS!
+;#DEF LINK VIRUS WARNING!
+;#SET (76//)
+L_VIRUS_INFECTED_FILE
+VIRUS: %s\n\nFile infetto:\n'%s'
+;#DEF VIRUS: %s\n\nInfected file:\n'%s'
+;#SET (77//)
+L_REMOVE_VIRUS_AUTO
+Rimuovi virus|Rimozione automatica|FIne verifica|Continua
+;#DEF Remove virus|Auto remove link virus|Stop checking|Continue
+;#SET (78//)
+L_VIRUS_REMOVED
+Virus rimosso!\n\nDimensione\ndi origine: %ld\nDimensione\nattuale: %ld
+;#DEF Virus removed!\n\nOld size: %ld\nNew size: %ld
+;#SET (79//)
+L_SAVE_NEW_FILE
+Salva nuovo file|Annulla
+;#DEF Save new file|Cancel
+;#SET (80//)
+L_ERROR_WRITING_FILE
+Errore scrittura file: '%s'!
+;#DEF Error writing file: '%s'!
+;#SET (81//)
+L_ERROR_OPENING_FILE
+Errore lettura file: '%s'!
+;#DEF Error opening file: '%s'!
+;#SET (82//)
+L_ERROR_VIRUS_NOT_REMOVED
+Errore: %s\n\nIl virus non può essere rimosso!
+;#DEF Error: %s\n\nVirus could'n be removed!
+;#SET (83//)
+L_ERROR_REMOVING_VIRUS
+ERRORE RIMOZIONE VIRUS DAL FILE
+;#DEF ERROR REMOVING VIRUS FROM FILE
+;#SET (84//)
+L_DELETE_FILE_STOP
+Cancella file|Fine verifica|Continua
+;#DEF Delete file|Stop checking|Continue
+;#SET (85//)
+L_UNLINKING_FILE
+Rimozione collegamento %s (%s)...
+;#DEF Unlinking %s (%s)...
+;#SET (86//)
+L_ERROR_UNLINKING
+Errore rimozione collegamento file: '%s'!
+;#DEF Error unlinking file: '%s'!
+;#SET (87//)
+L_EXTRACTING
+*
+;#DEF *
+;#SET (88//)
+L_CHECKING
+Verifica... '%s'
+;#DEF Checking... '%s'
+;#SET (89//)
+L_ERROR_READING_FILE
+Errore lettura file '%s'!
+;#DEF Error reading file '%s'!
+;#SET (90//)
+L_FILE_CHECK_PAUSED
+Verifica file sospesa
+;#DEF File checking paused
+;#SET (91//)
+L_CONTINUE_STOP
+Continua|Fine verifica
+;#DEF Continue|Stop checking
+;#SET (92//)
+L_USER_BREAK
+Pausa
+;#DEF User break!
+;#SET (93//)
+L_ERROR65
+ERRORE: 65\nContattare l'autore.
+;#DEF ERROR: 65\nContact author!
+;#SET (94//)
+L_ERROR_LOCKING_DIR
+ERRORE di lettura dir '%s'!
+;#DEF ERROR locking dir '%s'!
+;#SET (95//)
+L_CHECK_FILES_VIRUS
+Ricerca virus.
+;#DEF Check files for virus.
+;#SET (96//)
+L_ERROR46
+ERRORE: 46\nContattare l'autore\n
+;#DEF ERROR 46! Contact author...\n
+;#SET (97//)
+L_FILE_SCAN_END
+*
+;#DEF *
+;#SET (98//)
+L_DIR
+dir
+;#DEF dir
+;#SET (99//)
+L_DIRS
+dirs
+;#DEF dirs
+;#SET (100//)
+L_ARCHIVE
+archivio
+;#DEF archive
+;#SET (101//)
+L_ARCHIVES
+archivi
+;#DEF archives
+;#SET (102//)
+L_MINUTE
+minuto
+;#DEF minute
+;#SET (103//)
+L_MINUTES
+minuti
+;#DEF minutes
+;#SET (104//)
+L_SECOND
+secondo
+;#DEF second
+;#SET (105//)
+L_SECONDS
+secondi
+;#DEF seconds
+;#SET (106//)
+L_FOUND
+\n\nTrovati %ld virus!
+;#DEF \n\nFound %ld virus!
+;#SET (107//)
+L_NO_KNOWN
+Sconosciuti
+;#DEF no known
+;#SET (108//)
+L_FILE_CHECK_STATUS
+Stato di verifica file.
+;#DEF File check status.
+;#SET (109//)
+L_REBOOT_CANCEL
+Reboot|Annulla
+;#DEF Reboot|Cancel
+;#SET (110//)
+L_NO_ENTRIES_FOUND
+Unità non trovate.
+;#DEF No entries found.
+;#SET (111//)
+L_ADDRESS_NAME
+\nINDIRIZZO   NOME\n\n
+;#DEF \nADDRESS    NAME\n\n
+;#SET (112//)
+L_LOOK_FOR_TEXT
+Ricerca per testo: VIRUS etc
+;#DEF Look for text: VIRUS etc
+;#SET (113//)
+L_IT_MIGHT_MEMVIRUS
+\nPotrebbe essere presente un virus in memoria!
+;#DEF \nIt might be a virus in memory!
+;#SET (114//)
+L_VIEW_MEMORY
+LOCALE STRINGA NON USATA!
+;#DEF LOCALE STRING IS NOT USED!
+;#SET (115//)
+L_ERROR_CLR_VECTORS
+Errore aggiornamento vettori!\nPotrebbe esserci un virus in memoria!
+;#DEF Error clearing vectors!!\nIt could be a virus in memory!
+;#SET (116//)
+L_MEM_VEC_OK
+\nI vettori della memoria sembrano ok.
+;#DEF \nMemory vectors seems ok.
+;#SET (117//)
+L_VECTOR_CHECK
+Verifica vettori
+;#DEF Vector check
+;#SET (118//)
+L_VIRUS_DETECTED_IN_MEM
+%s virus localizzato in memoria!\n
+;#DEF %s virus detected in memory!\n
+;#SET (119//)
+L_VIRUS_REMOVED_MEM
+\nVirus rimosso dalla memoria.
+;#DEF \nVirus removed from memory.
+;#SET (120//)
+L_NO_KNOWN_VIRUS_MEM
+Nessun virus conosciuto localizzato in memoria.
+;#DEF No known virus detected in memory.
+;#SET (121//)
+L_GREAT
+Ottimo!
+;#DEF Great!
+;#SET (122//)
+L_MEMORY_CHECK
+Verifica memoria
+;#DEF Memory check
+;#SET (123//)
+L_EXIT
+OK
+;#DEF Done
+;#SET (124//)
+L_PROJECT
+Progetto
+;#DEF Project
+;#SET (125//)
+L_PREFS
+Preferenze
+;#DEF Prefs...
+;#SET (126//)
+L_FILE_CHECK
+Verifica file
+;#DEF File check
+;#SET (127//)
+L_SECTOR_CHECK
+Verifica settori
+;#DEF Sector check
+;#SET (128//)
+L_SELECT_SCREEN
+Seleziona modo schermo...
+;#DEF Select screen mode...
+;#SET (129//)
+L_QUIT
+Esci
+;#DEF Quit
+;#SET (130//)
+L_SHOW
+Visualizza
+;#DEF Show
+;#SET (131//)
+L_BOOTBLOCK_VIRUS
+Bootblock virus
+;#DEF Bootblock virus
+;#SET (132//)
+L_LINK_VIRUS
+Link virus
+;#DEF Link virus
+;#SET (133//)
+L_TASKS
+Tasks
+;#DEF Tasks
+;#SET (134//)
+L_LIBRARIES
+Librerie
+;#DEF Libraries
+;#SET (135//)
+L_DEVICES
+Dispositivi
+;#DEF Devices
+;#SET (136//)
+L_PATCHES
+Patches
+;#DEF Patches
+;#SET (137//)
+L_INSTALL
+Installa
+;#DEF Install
+;#SET (138//)
+L_BOOTBLOCK_DATABASE
+Bootblock database
+;#DEF Bootblock database
+;#SET (139//)
+L_RECORD
+Registra
+;#DEF Record
+;#SET (140//)
+L_VIEW
+Visualizza
+;#DEF View
+;#SET (141//)
+L_EDIT_NAME
+Edita nome
+;#DEF Edit name
+;#SET (142//)
+L_MERGE
+Concatena
+;#DEF Merge
+;#SET (143//)
+L_DELETE_ONE
+Cancella uno
+;#DEF Delete one
+;#SET (144//)
+L_DELETE_ALL
+Cancella tutti
+;#DEF Delete all
+;#SET (145//)
+L_SAVE
+Salva
+;#DEF Save
+;#SET (146//)
+L_UTILITIES
+Utilità
+;#DEF Utilities
+;#SET (147//)
+L_RENAME_PICTURES
+Rinomina immagini
+;#DEF Rename pictures
+;#SET (148//)
+L_CONVERT_IBN
+Converti IBN/IBM/IBMM in ISO
+;#DEF Convert IBN/IBM/IBMM to ISO
+;#SET (149//)
+L_SAVE_ROM_TO_FILE
+Salva ROM su file
+;#DEF Save ROM to file
+;#SET (150//)
+L_TRANSLATED_BY
+Traduzione italiana a cura di Andrea Zanellato\nEmail: andyza@tiscalinet.it
+;#DEF Translated to LANGUAGE by PUT YOUR NAME HERE
+;#SET (151//)
+L_SEEMS_TO_KICKWORK
+\n\nSembra funzionare solo con kickstart v%s!
+;#DEF \n\nSeems to work only with kickstart v%s!
+;#SET (152//)
+L_UNKNOWN_BOOTBLOCK
+Bootblock sconosciuto! %ld%% potrebbe essere un virus!
+;#DEF Unknown bootblock! %ld%% chance for a virus!
+;#SET (153//)
+L_ANALYZE_PERCENT_VIRUS
+%s analizzati: %ld per cento di possibilità per un virus!
+;#DEF %s analyze: %ld percent chance for a virus here!
+;#SET (154//)
+L_WRITES_TO_BOOTBLOCK
+*
+;#DEF *
+;#SET (155//)
+L_WRITES_TO_UNKNOWN
+\n\nIncisi in una area sconosciuta del disco!
+;#DEF \n\nWrites to unknown place on disk!
+;#SET (156//)
+L_DESTROYS_THE_DISK
+\n\nElimina questo disco!!
+;#DEF \n\nDestroys the disk!!
+;#SET (157//)
+L_COULD_BE_FILEVIRUS
+\n\nPotrebbe essere un file virus!
+;#DEF \n\nThis could also be a file virus!
+;#SET (158//)
+L_UNKNOWN_BB
+Bootblock sconosciuto! Potrebbe essere %s.
+;#DEF Unknown bootblock! It might be %s.
+;#SET (159//)
+L_A_VIRUSKILLER
+un virus killer
+;#DEF a viruskiller
+;#SET (160//)
+L_A_LOADER
+un loader
+;#DEF a loader
+;#SET (161//)
+L_A_VIRUSCHECKER
+un anti virus
+;#DEF a virus checker
+;#SET (162//)
+L_AN_UTILITY_INTRO
+una utilità o una intro
+;#DEF an utility or an intro
+;#SET (163//)
+L_CRYPTED_VIRUS
+crittato! Potrebbe essere un virus!
+;#DEF crypted! Could be a virus!
+;#SET (164//)
+L_HARMLESS_BB
+Bootblock sconosciuto (Sembra innocuo)
+;#DEF Unknown bootblock! (Seems harmless)
+;#SET (165//)
+L_AVAIL_CHIP_FAST
+*
+;#DEF *
+;#SET (166//)
+L_LARGEST_CHIP_FAST
+*
+;#DEF *
+;#SET (167//)
+L_DIRECTORIES_STAT
+*
+;#DEF *
+;#SET (168//)
+L_CRUNCHED_DECRUNCHED
+Chrunched:     %8ld  Decrunched:  %8ld
+;#DEF Chrunched:     %8ld  Decrunched:  %8ld
+;#SET (169//)
+L_ARCHIVED_EXTRACTED
+Archiviati:      %8ld  Estratti:  %8ld
+;#DEF Archived:      %8ld  Extracted:   %8ld
+;#SET (170//)
+L_VIRUS_FOUND_TIME
+*
+;#DEF *
+;#SET (171//)
+L_INSTALL_TO
+Installato in %s
+;#DEF Install to %s
+;#SET (172//)
+L_ERROR_OPENING_WINDOW
+Errore apertura finestra!
+;#DEF Error opening window!
+;#SET (173//)
+L_FILE_SYSTEM
+File system:
+;#DEF File system:
+;#SET (174//)
+L_INT_MODUS
+Modo internazionale:
+;#DEF International modus:
+;#SET (175//)
+L_DS_MODUS
+Directory cache:
+;#DEF Directory cache:
+;#SET (176//)
+L_FROM_DATABASE
+Dal database:
+;#DEF From database:
+;#SET (177//)
+L_DISK_INSTALLED
+Disco installato.
+;#DEF Disk installed.
+;#SET (178//)
+L_WINSTALL
+ Installa
+;#DEF  Install
+;#SET (179//)
+L_WCANCEL
+Annulla
+;#DEF Cancel
+;#SET (180//)
+L_EXEC_INTERRUPT
+Vettori Exec interrupt in RAM\n\n
+;#DEF Exec interrupt vectors in RAM\n\n
+;#SET (181//)
+L_KICKMEM_ENTRIES
+Unità KickMemPtr:
+;#DEF KickMemPtr entries:
+;#SET (182//)
+L_KICKSTART_AT
+Kickstart v%s in $%08lx\n\n
+;#DEF Kickstart v%s at $%08lx\n\n
+;#SET (183//)
+L_ERRORP500
+*
+;#DEF *
+;#SET (184//)
+L_LIBRARY_VECTORS
+Vettori librerie in RAM
+;#DEF Library Vectors in RAM
+;#SET (185//)
+L_PREFS_WININFO
+Preferenze (BETA - Premere 'Esc' per uscire)
+;#DEF Prefs (BETA - Press 'Esc' to return)
+;#SET (186//)
+L_FILE_CHECKING
+Verifica file:
+;#DEF File checking:
+;#SET (187//)
+L_MISC
+Misc:
+;#DEF Misc:
+;#SET (188//)
+L_P1
+Decrunch crunched files
+;#DEF Decrunch crunched files
+;#SET (189//)
+L_P2
+Verifica data files
+;#DEF Check data files
+;#SET (190//)
+L_P3
+Estrazione archivi LHA 
+;#DEF Extract LHA archives
+;#SET (191//)
+L_P4
+Estrazione archivi LZX
+;#DEF Extract LZX archives
+;#SET (192//)
+L_P5
+Estrazione archivi ZIP
+;#DEF Extract ZIP archives
+;#SET (193//)
+L_P6
+Salta files crittati
+;#DEF Skip encrypted files
+;#SET (194//)
+L_P7
+Nascondi patches conosciute
+;#DEF Hide known patches
+;#SET (195//)
+L_DATABASE_EMPTY
+Il database è vuoto!
+;#DEF Database is empty!
+;#SET (196//)
+L_CHANGES_DATABASE
+Sono state apportate modifiche nel database!\nSalvare il database?
+;#DEF Changes has been made to the database!\nSave database?
+;#SET (197//)
+L_SAVE_CANCEL
+Salva|Annulla
+;#DEF Save|Cancel
+;#SET (198//)
+L_DELETING_DATABASE
+Cancellazione database...
+;#DEF Deleting database...
+;#SET (199//)
+L_DELETE_DATABASE_ALL
+Eliminare database?\nSono registrati %ld bootblocks.\n\nIl database verrà cancellato dal tuo drive!
+;#DEF Delete database?\nYou have %ld bootblocks recorded.\n\nThe database will also be deleted from your drive!
+;#SET (200//)
+L_DELETE_CANCEL
+Elimina|Annulla
+;#DEF Delete|Cancel
+;#SET (201//)
+L_DELETE_DATABASE
+Rimozione database...
+;#DEF Delete database...
+;#SET (202//)
+L_ARE_YOU_SURE
+Sei sicuro???
+;#DEF Are you sure???
+;#SET (203//)
+L_DATABASE_DELETED
+Database rimosso.
+;#DEF Database is deleted.
+;#SET (204//)
+L_ERROR_DELETE_DATABASE
+Errore rimozione del database dal disco!
+;#DEF Error delete database from disk!
+;#SET (205//)
+L_NO_CHANGES_DATABASE
+Nessuna variazione nel database!
+;#DEF No changes in the database!
+;#SET (206//)
+L_SAVING_DATABASE
+Registro database...
+;#DEF Saving database...
+;#SET (207//)
+L_SAVING_DATABASE_1
+Registro database... %ld
+;#DEF Saving database... %ld
+;#SET (208//)
+L_DATABASE_SAVED
+Database salvato.
+;#DEF The database is saved.
+;#SET (209//)
+L_ERROR_SAVING_DATABASE
+Errore salvataggio database!
+;#DEF Error saving database!
+;#SET (210//)
+L_LOADING_DATABASE
+Caricamento database...
+;#DEF Loading database...
+;#SET (211//)
+L_LOADING_DATABASE_1
+Caricamento database... %ld
+;#DEF Loading database... %ld
+;#SET (212//)
+L_NO_MEM_DATABASE
+Memoria insufficiente per caricare l'intero database!
+;#DEF Not enough memory to load the entire database!
+;#SET (213//)
+L_NOT_A_DATABASE
+'%s' non è un database di VirusExecutor!
+;#DEF '%s' is not a VirusExecutor database!
+;#SET (214//)
+L_ERROR_LOADING_DATABASE
+Errore caricamento database!
+;#DEF Error loading database!
+;#SET (215//)
+L_MERGE_DATABASE
+Aggiornamento database...
+;#DEF Merge database...
+;#SET (216//)
+L_ERROR_MERGING
+Errore giunzione da '%s'
+;#DEF Error merging from '%s'
+;#SET (217//)
+L_NO_MEM_MERGE_DATABASE
+Memoria insufficiente per la giunzione dell'intero database!
+;#DEF Not enough memory to merge the entire database!
+;#SET (218//)
+L_MERGING
+Giunzione %3ld...
+;#DEF Merging %3ld...
+;#SET (219//)
+L_MERGE_END
+Concatenati %ld %s di %ld.
+;#DEF Merged %ld %s of %ld.
+;#SET (220//)
+L_ERROR_MERGING_DATABASE
+Errore giunzione database!
+;#DEF Error merging database!
+;#SET (221//)
+L_RECORDED_VIEW
+Salvati: %10ld
+;#DEF Recorded: %10ld
+;#SET (222//)
+L_FREE_VIEW
+Liberi:    %10ld
+;#DEF Free:     %10ld
+;#SET (223//)
+L_SELECT_BB_INSTALL
+Seleziona bootblock da installare...
+;#DEF Select bootblock to install...
+;#SET (224//)
+L_CHANGE_NAME
+Cambiato '%s' in:
+;#DEF Change '%s' to:
+;#SET (225//)
+L_CHANGE_TO
+Cambia in:
+;#DEF Change to:
+;#SET (226//)
+L_CHANGE_MIND
+Sei sicuro?
+;#DEF Did you change your mind?
+;#SET (227//)
+L_ALLREADY_EXISTS
+'%s' esiste già!
+;#DEF '%s' allready exists!
+;#SET (228//)
+L_CHANGED_OK
+Cambiato da '%s' a '%s'.
+;#DEF Changed '%s' to '%s'.
+;#SET (229//)
+L_VIEW_BB
+Visualizzazione bootblock...
+;#DEF View bootblock...
+;#SET (230//)
+L_SELECT_BB_DELETE
+Seleziona bootblock da cancellare...
+;#DEF Select bootblock to delete...
+;#SET (231//)
+L_DELETE_ONE_DATABASE
+\nCancellare '%s' dal database?\n
+;#DEF \nDelete '%s' from the database?\n
+;#SET (232//)
+L_IS_DELETED
+'%s' è stato cancellato.
+;#DEF '%s' is deleted.
+;#SET (233//)
+L_ERROR_DELETING_BB
+Errore cancellando '%s'!
+;#DEF Error deleting '%s'!
+;#SET (234//)
+L_NO_NEED_RECORD
+Non è necessario registrare\nquesto bootblock!
+;#DEF You don't need to record this bootblock!
+;#SET (235//)
+L_NO_RECORD_VIRUS
+Non posso permettere la registrazione\ndi questo virus!
+;#DEF I wont let you record this virus!
+;#SET (236//)
+L_GIVE_BB_NAME
+Dai un nome al bootblock da %s...
+;#DEF Give the bootblock from %s a name...
+;#SET (237//)
+L_NO_MEM_RECORD_BB
+Memoria insufficiente\nper registrare questo bootblock!
+;#DEF Not enough memory to record this bootblock!
+;#SET (238//)
+L_DATABASE
+Database...
+;#DEF Database...
+;#SET (239//)
+L_NO_DISK_ANY_DRIVE
+Nessun disco presente!
+;#DEF No disk in any drive!
+;#SET (240//)
+L_SELECT_BB_RECORD
+Seleziona bootblock\nda registrare.
+;#DEF Select bootblock\nto record.
+;#SET (241//)
+L_RECORD_A_BB
+Registra un bootblock.
+;#DEF Record a bootblock.
+;#SET (242//)
+L_MERGING_DATABASE
+Aggiornamento database...
+;#DEF Merging database...
+;#SET (243//)
+L_DISK_IN_DRIVE_PROTECTED
+Il disco nel drive %s è protetto in scrittura!
+;#DEF Disk in drive %s is write protected!
+;#SET (244//)
+L_DISK_NO_VALIDATED
+Il disco nel drive %s non è validato!
+;#DEF Disk in drive %s is not validated!
+;#SET (245//)
+L_PLEASE_WAIT_SECTOR_CHECK
+Attendere prego, verifica settori in corso...
+;#DEF Please wait, sector checking in progress...
+;#SET (246//)
+L_CHECKING_CYLINDER
+Verifica cilindri: %ld - %ld alla fine...
+;#DEF Checking cylinder: %ld - %ld to go...
+;#SET (247//)
+L_SECTOR_CHECKING_PAUSED
+Verifica settori sospesa
+;#DEF Sector checking paused
+;#SET (248//)
+L_CONTINUE_CANCEL
+Continua|Annulla
+;#DEF Continue|Cancel
+;#SET (249//)
+L_SECTOR_DESTROYED
+Settore %d distrutto con: %s
+;#DEF Sector %ld is destroyed with: %s
+;#SET (250//)
+L_BLOCK_INFECTED
+Blocco %ld infetto da: %s
+;#DEF Block %ld is infected with: %s
+;#SET (251//)
+L_REPAIR_SECTOR_CONTINUE
+Ripara settore|Continua
+;#DEF Repair sector|Continue
+;#SET (252//)
+L_ERROR_REPAIRING
+Errore riparazione settore!
+;#DEF Error repairing sector!
+;#SET (253//)
+L_SECTORS_CHECKED
+%ld settori analizzati, %ld trovati infetti.
+;#DEF %ld sectors checked, %ld infections found.
+;#SET (254//)
+L_SECTOR_CHECK_END
+Fine verifica settori.
+;#DEF Sector check finished.
+;#SET (255//)
+L_SHOWING_TASKS
+Visualizzazione tasks...
+;#DEF Showing tasks...
+;#SET (256//)
+L_PROCESS
+Processo 
+;#DEF Process 
+;#SET (257//)
+L_TASK
+Task    
+;#DEF Task    
+;#SET (258//)
+L_WARNING_NO_NAME
+*** ATTENZIONE - NESSUN NOME! ***
+;#DEF *** WARNING - NO NAME! ***
+;#SET (259//)
+L_SHOWING_TASKS_1
+Visualizzazione tasks (%ld)...
+;#DEF Showing tasks (%ld)...
+;#SET (260//)
+L_NAME_ADDRESS_PRI_TYPE
+Nome                                               Indirizzo   Pri  Tipo
+;#DEF Name                                                Address   Pri  Type
+;#SET (261//)
+L_SHOWING_LIBRARIES
+Visualizzazione librerie...
+;#DEF Showing libraries...
+;#SET (262//)
+L_SHOWING_LIBRARIES_1
+Visualizzazione librerie (%ld)...
+;#DEF Showing libraries (%ld)...
+;#SET (263//)
+L_NAME_ADDRESS_PRI_VER
+Nome                                              Indirizzo   Pri  Versione
+;#DEF Name                                              Address   Pri  Version
+;#SET (264//)
+L_SHOWING_DEVICES
+Visualizzazione dispositivi...
+;#DEF Showing devices...
+;#SET (265//)
+L_SHOWING_DEVICES_1
+Visualizzazione dispositivi (%ld)...
+;#DEF Showing devices (%ld)...
+;#SET (266//)
+L_SHOWING_PATCHES
+Visualizzazione patches...
+;#DEF Showing patches...
+;#SET (267//)
+L_SHOWING_PATCHES_1
+Visualizzazione patches (%ld)...
+;#DEF Showing patches (%ld)...
+;#SET (268//)
+L_NAME
+Nome
+;#DEF Name
+;#SET (269//)
+L_SELECT_FILE_TO_FIX
+Seleziona file da fissare...
+;#DEF Select file to fix...
+;#SET (270//)
+L_FIX_IT
+Fissalo
+;#DEF Fix it
+;#SET (271//)
+L_LOAD_TEXT
+Carica testo
+;#DEF Load text
+;#SET (272//)
+L_LOADING
+Caricamento '%s'...
+;#DEF Loading '%s'...
+;#SET (273//)
+L_CONVERTING
+Conversione...
+;#DEF Converting...
+;#SET (274//)
+L_SAVING
+Salvataggio...
+;#DEF Saving...
+;#SET (275//)
+L_FILE_IS_NOW_SMALLER
+Il file è ora diminuito di %ld caratteri.
+;#DEF File is now %ld chars smaller.
+;#SET (276//)
+L_ERROR_SAVING_FILE
+Errore salvando il file!
+;#DEF Error saving file!
+;#SET (277//)
+L_NOT_AN_IBN
+Non è un file di testo IBN/IBM/IBMM!
+;#DEF Not an IBN/IBM/IBMM text file!
+;#SET (278//)
+L_NOT_AN_ASCII
+Non è un file ASCII!
+;#DEF Not an ASCII file!
+;#SET (279//)
+L_ERROR_LOADING_FILE
+Errore caricamento file!
+;#DEF Error loading file!
+;#SET (280//)
+L_SELECT_FILE
+Seleziona file...
+;#DEF Select file...
+;#SET (281//)
+L_SAVE_ROM
+Salva ROM
+;#DEF Save ROM
+;#SET (282//)
+L_SAVING_ROM_TO
+Salvataggio  ROM (%08lX - %08lX) in '%s'
+;#DEF Saving ROM (%08lX - %08lX) to '%s'
+;#SET (283//)
+L_PATCH_REQUIERS
+\n\nQuesta versione di VirusExecutor richiede la versione %ld.%02ld+ di PatchBrain!
+;#DEF \n\nThis version of VirusExecutor needs v%ld.%02ld+ of PatchBrain!
+;#SET (284//)
+L_VE_MODIFIED
+Errore: VirusExecutor è stato modificato!
+;#DEF Error: VirusExecutor has been modyfied!
+;#SET (285//)
+L_KICKTAG_ENTRIES
+Unità KickTagPtr:
+;#DEF KickTagPtr entries:
+;#SET (286//)
+L_VE_NEEDS_XFDMASTER
+%s richiede la %s per il decrunch crunched files!\nSi richiede l'ultima versione della %s.\n\nL'opzione 'Decrunch crunched files' è ora disabilitata.
+;#DEF %s needs %s to decrunch crunched files!\nPlease install the latest version of %s.\n\nThe 'Decrunch crunched files' option is now disabled...
+;#SET (287//)
+L_UNKNOWN_STARS
+*** SCONOSCIUTO ***
+;#DEF *** UNKNOWN ***
+;#SET (288//)
+L_CPU_INTERRUPT_VECTORS
+Vettori CPU Interrupt in RAM (VBR: $%08lX)\n\n
+;#DEF CPU Interrupt Vectors in RAM (VBR: $%08lX)\n\n
+;#SET (289//)
+L_VIEWING_MEMORY_AT
+Visualizzazione dell'indirizzo di memoria $%08lX:
+;#DEF Viewing memory at address $%08lX:
+;#SET (290//)
+L_UNKNOWN
+Sconosciuti
+;#DEF Unknown
+;#SET (291//)
+L_PROGRAMS_FOUND_IN
+programmi trovati in
+;#DEF program(s) found in
+;#SET (292//)
+L_KNOWN
+Conosciuti
+;#DEF Known
+;#SET (293//)
+L_LIST_KICKTAGPTR
+Lista KickTagPtr|
+;#DEF List KickTagPtr|
+;#SET (294//)
+L_LIST_KICKMEMPTR
+Lista KickMemPtr|
+;#DEF List KickMemPtr|
+;#SET (295//)
+L_RESTORE_VECS_CONTINUE
+Ripristina vettori|Continua
+;#DEF Restore vectors|Continue
+;#SET (296//)
+L_FOUND_A_CRUNCHED_FILE
+Trovato un crunched file!\n\nSei sicuro di volere sovrascrivere TUTTI \ni crunched files e il decrunched buffer?
+;#DEF Found a crunched file!\n\nAre you sure you want to overwrite ALL\ncrunched files with the decrunched buffer?
+;#SET (297//)
+L_DO_IT_TURN_OFF
+Sovrascrivi|Disabilita sovrascrittura
+;#DEF Do it!|Turn off the 'Overwrite'-flag
+;#SET (298//)
+L_P8
+Sovrascrvi crunched files
+;#DEF Overwrite crunched files
+;#SET (299//)
+L_CALCULATING_CPU_SPEED
+Calcolo velocità processore...
+;#DEF Calculating processor speed...
+;#SET (300//)
+L_SELECT_DISK_SECTOR
+Seleziona un drive per la verifica dei settori.
+;#DEF Select a drive to process the sector checking.
+;#SET (301//)
+L_I_HAVE_CHECKED_S
+Analizzati %s %s e %s %s.
+;#DEF I have checked %s %s and %s %s so far.
+;#SET (302//)
+L_COLDREBOOT
+ColdReboot...
+;#DEF ColdReboot...
+;#SET (303//)
+L_REBOOT_THE_MACHINE
+Resetto il sistema?
+;#DEF Reboot the machine?\n\nAll external memory and peripherals will be RESET,\nand the machine will start its power up diagnostics.
+;#SET (304//)
+L_CANCEL_REBOOT_CANCEL
+Annulla|Reboot|Annulla
+;#DEF Cancel|Reboot|Cancel
+;#SET (305//)
+L_DATA_VIRUS_WARNING
+ATTENZIONE VIRUS DATA!
+;#DEF DATA VIRUS WARNING!
+;#SET (306//)
+L_P9
+Startup veloce
+;#DEF Fast startup
+;#SET (307//)
+L_P10
+Ignora files più vecchi di
+;#DEF Skip files older than
+;#SET (308//)
+L_P11
+giorni
+;#DEF day(s)
+;#SET (309//)
+L_NON_STANDARD_VECTOR
+*** NON-STANDARD VECTOR ***
+;#DEF *** NON-STANDARD VECTOR ***
+;#SET (310//)
+L_ADDING_TO_FILE_WATCH
+Aggiunto '%s' al 'File watch'
+;#DEF Adding '%s' to 'File watch'...
+;#SET (311//)
+L_NO_FILES_TO_CHECK
+Nessun file da analizzare!
+;#DEF No files to check!
+;#SET (312//)
+L_FW_CHECKING
+Verifica '%s'...
+;#DEF Checking '%s'...
+;#SET (313//)
+L_FILE_DOESNT_EXIST
+Il file non esiste!\n\n'%s'
+;#DEF File doesn't exist!\n\n'%s'
+;#SET (314//)
+L_REMOVE_FROM_LIST_CONT
+Rimuovi dalla lista|Continua
+;#DEF Remove from list|Continue
+;#SET (315//)
+L_FILE_OLD_NEW_DIFF
+    File: '%s'\n\nOrigine: %ld\nNuovo: %ld\n\n    Diff: %ld
+;#DEF     File: '%s'\n\nOld size: %ld\nNew size: %ld\n\n    Diff: %ld
+;#SET (316//)
+L_FILE_SIZE_CHANGED
+DIMENSIONE FILE CAMBIATA!
+;#DEF FILE SIZE HAS CHANGED!
+;#SET (317//)
+L_ACCEPT_CHANGE_CONTINUE
+Accetta variazione|Continua
+;#DEF Accept change|Continue
+;#SET (318//)
+L_FILE_CRC_OLD_NEW
+      File: '%s'\n\nCRC-32 Originale: $%08lX\nNuovo CRC-32: $%08lX
+;#DEF       File: '%s'\n\nOld CRC-32: $%08lX\nNew CRC-32: $%08lX
+;#SET (319//)
+L_CRC_CHANGED
+CRC-32 CAMBIATO!
+;#DEF CRC-32 HAS CHANGED!
+;#SET (320//)
+L_EXE
+ESEGUIBILE
+;#DEF EXECUTABLE
+;#SET (321//)
+L_ICON
+ICONA
+;#DEF ICON
+;#SET (322//)
+L_FW_ERROR
+ERRORE???
+;#DEF ERROR???
+;#SET (323//)
+L_FILE_NAME_SIZE_TYPE
+Nome file: %s\n     Dimensione: %ld\n\n     Tipo: %s
+;#DEF File name: %s\n     Size: %ld\n\n     Type: %s
+;#SET (324//)
+L_ADD_FILE_CANCEL_SKIP
+Aggiungi file|Annulla|Ignora file
+;#DEF Add file|Cancel|Skip file
+;#SET (325//)
+L_SAVE_CONTINUE
+Salva|Continua
+;#DEF Save|Continue
+;#SET (326//)
+L_ADDED_FILES_TO_WATCH
+Aggiunti %ld %s al 'File watch'
+;#DEF Added %ld %s to 'File watch'
+;#SET (327//)
+L_SELECT_A_DIRECTORY
+Seleziona una directory...
+;#DEF Select a directory...
+;#SET (328//)
+L_SAVING_WATCH
+Salvataggio 'File watch' data...
+;#DEF Saving 'File watch' data...
+;#SET (329//)
+L_LOADING_WATCH
+Caricamento 'File watch' data...
+;#DEF Loading 'File watch' data...
+;#SET (330//)
+L_INCLUDE
+Includi data files
+;#DEF Include data files
+;#SET (331//)
+L_ICONS
+Escludi icone
+;#DEF Exclude icons
+;#SET (332//)
+L_CONFIRM
+Conferma tutti
+;#DEF Confirm every file
+;#SET (333//)
+L_ADD
+Aggiungi
+;#DEF Add
+;#SET (334//)
+L_DONE
+Fatto
+;#DEF Done
+;#SET (335//)
+L_FILE_WATCH
+File watch
+;#DEF File watch
+;#SET (336//)
+L_CHECK_NOW
+Verifica ora!
+;#DEF Check now!
+;#SET (337//)
+L_ADD_A_DIRECTORY
+Aggiungi una directory
+;#DEF Add a directory
+;#SET (338//)
+L_ADD_UPDATE_STARTUP
+Aggiungi/Aggiorna startup files
+;#DEF Add/update startup files
+;#SET (339//)
+L_ADD_FILES_FROM
+Aggiungi files da una directory
+;#DEF Add files from a directory
+;#SET (340//)
+L_AVAIL_CHIP_FAST_1
+Disponibile (chip): %9s    Disponibile (fast): %11s
+;#DEF Available (chip): %9s    Available (fast): %11s
+;#SET (341//)
+L_DIRECTORIES_STAT_1
+Directories:   %8s  Files:       %8s  Analizzati:     %8s
+;#DEF Directories:   %8s  Files:       %8s  Checked:     %8s
+;#SET (342//)
+L_UPDATE_FILES
+Aggiorna files
+;#DEF Update files
+;#SET (343//)
+L_WRITES_TO_BOOTBLOCK1
+\n\nScrittura nel bootblock! (%ld per cento sicuro)
+;#DEF \n\nWrites to bootblock! (%ld percent sure)
+;#SET (344//)
+L_SOCKET_ERROR
+Errore Socket!
+;#DEF Socket error!
+;#SET (345//)
+L_CONNECTION_REFUSED
+Connessione rifiutata!
+;#DEF Connection refused!
+;#SET (346//)
+L_UNKNOWN_HOST
+Host sconosciuto!
+;#DEF Unknown host!
+;#SET (347//)
+L_IS_AVAILABLE
+%s v%s disponibile...\n\nVersione corrente: %s
+;#DEF %s v%s is available...\n\nCurrent version is %s
+;#SET (348//)
+L_DOWNLOAD_F_CANCEL
+Preleva file|Continua
+;#DEF Download file|Continue
+;#SET (349//)
+L_CONNECTING_TO_AMINET
+Connessione ad Aminet...
+;#DEF Connecting to Aminet...
+;#SET (350//)
+L_CHECKING_FOR_UPDATES
+Verifica per aggiornamenti %s (%s)...
+;#DEF Checking for %s updates (%s)...
+;#SET (351//)
+L_ERROR_SENDING
+Errore invio richiesta host!
+;#DEF Error sending host request!
+;#SET (352//)
+L_README_NOT_FOUND
+Errore leggendo file Readme!
+;#DEF Error reading Readme file!
+;#SET (353//)
+L_ERROR_RECIVING_README
+Errore ricezione dati readme!
+;#DEF Error reciving readme data!
+;#SET (354//)
+L_RECIVING
+Ricezione in RAM:%s.lha (%s bytes, %ld cps)...
+;#DEF Downloading to RAM:%s.lha (%s bytes, %ld cps)...
+;#SET (355//)
+L_DOWNLOAD_COMPLETED
+Trasferimento terminato!\n\n%s.lha registrato in RAM:
+;#DEF Download completed!\n\nFile %s.lha is located in RAM:
+;#SET (356//)
+L_PLEASE_SELECT
+Seleziona un sito Aminet
+;#DEF Please select an Aminet site
+;#SET (357//)
+L_USA
+USA|Germania|UK|Italia|Svezia|Annulla
+;#DEF USA|Germany|UK|Italy|Sweden|Cancel
+;#SET (358//)
+L_NO_TCP
+Nessun stack TCP in esecuzione!
+;#DEF No TCP/IP stack seems to be running!
+;#SET (359//)
+L_FILE_WATCH_CHANGED
+Dati file watch modificati!
+;#DEF File watch data has been changed!
+;#SET (360//)
+L_REMOVE_FILES
+Rimozione files...
+;#DEF Remove files...
+;#SET (361//)
+L_REMOVE_FROM_LIST
+Rimuovo '%s'?
+;#DEF Remove '%s'?
+;#SET (362//)
+L_REMOVE_CANCEL
+Rimuovi file|Annulla
+;#DEF Remove file|Cancel
+;#SET (363//)
+L_SELECT_FILE_TO_REMOVE
+Seleziona file da rimuovere dalla lista file watch...
+;#DEF Select file to remove from the file watch list...
+;#SET (364//)
+L_PLEASE_ADD_FIRST
+Aggiungere alcuni files prima!
+;#DEF Please add some files first!
+;#SET (365//)
+L_WATCH_CHECK_PAUSED
+Verifica file watch sospesa
+;#DEF File watch checking paused
+;#SET (366//)
+L_UP_NAME
+Nome
+;#DEF Name
+;#SET (367//)
+L_UP_VERSION
+Versione
+;#DEF Version
+;#SET (368//)
+L_UP_AMINET_VERSION
+Versione Aminet
+;#DEF Aminet version
+;#SET (369//)
+L_UPDATE_CHECK_FINISHED
+Verifica aggiornamento terminata.
+;#DEF Update check finished.
+;#SET (370//)
+L_UP_RECIVED
+Ricevuto %ld %s.
+;#DEF Recived %ld %s.
+;#SET (371//)
+L_UP_UPDATE
+aggiornamento
+;#DEF update
+;#SET (372//)
+L_UP_UPDATES
+aggiornamenti
+;#DEF updates
+;#SET (373//)
+L_VE_NEEDS_XADMASTER
+%s richiede la %s v%ld+ per estrarre gli archivi LhA+!\nInstalla l'ultima versione di %s.\n\nL'opzione di estrazione archivi è ora disbilitata...
+;#DEF %s needs %s v%ld+ to extract LhA+ archive!\nPlease install the latest version of %s.\n\nThe 'Extract # archives' option is now disabled...
+;#SET (374//)
+L_ARCHIVE_IS_CRYPTED
+L'ARCHIVIO E' CRITTATO!\n\n'%s'
+;#DEF ARCHIVE IS CRYPTED!\n\n'%s'
+;#SET (375//)
+L_ARCHIVE_IS_CORRUPT
+L'ARCHIVIO E' CORROTTO!\n\n'%s'
+;#DEF ARCHIVE IS CORRUPT!\n\n'%s'
+;#SET (376//)
+L_FILE_SCAN_END1
+Analizzati %ld %s e %ld %s\n\nVerificati %ld exe %s (%ld crunched)\nVerificati %ld data %s\nVerificati %ld %s\n\nTempo impiegato: %s
+;#DEF Scanned %ld %s and %ld %s\n\nChecked %ld exe %s (%ld crunched)\nChecked %ld data %s\nChecked %ld %s\n\nTime used: %s 
+;#SET (377//)
+L_VIRUS_FOUND_TIME1
+Virus trovati:   %8ld  Tempo:     %s
+;#DEF Virus found:   %8ld  Time:        %s
+;#SET (378//)
+L_ARCHIVE_ERROR
+Archivio: %s\n   File: %s\n\n  Errore: %s
+;#DEF Archive: %s\n   File: %s\n\n  Error: %s
+;#SET (379//)
+L_SAVING_FILE
+Salvo '%s'...
+;#DEF Saving '%s'...
+;#SET (380//)

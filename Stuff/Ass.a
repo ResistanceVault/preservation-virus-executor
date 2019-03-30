@@ -1,0 +1,19 @@
+	section code
+
+	eor.w	d0,(a0)+
+	eor.w	d0,(a1)+
+	eor.w	d0,(a2)+
+	eor.w	d0,(a3)+
+	eor.w	d0,(a4)+
+	eor.w	d0,(a5)+
+	eor.w	d0,(a6)+
+	nop
+	eor.w	d1,(a0)+
+	eor.w	d1,(a1)+
+	eor.w	d1,(a2)+
+	eor.w	d1,(a3)+
+	eor.w	d1,(a4)+
+	eor.w	d1,(a5)+
+	eor.w	d1,(a6)+
+
+	END

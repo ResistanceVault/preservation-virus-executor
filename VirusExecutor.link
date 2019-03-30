@@ -1,0 +1,12 @@
+FROM LIB:c.o+
+-V:VE.o+-V:VE_Files.o+-V:VE_Mem.o+-V:VE_Analyze.o+
+-V:VE_OtherBoots.o+-V:VE_Window.o+-V:VE_Record.o+-V:VE_AnalyzeWrite.o+
+-V:VE_Install.o+-V:VE_Utilities.o+-V:VE_Pack_files.o+-V:VE_List.o+
+-V:VE_Sector.o+-V:VE_FileStat.o+-V:VE_ShowStuff.o+-V:VE_fd.o+-V:VE_Watch.o+
+-V:VE_ShowWindow.o+-v:PrefsWindow.o+-v:VE_Prefs.o+
+-V:VE_FileVirus.o+-V:VE_Patches.o+-V:VE_PatchWindow.o+-V:VE_Log.o+-V:VE_Update.o+
+-V:VE_Monitor.o+-V:VE_Version.o
+
+TO "-V:VE"
+LIB LIB:scmffp.lib LIB:sc.lib LIB:reqtools.lib LIB:JEO.lib
+NODEBUG

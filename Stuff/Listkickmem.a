@@ -1,0 +1,56 @@
+vc_KickMemList	movem.l	d2/a2/a3/a6,-(a7)
+		move.l	4.w,a6
+		move.l	546(a6),-(a7)
+		move.l	a7,a1
+		lea	.HeadText(pc),a0
+		bsr	CLIPrintF
+		addq.w	#4,a7
+
+		move.l	546(a6),d0
+		bne.s	.ListNode
+		lea	vc_EmptyText(pc),a0
+		bsr	CLIPrintF
+		bra.s	.Exit
+
+.ListNode	move.l	d0,a2
+                move.w	14(a2),d2
+		move.w	d2,-(a7)
+		move.l	a2,-(a7)		
+		move.l	a7,a1
+		lea	.ListHeadText(pc),a0
+		bsr	CLIPrintF
+		addq.w	#6,a7
+
+		tst.w	d2
+		beq.s	.EmptyNode
+		lea	16(a2),a3
+.ListEntries	move.l	4(a3),-(a7)
+		move.l	(a3),-(a7)
+		addq.w	#8,a3				
+		move.l	a7,a1
+		lea	.ListEntryText(pc),a0
+		bsr	CLIPrintF
+		addq.w	#8,a7
+                subq.w	#1,d2
+		bne.s	.ListEntries
+
+.EmptyNode	move.l	(a2),d0
+		bne.s	.ListNode
+
+.Exit		movem.l	(a7)+,d2/a2/a3/a6
+		rts
+
+.HeadText	dc.b	10,'KickMem List (KickMemPtr: $%08lx)',10,10,0
+.ListHeadText	dc.b	'  List at $%08lx has %d entries',10,0
+.ListEntryText	dc.b	'    $%08lx: %ld bytes',10,0
+vc_EmptyText	dc.b	'  Empty',10,0
+		even
+
+
+CLIPrintF	movem.l	d2/a6,-(a7)
+		move.l	a0,d1
+		move.l	a1,d2
+		move.l	DosBase(a5),a6
+		jsr	-954(a6)
+		movem.l	(a7)+,d2/a6
+		rts

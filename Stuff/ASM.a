@@ -1,0 +1,12 @@
+	section code
+
+	roxl.w	#8,d0
+	roxl.w	#1,d0
+	roxl.w	#2,d0
+	roxl.w	#3,d0
+	roxl.w	#4,d0
+	roxl.w	#5,d0
+	roxl.w	#6,d0
+	roxl.w	#7,d0
+
+	end

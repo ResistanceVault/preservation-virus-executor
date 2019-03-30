@@ -1,0 +1,109 @@
+	SECTION CODE
+
+_LVOSupervisor	EQU	-$1E
+_LVODisable	EQU	-$78
+_LVOEnable	EQU	-$7E
+
+**********************************************************************
+
+Check_MMU
+	MOVEM.L	A2-A6,-(SP)
+	MOVEQ	#0,D0
+	MOVE.L	4,A6
+	BTST	#1,$129(A6)
+	BEQ	lbC0025EC
+	JSR	_LVODisable(A6)
+	BSR	lbC002666
+	MOVE.L	D1,A2
+	MOVE.L	$10(A2),A3
+	MOVE.L	$2C(A2),A4
+	LEA	lbC002608,A0
+	MOVE.L	A0,$10(A2)
+	MOVE.L	A0,$2C(A2)
+	NOP
+	BTST	#3,$129(A6)
+	BEQ.S	lbC0025BE
+	MOVE.L	#$109C8,D1
+	LEA	lbL00260E,A5
+	BRA.S	lbC0025DA
+	
+lbC0025BE
+	BTST	#2,$129(A6)
+	BEQ.S	lbC0025CE
+	MOVE.L	#$109BE,D1
+	BRA.S	lbC0025D4
+
+lbC0025CE
+	MOVE.L	#$10CF3,D1
+
+lbC0025D4
+	LEA	lbL0025F2,A5
+
+lbC0025DA
+	JSR	_LVOSupervisor(A6)
+	MOVE.L	A3,$10(A2)
+	MOVE.L	A4,$2C(A2)
+	NOP
+	JSR	_LVOEnable(A6)
+
+lbC0025EC
+	MOVEM.L	(SP)+,A2-A6
+	RTS
+
+lbL0025F2	dc.l	$70009FFC
+	dc.l	4
+	dc.l	$F0174200
+	dc.l	$2001DFFC
+	dc.l	4
+	dc.w	$4E73
+
+lbC002608
+	ADDQ.L	#6,2(SP)
+	RTE
+
+lbL00260E
+	dc.l	$70004E7A
+	dc.l	$8072001
+	dc.w	$4E73
+
+lbC002618	MOVEM.L	A5/A6,-(SP)
+	MOVE.L	4,A6
+	BTST	#4,$129(A6)
+	BNE.S	lbC002632
+	MOVEQ	#0,D0
+	MOVEM.L	(SP)+,A5/A6
+	RTS
+
+lbC002632
+	BTST	#5,$129(A6)
+	BNE.S	lbC002646
+	MOVE.L	#$10D11,D0
+	MOVEM.L	(SP)+,A5/A6
+	RTS
+
+lbC002646
+	BTST	#6,$129(A6)
+	BNE.S	lbC00265A
+	MOVE.L	#$10D12,D0
+	MOVEM.L	(SP)+,A5/A6
+	RTS
+
+lbC00265A
+	MOVE.L	#$109C8,D0
+	MOVEM.L	(SP)+,A5/A6
+	RTS
+
+lbC002666
+	MOVEM.L	A5/A6,-(SP)
+	LEA	lbL002680,A5
+	MOVE.L	4,A6
+	JSR	_LVOSupervisor(A6)
+	MOVEM.L	(SP)+,A5/A6
+	RTS
+
+lbL002680
+	dc.l	$4E7A1801
+	dc.l	$4E730000
+
+
+	END

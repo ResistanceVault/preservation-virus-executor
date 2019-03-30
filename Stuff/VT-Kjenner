@@ -1,0 +1,2557 @@
+
+----------------------------------------------------------------------------
+Original navn: VT-kennt
+Oversatt (så meget som mulig) fra Tysk til Engelsk av Marco 'Topic' van
+Den Hout, Juni 22. 1991
+Med takk til ASM-One for det's gode "replace" opsjon!
+Oppdateret fra Tysk til Engelsk, August 5. 1991 af   :  Mikkel Bille Stegmann
+                                                        Rekkendevej 43
+            <<<<<< SAFE HEX INTERNATIONAL >>>>>>>       4720 Præstø
+                                                        Danmark
+                                                        +45  53 796164
+----------------------------------------------------------------------------
+
+   VT2.39 Gjenkjenner:
+   ===================
+                  (Eller burde gjenkjenne)
+
+   Oppdatert: 30.03.92
+
+   - Vær vennlig å lese VT.ReadMe (VT-LesMeg) først. Takk!
+
+   - PD Distributører skal kontakte meg først!
+
+
+   Heiner Schneegold
+   Am Steinert 8
+   8701 Eibelstadt
+   Germany (Tyskland)
+   Tel. 09303/8369
+
+
+ Ikke 100% sikkert funne virus: (Dem jeg ikke har, kun 2 gamle vira)
+   - Test for "Longwords" er tatt fra andre (PD) programmer.
+   - Derfor kun muligheten mellom cold-reset eller continue (Fortsett).
+
+    - Kjente virus (jeg har):
+      ==============================
+            (Kjent av programmet og er blitt fjernet fra hukommelsen uten
+            reset hvis den gjenkjennes (untatt 3 virus-prg. se senere...)
+            Test for 3 "longwords" i hukommelsen!!!
+            Ingen Fastmem betyr, at virusen krasjer når jeg forsøkte med
+            noe FastMem expansjon. Kan muligvis fungere ved $C00000 eller
+            annen FastMem expansjon.
+
+   - .info    Annet navn: TimeBomb V0.9  se der.
+
+   - 16 Bit Crew   Cool, i Prg. også DoIo, FastMem virker, i hukommelsen
+      alltid ved $7ec00
+      spredes: over BB
+      Synligt i BB:
+      The 16 Bit Crew 1988
+
+   - 2001     SCA-Klone, Cool alltid 7EC3E, kun teksten er endret.
+
+   - Abraham     se Claas Abraham
+
+   - Aids      Vkill-Klone se der
+         Forskellen: 3 Bytes
+            1.Byte: i sjekksummen
+            2.Byte: generasjons teller
+            3.Byte: hopper inn i kodet tekst
+        (et Prg. hopper eks. til $7ebc3, det 2. til $7eba9)
+
+   - AIDS-HIV  SCA-Klone, Cool alltid 7EC3E, kun teksten endret.
+
+   - AlienNewBeat    Cold, Cool, DoIo, kun KS1.2, Fastmem ja
+         i hukommelsen alltid ved $20000
+         spres: via BB          generasjons teller: $2037e
+         Tekst i BB: eks.
+         THIS IS THE ALIEN NEW BEAT BOOT!
+
+   - Amiga Freak    Forpib-Klone  se senere
+         kun navnet i BB endret.
+
+   - Amigaknights filvirus lengde: 6048 (upakket)
+         DoIo, KickTag, KickChecksum
+         Skriver i Root og i Startup-sequencen.
+         Ingen ytterligere skader, men etter
+         5 reset's blir skjermen sort, og
+         følgende vises med en rosa tekst:
+
+         I toppen:
+            YEAH, THE INVASION HAS STARTED! YOUR TIME
+            HAS RUN OUT, AND SOON WE WILL BE
+                        EVERYWHERE!
+
+         I midten: (* vektordemo *)
+
+         I bunden:
+            THIS IS GENERATION 0039 OF THE EVIL
+                    AMIGAKNIGHTSVIRUS
+	  GREETINGS TO DUFFY, DWARF, ACID CUCUMBER 
+	    ASTERIX, ANDY AND ALL AMIGANS I KNOW
+
+         Vektordemo: 3 tekster vises med en Zoomeffekt
+                       a)   Toco of
+                       b)     THE
+                       c) AMIGAKNIGHTS
+
+   - Art Byte Bandit     annet navn: ByteBanditPlus    se senere.
+
+   - ASV-Virus  alltid $7DC00, Cool, i Prg Forbid, rydder KickTag etc.
+         ingen kopi rutine
+         skade: skifter benyttede setfunksjon Forbid til ChipAllocMem-Rutine
+                  Det er: ved ethvert Forbid-Kald blir ChipMem  tapt.
+
+   - Australian Parasite   Fastmem ja, Cool, DoIo, i Prg. BeginIo
+         spres: via BB
+         teksten som vises er blitt vent på hodet med en grafikk rutine
+         i BB:
+         The Australien Parasite!
+          By Gremlin 18/5/88!
+          Will NOT destroy game bootsectors or corrupt disks,
+          and kill other viruses!
+
+   - BAHAN     annet navn BUTONIC_1.1  se der
+
+      - BGS9 I (kopierer original prg. til devs directory)   Bytes 2608
+         Kall 12.05.91: På en A500 uten harddisk BGS9 I kopierer
+         det OrigPrg. usynlig til root dir når devs directory ikke er
+         representeret på disketten.
+         KickMem, KickTag, KickCheckSum, OpenWindow
+         PrgParts kodet til å bruke eori.l #$1AF45869,(a0)+
+         usynlig Fil i devs: A0A0A0202020A0202020A0
+         i enden av den usynelige fil kan det leses: TTV1
+         ved å bruke en monitor. Under hvert fjerde
+         reset vises en tekst ved hjelp av en grafikk rutine:
+         sort background, hvite bokstaver/tegn:
+            A COMPUTER VIRUS IS A DISEASE
+             TERRORISM IS A TRANSGRESSION
+             SOFTWARE PIRACY IS A CRIME
+
+                  THIS IS THE CURE
+
+         BGS9 BUNDESGRENZSCHUTZ SEKTION 9
+              SONDERKOMMANDO "EDV"
+
+            Fjerning: Omdøp filen i devs til original navn
+                        slett BGS VirusFilen
+                        kopier Org.Prg. til det opprinnelige directory.
+
+   - BGS9 II  likt BGS9 I
+         bare: Filen i devs kalles nå for:
+            A0E0A0202020A0202020A0
+         Tip: $E0 er et aksented 'a' (eks. å)
+         Kall 12.05.91: På en A500 uten harddisk BGS9 I kopierer
+         det OrigPrg. usynlig til root dir når devs directory ikke er
+         på disketten..
+         Endret i teksten:    :SOFTWARE'
+         Endringen i teksten ligger sammen med en kodet part av programmet.
+         i PrgFilen er TTV1 synlig.
+
+   - BIG BOSS, SCA klone, bare teksten er fjernet.
+
+   - BLACKFLASH V2.0     Cool, DoIo, FastMem ja
+         i hukommelsen alltid ved $7F000
+         Telleren = $13  tekst vises ved bruk av en grafikk rutine.
+         Røde tegn, sort bakgrunn.
+         spres: via BB
+         kodet i teksten i BB:
+         HELLO, I AM AMIGA !
+           PLEASE HELP ME !
+         I FEEL STICK !
+         I HAVE A VIRUS !
+         ! BY BLACKFLASH !
+
+   - BlackStar       Annet navn: Starfire1/NorthStar1  se der.
+
+   - Blade Runners   SCA-Klone, alltid ved 7EC00, Cool, i Prg. DoIo
+         Tekst: Hello! We are the Blade Runners!     etc.
+
+   - BLF-Virus  alltid ved $7F000, Cool, DoIo, BeginIo
+         rydder KickTag etc.
+         Virusprogrammet viser ikke seg selv (ingen requester, grafikk, farve)
+         program part Kodet via eori.b #$28,(a1)+
+            Synligt : This is the new virus by BLF            (og mere)
+         Skader og spres: via BB
+
+   - BlowJob   KickTag, KickCheckSum, i Prg. DoIo og $6c, alltid $7f000
+         Gir seg ut for å være Memory Allocator 3.01 (etter teksten)
+         spres og ødelegges: via Bootblocken
+         Så snart  telleren har nått $7530, dekodes en program part ved å
+         bruke subi.b #$71,D0 og bruke Display Alarmen, følgende tekst vises:
+            ONCE AGAIN SOMETHING WONDERFULL HAPPENED  (HE HE HE)
+           PLEASE POWER OFF - PLEASE POWER OFF - PLEASE POWER OFF
+
+   - BlueBox  Filvirus, ingen kjente vektorer endret.
+         lengde (crunchet) 5608, kun Cold reset (I'm sorry!)
+         Spres etter sigende blandt modem brukere og mailbox operatører, men
+         det er ingen spesielle betingelser for spredning (inkludert Source 
+         for serial port $DFF030, $DFF018 ???!!!??? #Disables connection?!?!)
+         Crunched Prg. (Bluebox) består av 3 deler:
+         - En velger: ##enables >Tonfolge mit Zehnertastatur<
+         (Pardon me? enables beep pattern using 10-key keyboard?!!!)
+         - et komplet icon.library
+            - lengde: 6680
+            - Tilføyet tekst: input.device , RAM:
+            - forskjellige årstall
+      	    - en kopi-part for dårlige (virus!) icon.library
+            - tester om icon.library eksistere, hvis ikke, ingen endring.
+            - tester om disken er validated
+            - setter beskyttelses-Bits tilbake.
+            - kopiere dårlig(virus!) icon.library
+            - virker også med HD !!!!!!
+         Etter reset starter en proces 'input.device' (med tomme tegn) ved å
+         benytte icon.library. VT gjenkjenner denne prosess, men kan ikke 
+	 fjerne den (cold reset), i RAM: lages en usynlig fil (ikke altid)
+         ($A0).
+         
+	 Nermere tips:
+         VT gjenkjenner virusen Bluebox, men kun når den er crunchet !!
+         Ignorer cold reset requesteren og slett først det dårlige
+         icon.library. Kopier så et originalt icon.library til disken eller
+         HD (ellers ingen  Workbench!) til slutt skal du starte
+         cold reset-Programmet.
+         Min maskin reagerete normalt etter dette. Dette kunne være
+         forskelligt avhengig av modem/mailbox programmørene. Gi vennligst
+         beskjed om slike problemer. TAKK!.
+
+         Source:   Bluebox.lzh  23033 Bytes
+                  -Bluebox            5608    (crunched endnu engang!)
+                  -Bluebox.info       325
+                  -Bluebox.DOC        37271
+                  -Bluebox.DOC.info   354
+
+   - BOMB-Bootblokk ikke kjent av VT, fordi det bare en spøk, og ikke 
+     et ekte virus.	
+
+   - BootX-Virus BB, Kicktag, KickChecksum, Også på KS2.04
+	Annet navn: Perverse I
+	Skjuler seg ved å skrive følgende lesbare tekst i BB:
+	"BootX-Viruskiller by P. Stuer". viser seg når den oppdager
+	skrivebeskyttede disker ved å sette frem en requester som 
+	sier: Read/Write Error.
+	Spredes: Over BB
+	Skade:
+	  Bruker Input.Device for tastebordet og teksten gjøres i RAW-kode 
+	  i BB (Amerikansk tastatur):
+
+         "SOFTWARE_PIRATES RUINED MY EXCELLENT PROFESSIONAL DTP_PROGRAM
+         I REVENGE MYSELF ON THESE IDIOTS BY PROGRAMMING VIRUSES
+         THIS IS PERVERSE I  BECAUSE I LIKE ASSHOLE_FUCKING
+         I PROGRAM VIRUSES FOR MS_DOS TOO"
+
+	(STÅR DET I BOOTBLOKKEN ETTER AT DEN ER FERDIG MED Å SKRIVE)
+
+	Deretter kan du ikke gjøre mer, og må starte på nytt, og installere
+	en ny bootblokk over viruset.
+
+   - BRET HAWNES    Filvirus  lengde: 2608 , alltid ved $7F000
+          Kicktag, SumKickData, KickCheckSum, OpenNewLib, $6c
+          spredning og skade:
+          skriver i root og i 1st linje av Startup-Sequence: C0A0E0A0C0
+
+          Efter 20 mins. blå grafikk skjerm og hvite tegn:
+
+            GUESS WHO`S BACK ??? VEP. BRET HAWNES BLOPS YOUR SCREEN
+                 I`VE TAKEN THE CONTROLL OVER YOUR AMIGA!!!
+             THERE`S ONLY ONE CURE: POWER OFF AND REBOOT ! ! ! ! !
+
+          For å unngå at hvert 10. spor blir ødelagt.
+
+
+   - BS1! (SCA Klone igjen) Annet navn Bamiga Sector One
+
+   - BUTONIC 1.1     annet navn BAHAN (i BB alltid leselig)
+         Cool, in Prg. DoIo, alltid ved $7ec00, FastMem ja
+         spres: over BB når DOS0 finnes
+         tekst vist ved å benytte PrintIText (decoded med eori.b #-1,d1
+         over $7eb0c)
+         etter decodning i hukommelsen står det:
+     BUTONIC'S VIRUS 1.1 GREETINGS TO HACKMACK ... <GENERATION NR. #####>
+
+   - Byte Bandit       Uten FastMem
+         Begin, KickTag, KickCheckSum, Vec5
+
+   - Byte Bandit 2    annet navn: No name 1  se der
+
+   - Byte Bandit Klone     uten Fastmem
+      Forskjellen i forhold til den originale ByteBandit: 180 Bytes
+     (  Byte B.. Teksten er fjernet fra BB!!)
+
+   - ByteBanditError
+      Det Orginale ByteBanditVirusPrg. starter i BB ved $0C, her på $32.
+      Fordi den gamle BB-Kopi Rutine benyttes, den 1. LW i den nye
+      Kopi-BB NOT DOS0, er at den nå infiserte disk er "Not a DOS-Disk"
+      Det betyr at den hverken kan spres eller boot'es.
+
+   - ByteBanditPlus  Kick1.2 Uden FastMem
+                  Begin, KickTag, KickCheckSum, Vec5
+      Forskjellen i forhold til Original Byte Bandit er på 92 Bytes
+      (trackdisk.... er fjernet)
+
+   - Byte Parasite   størrelse: 2108 
+      Skulle være på S6c, hvis før resulterer det i GURU
+      Skade: 
+      Skulle være imellom cd, dir og startup-sequencen, med
+      1 bytes mellemrom, men er meget meget dårlig kodet.
+      (Programmøren leker bedre med en Joystick). Derfor: mange GURU'er
+      Der vises ingen tekst.
+
+   - Byteparasite II fil, størrelse: 908 bytes, smitter ogå med KS 2.04
+     ingen vektorer.
+
+   - Byteparasite III fil, størrelse: 2160 bytes
+	Cool, Kickmem, KickcheckSum, (Avogtil tåpelige verdier fra 
+      tilstedeværende minne).  $6C (tåpelig verdi).
+      Viruset må fjernes fra minnet ellers så vil du få guru (blinkende
+      rødt "lys") forårsaket av den tåpelige $6C
+      Viser et vindu på skjermen med: Virus-checker v.3.0, og så videre....
+      Prøver å finne C/Virus-Checker og skriver programdeler, (Hvis noen) 
+      totalt, etter $7C000. Prøver å infisere andre diskdriver med under-
+      katalog C. Jeg finner da kun en fil med størrelse på 0 biter
+      Fremsetter et dos-requester: Hallo Enforcer-Freunde. 
+      VT viser her bare enda et Enforcer-Treff ($6C = ZeroPage).
+
+	OBS!!!!! Jeg har fått flere brev som sier at du kan få
+        --------  skrivefeil på dine disketter eller HARDDISKER! på
+                  grunn av denne virus.
+
+		1. "DA FANT JEG UT AT MIN STEPMOTOR På DISKDRIVEN 
+                    HADDE FESTET SEG På SPINDELEN, SLIK AT JEG MåTTE 
+                    TREKKE DEN TILBAKE MED EN TANG"
+
+		2. "DERETTER MåTTE JEG JUSTERE LESEHODENE IGJEN!!!!"
+
+	OBS! OBS!!!!! Nå har vi nådd det punkt at viruser kan påvirke
+		Maskinene (diskdrivene). Derfor skal du ALDRI bruke en 
+                disk FØR DEN ER TESTET FOR VIRUS!!!!!!!!!!!!!!!!!!
+
+   - Bbyte VOYAGER I    Kicktag, KickCheckSum, i Prg. DoIo og $6c
+         alltid ved $7F000, kodet med $DFF006
+
+      spres og skader (også HD!!): Bootblock og skriver i Block 880 
+      "Infected by BYTE VOYAGER !!!!!"
+      Tekten er på disker med det nye disknavn.
+
+   - Byte Voyager II    Kicktag, KickCheckSum, i Prg. DoIo og $6c
+         alltid ved $7F000, kodet ved $DFF006
+
+      spres og ødelegger (også Harddisk!!):
+      Bootblock og skriver i Block 880 "Another Virus by Byte Voyager"
+      Teksten er på disker med det nye disknavn.
+
+   - Byte Warrior (DASA)    (KickV1.2)
+         DoIo, KickTag, KickCheckSum
+         Første encryptede BB-Virus
+
+   - CCCP-Virus    Cool, i Prg. Vec3, DoIo, Openwindow, NewOpenLib !!!!
+      første VirusPrg. som spres som BB og som Link!!
+      Synligt i BB: CCCP VIRUS
+      Link: filstørrelsen er på 1044 Bytes
+      infiserer ingen Prg. i l* (eks.libs), d* (eks.devs), f* (eks.fonts)
+
+   - CENTURIONS     annet navn: THE SMILY CANCER   se der
+
+
+   - Chaos        Cool, DoIo
+     BB kodet med verdien $DFF006
+     Skader og spres: over BB
+     så snart telleren har nått 8, blir alle blokker på disketten
+     fylt med tilfeldige verdier, og virusen tilføyer søppel på alle
+     blokker.
+     Vises med Display Alarmen: Chaos by Tai-Pan etc.
+     og derefter reset'er den.
+     Source : Virusinstall V2.0
+
+   - CHAOS-MASTER V0.5  fil PP-Pakket: 12972, Upakket: 16676 biter
+      CHAOS-MASTER V0.5 er å lese i filen
+     Filnavn sannsynligvis: dir
+     ingen kjente vektorer er skjult, ikke resident
+     Skade og spres:
+	- Dir-kommandoen er mange ganer ikke utført. En liten requester
+	  sier: error xyz, Return-gadget
+	  Verdien xyz kan også være negativ og kaller ikke alltid
+	  Dos-error-code
+	- du får: dir df3:
+	  innholdet av df3: vises, og virusfilen er kopiert etter 
+	  df3:c/dir. Hvis en dirkommando er funnet på disken, så blir den 
+	  overskrevet av virusen.
+	- du får: dir prefs
+	  innholdet av prefs blir vist og disk.info (lengde: 370 biter) er
+	  kopiert etter prefs. Denne fil inneholder icon-strukturen. De 
+	  fleste delene av denne strukturen er overskrevet av tekst.
+	  Resultat: du klikker på prefs, disk.info må utføres, men.. 
+          beklagelig pga strukturfeilen... eders gode venn slutter 
+	  å samarbeide, å du må resette.
+	- tekst i disk.info: Sorry an alle User   O.S.V.
+	  Anbefaling: FJERN dir-kommandoen (VT) og kopier en ny fra
+	  orginal WB  	
+ 
+   - Charlie Brown          annet navn : Hireling Protector V1.0
+                                         Forpibklone   se der
+                                         kun teksten er endret.
+
+   - Cheater Hijacker BB, Ks 2.04 også, LameBlame klone
+     DisplayAlert teksten forandret:
+	-+= Cheater Hijacker OSV
+	Er infisert av en annen virus: "Virus Terminator v.6.0", (Se der
+	for mere informasjon)
+
+   - Check Filevirus PP-Crunched  Lengde : 18644
+     Prosess: Harddisk.device
+     i C-Aztek
+     skader: Alle 5 min. (delay $3A98) bilder (Totenkopf) og lyden
+     for et kort øyeblikk.
+     I N G E N sprede rutiner funnet.
+
+   - Claas Abraham     annet navn: Abraham, MCA
+      Cold, Cool, KickTag, KickCheckSum, $68
+      behøver FastRam !!!!! vist ved å bruke move.l #$4,d1 og AllocMem
+      (program missforståelse????)
+      Mens prg. kjører først BeginIo
+      spres: via BB
+      skade: etter $F (#15) reset'er formatteret disk.
+      Eor-Byte for nye BB er valgt ved å benytte $DFF006
+      dekodet i hukommelsen:
+      >>> Claas Abraham Virus !!! <<<
+
+   - Clist-Virus    annet navn: U.K.LamerStyle
+      Begin, Kicktag, KickCheckSum
+      dekodet i hukommelsen:
+      expansion ram.trackdisk.device..clist.library.clist 33.80 (8 Oct 1986).
+      spres: via BB
+      Nye BB er igjen kodet med eori.b. Encryptions byten er valgt ved
+      å benytte $DFF006.
+      minne for VirusMainPrg er allokert ved å bruke StructMemList og
+      Allocabs.
+	
+   - CODER     annet navn: Coders Nightmare
+      alltid $7f600, DoIo, KickTag, KickCheckSum, $68
+      i BB ukodet:
+      Bootblock installed with 'CODER' - The Ultimate Viruskiller!!
+      spres: via BB
+      i hukommelsen (dekodet med ror.b #2,d1):
+            Something WONDERFUL has happened!!
+         Your Amiga is alive, and it is infected with the
+         'Coders Nightmare Virus'. - The ultimate key-killer,
+         masterminded by the megamighty Mr. N of
+         The Power Bomb Systems!!
+
+   - Coders Nightmare    annet navn: CODER  se der
+
+   - Color   Filvirus  lengde: 2196Bytes
+         DoIo alltid $70000, Cool
+         Avtar 102400 Bytes ChipMem (ikke brukt av programmet),
+         Skifter mellom grafikk demo, sort bakgrunn og 3 barer
+         (rød, grøn, blå) og installeres på samme tid fra $70000
+         Virusprogrammet og ved 7F000 Virus-BB'en (TURK).
+         Endrer IKKE Startup-Sequencen.
+         ødeleggelse:
+         Ved DoIo-jump er Virus-BB skrevet.
+         Ved Cool-jump $5000 er x TURK  skrevet i hukommelsen.
+
+   - Compuphagozyte 1 Fil virus 1452 bytes
+	Ingen skjulte vektorer
+	Synlig som: The Compuphagozyte.. OSV
+	Fremsetter en requester med teksten: Virus-Checker V 4.0 by...OSV
+	Viruset fremkommer når du trykker på requesteren og ... ingenting
+	skjer! Venter på CloseWindow og DiskInserted.
+	Ødeleggelse:
+	Så lenge requesteren er tilstede, er alle disketter som ikke er 
+	skrivebeskyttet, forkortet med 1452 bytes. MERK! Ingen spredning!
+	Råd: Fjern, og installer den orginale Virus_Checker igjen
+
+   - CompuPhagozyte 2 Fil virus 1148 bytes
+	Ingen skjulte vektorer
+	Synlig som: The Compuphagozyte.. OSV
+	Fremsetter en requester med teksten: VirusX 5.0 by... OSV
+	Viruset fremkommer når du trykker på requesteren og ... ingenting
+	skjer av det som skjer når du starter den orginale VirusX! Venter 
+	på CloseWindow og DiskInserted.
+
+	Ødeleggelse:
+	Så lenge requesteren er tilstede, er alle disketter som ikke er 
+	skrivebeskyttet, forkortet med 1148 bytes. MERK! Ingen spredning!
+	Råd: Fjern, og installer den orginale VirusX 4.01 igjen		 
+
+   - Crackright    annet navn: Diskdoctors  se der
+
+   - Crime Linkvirus Prgstørrelse øket med 1000 bytes.
+      Infiserer den første CodeHunk i Cool, AllocMem, Dos: Open, LoadSeg,
+      Dosbase +$2e
+      virker ikke på programmer som kjøres under KS 2.04
+      Ingen requester rutine funnet.
+      Dette virus kan skrive til den samme fil flere ganger
+      (Jeg har testet dette 3 ganger) 
+      I minnet dekodes 19 bytes: "Crime!00dos.library"
+      Spredes:      
+          
+            - Flag Disk o.k. ($52)
+            - #16 Blokk fri
+            - Fil mindre enn #102400  (#$19000)
+            - 1.LW #$3F3  (Fil kjører)
+            - #$3E9 er funnet (1.Hunk is CodeHunk)
+            -  Siste kommando i 1.Hunk is #$4E75 (RTS). Viruset infiserer
+              da $4E71 (NOP).
+              eller:
+              Er funnet bak ved $3E+1 Wort-Schritte. Viruset infiserer
+              da $60xy (bra.s xy).
+            - Navn inneholder ikke: #, *, -, ., ?,
+
+      VT finner Crime i Minnet  ...........15.02.92
+      VT fjerner virus link delen .........16.02.92
+
+      VIKTIG!!!!!
+
+      VT vil finne Crime viruset i "Filetest" opsjonen, men den
+      andre testen kan ikke finne viruset  (Block-test) 
+ 
+   - DAG   Cool, i Prg DoIo, Fastmem ja, alltid ved $7ec00
+      Cool, stykke av kodningen: i den originale SCA-Tekst er det innskjøvet:
+               Try ANTIVIRUS from DAG
+
+   - DASA  annet navn: ByteWarrior  se der
+
+   - DAT '89   kun KS1.2 på grunn av DoIo-ROM-jump, KickTag, KickCheckSum
+      alltid 7F800, prøver å bytte teksten i BB:
+            THIS BOOT RESETS ALL VECTORS   etc.
+      Så snart telleren når $F, Vises følgende i DisplayAlarmen:
+                     DAT '89!!!
+      Benytter IKKE trackdisk.device !!!!
+      skade:
+         skriver BB .
+         ødelegger Block 880 og 881 (Disk Root)
+
+   - DENIZ  Cool SCA-klone
+	Spres via KS 2.04 også
+	bare teksten er forandret	
+
+   - Destructor   Cold
+         Synlig i BB:
+            Destructor_Virus v1.2 Written by Aldo Reset.
+            (c) M.C.T. Ltd 1990- Everything is ander control !
+            (eh!eh!)
+         ingen kopierings rutine funnet!!
+         skader ved neste reset over Cold og på en ikke-skrivebeskyttet
+         disk blir hvert fjerde spor overskrevet.
+
+   - DIGITAL AGE = Rude Xerox = Forpib-klone  kun teksten er forandret
+
+   - DIGITAL EMOTIONS   Cool, i Prg. DoIo, alltid $7ec00
+         i BB står det: *** DIGITAL EMOTIONS ***
+         Bruker telleren til å velge  mellom:
+         - kopiere BB
+         - 'VIRUS ' skrevet på track 0 :No Dos-Disk
+         tekst vist (dekodet med -1) over DisplayAlarmen:
+                KickStart ROM Ødelagt ved $c00276
+
+   - DISASTER MASTER V2  ( cls * )   1740 Bytes
+         seperat virkende Prg. for startup-sequencen
+         kicktag, kickcheck
+         i Prg. DoIo
+         cool og cold er tømt.
+      Fjerningen: slett første linje i Startup-Sequencen
+              slett fil 'CLS' i C: dir.
+         Skrevet til disketten av:
+         Intro-Maker by T.C.R.
+
+   - DiskDoctors (KickV1.2)
+         Mutanter kan bli avsløret ved å kikke på $4 (Checksum)
+         og fra $390-$3A8 (Variabler)=forskjellige ved enhver reset
+
+   - Disk-Herpes    Cool, i Prg. DoIo, i hukommelsen alltid ved $7ec00
+         Ofte galt forvekslet som Phantasmumble, Fastmem ja
+         spres: via BB
+         skader: dumper hukommelse fra $60000 til Track 80 (Root): Disk BAD
+         grafikk rutine: Tysk flag + Tekst (forøvrigt synlig i BB)
+              --- Hello Computerfreak ---
+            You've got now your first VIRUS
+              ** D i s k - H e r p e s **
+              Many Disks are infected !!
+            Written by >tshteopghraanptha<
+                c 27.07.1987 in Berlin
+
+   - Disk.info     370 bytes  INGEN spredning
+	Den orginale WB1.3 ikon er utskiftet (tekst e.g. utført:
+	This i a little present for all lamers abroad).
+	så snart du plasserer en disk i driven med et disk ikon på skjermen
+	vil computeren stoppe opp.
+	Hvis du stopper Startup-sequence for å bruke CLI, så vil ikke noe 
+	ikon bli kjørt, og du bruke disken uten problemer.
+	Reparasjon: skift ut disk.info med orginal ikon.
+	Kilde: Ukjent    (diskpacker ???)
+
+   - Disktroyer V1.0  fil  Upakket: 804 bytes
+	Allocmem
+	også eksekverbar med KS 2.04
+	prøv å fjerne ved å flytte CLI-vinduet.
+	Jeg tror derfor at filen er kjørt som CLI-kommando
+	I filen kan du lese: Disktroyer v1.0 osv
+	Ingen spredning
+	Ødeleggelse, når:
+		- virustelleren når $96
+		- en disk er plassert i driven
+		- i tilfellet disken ikke er skrivebeskyttet:
+		- headstep i driven(e). ødeleggelse på de diskene som er 
+		  plassert i drivene, og muligens driven.
+		- DisplayAlert: Disktroyer V1.0 osv
+	Reparasjon: Fjern filen (VT) og kontroller Startup-Sequence 
+
+   - DIVINA EXTERMINATOR I   Cool, DoIo, Inter.5 og $64. i Prg også
+         $68 og $6c. overskriver SetPatchList ved $C0.
+         Koder BB igjen ved å ta en verdi fra $DFF006 (verdien er gjemt i
+         BB ved $3F6).
+         etter eor.w d0,d1 i memory:
+            VIRGO PRESENTS DIVINA EXTERMINATOR I
+         Later til å være en normal installert BB.
+         skader og spres: via BB
+         etter 3 kopier: startes lesningen av K-key og etter ti ganger
+         settes ExecBase til nul => system crash
+         Source: -p-turbo.dms
+
+   - DOSSPEED (New Zealand) riktig navn: Revenge of the Lamer
+
+   - Dotty-Virus  alltid S7f000 KickTag, KickChecksum
+          i program: DoIo, Vec5
+          Ingen trackdisk.device
+          Spres via: BB
+          Skade: Endrer PRIVAT-intuisjon-struktur
+
+   - DumDum BB spres også med KS 2.04      Alltid ved $7FA00
+	 Cool i prg. DoIo $64, $80 (Hallo Enforcer-venner)
+	 Lesbar tekst i BB:
+	You are the owner of a DUMDUM virus, please unprotect disk to kill
+	(vær vennlig å ikke gjøre dette) (er du DUMDUM! eller.....)
+	Tekst editering med DisplayAlert
+	Ødeleggelse og spredning:
+	- Infeksjon er via BB
+	- Formaterer diskene.
+
+   - EM-Wurm        (Mot EUROMAIL)
+         overlever ikke reset's
+         alltid:
+         skriver i startup-sequencen  $A0,$0A  (1. linje)
+         egen Prosess: clipboard.device
+         skriver i c: $A0, lengde: 3888 Bytes (ASCII-Tekst tilgjengelig)
+         skriver i 5. Byte av c:protect (hvis mulig) $01
+         Resultat: protect kommandoen er ubrukelig.
+         Skade rutine:
+         Virker kun når devices EM, EUROMAIL eller EUROSYS er tilgjengelige.
+         overskriver alle Filer i disse directories med hukommelse fra
+         MsgPort. I skadede filer: fra $BC teksten 'clipboard.device'.
+         Etter en pause på 3min. benytter den dosdelay $259A
+         Etter pausen kalles skade rutinen frem igjen.
+         Source:
+         QuickInt   PP-crunched  lengde: 3196 Bytes
+         VT klarer IKKE prosessen, men fyller det med NOPs
+         Noen deler, eks. Autorequesteren, con etc. kan ikke testes, fordi 
+         jeg ikke har EUROMAIL. Disse deler fylles også med NOPs.
+         Hvis du har problemer med virusen pga disse NOPs, hjelp meg
+         vennligst.
+
+   - Excreminator 1 Fil 2392 bytes, Under KS2.04 too!!
+         Ingen skjulte vektorer
+         Ingen sprede rutiner
+         Ingen skrive-rutiner for startup.sequence
+         Prøver å være en viruskiller, men vi vet noe annet!
+         I filen kan du lese: The Lame Trio OSV......
+         Frister deg til å fjerne skrivebeskyttelsen på dine disker ved å
+         bruke en requester som sier det! OBS!, Du burde nå vite bedre!
+         Ødeleggelse:
+         Prøver å sette opp Exec.library (4 bytes) som en teller-fil
+         (start verdi = 5) som telles ned for hver gang den kalles på.
+         Når telleren blir 0 ....ALLE diskdrive hoder Flyttes  
+         Resultat: Not a dos disk og Display-Alert: Lame Sucker OSV...
+         Deretter reset.
+ 
+         RÅD: Begge filene fjernes, og deretter må Startup-Sequence 
+         testes.
+
+   - EXTREME
+         DoIo, KickTag, KickCheckSum, RasterBeam
+         enten 7f800 eller ff800 => benytter SysStkLower+ $1000
+         leselig tekst i BB : THE EXTREME ANTIVIRUS etc.
+         så snart telleren når nul :
+         Alarmeres og ødelegges (Disk BAD) alle skrivbare disks i alle drev.
+         spres: via BB.
+
+   - F.A.S.T.
+         Cool, DoIo , FreeMem, altid ved $7F000
+         Alarm (kodet med eori-Byte taget fra $DFF006) og sletter
+         også endringer $C0-$E0  (SetPatchList!)
+         spres: via BB
+
+   - F.A.S.T. 1     FAST-Klone
+         For å innsette Dos.Library i toppen av programmet,er den kodede
+         part rykket en smule lenger ned. Hukommelses bruken er den
+         sedvanelige.
+
+  - F.I.C.A
+         BeginIO, KickTag, KickCheckSum, SumKickData
+         spres: via BB
+         Spesielt: utgir seg for en "ren" BB.
+         synlig Tekst i BB ved $288
+         eks. F.I.C.A RULES!
+
+   - FAST EDDIE  meget lik Glastnost Blokk 2 og 3.
+         KickTag, KickCheckSum.
+         I prg. også DoIo, $6 i hukommelsen alltid ved $7F000.
+         Behøver ikke trackdisk.device.
+         Aktiveres når blokk 880 leses.
+         Skade: Processoren stopper etter cirka 15 til 20 minutter.
+         Skriver sin egen Bootblock. Velger en blokk over $DFF006
+         gjennom muly #6,D7 og skriver i denne blokk ved $100 :" FAST EDDIE".
+         Denne blokk har nå en permanent skade.
+         Omdøper disketten til : "This Disk Is Infected (HE-HE)."
+         Koder enhver Bootblock med Byteverdien $DFF006 eor.b D1,(A0)+.
+         Dekoder sin egen BB med eor.b D6,(A0)+.
+         Dekodet i hukommelsen:
+         "CALL 43-444304 and ask for Henrik Hansen (FAST EDDIE)".
+
+   - FORPIB     no Fastmem, BeginIo,KickTag, KicCheckSum, Vec5
+	spres:  over BB
+	får minne ved å bruke Memlist, minne for ny BB bruker AllocMem
+	in BB:   - FORPIB - 09.88 - No 197102 -    etc.
+
+
+    - Freedom  størrelse: 10876 Bytes
+         Source: Freedom!.LZH 8153 Bytes
+         Ingen "hemmelige" vektorer
+         Forsøker å gi et godt inntrykk ved å skrive:
+         Freedom!     by Steve Tibbett
+         Checking Df0: for 126 viruses
+         Etter en tid vil du få en beskjed. eksempelvis:
+         SADDAM-Virus removed!
+         eller
+         SMILY CANCER-VIRUS removed!
+         Skade: Skriver i hver 5. Block (Også i Root=880)
+         Endrer kanskje også innholdet av et spor!
+         (Muligens skulle dette forhindre å gjenkjenne virusen på blokkene)
+         De ødelagte blokker kan ikke gjenopprettes, skriv data'ene pånytt og
+         formater disken.
+       Med litt hell gjenkjenner VT, via BitMapTest'en, en "Freedom-Disk".
+       Via BlockITest viser VT ikke at "datasøppelet" går fra disk til disk,
+       og sporene endres.
+
+   - FrenchKiss   bruker Blokk 0-5 i spor 0
+         Jeg har kun Block 0 og 1. En ekte virus !!!
+         Cool, DoIo, $6c, Vec5,
+         alltid ved $7f0d0
+         spredning: Block 0 til 5 , Track 0
+         skade:
+         Telleren: Track 0 overskrevet eller Track 80 ødelagt.
+         Jeg kan ikke fortelle mer, da jeg kun har blokk 0 og 1.
+         send meg vennligst en infisert disk!!
+
+   - Frity  Forpib-Clone    se der
+
+   - Future Disaster    kun Kickstart V1.2, Cool, DoIo, BeginIo alltid ved
+         S7FB00. Bruker Trackdisk.device
+         Spres: via BB
+         Skade: Når telleren når 7:
+         - Skriver Hukommelsesinnholdet til Block 0 og 1
+         - Skriver Hukommelsesinnholdet til Block 880 og videre.
+         Resultat: Disketten er ubrukelig.
+
+   - Gadaffi  (KickRomV1.2 Floppymusik)
+         Cool, DoIo, KickTag, KickCheckSum
+
+   - Gandalf BB Cool, ExitIntr, PutMsg
+
+	BB-del kodes med eor.w d1,(a1)+
+	ved dekoding kan det leses i minnet: Gandalf's Rache.....
+	Spredning og skade:
+	- overskriver BB
+	- Ødelegger disken, med en virus-teller. Misforstår DiskSeek med 
+	DiskFormat, Display-Beep med DisplayAlert o.l.	(novice?)
+
+   - Glasnost Block 0 til 3, Lengde også 2048, KickTag, KickChechsum
+         i prg også DoIo, $6C, i hukommelsen alltid ved $7F000
+         Behøver IKKE et trackdisk.device.
+         Er aktiv når Block 880 blir lest.
+         skade:
+         Blokkerer computeren etter 15-20 min. etter noen utregninger.
+         Skriver sin egen BB og destruerer også filer i block 2 & 3
+         velger en blokk over $DFF006 gjennom muly #6,d7  og skrives
+         i denne block fra $100 4 LongWord ($11111111, $22222222,
+         $4444444, $8888888). Denne blokk kan  I K K E repareres!
+         Tekst i blokk 3: Glasnost VIRUS by Gorba!! First release
+
+    - Golden Rider Linkvirus. Alltid i minnet ved $7C000
+	Forandrer Cool, DoIo, DosOpen
+	Virker ikke med DosLib-Version 35 eller senere
+	Progstørrelse: økes med 868 bytes. linker flere ganger i en fil, 
+	siden det ikke er noen test om filen er infisert fra før.
+	Filen kan maksimalt være 100000 bytes.
+	Filen må være eksekverbar.
+	Filnavnet må kun bestå av biter inneholdende A (Ausnahme/: 10)
+	En maksimal grense av byter i programmet er ikke funnet.
+	spres ved:
+	  df0:test/file
+	Spres IKKE ved:
+	  df3:test/F9
+	Virusdelen inneholder ikke noen oppkallsrutine
+	Linkes i enden av 1.Hunk og setter en RTS vha en NOP
+	I tilfellet av at det ikker er en RTS i slutten av 1.Hunk, så vil
+	$38 prøve å finne en RTS ed Hunkslutten, og så tilbake gjennom BRA.s.
+	I den første Hunk av den ødelagte fil, kan du lese ukodet:
+	>>> Golden Rider <<< by ABT
+	VT prøver å fjerne virusdelen og insette en pseudokode, men 
+	ingen garanti 
+	Vennligst bruk en kopi!!
+	Merk: De 3 TestLongWords kan bli plassert i to forskjellige blokker
+	Golden Rider Viruset er kun 100% gjenkjennelig ved bruk av filtest.
+
+    - Gotcha Lamer  Linkvirus også kalt "Lamer Bomb"
+         Prgsize økes med 372, bytes DoIo, infiserer kun
+         C/kommandoerne Dir, Run, Cd, Execute.
+         Damage:
+         INGEN infeksjon i andre filer enn ovestående.
+         Diskdrevet starter å hoppe (hakke).
+         DisplayAlert viser " HAHAHA....Gotcha LAMER!!!" og reset oppstår
+         Se til link C/Dir, DH0:c/run, DH0:C/cd, DH0:c/execute.
+
+         Source Program Minidemo.Exe. 773 bytes
+
+   - Graffiti      omkoding av 16Bit Crew + 3D-Grafikk
+         FastMem ja, Cool, i Prg DoIo, i hukommelsen alltid $7ec00
+         spres: via BB
+         grafikk rutine med 3D
+         ukodet i BB:
+         VIRUS! written by Graffiti
+
+   - GREMLIN    Cool, KickSumData, i Prg. DoIo, i hukommelsen alltid $7f400
+         sprees: via BB
+         tekst vises med grafikk rutine: rød bakgrunn, hvite tegn
+                        GREMLIN
+
+   - GX.TEAM    Fastmem ja, kun KS1.2 på grunn av absolutt DoIo-hopp
+         Cool, DoIo, KickTag, KickCheckSum, i hukommelsen alltid ved $7f4d0
+         spredes: via BB
+         Tekst vises via displayAlarmen (dekodet med sub.b #$41,d0 etter
+         $7f300):
+         Mais qui voila ???C'est le nouveau VIRUS de GX.TEAM !!
+         AAAHH! Les salauds! Les ...(Insultes diverses)
+         He!He! SILENCE :
+         GX.TEAM entre enfin dans la legende ...
+         BYE!!!  
+
+   - GYROS  Cool, DoIO, alltid ved s7EC00
+            Benytter ikke Trackdisk.device
+            Spres via: BB
+            Skade: Når telleren når 10 skjer dette:
+            - Stopper Computeren
+            i BB: Your Amiga is fucked from a nice GYROS.
+
+   - Hauke  Byte-Bandit-Klon
+            tekst endret: Hauke Jean Marc
+
+   - Haukeextermninator I Disk-Doctors-Klon
+            tekst endret: Haukeexterminator I.
+
+   - Hilly  KickTag, KickCheckSum, Kick1.2
+            DoIo i Prg med absolutt ROM sprang
+            Tester for spesiell Kickstartversjon ($FC0090)
+            Hvis tilgjengelig, ingen virusinfeksjon.
+            Bruker ikke trackdisk.device, så skrivning til harddisken
+            er mulig.
+            I hukommelsen: alltid ved $7f300 (ResStruc.)
+            spres: over BB
+            Ingen nærmere rutine funnet (Ingen grafikk etc.)
+
+   - Hireling Protector V1.0     andet navn : Charlie Braun
+                                              Forpib klone   se der
+                                              kun teksten endret.
+
+   - Hochhofen linker også med KS 2.04. Prg.størrelse økt med 3000 bytes
+	INGEN kjente skjulte vektorer
+	Siden jeg ikke kan se navnet på denne virus, (fremkommer ikke
+	i programkoden) har jeg kalt den Hochhofen
+	spres:
+	Bare mulig ved start av infisert program.
+	Scanner root, (examine, exnext, etc.) og leter etter filer som er:
+		- executive ($3F3)
+		- mindre enn 200000 bytes
+		- enda ikke infisert.
+	Plasserer seg som den første hunk og ekspanderer filen med 3000 bytes
+	(hunk ikke kodet)
+	merk: IKKE alle infiserte filer er kjørbare!
+	Ødeleggelse:
+	Task: Greetings to hochhofen
+	I task: INGEN programdel for spredning
+	Tidsavhengig:
+		Bakgrunnsbilde:  Svart - Rød - Gul.
+			Trykk på venstre musknapp for å fjerne dette.
+
+		Requester: Fasten seat-belt
+			Trykk på venstre musknapp for å fjerne dette.
+			Tasken vil da forsvinne
+	Feil: Kjenner kun noen få hunk-typer og forandrer hunk typen
+	gjennom feed-back feil +1. f.eks. når jeg oppdaget den for første
+	gang så det slik ut:
+	Unknown hunk-symbol: ($3F0), deretter laget den hunk-debugen: ($3F1).
+	I ukjente hunker vil det være en ødelagt feed-back byte forandring.
+	I infiserte filer som gjør at computeren bryter sammen, forandrer også 
+	min hardware klokke. 
+	Spredes: Via KS 2.04
+	Fjernes: VT gjør det.
+
+
+   - HODEN V33.17   only KS1.2, på grunn av absolutt DoIO sprang
+            DoIo, KickTag, KickCheckSum, i hukommelsen altid $7f000
+            spredes: via BB
+            Features: etter 5 kopier beveger et gult hode seg, fra venstre
+            mot høyre av skjermen.
+            ukodet i BB:  HODEN V33.17
+
+   - ICE    SCA-Klone, Cool, i Prg. DoIo, i hukommelsen alltid ved $7ec00
+            spres: over BB
+            tekst vises med en grafikk rutine.
+            ukodet i BB:
+            Greets from The Iceman & The IRQ  etc.
+
+   - Incognito     annet navn Trojan (også kalt NoName).
+            DoIo, KickMem, KickTag, KickCheckSum, FastMem ja
+            kun KS1.2, på grunn av absolutt DoIO sprang i ROM
+            spres: via BB
+            Ingen videre tekst eller skade.
+            i BB: ingen tekst, trackdisk.device kodet.
+
+   - Inger IQ      ByteBandit/Forpib-Klone  se der
+            Tekst:     "Inger IQ Virus - Ersmark 1953"
+
+   - INIT_CLI, Annet navn på AMIGAKNIGHTVIRUS
+
+   - IRQ-TeamV41.0   Link-Virus, øker prg. størrelsen med 1096 Bytes
+                     Hopper etter reset: KickTag
+                     Hopper når den er aktiv: OldOpenLib
+         Tekst i CliTitlen: (dekodet med eor.l d0,(a0)+
+         addq.l #3,d0 ; for en ny virus , D0, er skiftet ved 
+         move.l OldValue,d0 og add.l $dff004,d0)
+             AmigaDOS presents:a new virus by the IRQ-TeamV41.0
+         Hverken c/dir eller den første fil i startup-sequence infiseres.
+         I N G E N  Fil infiseres to ganger. Filen må ikke være lenger enn
+         100000  bytes.
+         Fjernes: slett første linje i Startup-Sequencen
+         kopier den originale fil tilbake.
+
+   - IRQ II    lik IRQ I, men test rutinen ser nå om en fil allerede
+         er infisert (cmpi. #$fffe6100,30(a4,d6.l) er endret.
+         Den første fil i startup-sequencen er infisert inntil disken er
+         full. IRQI+II: Med mitt Fastmem-Kort er ingen spredning mulig etter
+         en reset ????
+         Bemerk: Jeg har en IRQ2-Fil med seks links.
+
+
+   - JEFF-BUTONIC V1.31/05.11.88    PrgFilVirus   3408 Bytes
+
+         DoIo, KickTag, KickCheckSum, $68
+         skriver seg selv inn i 1. linje av Startup-Sequencen på en skriv-
+         bar disk. dekknavn: se senere
+
+         Tekst kodet med: eori.l #$AAAAAAAA,(a0)+
+
+
+     Tekst for DisplayAlarmen:
+
+                    "Einen ganz wanderschönen guten Tag!"
+
+             "* I am JEFF - the new Virus generation on Amiga *"
+
+                      "(w) by the genious BUTONIC."
+
+                 "V 1.31/05.11.88 - Generation Nr.00037"
+
+          "Greetings to * Hackmack *,* Atlantic *, Wolfram, Frank,"
+
+        "Miguel, Alex, Gerlach, and to the whole Physik-LK from MPG !!"
+
+
+  Tekst for "Vinduslisten":
+
+    "Ich brauch jetzt'n Bier!"
+    "Stau auf Datenbus bei Speicherkilometer 128!"
+    "Mehr Buszyklen für den Prozessor!"
+    "Ein dreifach MITLEID für Atarist!"
+    "BUTONIC!"
+    "Schon die Steinzeitmenschen benutzten MS-DOS...einige sogar heut noch!"
+    "Schon mal den Sound vom PS/2 gehört???"
+    "PC/XT-AT: Spendenkonto 004..."
+    "Unabhängigkeit & Selbstbestimmung für den Tastaturprozessor!"
+    "Paula meint, Agnus sei zu dick."
+    "IBM PC/XT: Ein Fall für den Antiquitätenhändler..."
+    "Sag mir, ob du Assembler kannst, und ich sage dir, wer du bist."
+
+
+  Dekknavn: 
+
+      for RootDir:                        i Startup-Sequence:
+
+       AddBuffers                            "AddBuffers 20"
+       Add21K                                "Add21K "
+       Fault                                 "Fault 206"
+       break                                 "break 1 D"
+       changetaskpri                         "changetaskpri 5"
+       wait                                  "wait "
+       $A0                                   $A020
+       $A0A0A0                               $A0A0A020
+       Arthus                                "Arthus "
+       Helmar                                "Helmar "
+       Aloisius                              "Aloisius "
+  ??   $20                                   $2020          ??
+
+   Bruken av $20-dekknavnet er feilet, men er inkluderet i programmet.
+
+
+   - JEFF-BUTONIC V3.00/9.2.89   PrgFilVirus  2916Bytes
+            navn i root dir: A0A0A0
+            1. linje i startup. A0A0A0209B41
+            DoIo, KickTag, KickCheckSum
+            spres: via enhver ubeskyttet DOS-Disk med startup
+            Fjernes: slett 1. linje i startup-sequencen
+                        Slett fil i DfX:
+                         Dekode rutine:
+      dekodet Tekst:                         move.w #$013a,D0
+         Hi.                                     loop:
+         JEFF`s speaking here...                   move.w (A0)+,(a1)
+         (w) by the genious BUTONIC.               eori.w #$b4ed,(A1)+
+         etc. in total over $270 Bytes Text      dbf D0, loop
+
+   - JEFF-BUTONIC V3.10   filvirus størrelse: 2916
+         Les teksten vedrørende JEFF V3.00
+         Programkode endret (Nå Anti-Virus program ???)
+         + kodet tekst endret: eks. "Sauf blos keinen Wodka!"
+           Vidrere: eori.w #sb4ed,(a1)+
+
+         Sourceprogram:
+           * JEFF * Viruskiller    Mastercruncher: 7368
+                                          upacked: 9064
+
+         Også: Jeff-Maker, Jeff-Remover
+         Skriver virkelig JEFF 3.10 på disketten i stedet for 3.00:
+         Virus Gefunden - bitte warten
+         Startup-Sequence desinfiziert
+         und Virus beseitigt!
+         I dette program er JEFF V3.10 kodet ( eori.b SFF,(a0)+ ].
+
+
+   - JITR          Cool, DoIo, FastMem ja, i hukommelsen alltid ved $7ec10
+         spres: over BB
+         Ingen videre grafikk rutine !!!! VirusPrg. kun $200 Bytes lang.
+         Leselig i Bootblocken:
+            I'm a safe virus! Don't kill me! I want to travel!
+               And now a joke : ATARI ST
+            This virus is a product of JITR
+
+   - Joshua0
+      Tekst 'Joshua' fra topp til bunn (vertikalt) over grafikk rutine
+      Begin, Kickmem, KickTag, KickCheck, Vec5
+
+   - Joshua 2     andre navn: Joshua3 eller Switch-Off
+      Cold, Begin, Vec5
+      Har et problem med C-SubD. på WB1.3
+      Bootblock nå kodet :         loop: move.b (A0),D0
+                                         eori.b #$18,D0
+      Eor-Byten endres og er også ved    move.b D0,(A0)+
+      $3ff i BB. Joshua 2 blir           cmpa.l A1,A0
+      gjenkjent av seriene av bytes i    bne loop
+      enden af BB, hvor X skifter        rts
+      EOR-byte avhenger av: .XX...XXX........XX.XX.XXXX...X.XX.
+      Punktene (perioderne) kan også være andre tegn.
+
+   - Joshua 3    annet navn og rigtig: Joshua 2
+      Det er et virus.library som kalles "a real ByteBandit Joshua 1".
+      fordi Joshua 2 også kalles Joshua 3. På nåværende tidspunkt
+      er dette allerede ordnet. (April 15 1991)
+
+   - Julie   annet navn Tick
+         alltid $7f800, cool, DoIo, BeginIo og $20
+         Virker ikke fullt ut korrekt med 1MB Chip
+         tester noen få pointere og 3 verdier (eks. at $7ec00)
+         spres: uten varsel over (kun bootbare) BB's.
+
+   - Kauki   alltid $7ec00, Cool, i Prg. $80, $84, $88
+         i Prg. DoIo, skriver tilbake til DoIo på KS1.2 senere i Prg. (etter
+         spredningen)
+         De fleste bytes brukes av Copperlist. CopperIntro'en
+         virker også på KS1.3. I BB'en står det Kauki.
+
+   - Kefrens     SCA-Klone
+         Tekst i BB:
+                       Ohh noo!!!!
+               I think something is wrong!
+                   and even better...
+               Some of your disks are sick
+                       Watch out!
+                       By Kefrens
+                      offcourse!!!
+
+   - L.A.D.S     DoIo, KickTag, KickCheckSum, alltid $7F400
+         later til å 'gjemme' seg selv ved å bruke DisplayAlarm ved bootup:
+            (Læselig tekst i BB)
+                       L.A.D.S Virus Hunter
+                        No virus in memory
+                      Press any mouse button
+         Det er IKKE foretatt noen virussjekk, men programmet er installert
+         (overlever reset)
+         spredning: hver BB på en disk uten forespørsel om noe.
+         så snart telleren når 8:
+         Vil en del av Virusprogrammet bli dekodet med
+                        eori.b #$41,(a0)+
+         og med DisplayAlarmen, vil følgende tekst vises:
+                  AMIGA COMPUTING Presents:
+                      The GREMLIN Virus
+             All Code (c) 1989 By Simon Rockman
+
+   - LamerBlame!   Cool, DoIo
+         BB kodet med verdien fra $DFF006
+         skade:
+         spres over BB
+         Så snart at telleren når 8 :
+         DisplayAlarm: LameBlame! by Tai-Pan osv.
+         ellers skjer det ingen ting.
+         Source : Virusinstall V2.0
+
+   - Lameralt (gammel Lamer Exterminator)   abcd ved $3a6
+         skriver Lamer i tilfeldigt valgte Blokker
+         FastMem ja, Begin, KickTag, KickCheckSum, SumKickData
+   - Lamerneu (ny Lamer Exterminator)   abcd ved $396
+         skriver LAMER i tilfeldigt valgte Blokker
+         FastMem ja, Begin, KickTag, KickCheckSum, SumKickData
+   - Lamer1      fedc ved $342
+         skriver LAMER
+         Begin, KickTag, KickCheckSum
+   - Lamer2      abcd ved $392
+         skriver LAMER
+         FastMem ja, Begin, KickTag, KickCheckSum, SumKickData
+   - Lamer3      abcd ved $3f4
+         (origBB i 2 og 3)
+         Fastmem ja, Begin, KickTag, KickCheckSum, SumKickData
+
+   - Lamer4      abcd ved $3ae
+      BeginIo, KickTag, KickCheckSum og SumKickData
+      spres: over BB
+      Skade: overskriver en Blokk med 85 x LAMER!, og fordi det er
+      to bytes tilovers, '!!'. Blokknummeret er valgt ved å bruge $DFF006
+      en ny BB er omkodet med eori.b. Kode byten er valgt ved å bruke
+      $DFF007.
+      Hukommelse for VirusMainPrg er reservert vha StructMemList.
+
+   - Lamer5      abcd ved $3aa   FastMem ja
+      BeginIo, KickTag, KickCheckSum and SumKickData
+      spres: over BB
+      Skade: se Lamer4
+      Hukommelse for VirusMainPrg er reservert vha SysStkLower.
+
+   - Lamer6      abcd ved $396   FastMem ja
+                  Ligesom LamerNeu   forskellen: 48 Bytes
+      BeginIo, KickTag, KickCheckSum og SumKickData
+      spres: via BB
+      Skade: se Lamer4
+      Hukommelsen for VirusMainPrg er reservert vha SysStkLower.
+      I Prg. er det også fjernet Node, Test for Cool og Cold.
+
+   - Lamer7     andre navn: Selfwriter, Pseudoselfwriter
+      ingen signifikant slutt, lengde BB $3BD,
+      BeginIo, KickTag, KickCheckSum
+      spredes: over BB
+      Skade: se Lamer4
+      Hukommelsen for Virusmainprg. er reservert vha StructMemList.
+      og !!!! med AllocABS. (det gjør andre Lamer's ikke)
+
+   - Lamer8    Ingen kjent slutt
+      BeginIo, KickTag, KickCheckSum, SumKickData
+      spres: via BB
+      Skade: Formatterer alle drev
+      En ny BB er omkodet med eori.b. Kode byte'en er valgt ved å benytte
+      $DFF007.
+      BB er kodet fra $3e til $3cc
+
+      Merk: 
+	Det finnes en "Lamer"-bootblokk spredd, hvor Lamer Exterminator er 
+	synlig i BB. Denne BB er IKKE Bootbar.
+	Og pga dette er den kun kjent av VT som Ikke-standard-BB
+
+
+   - Lamer8 fil/link-virus (Lamer VirusX)
+      Programmets størrelse øket med 13192 Bytes.
+      Source: Infiseret i Viruskilleren VirusX.
+      Virusen gjenkjennes i hukommelsen, av VT, som Lamer8.
+      Vigtig: VirusX gjenkjenner ikke lamer8 i hukommelsen !!!
+      Spres: Kun som en Lamer8 Bootblock, ikke som linkfil !!!
+      Derfor kan selve virusen kun fjernes med 'filetest'.
+      Forklaring: en Lamer-BB skrives også fra lamer Exterminatoren i BB.
+      Denne BB kan ikke boot'es, og gjenkjennes av VT som en
+      "Ikke -Standard-BB."
+
+    
+   -  Lamer-LoadWb Filvirus 4172 Bytes
+      KickTag, KickChecksum, SumKickData, BeginIo i SubDir C
+      Synlig i LoadWb: The Lamer Exterminator !!
+      Denne virus er exekvert og skrevet til hukommelsen, før LoadWB
+      kommandoen. Spres ikke som "LoadWB" men skriver (Infiserer) en Lamer
+      bootblock.
+
+   -  Lamer Bomb se: Gotcha Lamer
+
+   - Le Role   Fransk navn for Return of The Lamer Exterminator se der
+
+   - LOGIC BOMB   annet navn: PARADOX I  se der
+
+   - LSD!      (Igjen en SCA!)
+
+   - LZ-Virus (Døpt av Aaron  Digulla, som sendte denne til meg, takk Aaron)
+      Linkvirus Prgsize. øket med 400 Bytes.
+      Se for Dos.library versjons nummeret, når mer enn "34" eller mindre
+      enn "33" vil virusen ikke være aktiv. Skifter GlobVec 06 = skriv.
+      Linkes til etter CodeHunk (normalt 1), og skifter eks. $4E75 = rts
+      i mot $6004 = BRA 4 eller $4EEE = hopper mot $60xy. Behøver derfor
+      ikke å skifte Hunk-nummeret, men kun hvor mange longword du trenger
+      for å nå $ 64.
+      Betingelser for en fil:
+      0.LW = $3f3 exekverbar
+      1.LW = 0 ingen residente Libs at hente
+      Du vil finne et stykke kode, som er større enn # 1000 bytes
+      VENNLIGST: For å fortsette testen, Behøver jeg flere infiserte filer
+      (13.07.91)
+      Tusen Takk!
+
+      Viruset rapporteres  å være en avart av den velkjente LZ packer.
+
+   - MAD  (ForpibKlone)  kun Teksten endret  se der
+
+   - MAD II     kun KS1.2, på grunn av absolutt DoIo-ROM-sprang
+         Cool, DoIo, KickTag, KickCheckSum, i hukommelsen alltid $7FB00
+      synlig i BB : MAD II VIRUS er bedre  etc.
+      spres: over BB
+      så snart tellren når høyere opp enn $D, kalles det på en
+      DiskStepRutine. men fordi den er dårligt kodet, fungerer den 
+      derfor ikke, bare skjermen blir sort.
+
+   - MAD III  kun KS1.2  Byte-Warrior-Klone  se der
+         skiftet:  DASA0.2 i MAD.III
+
+   - MAD IV  LamerAltKlone  se der
+         Forskjellen: i stedet for 'Lamer!' skulle data skrives som 'MAD'.
+
+   - Mallander/(Derk) Virus V1.0 BB 
+         Blokk 0-3 KS1.3 og  KS2.04 , trenger 1 MB Chip
+         KickTag, KickCheckSum, DoIO alltid fra 7F800
+         Annet navn "Derk" som kan leses 2x i Bootblokken
+         Trenger ikke Trackdisk.device
+         Består av 4 blokker:
+         Blokk 0-1 = viruset!
+         Block 2-3 = den originale Bootblokk ukodet!
+         Spredning og ødeleggelse:
+         Skriver til 4 blokker, det betyr at en fil plassert i blokk 2-3
+         er ødelagt. overtar alltid $4000 Chipmem, og så er det ikke mer 
+	 ledig Chipmem.
+         Dekoder en Bootblokk-del med eori.w#$aaaa,(a0)+ 
+         (intuition.library også) viser en DisplayAlert, deretter reset =
+         jump fc0000:
+                       
+         "J.D.Mallander Virus V.1.0. I neee lots of money - buy my cool PD
+         serie "Action Power"
+
+         Det er ikke en annen Derk2 untatt forandrede vektorer, hvis den
+	 kjøres under KS1.3
+
+   - Memchec v8.1 Fil   Annet navn: Liberator virus v1.21
+	Pakket (PP): 4692 bytes  upakket: 10936 bytes
+	Ikke resident
+	Etter call følger teksten: MEMORY CLEAR  osv
+	Med SnoopDos kan du se, at
+	  - prøv å åpne Sys:FastDir
+	  - test mens MemCheck plasseres i rot.
+	  - prøver å bruke Startup-Sequence til å kjøre hvis feil oppstår
+	    i første linje: 
+		Memcheck s
+	I filen er skrevet:
+		Hello from the Liberator virus v1.21
+		Lets play trash the harddisk
+		I'm outta here, kiss mine you lamer!
+
+		DH0:, BLVC Og så videre
+	Det er i dette programmet en oppkall for denne tekst, dette betyr
+	at disse Calls er utført ved bruk.
+	Jeg har ikke testet viruset på min harddisk. Jeg TØR ikke, men med
+	en disktest er forandringen i startup-sequence prøvd.
+
+   - MG's Virus v1.0 (BB) Virker med Kickstart 2.04 også
+	KickTag, KickChecksum, SumKickData, GetMes, BeginIO
+	AddIntSer (5 = Vert. stråle)
+	Kodet med not.w (a1)+
+	Dekodet i minnet er å lese: MG's Virus V1.0
+	Ikke fremskynn noe tekst på skjermen
+	Spres ved: - Lesing eller skriving av blokk 0
+		   - Formater disken.
+
+   - MicroSystems     FastMem ja kun KS1.2
+         tar navn etter ROM (eks. dos.library)
+      Cool og Cold
+      i Prg. når nødvendigt: AddTask, RemTask og DoIo
+      spres: over BB
+      tekst vist med en grafikk rutine
+      ukodet i BB:
+      YOUR AMIGA IS INFECTED BY
+      A NEW GENERATION OF VIRUS
+      CREATED IN SWEDEN BY
+      MICROSYSTEMS
+
+   - MCA      se Claas Abraham
+
+   - MEGAMASTER
+      Cool, DoIo, alltid $7e300
+      to kodede områder i BB
+      1. område: eori.b #-$45,(a0)+   ; tester for andre virus
+      2. område: eori.b #-$11,(a0)+   ; tekst vist med grafik
+               sort bakgrunn, røde tegn:
+                        Surprise!!!
+               Your Amiga is controlled by
+                        MEGAMASTER
+     spres: via BB
+
+   - MEXX     SCA-Klone
+      Tekst:         Hello there...
+                     Here I'm again...
+                     I've infected ya Disx !
+                     I'm a simple VIRUS
+                     and I came from a group called
+                      --- MEXX ---
+                      Yeah, reset now !!!
+                     Or I will infect more!
+
+   - MGM89     annet navn: MEGAMASTER   se der
+
+   - Micro-Master  (SCA! igjen)
+
+   - Morbid Angel   Forpib-Klone   se der
+       kun synlig tekst og noen få bytes var endret.
+
+   - Nast 29.03.92 Fil, 2608 bytes KS2.04 også
+      BGS-9 Klone! 
+
+      Som den gamle BGS-9: KickMem, KickTag, KickCheckSum, OpenWindow(Int.lib)
+
+      også denne klone: $6c, FindTask, OldOpenLob, NewOpenLib med dette er 
+                        det ingen dekoding av Bitplanene
+                        
+      Navnet "Nast" kan leses 2x i  virus filen
+      flytt den Org-Fil skjult etter C $A020A020A020202020A0202020A0  
+
+      VT prøver først å omdøpe, dersom orginalfilen ikke finnes, så blir
+      du tilbudt å fjerne virusen. Men husk å fjerne første linje i 
+      S/startup-sequence.
+
+   - NASTY NASTY BB Bare KS 1.2 alltid $7F000
+	Cool, DoIo, Userstate, Superstate, Alert
+	Spredning og ødeleggelse:
+		- BB
+		- Når telleren når verdien 5 formaterer den disken.
+	Virusprogrammet gir ingen beskjed. I BB kan du lese Nasty-Nasty
+
+   - NO BANDIT   (se senere - virusdetektor)
+
+   - No head     se ByteBanditPlus
+
+   - No name 1   annet og riktige navn :  Byte Bandit 2
+      ingen FastMem, BeginIo, KickTag, KickCheckSum, Vec5
+      Hukommelse benytter structMemList, søker for nye BBvirus
+      ved hjelp av Allocmem,
+      Teller: Virusstart + $1c
+      spres: over BB
+      i BB synlig: trackdisk.device (oftest ved slutningen)
+      en ByteBanditKlone, uten keyboard sjekk, kun 5 kopier og
+      mindre "timeout".
+
+   - No-Guru V2.0 størrelse: 1224 Bytes (Med PP-Data-Program.)
+      Jeg mener at det er dårligt for AmiExpress-Brukere
+      Endrer: Alert, Autorequest
+      Tekst i Cli:
+          Making life with AmiExpress just that little bit easier...
+      Søker etter BSS:User.Data ;
+      Veiledning: Slå av maskinen!
+
+   - NorthStar   annet navn: Starfire  se senere
+
+   - NoVi   Fil   Terrorist-klone s.u. 1612 Bytes
+	Skifter TTV1 til NoVi
+	Orginal fil er plassert etter sys:c/.fastdir,$A0.
+
+   - Nuked007  Samme som  SHIT
+	
+
+   - Obelisk1  (Tysk flag + grafisk tekst) "Hopper": cool
+               skrives i hukommelsen ved $00000060
+               ordet GURU: skader level 7
+               interrupt.
+
+   - Obelisk2   Begin, KickTag, KickCheckSum, Vec5
+                Hopper: KickTag ,tre tellere, grafikk tekst med beskjed
+                som sier at det skal formatteres, men det er kun
+                etterlignet ved å bruke "Motor step"
+                Se med TrackDisplay !!
+                hukommelses adresse $60 se Obelisk 1
+
+   - OP1        (New Zealand) riktige navn: Joshua
+
+   - OPAPA     Begin, KickTag, KickCheckSum, Vec5
+               teller: ja, spres: over BB på alle stasjoner
+               tekst vist (grafikk): OPAPA-VIRUS READY STEADY FORMAT
+               Alle driver går nå til track 0.
+
+   - PARADOX I  KickTag, KickCheckSum, i Prg. DoIo og $6c, altid $7F800
+               spres og ødelegger: via Bootblock'en
+               Tekst synlig i BB:
+               * A new age of virus-production has begun ...
+               This time PARADOX brings you the "LOGIC BOMB" Virus !!! *
+
+   - PARADOX II  Kicktag, KickChecksum i Prg. DoIo og $6c, alltid $7F000
+               kodet med move.b $DFF006,D1 og eor.b d1,(a0)+
+               spres og ødelegger: via Bootblock'en
+               Tekst etter dekodning:
+               This is the second VIRUS by PARADOX  -
+               For swapping call: 42-455416 - ask for Hendrik Hansen
+
+   - PARAMOUNT  kun KS1.2 KickTag, KickCheckSum, DoIo, alltid s7F800
+                Byte-Warrior-Klone, Slår av Cold og Cool
+                bruker ikke trackdisk.device
+                spres via: BB
+                i BB : Paramount SoftWorks
+
+   - PARATAX   SCA-Klone, Cool alltid 7EC3E, kun teksten er endret
+
+   - PARATAX II    Disk-Dokters-Klone, kun KS1.2 på grunn av DoIo-ROM hopp
+                   Cold, Cool, DoIo, i Prg. Vec5
+               synlig i BB: PARATAX II
+               clipboard.device omplassert av ".dos.library"
+               Avhenger av om tellerens egen BB leses, for ellers vil disken
+               bli formattert fra Cylinder 40 (ROOT)
+
+   - PARATAX III    16BitCrewKlone   se der
+            Forskjellen: 16Bit Crew 1988 skiftet til PARATAX III (!!!)
+        En stor forandring, ikke sant ????!!!!
+
+   - PentagonCircle     cool,kickchecksum
+               Fastmem ja, i hukommelsen alltid ved $7fb00, i Prg. også
+               DoIo tester for noen virus, Alarm
+               spres: over BB
+               Tekst i BB: eks.
+               The Pentagon Circle VirusSlayer by Mr.Moutainlake!
+
+   - PentagonVirusSlayer2:  cool, KickCheckSum, alltid ved $7f000
+               Fastmem ja, i Prg. DoIo, kodet forskjellig fra
+               Pentagon, Alarm
+               spres: over BB
+               Tekst i BB: eks.
+               The Pentagon Circle VirusSlayer 2 by Mr.Mountainlake!
+
+   - PentagonVirusSlayer3:  Cool, KickCheckSum, alltid ved $7e000
+               Fastmem ja, i Prg. DoIo, FindResident
+               Alarm
+               spres: over BB
+               Tekst i BB: eks.
+               The Pentagon Circle VirusSlayer by Mr.Mountainlake!
+
+   - POWERBOMB  ByteBandit/Forpib-Klone    se der
+         Text: POWERBOMB SYSTEMS PRESENTS: BYTE BANDIT V2.0 !!!
+
+   - PP-Bomb  Poverpacker (3.2) ? Falsk!, Trojansk hest. Spres ikke.
+      upakket: 9880 bytes
+      - 3 program deler
+      - Kort kodestykke med 2 Jsr-Kommandoer (Behøves for å kjøre)
+      - Crunched Bomb del.
+      - Poverpacker 3.0b (Tror jeg: Ikke endret og ikke crunched)
+
+     Bomb-Part:
+      - Ser først etter SnoopDos-Task, finnes den stoppes bomben.
+      - Ser i DH0:C, og/eller DH1: for "Why" kommandoen og endrer denne
+        fil = 0 bytes
+      - Endrer ikke andre C/kommando filer (Er testet).
+      - Endrer ikke programmet "AmiExpres", men ikke testet .
+      - Ser etter følgende : BBS:, DH0:BBS/, DH1:BBS/, DH0:, DH1:, for
+        å slette spesielle filer.
+
+     Source: qtx_pow.lzh.3.2 139670 Bytes.
+
+     Godt råd: slett denne falske, og benytt den originale!
+
+   - Pseudoselfwriter   annet navn: Selfwriter, Lamer7
+
+   - Red October V1.7 Link, 1296 bytes
+      (Navnet kan ikke leses i filen), KS2.04 også
+      ingen brukte vektorer, rask spredning på 20 min er en disk komplett 
+      brukt opp. Linkes til den 1. hunk og legger 1296 bytes til filen. 
+      I en infisert fil kan det leses på adresse $500: Timer.Device, 
+      Dos.library, Ram, Ram: 1
+      Viruset gir seg ikke til kjenne med tekst på skjermen eller liknende.
+      Mange infiserte filer infiseres på ny når den påkalles senere.
+      Men når du kjører ekte programmer så får du GURU. VT kan reparere 
+      disse filene!
+
+      Ødeleggelse: Avhengig av System-klokken
+
+          Computer-sekunder delt på 3   = Infisering av filer
+          Computer-sekunder delt på 16  = Reset
+
+      Sprednings krav:
+
+        -  Bare med kall på en infisert Red October fil
+        -  Prøver å infisere andre filer som inneholder:Lock, Info, Examine
+           og Exnext
+        -  Tester for skrive-beskyttelse
+        -  Eksekverbare filer ($3f3)
+        -  Filer mindre enn #5000
+        -  Filer som ikke er infisert enda
+        -  Ingen test for Disk full
+
+      VT-Test: 27.03.92: Alle infiserte filer blir reparert som de var før
+      virus skaden.
+
+
+   - Rene    annet navn: Lamer8 (Jeg bruker Lamer8)
+         På grunn av at 'The LAMER Ex...' er i dekodet program og virker
+         som en Lamervirus, Jeg tror at en liten tilføyelse til
+         Lamer gruppen er korrekt.
+
+   - Return Of The Lamer       PrgFilVirus    lengde 1848 Bytes
+            kun Cold reset (Unnskyld!)
+         Utgir seg for å være Disk-Validator
+         KickTag, KickCheckSum, BeginIo og noen andre
+         gjenkjenner: Ingen lesbar tekst (originale Disk-Validator kunne)
+         ødeleggelser avhenger av tiden:
+         a) Velger blokknummer med $DFF007 og skriver 64 x LAMER!!!
+         b) Hurtigformatrutine for alle drives og over DisplayAlarmen
+            tekst vist:
+            The Return Of The Lamer Exterminator
+         c) Skriver dårlige Disk-Validator (virus) til disketter.
+
+   - Revenge Bootloader!  Begin, KickTag, KickCheckSum, Vec5
+               Fastmem: nei
+               spres over BB
+
+   - Revenge V1.2       cool,doio,vec5 , i hukommelsen alltid $7e000
+         og hukommelses adresser $C0-$FF (fare for Setpatch-List)
+         spres: over BB
+         Skader: endrer pointeren etter en tid.
+         I BB: Revenge V1.2GCount:
+
+   - Revenge of the Lamer   PrgFilVirus lengde 4560 Bytes
+               kun Cold reset (Unnskyld!) -For mange vektore endret (10!)
+               dekodet i hukommelsen:
+               dos.library.graphics.library.intuition.library.
+               trackdisk.device.DOS s/startup.sequence   etc.
+               navn: $A0A0A0A0A0 er i root dir og
+               1. linje av Startup
+               tester før spredning når der er nok plass til rådighet.
+               Etter 6 resets (tror jeg), Formatteres alle ikke-skrive
+               beskyttede disker som settes inn.
+               3 Sides Alarm-Melding
+
+   - Revenge of the Lamer 2
+               PrgFilVirus   lengde 4448 Bytes
+               noen Skrive-Test-Rutiner er fjernet,
+               Ellers lik Revenge of the Lamer
+
+   A D V A R S E L: Under testen lot jeg Revenge of the Lamer 1 og 2,
+      spre seg selv på en måte som SID og andre programmer ikke viste
+      A0A0A0A0A0 filen. Min FilRequester kunne ikke. Virusprogrammet
+      spres kanskje fra denne disk (Nei, det er testet) !!!. Ved å bruke
+      en DiskMonitor kan programmet finnes. I min PrgTest opptrer i
+      et slikt tilfelle:
+               Rev. Lam. usynelig
+      Dette er ikke en JOKE! Andre programmører har sjekket det etter min
+      oppdagelse, og fant en feil i Kickstart 1.3. i 2.0 er denne fejl
+      blitt rettet (se også Fish 429  Dr.doc)
+
+   - RIPPER             Programkode = Northstar, kun teksten endret
+                        cool i Prg. DoIo  alltid ved $7ec00
+                        spres: via BB
+      Tekst (også synlig i BB):ATARI KILLS COMMODORE! RIP! RIP THE RIPPER
+      etc.
+
+   - Riska   Forpib-Klone     se der
+
+   - Rob Nothern  Fil 2616, BGS-9 klone 
+     Rob Northern kan leses i filen.
+     Her ser du typeis amatørprogrammering! Tester fremdeles for TTV1 
+     selv om dette ikke kan finnes. Infiserer ved å skrive 2608 byte tilbake
+     som det orginale BGS-9 virus, men husker ikke å skrive 3F3.
+     Dette betyr, at et re-infisert Rob Nothern virus kjører, og en 
+     infisert disk slutter med å kjøre startup-sequence.
+
+     VT finner Rob Nothern i minnet som BGS-9
+     Bruk ikke Blockkette testen, Jeg anbefaler kun Filetest som fjerner 
+     denne virus.
+
+   - Rude Xerox = -DIGITAL AGE = Rude Xerox = Forpib-klon, 
+	bare endring i tekst 
+
+
+   - Sachsen Virus No.1    Cool, altid ved s78000
+           BB kodet med:  move.b #s70,d0
+                          add.b d0,(a0)+
+           dekodet i hukommelsen: ** SACHSEN VIRUS NO.1 **
+           Spres via: BB
+           Ingen ytterligere skader og ingen rapport
+           GURU: Når virusen er i hukommelsen og du Reset'er,
+           skulle CloseDevice endres. FastMem ved $200000 resulterer i
+           GURU.
+
+   - Sachsen Virus N0.3  Cool, DoIo, Wait, altid ved s78000
+           Blokk 0-3 (d.h. en fil ved Block 2 skulle altså bli ødelagt)
+           Benytter ikke trackdisk.device (HD!!!!)
+           Alt tekst kodet.
+           Spres via: Bootblock 0 - 3
+           Skade: Skriver til Block 880 (Root) nytt disk navn:
+               SACHSEN VIRUS NO.3 ON DISK
+           Skriver i Blokk (fra sDFF006) 64 x SACHSEN3
+           Skulle denne Blokk være i en fil, kan du IKKE
+           gjenoprette denne fil.
+           DisplayAlarm og derefter RESET
+                 SACHSEN VIRUS NO.3 in Generation :     is running...
+                   (For meg generation 23).
+
+   - SADDAM HUSSEIN Bootblockvirus    (se også BlowJob)
+         KickTag, KickCheckSum, i Prg. DoIo og $6c, altid $7f000
+         Prøver å villlede brukeren med teksten i BB:
+         A2000 MB Memory Controller V2
+         spres og ødelegger: Bootblock'en
+         så snart at telleren har nått verdien $7530, vil en del av det
+         program som er dekodet med subi.b #$71,D0 via en displayAlarm
+         vise følgende tekst:
+          TOO BAD BROTHER ... SADDAM HUSSEIN STRIKES BACK !!!
+          THE ONLY ESCAPE IS TO TURN THE POWER OFF !!!
+
+
+   - SADDAM-VIRUS     Disk-Validator   lengde: 1848 Bytes
+
+	OBS!! Flere killere (VirusX) kaller dette viruset "Australian
+	Parasite".
+
+      Det første virusprogram, som overlever et keyboard reset med 1 MB
+      Chip, Kick 1.3 og uten Setpatch r !!!!!!!
+      Cold, BeginIo, Lukker i Trackdisk.device, Beam pos. $90(a6)
+      i Prg. også OpenWindow, InitResident, direkte Dos.lib-spring
+
+      dekodet i hukommelsen med:         eor.b d0,(a0)+
+                                         subq.l #2,d0
+                                         dbra d1,loop
+
+      Nye verdier for kodning er valgt ved å bruke $DFF007 i D0
+
+      Memory: SysStkLower - endret verdi fra $DFF007 - Virusprogramlengde
+
+      Skade og fare:
+      Isetting av disk med dårlig BitMap er nok til å aktivere SADDAM!
+      Avhengende av telleren:
+      HovedStep alle drives   (Disk BAD etter noe tid) og DisplayAlarm:
+                           SADDAM-VIRUS
+
+      overskriver enhver Disk-Validator på en skriv-bar disk!!!
+      Når det ikke er L dir på disken, da lager SADDAM bare et.
+      Ingen annen virus har noensinne laget directories av seg selv!!
+      Finner ved hjelp av FileHeaderBlock den første FilDataBlock og
+      skriver i T.DATA "LongWord" IRAK. Resten av FilDataBlocken
+      kodes ved hjelp av    eor.l d1,(a0)+
+                            dbra d0,loop
+      Når SADDAM-VIRUS er aktiv, vil i stedet for IRAK vises den rigtige 
+      verdi 8! (Etterligner!! se også Lamer Exterminator, som  utgir seg for
+      en ren BB!).
+
+      Skriver ofte i ROOT i $13c (=teller til BitMapBlock) verdien null.
+      Hvis man er heldig, vil man finne den originale verdi i $140.
+      (Anbrakt der av virus), når man er uheldig vil en annen del av
+      virusen ha endret adressen til 0 kort etter. Så skulle du forsøke
+      å starte en "god" Disk-Validator fra en annen disk, eller
+      forsøke å finne Bitmapblokken ved å bruke en diskmonitor og sette
+      i $13c igjen på din egen. Eller les BitMapTest.doc (11.07.91)
+      (i VT2.28d filen)
+
+      Bemerk 1: Prøv I K K E å dekode IRAK fra et fms.device
+                (Fordi at blokkene ikke er identiske).
+                Du skal dekode IRAK fra en disk!!!
+
+      Bemerk 2: Jeg har en Saddam klone med den spesielle lengden 1892
+		bytes, men denne kan ikke infisere noe.
+
+      Bemerk 3: Dato: 22.03.92
+		I mars måned har jeg fått flere telefoner som fortalte meg
+		 om forandringen til andre navn enn "IRAK". På grunn av
+		dette, har jeg forandret testen. Vennligst gi meg beskjed
+		dersom dere får problemer med dette.
+
+      Bemerk 4: For å reparere "IRAK" infiserte blokker, skal du bruke
+		BlockITest.
+
+   - SCA!
+
+   - SCA 2  ingen fare, ikke bootbar, alltid GURU
+         derfor i mitt prg. kun "Nicht-Standard-BB" (Ikke Standard-BB)
+         grunnen: les $200 til $7FC00 fra Cylinder 79 og
+                  deretter jmp $7FA00 (alt OK?, begynnere!!)
+
+   - SCARFACE   BeginIo, KickTag, KickCheckSum, Vec5
+         FastMem nei
+         spres: over BB
+         ResetRutine, kontrolleret av Vec5 (tæller > $2710)
+         i BB:  eks. SCARFACE
+
+   - Self-Writer  annet navn: Pseudoselfwriter  Jeg kaller den Lamer7
+         Fordi  'The LAMER Ex...' er i dekodet program og det ser ut
+         som en Lamervirus, enda en tilføyelse til Lamergruppen !!!!.
+
+   - Sendarian   Revenge V1.2-Klone, Cool, DoIo, Vec5, i hukommelsen
+         $7e000 og hukommelses adressen $C0-$FF (farlig for setpatch-List)
+         spres: over BB
+         skade: ny musepil etter en tid.
+         I BB: Sendarian #1Count:
+
+   - SHIT-Virus  (BB) ikke KS 2.04, ikke FastMem
+	KickTag, KickCheckSum, BeginIo, Vec5, $64, $68, $6C
+	Gir ofte GURU
+	Tidsteller: 8 min.
+	sett $60 til 0
+	Kodet med:	eor.w d0,(a0)+
+			add.w $xyz(pc),d0
+
+	I BB-koden kan du lese: Nuked007 (Wobei Nu=RTS)
+	Jeg har mottatt denne BB virus kallt Ethik-BB. dette nave er ikke
+	nevnt i koden.
+
+	Ødeleggelse av konsekvensene av Virustelleren:
+	- skriver $1400 bytes til blokk 0 (forstår ikke ??)
+		ødelegger filer plassert i blokk 2
+	- Skriver i en blokk til $30 SHIT
+		legger 8 til $10 i blokken (når OFS = NextDataBlock)
+		legger 8 til $14 i blokken (når OFS = BlockCheckSum)
+		Skriver den forandrede blokk til posisjon 1, returnerer senere
+		Denne fil kan ikke repareres !!!!!!!!!!!
+	FARE: Innen 5 minutter har jeg fått 12 SHIT-blokker på disken.    	
+
+     - STARFIRE/NorthStar 1   annet navn  BlackStar
+         Cool, DoIo, i hukommelsen alltid i $7ec00, VersionNr: 1
+         sjekker ikke for SystemZ, kun for SCA, ByteBandit = DisplayAlarm
+         spres: over BB
+         i BB:
+         Virus detected on this disk  etc.
+         Reset,WriteProt OFF (not in NorthStar2)
+
+   - STARFIRE/NorthStar 2 = GammelNorthStar  ????
+         Cool, DoIo, i hukommelsen alltid i $7ec00, VersionNr: 2
+         tester for SCA, ByteBandit, SystemZ, NorthStar1, -> DisplayAlarm
+         spres: over BB
+         i BB:
+         VIRUS detected on this disk  etc.
+         My AntiVirus is better!    (ikke i NorthStar1)
+
+   - Starlight       Warhawk-Klone
+         kun teksten er endret.
+
+   - Starlight 2     Micro-Systems-Klone
+         kun teksten er endret.
+
+   - Suntronic       cool,doio, kun Kick1.2 på grunn av absolutt ROM-hopp
+                     spres over BB   , alltid $7fa00
+                     Suntronic-Tekst i BB
+
+   - SuperBoy     Cool, i Prg DoIo, i hukommelsen alltid ved $7ec00
+         spres over BB
+         Alarm med  .... The Famous SuperBoy
+
+   - Switch-Off    annet navn: Joshua 2 se der
+
+   - T.F.C. Revenge klon se Extreme virus
+
+   - T.F.C. Revenge LoadWB  filvirus  upakket 2804 btes
+	Utfører Loadwb kommandoen og infiserer minnet med T.F.C.
+	Revenge Bootblock. Brukte vektorer, se Extreme virus
+	spres kun ved infiserte bootblokker
+
+   - Taipan Chaos  annet navn for Chaos viruset
+
+   - Taipan-Lameblame   annet navn for Lameblame viruset. 
+
+   - Target   cool,  i Prg. DoIo , alltid $7ec00
+         skriver til enhver skriv-bar disk, som inneholder i Blokk
+         880 ved $1b0/1 (=Disknavn) en bestemt serie av bytes
+         , fra Track 80 til enden (noe nytt) ubrukelig data
+         source: target.install (Malta)
+
+   - Termigator: Kick 1.2 (på grunn av absolutte ROM-hopp)
+         alltid $7f4d0, Cool og DoIo
+         dekodet Alarm:
+         Only the TERMIGATOR'VIRUS makes it possible! Bye!...
+         spres: over BB
+
+   - Terrorists     PrgFilVirus  lengde 1612 Bytes
+         KickMem, KickTag, KickCheckSum
+         tekst vist med grafikk rutine.
+         tar navn etter 1. fil i Startup og fjerner OrgPrg. til Root dir
+         (usynlig se der)
+         spredningen: enhver skriv-bar disk med Startup
+         synlig i PrgFile: TTV1
+         sort bakgrunn, hvite tegn, rekke for rekke.
+
+                  THE NAMES HAVE BEEN CHANGED
+                  TO PROTECT THE INNOCENT...
+                  THE TERRORISTS HAVE YOU UNDER CONTROL
+                  EVERYTHING IS DESTROYED
+                  YOUR SYSTEM IS INFECTED
+                  THERE IS NO HOPE FOR BETTER TIMES
+                  THE FIRST TERRORISTS VIRUS !!!
+
+   - THE SMILY CANCER   LinkVirus, også kalt Centurions
+         Fastmem ja, i hukommelsen alltid ved $7F000, KickTag, KickCheckSum,
+         SumKickData, i Prg. BeginIo og $6c = Vec3
+         PrgPart dekodet med ror.b #2,d1 eller kodet med rol.b #2,d1
+         infiserer første fil i startup-sequencen,
+         tester i k k e for annerledes tegn i Filnavnet,
+         det betyr: enhver fil infiseres
+         etter 20 spredninger:
+         Musepilen endres til et gult hode (smilende) med blå hatt
+         og fortsettende rød scroll:
+    "????????.........."
+    " HI THERE!!! A NEW AGE IN VIRUS MAKING HAS BEGUN!!!"
+    " THANX TO US... THANKX TO: --- CENTURIONS ---  "
+    " AND WE HAVE THE PLEASURE TO INFORM YOU THAT SOME"
+    " OF YOUR DISKS ARE INFECTED BY OUR FIRST MASTERPIECE"
+    " CALLED: ` THE SMILY CANCER `  "
+    " HAVE FUN LOOKING FOR IT... AND STAY TUNED FOR OUR NEXT PRODUCTIONS.  "
+    " CENTURIONS: THE FUTURE IS NEAR!"
+     "                     "
+
+     I programmet er også dekodet:
+     (ikke i "scroll'en")
+     HELLO HACKERS OUT THERE!! A NEW FORCE HAS BORN IN ITALY:
+     --- CENTURIONS ---. OUR TEAM IS COMPOSED OF 2 GUYZ:
+     ME & HIM.(AHAHHA!)
+     THE AIM OF - - CENTURIONS - - IS JUST VIRUS MAKING..
+     WE HAVE LOTTA FUN DOING THIS AND WE ALSO HOPE TO GIVE FUN TO THE
+     KILLERS MAKERS (HI STEVE TIBBETT!) HAW! HAW! HAW!
+     SIGNED: ME & HIM / CENTURIONS
+     Bemerk: Jeg har en Smily-Fil med fire links
+
+   - The Smily Cancer II   Filvirus  lengde: 4676  2x kodet
+      etter 1x dekoding med       eori.b #$90,d1
+                                  subi.b #$22,d1
+      ved fil-enden:
+            CENTURIONS STRIKES BACK: THE SMILY CANCER II
+
+      Når man starter programmet, er loadWB kommandandoen simuleret og
+      virusen kopierer seg selv til hukommelsen. Spredning foregår som i
+      Smily 1, det betyr: Ingen spredning som Smily II! Se Smily I
+
+   - The Traveller 1.0
+      KickTag, KickCheckSum, i Prg. DoIo u. $6c, alltid $7F000
+      avhengig av telleren: tekst vist
+         røde,grønne og blå striper, sorte tegn
+            NEVER HEARD OF VIRUS-PROTECTION ??? -LAMER !!!
+      spres og ødelegger: BB   (HD too!!!!!!!!!)
+
+   - Tick
+         se Julie
+
+   - TimeBomb V0.9    Trojansk hest
+      Er laget ved hjelp av Prg. BMassacre (It says TimeBomb V0.9 too.)
+      består av 2 dele i SubDir c og Root:
+         i c: .info      = Virus   lengde: 7840 Bytes
+      i Root: pic.xx      = teller (Start verdi=6)  lengde: 1 Byte
+      i 1. linje av startup: c/.info
+      ikke resident, ingen kopi rutine i .info
+      Betingelser: øker tellerens verdi i pic.xx med 1 ved enhver ny
+      start, så snart at telleren bliver 0, formatteres disketten.
+      For å endre verdien i pic.xx, må disken ikke være skrivebeskyttet.
+      Hvis den er, opptrer følgende beskjed:
+       Bruker Request : Please remove write Protection and press
+                        left Mouse Button to continue..
+      En annen bruk av startup-sequence med skrivebeskyttet disk er
+      umulig.
+      i CLI alltid :
+            RAM CHECKED - NO VIRUS FOUND.
+
+   - TimeBomb V1.0  BB-Virus
+     (endrer ingen "kjente" pointers)
+     (avhenger av om tellerens egen BB er skrevet,
+     ((hopper ved $70208))
+     eller Track 80 (Directory) er overskrevet med hukommelse fra $20000
+     = Disk becomes unreadable !!!)
+     ((hopper til $70026))
+
+   - TimeBomber    Trojansk hest
+      laget ved hjelp av programmet TimeBomber
+      består av 2 deler i RootDir:
+      virustest         = Virus   lengde: 936 Bytes
+      virustest.data    = teller (Start verdi=5)  lengde: 1 Byte
+      i 1. linje av startup: virustest
+      ikke resident, ingen kopi rutine i virustest
+      Features: øker telleren i virustest.data med 1 ved enhver start
+      Så snart 0 er nått, formatteres disketten.
+      For å endre verdien i virustest.data, må disken ikke være skrive-.
+      beskyttet. Hvis den er, opptrer følgende beskjed:
+      Bruker requester : Please remove write Protection and press
+                        left Mouse Button to continue..
+      En senere bruk av startup-sequence er med skrive-beskyttet disk
+      umulig.
+      i CLI altid :
+            RAM CHECKED - NO VIRUS FOUND.
+
+   - Tomates-Gentechnic-Service  = TimeBomb-BB-Klone
+            kun teksten er endret
+
+   - Traveling Jack
+      LinkVirusPrg med variabel Hunklengde
+      skifter DosBase+$2E  (= dos.library-pointer i ROM), overlever ikke
+      reset.
+      a) skriver en fil til disk VIRUS.xy   lengde alltid 198 Bytes
+         x og y er HexNumre, valgt ved hjelp av $BFE801.
+
+         Tekst i VIRUS.xy:
+      The Traveling Jack....
+      I'm traveling from town to town looking for respect,
+      and all the girls I could lay down make me go erect.
+                            -Jack, 21st of September 1990
+
+      b) links til andre programmer
+      Betingelser:
+      DOS0-Disk, Disk validated, 12 Blocks fri på disk, Fillengde
+      minst 2000 Bytes, Filnavn minst 5 tegn, Filnavn inneholder
+      ingen tegn med en lavere verdi end $40,
+      ingen Info.File
+      Type A:
+      LinkLengdeUtregninger:
+      $24C + verdi fra $DFF006
+      dekodet i hukommelsen $909+1 Bytes
+      Type B:
+      LinkLengdeUtregninger:
+      $25B + verdi fra $DFF006
+      dekodet i hukommelsen $945+1 Bytes
+
+   - Travelling Jack 3 er det ikke, men en type B, Tror Jeg. Mange
+     Virussjekkere har en feil, på grunn av at de gjenkjenner denne som en
+     annen enn en Type B, men kanskje har de rett. (28.09.91)
+
+   - TRISTAR-Viruskiller V1.0
+      IKKE den Orginale TRISTAR- BB, men noen har lagt tekst i
+      en "Target-BB."  (meget kort kode)
+      Åh, dere begynnere!!   VT gjenkjenner Target  se der
+
+   - Trojan     annet navn: Incognito    se der
+
+   - TURK_V1.3      Cool, DoIo, i hukommelsen alltid $7f000
+         skriver TURK til $60
+         spres: over BB
+         tekst vist (dekodet med subq #6,d0) over DisplayAlarmen:
+            Amiga Failure... Cause: TURK VIRUS Version 1.3!
+         i BB: TURK
+
+   - Twinz Santa Claus Coder-strain
+         Teksten er endret til: The Santa Claus virus !!!
+
+   - U.K.LamerStyle   annet navn: Clist se der
+
+   - UF-Virus   annet navn: UltraFox  se senere
+
+   - ULDV8  NOfastmem, KickTag, KickChecksum, BeginIo, IntVec 5 skriver i
+     bootblokk (synlig): ULDV8
+     Behøver Trackdisk.device
+     Spres over BB.
+
+   - UltraFox       Cool, DoIo, FastMem ja, kun KS1.2 på grunn av $fc06dc
+         spres: over BB
+         i hukommelsen alltid ved $7eb00
+         telleren høyere enn $f = tekst vist, grafikk rutine
+         bakgrunn mørkeblå, stripene lyseblå, tegnene gule:
+         Greetings from ULTRAFOX of Aust.
+
+   - Umyj Dupe   kun KS1.2 pga den absolutte DoIo-ROM-Hopper
+         KickTag, KickCheckSum, DoIO, alltid ved s7F800
+         Bruker ikke trackdisk.device
+         Skade og formering: via BB
+         Skriver i Block 880 (Root)
+                 Umyj Dupe
+               Displayalert:
+                 Umyj Dupe
+
+   - Vermin  Cool, in Prg DoIo  alltid ved $7eb10
+         fyller ikke behøvd plass i BB med betingelser av $DFF006.
+         spres og ødelegger: Bootblock'en
+
+   - VIRUS FIGHTER V1.0  BB også via KS 2.04 VKill-klone (se under)
+	Prg. kode = VKill
+	DekoderLW forandringer: "1991" (virker IKKE med VT)
+	Dekodet tekst for requester: VIRUS FIGHTER V1.0 etc.
+
+   - Virus V1 alltid $7EC00   Cool $ 7EC62, DoIo $7ECA8
+	Aktiv med KS 2.04 også
+	Trenger ikke trackdisk.device
+	Spres og ødelegger: 
+		Infiserer Bootblokken
+		Så snart telleren når $F:
+		Tekst-grafikk-rutine, mørk bakgrunn:
+
+		1. Virus V1 (rødt)
+		2. Wir sind wieder da ahaa.. (grønnt), Kan også leses
+		   i Bootblokken
+
+   - Virus Predator BB:   Annet Falskt navn for Julie Virus.
+
+   - Virus Terminator v 6.0 Trojan Horse Mega1-Cr: 1880 bytes
+      KS2.04 også!
+      Prøver å skjule seg VHA teksten: Virus Terminator v6.0 by Rudolf Neiber
+      (1992).
+      Men sannheten er at denne trojaneren installerer Cheater Hijacker
+      virus ( en bootblokk virus, se den for mer info!)
+      Virus Terminator finnes i minnet av VT, og finnes ved å kjøre
+      VT "FileTest".
+      
+      Råd: Fjern viruset og sjekk for Cheater Hijacker virus!!!
+
+   - Virusblaster V2.3 upakket 9232 Bytes
+     Jeg har ikke den pakkede versjon (Powerpacker??)
+     Spreder ikke .
+     Ødelegger disk i DF0:
+     Loadning fra Cli: vil du se en beskjed som Antivirus Killer from M & T
+     7/91 . Let å fjerne:
+
+   - Virustest    annet navn: TimeBomber  se der
+
+   - VKill 1.0     annet navn: Aids, endrer PutMsg
+           med FastMem:
+  (Rydder e n h v e r skriv-bar Bootblokk  u t e n advarsel !!!,
+                    også når det er en Org. Bootblock!! )
+           kun med ChipMem:
+     (skriver egen BB uten advarsel)
+         DekodeLongWord: " KEN"
+
+   - WAFT BB  Cool, DoIo, spres også med KS 2.04 
+	En del av BB er kodet med 	eori.b #-$31,(a0)+
+	Tekstdisplay:  WAFT o.l.
+	Spres og ødelegger:
+	- BB
+	- Displayalert
+	- Calls skjerm- uten vindustruktur
+
+   - Warhawk   Cool, i Prg. DoIo, alltid ved $7e600
+
+   - Warshaw Avenger   BeginIo, KickTag, KickChechSum, SumKickData
+         Meget lik Lamer, men BB er ukodet
+         skrivningen avhenger av telleren i BB eller skrivninger i en
+         Diskblokk (plass valgt med $dff006) $55 x Warsaw og 1 x !! .
+
+   - XENO     Link-Virus, størrelsen på et infisert prg. økes med
+              1124 Bytes. Endrer DosOpen, DosLock og DosLoadSeg
+         øker ikke Hunk-Verdien i File-Header!!!
+         tester for 0-9, a-z og A-Z før den infiserer,
+         Resultat: programmer med et navn som har spesielle tegn, er IKKE
+         infiserte.
+         Hverken programmer i L eller Devs er infisert.
+
+         Tekst display (Output, Skriv) avhenger av $DFF006
+         Tekst er dekodet først ( eori.b #-$80,(a0)+ ) :
+            Greetings Amiga user from the Xeno virus!
+         I en infisert fil nær $460 er følgende synlig med monitor:
+               l.devs.fastfilesystem.
+
+   - Xerox = Rude Xerox = Digital Age = forpib klon. bare teksten er endret 
+
+   - ZACCESS V1.0    16Bit-Klone      se der
+         kun teksten er endret
+
+   - ZACCESS V2.0    Forpib-Klone     se der
+         kun teksten er endret
+
+   - ZACCESS V3.0    Extreme-Klone    se der
+         kun teksten er endret
+
+   - Zombi I Virus   Cool, i Prg. DoIo, alltid ved s7A000
+         Benytter ikke trackdisk.device
+         Spres via: BB
+         Skade: Når telleren når SF:
+         - Omskrives RootBlock og BitMapblock.
+         - Omdøper disketten til: Zombi 1
+         - Tekst med Displayalert:
+           Teksten er dekodet på s70000 med eori.l #SAAAAAAAA,(A0)+
+                >>>>>   Hello Amiga User !!  <<<<<
+                          HERE IS ZOMBI I
+                  If you want to clean your Disks
+                    Use Zombi I without risks!
+
+         BitMapblock alltid ved s371, kan en fil som begynner ved
+         Block s371 bli ødelagt. Alt i RootBlock er nullstillt.
+         VT kjenner denne disk på BitMap-Test ved S1B0.
+         Genopbyg med: Diskdoctor eller Disksalv.
+
+
+         enden av listen....
+
+
+   - Kjente Virus Detektorer:
+     ========================
+      Noen KickRomV1.2, med Bootblock-write, Gamle, residente, blir
+      fjernet etter request.
+
+	AmigaDOS Viruskillere v2.1, alltid 7F3F0. resident linkes DoIo
+	Kicktag, OpenOldLib og pgr. OpenWindow
+	Skriv i CLI-liste AmigaDOS VirusKiller v2.1. gir beskjed om 
+	bootblokken er utskiftet, og gir deg en mulighet til å installere
+	den normale AmigaDOS BB. Guru med KS 2.04. Mitt råd er å fjerne
+	den.
+
+      - ASS VirusProtector V1.0  (KickV1.2, beeps)
+            FastMem ja, KickTag, KickCheckSum, Vec5
+
+
+      - Blizzard Protector V1.0
+            tester Cool, Vec3, når endringer uten advarsel
+            skrives egen  BB (bruker derfor over skifting av
+            CoolVector Prg. (jsr 82(a0))
+            Råd: fjern.
+
+      - BlizzPro V3.1    cool, Fastmem ja,
+            i Prg. closedevice (åh, noe nytt)
+            spres: over BB
+            kjenner noen virus, men skriver tilbake KS1.2 DoIo
+            DisplayAlarm beskjed
+            ukodet Tekst i BB:
+            BlizzPro V3.1  og virusnavn
+
+      - CLONK!  DoIo, KickMem, KickTag, KickCheckSum, SumKickData
+            kun 512KB Chip (eller 1MB som overlever reset).
+            ($7D042 to $80, TRAP 0)
+            source: Clonk! (Alcatraz)
+
+      - DISKGUARD v1.0   cool, i Prg DoIo, alltid $7FA00
+            spres: over BB
+            Underlig beskjed BB som bruker DisplayAlarm
+            alltid: skriver DoIo av KS1.2, resultat: Guru med KS1.3
+            Råd:  fjern.
+
+      - H.C.S I      Endrer cool, i Prg DoIo, rydder KickTag
+                     i hukommelsen alltid ved $7EC00
+                     spres: enhver DOS-BB uten advarsel !!!!
+
+      - H.C.S II  Endrer cool
+                  gjenkjenner noen gamle BB virus (Alarm beskjed)
+                  først BBskrivning, DoIO vektor endres og står
+                  endret når driven er tom, Powerknappen blinker.
+
+      - Monkey-Killer    ASS-Prot-Klone  Veiledning: slå av
+                  VT kjenner denne BB som ASS+Prot BB
+
+      - NO BANDIT  skulle beskytte mot ByteBandit
+         Tekst:  NO BANDIT ANYMORE!  R.T.
+            Råd: fjern
+
+      - Sherlock     AntiVirusBB , Cool, DoIo, resident i hukommelsen,
+         i hukommelsen alltid ved $7FA00, bruker også $7CA00,
+         tekst vist med DisplayAlert
+         skriver feil verdi til BeginIO når mer enn 512KB er
+         tilgjengelig.
+         Råd: Fjern
+
+      - SystemZ V3.0, 4.0, 5.0, 5.1, 5.3, 5.4, 6.1, 6.3, 6.4, 6.5
+         KickTag, KickCheckSum, rydder Cool, i Prg. DoIo
+         Melodi og farvestriper
+         fra 6.3 ingen absolutt adresse mer.
+         nytt navn Virusprotector (Spør før den skriver)
+
+      - Virus-Killer
+            KickMem, KickTag, KickCheckSum
+
+      - VIRUS SLAYER V1.0     Cool, DoIo, i hukommelsen alltid $7FA00
+         kun KS1.2 på grunn av absolutt ROM-DoIo
+         Gammel, Råd: fjern
+         spres: via BB
+
+
+
+
+   - Kjente utilities:
+     ================
+	Delvis med (N)
+
+
+      - ACT-Killer          ;BeginIo, KickTag, KickCheckSum, SumKickData
+                              (Antivirusprogram)
+
+      - ALF2-HD             ;KickTag, KickCheckSum, KickMem
+
+      - ATool               ;Nesten alle Vectors
+                              (Utilities)
+
+      - Berserker 5         (AntiVirusPrg.)
+
+      - BOIL3-HD            ;KickTag, KickCheckSum, KickMem
+
+      - BootPic             ;KickMen, KickTag, KickCheckSum
+
+      - Bootpreventor       ;Cool, in Prg DoIo
+        Råd: fjern
+
+      - Cache-Disk          ;BeginIo
+                             Tasknavn; Cachedisk.device
+
+      - FaccII              ;BeginIo
+                              (FloppySpeeder)
+
+      - Guardian V1.1/V1.2  ;KickMem, KickTag, KickCheckSum
+                              (Antivirus)
+
+      - ICD-HD		    KickMem, KickTag, KickCheckSum
+
+      - LVD                 Loadseq
+                              Type B: Endrer også KickTag
+
+      - MemGuard 4          (Hukommelses kontroll)
+
+      - MemWatch            (Hukommelses kontroll)
+
+      - PatchLoadseq        ;Loadseq
+                             (Pieter Van Leuven)
+
+      - PCL deluxe V1.10    ;Cold, Cool, SumKickData, Vec5.
+                            (Antivirus program)
+
+      - Power-Utility       ;BeginIo, KickTag, KickMem, KickCheckSum
+
+      - PP-Patcher          ;Fish 515  Endrer dos.lib
+                                open, close, write, examine
+
+      - PPloadseg	    ; Loadseg og fra KS 2.0 Newloadseg også 
+
+      - Prokiller V1.03     ;Anti-Virus-Prg.
+
+      - Protec III          ;KickTag, KickCheckSum
+                              (antivirus)
+
+      - Pseudo-Ops          ;KickMem, KickTag, KickCheckSum
+                              (antivirus)
+
+      - RAD: (RAMB0)        ; KickTag
+
+      - RETRAX              ;Cool, $6c
+                              (antivirus)
+
+      - RRam Disk           ;KickMem, KickTag, KickCheckSum
+                              (Ram Disk som kan fjernes)
+
+      - Setpatch r V1.34  1MB RAD      ; Cold
+
+      - TrackSalve V1.3     ;Disk-Utility
+
+      - TurboPrint II+Prof  ;KickTag, KickCheckSum, (Prof. også Cold)
+                              (Printer-Utility)  (Prof. 21.04.91)
+
+      - Ultrakill           ;Cold, Cool
+                              (antivirus)
+
+      - VD0:                (ASDG-RamDisk)
+
+      - VirusControlV2.0    ;Cold, Cool, DoIo, BeginIo
+                              (antivirus)
+
+      - VIRUS MURDERER      ;Cold always $7EC00
+                              tester Vectors
+
+
+   - SKADELIGE PROGRAMMER
+     ====================
+
+     - ByteWarriorCreator    pakket: 6012 Bytes (TNM)
+                            upakket: 7360 Bytes
+       Med FastMeM en NDOS-DISK
+       Uten FastMeM skriver den ByteWarrior til disketten.
+
+     - DAG viruscreator  upakket 7000 bytes
+	Skriver DAG virus i BB på DF1:
+
+     - Disk.Info  størrelse: 370 Bytes INGEN spredning
+         Et originalt WB ikon blir endret i strukturen.
+       Med tekst: This is a little present for all Lamers.
+       Når du setter i denne disk, og den forsøker å gjenopprette
+       WB-ikonet, kan Computeren gå i GURU. Har du Startup-Sequencen i
+       Cli, vil ingen av ikonene bli utsatt for endringer, og så
+       kan du benytte denne disk til å løse problemet.
+       Hjelp: Skift disk.info med disk.info på denne disk.
+
+     - LhWarp V1.40    størrelse: 47880 Bytes upakket
+       Skriver (for meg) på Target en Falsk disk struktur
+       Og deretter ødelegges disketten. Forsøk vennligst med mindre
+       viktige disketter og test med BlockKette.
+
+     - LZ 2.0  Funnet  21.09.91
+	i BBS er en LZ 2.0 versjon spredt, med en lengde på 37380 bytes
+	upakket. ingen tvil om at dette er et hack, og vil trolig 
+	ødelegger arkiv.
+	Jeg har denne, men VT kjenner den ikke
+	Det siste orginale versjonsnr. var pr 22.09.91: LZ 1.92
+
+     - Virusmaker
+       Du kan velge i mellom: Byte Bandit, Byte Warrior, SCA,
+       Northstar 1+2 samt System Z.
+
+     - X-Ripper V1.1    størrelse: 41360 Bytes (upakket)
+       Tillater deg å skrive en Lamer-BB. Og det ender med å bli en
+       NDOS-Disk, pga at DOS-gjenkjennelsen er på 8 Bytes.
+
+   - Andre Bootblocks:
+     =================
+
+      - Amiga Action Replay harmløs
+
+      - Anachos Virus-Slayer 3.12  harmløs
+
+      - AntiRipperBoot   annet navn: The Punisher  se der
+
+      - Bavarian  Jeg mener at den er harmløs.
+
+      - Bootgen V3.4 Bootmenu, harmløs
+
+      - BootGirl   harmløs   synlig i BB: BBM 1987
+
+      - Bootintro V1.2 fra R.F, harmløs
+
+      - BootLeg V2.1  harmløs
+
+      - Bootpreventor    harmløs  usynlig: Bootpreventor
+
+      - Countach V1  tester vektorer, ingen kopirutine, harmløs
+
+      - CopyLock 91    harmløs, 01.10.91 fjernet igjen pga for mange kloner
+
+      - DiskSafe PROTECTOR v1.0  harmløs
+
+      - Fastloader by Byte Warrior
+        Endrer kun verdier i Portstrukturen (step-rutine og
+        tids rutine for pause)
+        ikke resident, ingen spredning, Reset når VMus presses ved bootup
+        Min mening: Install, fordi nye verdier er for ekstreme
+        (Skrivefejl!!) i BB: >>Fastloader by Byte Warrior !<<
+
+      - Hallon Boot     F1-F6 Menu
+        Godt råd: Fjern
+
+      - Hypnosis Boot  harmløs
+
+      - Install 2 BB  Ralph Babel  harmløs
+
+      - INTERFERON  harmløs, ikke resident
+        tester Cold, Cool, Kicktag til zero, når umulig: ROM-Reset
+        tekst vist med grafikk rutine
+        i BB synlig: I N T E R F E R O N   etc.
+
+      - INTERFERON PRO!   harmløs
+
+      - LSD  Boot V1.1 harmløs
+
+      - Magic BB   harmløs tester vektorer og om det er PAL 
+
+      - Meikel BB  harmløs tester vektorer
+
+      - MemoryAllocator V1.3
+        harmløs
+
+      - MemoryController V1.3
+        harmløs
+
+      - MOSH-BB     Cool, etter reset s68 alltid ved s7C000
+        skulle være en Virusdemo. kodet med eor.l d0,(a0)+
+        Råd: Slå av 
+
+      - NoBoot
+        Cold, Cool, i Prg. DoIo etc. , ingen spredning
+        se Kickstart 10.90 S87ff
+
+      - NOLL DETECTOR  harmløs, ikke resident
+        tester Cold, Cool, Kicktag til zero, når umulig: ROM-Reset
+        tekst vist med grafikk rutine.
+        i BB synlig: DIETMAR NOLL   etc.
+
+      - N.O.M.A.D    harmløs
+
+      - Outlaw-VirusChecker
+        ingen spredning, gjenkjenner SCA. Skriver alltid KS1.2 verdier
+        (eks. Vec5 $fc12fc). resulterer i en GURU med KS1.3
+        ikke resident
+
+      - Peter Stuer V5.0 BB harmløs tester vektorer
+
+      - PROBOOT 1.0  F1-F7 Menu, tester vectorer
+         med Install !?!? (Brugernes valg), harmløs
+
+      - PVL Sound BB        harmløs
+        Grønt Display, lyd , lukker ikke "Graphics.Library."
+
+      - Random Access      CopperIntro
+        skriver GURU til $60, ikke resident, ingen spredning
+        Råd: Install
+
+      - Revenge of MAD   normal BB
+
+      - Scoopex utility V1.0
+        harmløs, brukbar Bootblokk
+
+      - Seek & Destroy   harmløs
+
+      - Sinister Syndicate   , ikke resident
+        gjenkjent som virus av ZeroVirus 3
+        Jeg tror at det er en CopperIntro, uten eor- eller sprednings-
+        rutine, GURU er skrevet i $60, kan bli satt tilbake i menu
+        (se Obelisk)
+
+      - Starlight  harmløs
+        Dette er egentlig en Viruscope BB V1.0, men noen har endret
+        i teksten.
+
+      - Telstar cold, cool, counter $c0
+        meget stygg, utgis for å være Virusprotecto 6.0 (tekst), dekodet
+        (neg.b) BBpart etter $7fc00, ethvert 4/2.Reset grafikk (Dutch
+        Flagg og Tekst eks. Telstar), ingen kopi rutine funnet.
+
+      - The IRQ Protector (BB) og FilePrg
+        ingen spredning
+        skifter OpenLibVector til $120, men sjekker ikke videre om det
+        allerede er satt .
+        FilePrg: skifter OldOpenLib til en tilfeldig adresse,
+        uten Vectortest.
+        råd: fjern
+
+      - The Punisher  annet navn: AntiRipperBoot,   Cold
+        endrer Cold og skriver en verdi lavere enn $FF på dette sted.
+        resultat: når det bootes fra en annen BB, blir det laget et reset
+        Råd: Fjern
+
+      - The Supply Team
+        ikke resident, ingen spredning, men skriver KS1.2-vektorer
+        Derfor: Install
+        rydder Cool, KickMem, KickTag, KickCheckSum. skriver alltid kun
+        absolute KS1.2-vektorer: DoIo, BeginIo, Vec5
+        Også tekst vist over grafikk rutine, mørk bakgrunn
+        lysebrune striper, Mørkbrune tegn
+        Tekst i BB :  The Supply Team
+
+      - UNICORN V1.1   harmløs
+        Jeg tror det er en CrackerBB med PictureLoadFunction
+        noen Viruskillere tror de finner en Formatrutine:
+        Instruktionerne move.w #$b,$1c(a1) er der, men når denne linje
+        er nått, er trackdisk.device allerede lukket og input.device
+        åpnet.(Writeevent)
+
+      - Virkill V2.0 Harmløs
+
+      - Viruscope V1.0 BB
+        harmløs
+
+      - VIRUS MURDERER  som BB harmløs
+
+      - Virus v4.2   harmløs
+        DisplayAlert når det boot'es :  I control your computer etc.
+        ingen vektorer er endret og ingen sprednings rutiner.
+        Råd : Install
+
+      - VirusTerminator 1.0 = A.C.I.D
+        ingen spredning, gjenkjenner SCA, Byte og DASA. skriver alltid
+        KS1.2 verdier (eks. DoIo $fc06dc). resultat: GURU med KS1.3
+        ikke resident
+
+      - VirusTerminator 3.0 = A.C.I.D
+        ingen spredning, gjenkjenner noen Virus, DisplayAlert, rydder
+        Cool og resets med ROM-Spring.
+        ikke resident, harmløs.
+
+      - Xcopy harmløs, tekstskriving: "No Virus On Bootblock"
+
+      - Zerovirus III Harmløs
+
+
+ Kun Virus fjernes med Cold reset, det har jeg monteret på VT.
+ Men virus blir bedre og bedre hele tiden (flere list og pointer
+ endringer), Slik at  den orginale situasjon ikke kan bli gjenetablert.
+ Derfor har jeg med noen virus, kun montert Cold resets, da alt annet
+er for farligt for meg også....
+
+   Crunchers:
+   ==========
+
+   - Black & Decker V2.0
+   - Byte Killer V1.2+
+   - Compacker+ V4.2
+   - Crunch Master V1.0
+   - DEFJAM Packer V3.2
+   - Double Action V1.0
+   - DRAGPACK v1.0
+   - High Pressure Cruncher
+   - HQC-Compress
+   - HQC-Cruncher
+   - Imploder
+   - ISC V1.5   (Rainbow Trio)
+   - Lightpack V1.5
+   - LzHuf
+   - Mastercruncher V3.0
+   - Max Packer V1.2
+   - Mega Cruncher V1.2
+   - PackIt V1.0
+   - PowerPacker
+   - PowerPacker-Data
+   - PowerPacker-Clone
+   - Relokit V1.0
+   - RSI-Cruncher
+   - Stone Cracker V2.99b
+   - Super Cruncher V2.7
+   - SupplexCruncher
+   - Syncro Packer V4.6
+   - Tetra-Crunch V1.1
+   - Tetra-Pack V2.1, V2.2
+   - Time-Cruncher V1.7
+   - TITANICS-Cruncher
+   - TNM-Cruncher V1.1
+   - TryIt V1.01
+   - TUC-Cruncher
+   - TURBOSQUEEZER V8.0
+
+   Arkiver:
+   ========
+   - APE
+   - ARC
+   - compress
+   - LHSFX
+   - LhArc
+   - LhArcA
+   - LZ
+   - PKAZip
+   - ZOO 2.0
+
+   Disk- og Trackcrunchers:
+   =========================
+   - Disk Imploader
+   - Lhwarp 				forsiktig med LHWarp V1.40
+   - The Disk Masher (DMS)
+   - Warp
+   - ZOOM 4.1
+
+
+   Soundpakkere
+   ============
+
+	- Noisepacker
+	- Soundtracker
+
+
+   Heiner Schneegold
+   Am Steinert 8
+   8701 Eibelstadt
+   Germany (Tyskland)
+
+   Tel: 09303/8369
+   (19.00 - 20.00)
+
+
+ ser deg snart !!
+
+ Heiner
+
+
+›[0m›[1 p

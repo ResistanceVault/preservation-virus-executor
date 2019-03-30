@@ -1,0 +1,26 @@
+Short:    PatchBrain v1.36 for VirusExecutor v2.xx
+Author:   virusexecutor@c2i.net (Jan Erik Olausen)
+Uploader: virusexecutor@c2i.net (Jan Erik Olausen)
+Version:  1.36
+Type:     util/virus
+Replaces: util/virus/VEPatchBrain.lha
+Requires: VirusExecutor v2.xx
+
+
+How to Install the PatchBrain:
+Just copy the file 'VirusExecutor.patches' to the VirusExecutor: drawer
+and restart VirusExecutor
+
+
+Changes since last version:
+
+Added:
+  OldIcons v1.3
+
+Remember.. If you have a lot of unknown patches, please let me know so I can
+add them to this patch brain :)
+
+
+The author
+
+Email: virusexecutor@c2i.net

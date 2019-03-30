@@ -1,0 +1,19 @@
+	section code
+
+GetVBR	movem.l	d2/a5/a6,-(a7)
+		move.l	4.w,a6
+		moveq	#0,d2
+		move.w	$128(a6),d0
+		and.w	#$f,d0
+		beq.s	.Exit
+		lea	.Super(pc),a5
+		jsr	-30(a6)
+.Exit		move.l	d2,d0
+		movem.l	(a7)+,d2/a5/a6
+		rts
+
+		
+.Super	dc.l	$4e7a2801
+		dc.w	$4e73
+
+		END

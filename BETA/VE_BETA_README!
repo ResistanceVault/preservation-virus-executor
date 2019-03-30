@@ -1,0 +1,80 @@
+
+                         VirusExecutor 2.26  - BETA 10
+                        *******************************
+
+
+Hi!
+
+Thanks for testing VirusExecutor...
+
+Please note that all beta versions are not for the public release!
+
+
+Please hard test the new stuff...
+
+
+                            Changes since last version
+                            ==========================
+
+BETA 10
+      - Fixed some memory leaks when loading FD: files.
+      - Added file name output if 'Fast file-checking'-flag is active.
+      - VE now remembers the 'Memory monitor' setting.
+      - Added full path of xfdmaster.library errors (log and requester)
+
+BETA 9
+      - Improved internal patch checking...
+      - Updateded the patch brain...
+      - Added internal recog for asl.library v39
+
+BETA 8
+      - Fixed bug: Stupid requster asking for FD:
+      - Fixed bug: Disassemble output was not always right.
+      - Checking patches are now MUCH faster!
+
+BETA 7
+      - Fixed bug when detecting asl.library v42.0
+      - Fixed bug: When 'Check data files'-flag is on and 'Extract archives'-flag
+        is off, VE loaded the whole archive as a data file.
+      - Fixed some bug in the file status output...
+      - Added a yes/no window to multi check, and pressing ESC you can move on
+        to the next drive...
+      - I'll include the latest patchbrain... Do not spread this!
+
+BETA 6
+      - Moved CPU/Exec interrups to the patch window...
+        I have not added much patches to this yet... And you have to use 
+        patchbrain v1.45 for this...
+
+BETA 5
+      - Cleaned up the log output a bit and added some more to it.
+      - You can now see all output when checking files on a smaller screen...
+        (283 or higher)
+      - Some other fixes...
+
+BETA 4
+      - Improved a lot around the xadmaster.library.. Should now check
+        all archives and disk-archives correctly...
+      - Fixed some bug in checking all volumes. Should work now..
+        I just checked over 100.000 files on my system.
+
+BETA 3
+      - Added function to check ALL valid volumes in one go.
+
+BETA 2
+      - Added support for DMS SFX archives.
+      - Some ASCII files are detected by the xfdmaster.library as crunchers.
+        Fixed.
+
+BETA 1
+      - Fixed bug from xfdmaster.library when detecting wrong StoneCracker 4.04
+        cruncher. Should fix the problem with the AmiGameBoy.key error.
+      - Added internal sound player.
+      - Fixed 'Unsupported hunk type'-bug when decrunching some files...
+        Thanks to Dirk Stöcker for finding the bug.
+
+
+
+Thanks!
+
+Jan Erik Olausen

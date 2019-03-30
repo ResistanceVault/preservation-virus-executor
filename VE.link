@@ -1,0 +1,5 @@
+FROM LIB:c.o "PrefsWindow.o"+"VE.o"+"VE_Analyze.o"+"VE_AnalyzeWrite.o"+"VE_fd.o"+"VE_Files.o"+"VE_FileStat.o"+"VE_FileVirus.o"+"VE_Install.o"+"VE_log.o"+"VE_Mem.o"+"VE_Monitor.o"+"VE_OtherBoots.o"+"VE_Patches.o"+"VE_PatchWindow.o"+"VE_Prefs.o"+"VE_Record.o"+"VE_Sector.o"+"VE_ShowStuff.o"+"VE_ShowWindow.o"+"VE_Update.o"+"VE_Utilities.o"+"VE_Watch.o"+"VE_Window.o"+"VE_Version.o"
+TO "VE"
+LIB LIB:reqtools.lib LIB:JEO.lib LIB:scmffp.lib
+    LIB:sc.lib LIB:amiga.lib
+DEFINE @__chkabort=@__dummy

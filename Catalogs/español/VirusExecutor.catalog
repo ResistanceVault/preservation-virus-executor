@@ -1,0 +1,128 @@
+FORM  <˛CTLGFVER   5$VER: VirusExecutor.catalog 2.24 (5.7.2) by Diego CR  LANG   espaÒol CSET                                    STRS  <|       No hay disco en la unidad         Mensage       Ok        Listo.        Por favor espere...       !Error en pista del disco %ld: %s          ZError desconocido en pista del disco ->%ld<-
+unidad = %ld
+Por favor contacte con el autor!        )Error desconocido en pista del disco %ld!         Disco ProfFileSystem instalado.    	   Disco Flashback nr:        
+   Disco ABackup nr:         1Error en la comprobacion de la suma!! (checksum!)         &Disco AmigaDOS sin bloque de arranque.        Disco AmigaDOS instalado          Disco FMS Instalado v%s.          !Comprobando bloque de arranque...         Es un disco mal formateado?       	%s virus!         %s virus encontrado en %s         Eliminar virus|Cancelar       	PELIGRO!          Una utilidad en el arranque       Un antivirus en el arranque       Una Intro en el arranque          Un cargador.          A analizar...         No es un disco autoarrancable.        #Codigo de retorno = %ld Nombre = %s       Instalando '%s' a %s          Instalando %s         9
+Usted tiene la %s v%s
+Por favor use %s v%s o posterior!
+         Usando las librerias externas:         !Reconoce %3ld virus de arranque.
+      !   Reconoce %3ld virus adosados.
+     "   !Reconoce %3ld virus de fichero.
+
+      #   'Reconoce %ld tipos de descompresores.
+
+    $   )Reconoce %ld parches de %ld programas.
+
+       %   *      &   Bloque de arranque     '   Bloques de arranque    (   Fichero    )   	Ficheros       *   	Sobre...       +   -Cargando y desencriptando datos de parches...      ,   /Error: '%s' no es un fichero valido de parches!    -   Error cargando '%s'!       .   	Virus BA       /   
+Virus Fic.     0   N/A    1   No hay memoria!    2   Salvando preferencias...       3   En b. de arranque,     4   	Adosados,      5   De fichero,    6    %s virus (%ld)    7   Selecciona modo de pantalla:       8   7VirusExecutor no puede lanzar una pantalla tan pequeÒa!    9   *      :   cVirusExecutor tendra que volver a ser arrancado
+para que el cambio de pantalla pueda ser realizado.    ;   %Usted no escogio un modo de pantalla.      <   .
+VirusExecutor requiere kickstart v37+!
+
+Pulse     =   Error!     >   *      ?   "VirusExecutor necesita '%s' v%ld+!     @   &Error: xvs.library ha sido modificada!     A   Comprobando unidades...    B   !Por favor introduzca contraseÒa:       C   %Nombre de fichero: %s
+
+    Error: %s       D   NVIRUS: %s
+
+fichero Infectado:
+'%s'
+
+Este tipo de virus solo puede ser borrado.     E   %s PELIGRO VIRUS!!     F   ABorrar fichero|Autoborrado de virus|Parar comprobacion|Continuar       G   %El fichero '%s' no puede ser borrado!      H   DATOS      I   :        VIRUS: %s
+
+fichero Infectado: %s
+      Archivo: %s     J   PELIGRO FICHERO CON VIRUS!     K   FICHERO    L   PELIGRO VIRUS ADOSADO!     M   "VIRUS: %s
+
+fichero Infectado:
+'%s'     N   KEliminar virus|Autoeliminado de virus adosados|Parar comprobacion|Continuar    O   9Virus eliminado!
+
+TamaÒo anterior: %ld
+TamaÒo actual: %ld      P   Salvar fichero|Cancelar    Q   !Error escribiendo fichero: '%s'!       R   Error abriendo fichero: '%s'!      S   +Error: %s
+
+El virus no puede ser eliminado!    T   %ERROR ELIMINANDO EL VIRUS DEL FICHERO      U   +Borrar fichero|Parar comprobacion|Continuar    V   &Extrayendo virus adosado en %s (%s)...     W   1Error extrayendo virus adosado en fichero: '%s'!       X   *      Y   Comprobando... '%s'    Z   Error leyendo fichero '%s'!    [   Comprobacion parada    \   Continuar|Parar comprobacion       ]   Abortado por el usuario!       ^   !ERROR: 65
+Contacte con el  autor!      _   ERROR fijando dir '%s'!    `   Comprobar ficheros por virus.      a   %ERROR 46! Contacte con el  autor...
+       b   *      c   dir    d   dirs       e   archivo    f   	archivos       g   minuto     h   minutos    i   segundo    j   	segundos       k   
+
+Encontrado(s) %ld virus!     l   ninguno conocido       m   Estado de la comprobacion      n   Resetear|Cancelar      o   No se han encontrado entradas      p   
+DIRECCION  NOMBRE
+
+       q   Buscar el texto: VIRUS etc     r   %
+Hay un posible virus en la memoria!       s   LA CADENA "LOCALE" NO ES USADA!    t   BError limpiando los vectores!!
+podria ser por un virus en memoria!     u   .
+Los vectores de la memoria parecen correctos.     v   Comprobar vectores     w   #%s virus encontrado en la memoria!
+    x   
+Virus eliminado de la memoria.    y   %Ningun virus conocido en la memoria.       z   Hurra!     {   Comprobar memoria      |   Hecho      }   	Proyecto       ~   Preferencias...       Comprobar ficheros     Ä   Comprobar sectores     Å   Elegir modo de pantalla...     Ç   Salir      É   Mostrar    Ñ   Virus en bloques de arranque       Ö   Virus adosados     Ü   Tareas/procesos    á   	Librerias      à   Dispositivos       â   Parches    ä   	Instalar       ã   Bloque de arranque     å   Grabar     ç   Mostrar    é   Editar nombre      è   Juntar     ê   
+Borrar uno     ë   Borrar todos       í   Salvar     ì   
+Utilidades     î   Renombrar imagen...    ï   Convertir IBN/IBM/IBMM a ISO       ñ   Grabar la ROM en fichero       ó   !Traducido al EspaÒol por Diego CR      ò   -
+
+Parece que solo funciona con kickstart v%s!      ô   IBloque de arranque desconocido! %ld%% de probabilidades que sea un virus!      ö   9Analizando %s: %ld%% de probabilidades que sea un virus!       õ   *      ú   +
+
+Escribe a un lugar desconocido del disco!    ù   
+
+Destruye el disco!!      û   .
+
+Esto podria ser tambien un virus de fichero!     ü   -Bloque de arranque desconocido! puede ser %s.      †   un antivirus       °   un cargador    ¢   un detector de virus       £   una utilidad o intro       §   encriptado! Puede ser un virus!    •   3Bloque de arranque desconocido! (Parece inofensivo)    ¶   *      ß   *      ®   *      ©   'Comprimidos:   %8ld Descomprimidos:%8ld    ™   'Archivos:      %8ld Extraidos:     %8ld    ´   *      ¨   Instalar a %s      ≠   Error abriendo ventana!    Æ   	Sistema:       Ø   Modo internacional:    ∞   Cache de directorio:       ±   Desde base de datos:       ≤   Disco instalado.       ≥   	 Instalar      ¥   Cancela    µ   -Vectores de interrupcion de la Exec en RAM
+
+       ∂   Entradas KickMemPtr:       ∑   Kickstart v%s en $%08lx
+
+      ∏   *      π   !Vectores de las librerias en RAM       ∫   -Preferencias (BETA - Pulse 'Esc' para salir)       ª   Comprobar ficheros:    º   Misc:      Ω   !Descomprimir ficheros comprimidos      æ   Comprobar ficheros de datos    ø   Extraer archivos LHA       ¿   Extraer archivos LZX       ¡   Extraer archivos ZIP       ¬   Saltar ficheros encriptados    √   Ocultar parches conocidos      ƒ   La base de datos esta vacia!       ≈   7La base de datos a sido cambiada/actualizada!
+Salvarla?    ∆   Salvar|Cancelar    «   Borrando base de datos...      »   {Borrar la base de datos?
+Usted tiene %ld bloques de arranque guardados.
+
+La base de datos tambien sera borrada de su disco!    …   Borrar|Cancelar        Borrar base de datos...    À   Esta seguro???     Ã   !La base de datos a sido borrada.       Õ   /Error borrando la base de datos desde el disco!    Œ   #No hay cambios en la base de datos!    œ   Salvando base de datos...      –   Salvando base de datos... %ld      —   !La base de datos a sido salvada.       “   Error salvando base de datos       ”   Cargando base de datos...      ‘   Cargando base de datos... %ld      ’   1No hay memoria para cargar toda la base de datos!      ÷   .'%s' no es una base de datos de VirusExecutor!     ◊   Error cargando base de datos       ÿ   Juntando bases de datos...     Ÿ   Error juntando '%s'    ⁄   1No hay memoria para juntar toda la base de datos!      €   Juntando %3ld...       ‹   Juntado %ld %s de %ld.     ›   "Error juntando las bases de datos!     ﬁ   Grabados: %10ld    ﬂ   Libres:     %10ld      ‡   +Selecciona bloque de arranque a instalar...    ·   Cambiar '%s' a:    ‚   
+Cambiar a:     „   Usted a cambiado de idea?      ‰   '%s' ya existe!    Â   Cambiado '%s' a '%s'.      Ê   Ver bloque de arranque...      Á   )Selecciona bloque de arranque a borrar...      Ë   "
+Borrar '%s' de la base de datos?
+     È   '%s' esta borrado.     Í   Error borrando '%s'!       Î   1Usted no necesita grabar este bloque de arranque!      Ï   !No le permito grabar este virus!       Ì   6Introduzca un nombre para el bloque de arranque %s ...     Ó   3No hay memoria para grabar este bloque de arranque!    Ô   Base de datos...          No hay disco en ninguna unidad!    Ò   &Seleccione bloque de arranque
+a grabar     Ú   Grabar bloque de arranque.     Û   Juntando base de datos...      Ù   9El disco en la unidad %s esta protegido contra escritura!      ı   *El disco en la unidad %s no esta validado!     ˆ   9Por favor espere, comprobacion de sectores en progreso...      ˜   .Comprobando cilindro: %ld - %ld para acabar...     ¯   !Comprobacion de sectores pausada       ˘   Continuar|Cancelar     ˙   !Sector %ld esta destruido con: %s      ˚   !Bloque %ld esta infectado con: %s      ¸   Reparar sector|Continuar       ˝   Error reparando sector!    ˛   6%ld sectores comprobados, %ld infecciones encontradas.     ˇ   %Comprobacion de sectores finalizada.          Mostrando tareas...      	Preceso          	Tarea            *** PELIGRO - SIN NOMBRE! ***        Mostrando tareas (%ld)...        GNombre                                              Direccion Pri  Tipo      Mostrando librerias...       Mostrando librerias (%ld)...         INombre                                            Direccion Pri  Version      	   Mostrando dispositivos...     
+   Mostrando dispositivos (%ld)...      Mostrando parches...         Mostrando parches (%ld)...       Nombre       Selecciona fichero a reparar...      Reparar      Cargar texto         Cargando '%s'...         Convirtiendo...      Salvando...      /El fichero es ahora %ld caracteres mas pequeÒo.      Error salvando fichero!      )No es un fichero de texto IBN/IBM/IBMM !         No es un fichero ASCII !         Error cargando fichero!      Seleccionar fichero...       
+Salvar ROM       #Salvando ROM (%08lX - %08lX) a '%s'      E
+
+Esta version de VirusExecutor necesita v%ld.%02ld+ del PatchBrain!         )Error: VirusExecutor ha sido modificado!!        Entradas KickTagPtr:         •%s necesita %s para descomprimir ficheros comprimidos!
+Por favor instala la ultima version de %s.
+
+La opcion 'Descomprimir ficheros comprimidos' esta desactivada...          *** DESCONOCIDO ***   !   6Vectores de interrupcion de CPU en RAM (VBR: $%08lX)
+
+    "   &Viendo memoria en la direccion $%08lX:    #   Desconocido(s)    $   programa(s) en    %   Reconocido(s)     &   Listar KickTagPtr|    '   Listar KickMemPtr|    (   Restaurar vectores|Continuar      )   ~Encontrado un fichero comprimido!
+
+Esta seguro que quiere sobreescribir TODOS
+los ficheros comprimidos por los descomprimidos?    *   /Hacerlo!|Desconectar la funcion 'Sobreescribir'   +   "Sobreescribir ficheros comprimidos    ,   )Calculando la velocidad del procesador...     -   ?Seleccione la unidad para efectuar la comprobacion de sectores.   .   &Comprobados %s %s y %s %s hasta ahora.    /   ColdReboot...     0   ÇReiniciar la maquina?
+
+Toda la memoria y perifericos externos seran REINICIADOS,
+y la maquina empezara con sus test de arranque...    1   Cancelar|Reiniciar|Cancelar   2   PELIGRO VIRUS DE DATOS!!      3   Inicio rapido     4   !Saltar ficheros mas antiguos que      5   dia(s)    6   !*** NO ES UN VECTOR ESTANDARD ***     7   )AÒadiendo '%s' a 'Ficheros vigilados'...      8   No hay ficheros para comprobar!   9   Comprobando '%s'...   :   El fichero no  existe!
+
+'%s'      ;   Eliminar de la lista|Continuar    <   I    Fichero: '%s'
+
+TamaÒo antiguo: %ld
+TamaÒo actual: %ld
+
+    Diff: %ld      =   "EL TAMA—O DEL FICHERO HA CAMBIADO!    >   Aceptar cambio|Continuar      ?   .      Fichero: '%s'
+
+Antiguo CRC-32: $%08lX
+Ac    @   EL CRC-32 HA CAMBIADO!    A   
+EJECUTABLE    B   ICONO     C   	ERROR???      D   6Nombre del fichero: %s
+     TamaÒo: %ld
+
+     Tipo: %s    E   &AÒadir fichero|Cancelar|Saltar fichero    F   Salvar|Continuar      G   %AÒadido %ld %s a 'Ficheros vigilados'     H   Seleccione directorio...      I   )Salvando datos de 'Ficheros vigilados'...     J   )Cargando datos de 'Ficheros vigilados'...     K   Incluir ficheros de datos     L   Excluir iconos    M   Confirmar ficheros cada vez   N   AÒadir    O   Hecho     P   Ficheros vigilados    Q   	Comprobar     R   AÒadir directorio     S   %AÒadir/actualizar ficheros de inicio      T   #AÒadir ficheros desde un directorio   U   1Disponible (chip): %9s   Disponible (fast): %11s      V   6Directorios:   %8s Ficheros:      %8s Comprobados: %8s    W   Actualizar programa   X   5
+
+Escritos a bloques de arranque! (%ld%% de seguro..)     Y   Error en Socket!      Z   Conexion reusada!     [   Host desconocido!     \   2%s v%s esta disponible...
+
+La version actual es %s    ]   Recibir fichero|Continuar     ^   Conectando a Aminet...    _   *Comprobando actualizacion para %s  (%s)...    `   !Error enviando solicitud al host!     a   Error leyendo fichero .Readme !   b   %Error recibiendo el fichero .readme !     c   .Recibiendo a RAM:%s.lha (%s bytes, %ld cps)...    d   CDescarga completada!
+
+El fichero %s.lha lo puedes encontrar en RAM:   e   +Por favor elige que servidor de Aminet usar   f   &USA|Alemania|UK|Italia|Suecia|Cancelar    g   )No hay un programa TCP/IP ejecutandose!!      h   5Los datos de 'ficheros vigilados' han sido cambiados!     i   Quitar ficheros...    j   Quitar '%s'?      k   Quitar|Cancelar   l   BSelecciona que fichero quitar de la lista de Ficheros Vigilados...    m   )Por favor aÒada algunos ficheros primero!     n   *Comprobacion de Ficheros Vigilados pausada    o   Nombre    p   Local     q   Aminet    r   )Comprobacion de actualizacion terminada.      s   Recibidos %ld %s.     t   Actualizacion     u   Actualizaciones   v   è%s necesita %s v%ld+ para extraer archivos LhA+!
+Por favor instale la ultima version de %s.
+
+La opcion 'Extraer archivos #' esta desactivada...   w   !EL ARCHIVO ESTA ENCRIPTADO!
+
+'%s'     x   EL ARCHIVO ESTA CORRUPTO!
+
+'%s'   y   ëEscaneado(s) %ld %s y %ld %s
+
+Comprobados %ld %s ejecutables (%ld comprimidos)
+Comprobados %ld %s de datos
+Comprobados %ld %s
+
+Tiempo usado: %s       z   %Virus hallados:%8ld Tiempo:        %s     {   'Archivo: %s
+   Fichero: %s
+
+  Error: %s   |   Salvando '%s'...      }   Chequeo rapido de ficheros    ~   *        Reconoce %3ld virus de datos.
+    Ä   	En datos,     Å   Virus de datos    Ç   #Area de memoria: $%08lX-$%08lX '%s'   É   Monitor de memoria    Ñ   Escribir fichero de registro      Ö   
+Iconificar    Ü   Iconificar al inicio      á   No puedo crear el icono!      à   -La pantalla del Workbench no esta disponible!     â   xvs.library esta desactivada!     ä   &Error: exec.library a sido modificada!    ã   *Fichero: '%s'
+
+Ant. MD5: $%s
+Act. MD5: $%s    å   -LA SUMA DE COMPROBACION MD5-128 HA CAMBIADO!!     ç   OEsta version requiere que usted borre su antiguo archivo de ficheros vigilados! 

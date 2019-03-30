@@ -1,0 +1,116 @@
+
+                            BUG REPORT FORM
+                                  for
+                    VirusExecutor by Jan Erik Olausen
+                         (virusexecutor@c2i.net)
+
+
+
+                      THE FOLLOWING IS TESTED BY
+---------------------------------------------------------------------
+YOUR NAME: Per Martin Iversen
+---------------------------------------------------------------------
+EMAIL ADDRESS: pmiversen@fm.telia.no
+---------------------------------------------------------------------
+COUNTRY: Norway
+---------------------------------------------------------------------
+
+
+Just replace my configuration examples...
+
+                           PROGRAM VERSIONS
+                           ----------------
+            VirusExecutor: 2.03
+    VirusExecutor.patches: 1.12
+    VirusExecutor.catalog: norsk 1.2
+
+         reqtools.library: 38.1022
+              xvs.library: 33.21
+        xfdmaster.library: 39.10
+
+
+                      YOUR MACHINE CONFIGURATION
+                      --------------------------
+
+             MACHINE TYPE: A1200
+                CPU/CLOCK: 68040/40Mhz
+                FPU/CLOCK: 68040/40Mhz
+               MMU/STATUS: 68040/In use
+                      PPC: None
+
+        KICKSTART VERSION: 39.106
+        ROMUPDATE VERSION: 
+        WORKBENCH VERSION: 39.29
+
+    AMOUNT OF CHIP MEMORY:  2 Mb
+    AMOUNT OF FAST MEMORY: 16 Mb
+
+         BOARDS INSTALLED: None
+
+
+THE DETAILS OF THE FOUND BUG(S):
+--------------------------------
+If you choose cancel on the screen-prefs on run of VirusExecutor, it GURU's
+
+
+
+
+
+
+
+The guru code number by consequence of the bug: 8000 0006 001FFFD0
+
+
+
+The bug is tested with Snoopdos or program alike said the following
+before the guru:
+
+
+
+
+
+
+DOCUMENTATION
+-------------
+   I never read documantations
+
+ X The documentation is ok
+
+   The documentation is too diffecult to understand
+
+   Some parts of the documentation which is diffecult to understand
+
+ X The english spelling is ok
+
+   The english spelling is too diffecult to understand
+
+   There is some parts of the doc which is diffecult to understand
+
+   There is wrong (old) program versions mentioned in the doc's
+
+
+Some details of of the documentation to improve:
+------------------------------------------------
+(Write  a little comment concerning your opinion e.g.  correct the doc
+and  add  the  lines here ( Please use line number for every line from
+the original doc for an easy feed-back)
+
+
+
+
+
+
+IMPROVMENTS
+I have the following suggestions:
+
+
+
+
+ENFORCER TEST
+I have tested the above program with my MMU unit and I got the following
+report:
+
+
+
+
+

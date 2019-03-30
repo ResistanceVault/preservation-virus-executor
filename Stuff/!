@@ -1,0 +1,240 @@
+/* Working example of determining function LVO code address
+
+   Written by Harry "Piru" Sintonen <sintonen@iki.fi>
+   Public Domain.
+*/
+
+
+#include <exec/libraries.h>
+
+#include <proto/exec.h>
+#include <proto/dos.h>
+
+
+/* defines
+*/
+#define GF_NOLVO      0   /* LVO is invalid for this library base */
+#define GF_CODEINLVO  -1  /* LVO is not 'jmp (abs).l' or similar */
+
+
+/* protos
+*/
+int main(void);
+const void *GetOpcodes(struct Library *lib, WORD lvo);
+BOOL ValidMem(const void *ptr);
+const void *GetFunction(struct Library *lib, WORD lvo);
+const void *GetFunctionCode(struct Library *lib, WORD lvo);
+void DumpLVO(char *head, struct Library *lib, WORD lvo);
+
+
+void *ROMstart, *ROMend;
+
+extern struct Library *SysBase;
+
+int main(void)
+{
+  struct Library *UtilityBase;
+
+  ROMstart = (void *) (((ULONG) SysBase->lib_Node.ln_Name) & 0xfff80000);
+  ROMend   = ((UBYTE *) ROMstart) + 0x80000;
+
+  Printf("ROM at 0x%08lx - 0x%08lx\n", ROMstart, (UBYTE *) ROMend - 1);
+
+  DumpLVO("exec/Supervisor", SysBase, -0x1E);
+  DumpLVO("exec/Forbid",     SysBase, -0x84);
+  DumpLVO("exec/Permit",     SysBase, -0x8A);
+  DumpLVO("exec/GetCC",      SysBase, -0x210);
+  DumpLVO("exec/NonExistent",SysBase, -0x426);
+
+  UtilityBase = OpenLibrary("utility.library", 37);
+  if (UtilityBase)
+  {
+
+    DumpLVO("utility/SMult32",   UtilityBase, -0x8a);
+    DumpLVO("utility/UMult32",   UtilityBase, -0x90);
+    DumpLVO("utility/SDivMod32", UtilityBase, -0x96);
+    DumpLVO("utility/UDivMod32", UtilityBase, -0x9c);
+    DumpLVO("utility/SMult64",   UtilityBase, -0xc6);
+    DumpLVO("utility/UMult64",   UtilityBase, -0xcc);
+
+    CloseLibrary(UtilityBase);
+  }
+  else
+  {
+    Printf("failed to open utility.library V37!\n");
+  }
+  return 0;
+}
+
+
+void DumpLVO(char *head, struct Library *lib, WORD lvo)
+{
+  const void *code;
+  const void *addr;
+  const char *msg;
+
+  Forbid();
+  code = GetFunction(lib, lvo);
+  addr = GetFunctionCode(lib, lvo);
+  Permit();
+
+  if (code == (const void *) GF_NOLVO)
+  {
+    /* oops, LVO out of range
+    */
+    msg = "LVO N/A";
+  }
+  else if (code == (const void *) GF_CODEINLVO)
+  {
+    /* code is inside the LVO
+    */
+    msg = "code in LVO";
+  }
+  else
+  {
+    /* we got pointer to code
+    */
+    msg = "pointer to code";
+  }
+
+  Printf("\n%s:\n<%s> code at 0x%08lx\n", head, msg, addr);
+}
+
+
+
+
+/* Get pointer to function LVO opcodes
+   This routine is used by higher level routines...
+*/
+const void *GetOpcodes(struct Library *lib, WORD lvo)
+{
+  /* Check if lvo is valid for this library, if not return NULL
+  */
+
+  /* Note: lib_NegSize is positive, but lvo is not, so negate lvo
+  */
+  if (-lvo > lib->lib_NegSize)
+  {
+    return NULL;
+  }
+
+  /* Ok, it's valid, return the ptr to opcodes
+  */
+  return (const void *) (((UBYTE *) lib) + lvo);
+}
+
+
+/* return TRUE if ptr is valid memory (ROM or RAM)
+*/
+BOOL ValidMem(const void *ptr)
+{
+  return (BOOL) (((ptr >= ROMstart) && (ptr < ROMend)) || TypeOfMem((void *) ptr));
+}
+
+
+/* Return pointer to function LVO code or special values to tell the
+   LVO is special.
+
+   This is useful for visual printing of function address. We can
+   indicate that this LVO is not jmp to addr, but opcodes inside
+   jumptable, whereas the other routine can be used to get the ptr
+   to actual code, no matter what (that is used for actual checking,
+   see below).
+*/
+
+const void *GetFunction (struct Library *lib, WORD lvo)
+{
+  const UWORD *op;
+  const void *ptr;
+
+  /* Get ptr to function opcodes
+  */
+  op  = GetOpcodes(lib, lvo);
+
+  if (op == NULL)
+  {
+    return (const void *) GF_NOLVO;
+  }
+
+  /* default to no ptr
+  */
+  ptr = NULL;
+
+  /* Is it a JMP/JSR (abs).l ?
+  */
+  if ((op[0] == 0x4EF9) ||          /* JMP (abs).l */
+      (op[0] == 0x4EB9) ||          /* JSR (abs).l */
+      (op[0] == 0x4AFC) ||          /* ILLEGAL    - used by some viruses*/
+      ((op[0] & 0xFFF0) == 0x4E40)) /* TRAP #x      fool AV software... */
+  {
+
+    /* yep, get the destination
+
+      NOTE: ILLEGAL and TRAP #x could also use some custom way to
+            solve the destination address, but we assume they try
+            to trick us with unchanged jmp destination...
+
+            We could peek the actual vector from VBR for ILLEGAL and
+            TRAP #x, and return *that* ptr instead... that would be more
+            like detecting actual virus...
+
+            Anyway ILLEGAL or TRAP #x in first opcode *always* mean
+            something evil has patched the system and BIG alarm bells
+            should start ringing...
+    */
+    ptr = (const void *) *((ULONG *) &op[1]);
+
+  }
+  else if ((op[0] == 0x60FF) ||     /* BRA.L      - too.. (68020+ opcode) */
+           (op[0] == 0x61FF))       /* BSR.L      - too.. (68020+ opcode) */
+  {
+
+    /* long offsets at op[1] relative to op[1]...
+    */
+    ptr = (const void *) (((UBYTE *) &op[1]) + *((ULONG *) &op[1]));
+
+  }
+
+  if (ValidMem(ptr))
+  {
+    return ptr;
+  }
+
+  /* ...Else return special 'code in lvo' flag
+  */
+  return (const void *) GF_CODEINLVO;
+}
+
+/* Get pointer to library/device/resource function LVO's code, or
+   NULL if LVO is invalid for this library.
+*/
+const void *GetFunctionCode(struct Library *lib, WORD lvo)
+{
+  const UWORD *code;
+
+  /* Get ptr to function code
+  */
+  code = GetFunction(lib, lvo);
+
+  if (code == (const void *) GF_NOLVO)
+  {
+    /* oops, LVO out of range
+    */
+    return NULL;
+  }
+  else if (code == (const void *) GF_CODEINLVO)
+  {
+    /* Return ptr to the opcodes in jump table
+       Note: this is maximum 3 opcodes!
+
+       For example:
+       $7000 $4E75 $XXXX     moveq  #0,d0 / rts
+       $4C01 $0800 $4E75     muls.l d1,d0 / rts
+    */
+    return ((UBYTE *) lib) + lvo;
+  }
+
+  /* Yep, this is normal jmp, return the jump destination
+  */
+  return code;
+}

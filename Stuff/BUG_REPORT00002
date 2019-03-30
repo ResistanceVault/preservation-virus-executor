@@ -1,0 +1,115 @@
+From splatt@subdimension.com Thu, 26 Apr 2001 10:27:20 +1000
+From: Splatt <splatt@subdimension.com>
+To: virusexecutor@c2i.net
+Subject: bug (?) report
+Date: 26 Apr 2001 00:27:20 GMT
+Content-type: multipart/mixed; boundary="1906p4TteRSuKXBIgGr8gRiNDIkkZAlLD3I"
+
+MIME multipart
+
+--1906p4TteRSuKXBIgGr8gRiNDIkkZAlLD3I
+
+Hello,
+
+Attached is a bug report
+
+Thanks for giving the Amiga community a free maintained virus checker :)
+
+Cya later
+
+--1906p4TteRSuKXBIgGr8gRiNDIkkZAlLD3I
+
+                            BUG REPORT FORM
+                                  for
+                    VirusExecutor by Jan Erik Olausen
+                         (virusexecutor@c2i.net)
+
+
+
+                      THE FOLLOWING IS TESTED BY
+---------------------------------------------------------------------
+YOUR NAME: Mathew B
+---------------------------------------------------------------------
+EMAIL ADDRESS: splatt@subdimension.com
+---------------------------------------------------------------------
+COUNTRY: Australia
+---------------------------------------------------------------------
+
+
+Just replace my configuration examples...
+
+                           PROGRAM VERSIONS
+                           ----------------
+            VirusExecutor: 2.15
+    VirusExecutor.patches: 1.32
+    VirusExecutor.catalog: english
+
+         reqtools.library: 38.1266  (where is a newer one for download?)
+              xvs.library: 33.24
+        xfdmaster.library: 39.12
+
+
+                      YOUR MACHINE CONFIGURATION
+                      --------------------------
+
+             MACHINE TYPE: A1200
+                CPU/CLOCK: 68040/25Mhz
+                FPU/CLOCK: 68040/25Mhz
+               MMU/STATUS: 68040/In use
+                      PPC: None
+
+        KICKSTART VERSION: 39.106
+        ROMUPDATE VERSION: ?
+        WORKBENCH VERSION: 40.42
+
+    AMOUNT OF CHIP MEMORY:  2 Mb
+    AMOUNT OF FAST MEMORY: 32 Mb
+
+         BOARDS INSTALLED: None
+
+
+THE DETAILS OF THE FOUND BUG(S):
+--------------------------------
+
+Each time the clock border in VE gets raised or unraised, it makes my
+mouse pointer freeze and jerk for half a second.  This also happens
+when VE is in the background and not the current screen to front.
+
+
+The guru code number by consequence of the bug: none
+
+
+
+The bug is tested with Snoopdos or program alike said the following
+before the guru: n/a
+
+
+
+
+
+
+DOCUMENTATION
+-------------
+   The documentation is ok
+   The english spelling is ok
+
+
+Some details of of the documentation to improve:
+------------------------------------------------
+
+
+
+
+IMPROVMENTS
+I have the following suggestions:
+
+cant think of any atm
+
+
+
+ENFORCER TEST
+I have tested the above program with my MMU unit and I got the following
+report:  none
+
+--1906p4TteRSuKXBIgGr8gRiNDIkkZAlLD3I--
+

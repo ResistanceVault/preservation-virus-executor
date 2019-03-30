@@ -1,0 +1,17 @@
+
+	section code
+
+	xdef _MemCCCP
+
+_MemCCCP
+	move.l	$6C,a0
+	cmp.w	#$611C,(a0)
+	beq.s	CCCPFound
+	moveq	#0,d0
+	rts
+
+CCCPFound:
+	moveq	#1,d0
+	rts
+
+	END

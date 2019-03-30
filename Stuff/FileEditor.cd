@@ -1,0 +1,417 @@
+txt_001 (0//)
+Enter user:
+;
+txt_002 (1//)
+Error loading user: '%s'!\nPlease try again...
+;
+txt_003 (2//)
+Ok|Quit FileEditor
+;
+txt_004 (3//)
+Error saving user: '%s'!
+;
+txt_005 (4//)
+%s - User: %s
+;
+txt_OK (5//)
+Ok
+;
+txt_MESSAGE (6//)
+Message
+;
+txt_READY (7//)
+Ready.
+;
+txt_PLEASE (8//)
+Please wait...
+;
+txt_NOT_YET (9//)
+Not yet ;)
+;
+txt_ERROR (10//)
+Error!
+;
+txt_012 (11//)
+Sure you want to delete file '%s'?
+;
+txt_DELETE_CANCEL (12//)
+Delete|Cancel
+;
+txt_014 (13//)
+Error deleting fileentry!
+;
+txt_015 (14//)
+Error writing configfile!
+;
+txt_016 (15//)
+ Downloads:
+;
+txt_017 (16//)
+      Size:
+;
+txt_018 (17//)
+      Date:
+;
+txt_019 (18//)
+      From:
+;
+txt_020 (19//)
+        To:
+;
+txt_021 (20//)
+Conference:
+;
+txt_022 (21//)
+ALL
+;
+txt_023 (22//)
+N/A                           
+;
+txt_024 (23//)
+File not found:\n\n%s
+;
+txt_025 (24//)
+Delete file|Cancel
+;
+txt_026 (25//)
+Sure you want to make this file public?
+;
+txt_027 (26//)
+Make public|Cancel
+;
+txt_028 (27//)
+Error saving '%s'
+;
+txt_029 (28//)
+Error reading fileentry!\n
+;
+txt_030 (29//)
+Not enough memory!
+;
+txt_031 (30//)
+Enter directory name:
+;
+txt_032 (31//)
+Select path for: '%s'
+;
+txt_033 (32//)
+Error creating new directory!
+;
+txt_034 (33//)
+Path name too long!
+;
+txt_035 (34//)
+Illegal characters in filedir name!
+;
+txt_036 (35//)
+Enter new directory path for '%s'...
+;
+txt_037 (36//)
+Scanning dir %s...
+;
+txt_038 (37//)
+Delete file|Continue
+;
+txt_039 (38//)
+Delete file '%s'
+;
+txt_040 (39//)
+Delete|Skip file
+;
+txt_041 (40//)
+You can't delete '%s!'
+;
+txt_042 (41//)
+Sure you want to delete directory '%s'?
+;
+txt_043 (42//)
+Error deleting directory!
+;
+txt_044 (43//)
+Counting: %6ld files, %6ld (MB)...
+;
+txt_045 (44//)
+Total innstalled: %6ld files\n      Total size: %6ld (MB)
+;
+txt_046 (45//)
+File count result
+;
+txt_047 (46//)
+Please select a directory to edit.
+;
+txt_048 (47//)
+Please select a directory to delete.
+;
+txt_049 (48//)
+Please select a directory.
+;
+txt_050 (49//)
+Please select a file to edit.
+;
+txt_051 (50//)
+Please select a file to delete.
+;
+txt_052 (51//)
+FileEditor needs '%s' v%ld +
+;
+txt_053 (52//)
+Error talking to ABBS!
+;
+txt_054 (53//)
+Error creating message port!
+;
+txt_055 (54//)
+Error opening utility.library!
+;
+txt_056 (55//)
+ABBS must be running for FileEditor to work!
+;
+txt_057 (56//)
+Test LHA, LZH, ARC, DMS and GIF files for errors?
+;
+txt_058 (57//)
+New files|All files|Cancel
+;
+txt_059 (58//)
+Tested %ld %s.
+;
+txt_060 (59//)
+file
+;
+txt_061 (60//)
+files
+;
+txt_062 (61//)
+ Found %ld %s\n\nPlease take a look in the '%s' file.
+;
+txt_063 (62//)
+error
+;
+txt_064 (63//)
+errors
+;
+txt_065 (64//)
+\n\nEverything seems to be ok.
+;
+txt_066 (65//)
+Couldn't find C:LHA!
+;
+txt_067 (66//)
+Couldn't find C:LZX!
+;
+txt_068 (67//)
+File name too long: '%s'
+;
+txt_069 (68//)
+File %s allready exists!\n\nFILE ALLREADY IN ABBS:\nShort: %s\n Size: %ld\n\nNEW FILE:\nShort: %s\n Size: %ld\n\nSize differance: %ld
+;
+txt_070 (69//)
+Replace|Skip
+;
+txt_071 (70//)
+Create ABBS directory '%s'?
+;
+txt_072 (71//)
+Yes|No
+;
+txt_073 (72//)
+Found
+;
+txt_074 (73//)
+Not found
+;
+txt_075 (74//)
+Install this file to directory
+;
+txt_076 (75//)
+Install|
+;
+txt_077 (76//)
+Move this file to directory
+;
+txt_078 (77//)
+Move|
+;
+txt_079 (78//)
+%s '%s'?\n\n        Name: %s\n        Size: %s bytes\n%s Readme file: %s
+;
+txt_080 (79//)
+AUTO INSTALL|Skip file|Cancel
+;
+txt_081 (80//)
+Error creating/locking directory:\n%s
+;
+txt_082 (81//)
+Enter file description for '%s'...
+;
+txt_083 (82//)
+No new files found in directory '%s'.
+;
+txt_084 (83//)
+Edit file... <Esc> to cancel
+;
+txt_085 (84//)
+Project
+;
+txt_086 (85//)
+About
+;
+txt_087 (86//)
+Quit
+;
+txt_088 (87//)
+Directories
+;
+txt_089 (88//)
+New
+;
+txt_090 (89//)
+Change name
+;
+txt_091 (90//)
+Change path
+;
+txt_092 (91//)
+Delete
+;
+txt_093 (92//)
+Update
+;
+txt_094 (93//)
+File
+;
+txt_095 (94//)
+Auto install
+;
+txt_096 (95//)
+Edit
+;
+txt_097 (96//)
+Update file sizes
+;
+txt_098 (97//)
+Count files
+;
+txt_099 (98//)
+File comments
+;
+txt_100 (99//)
+Load new file-list
+;
+txt_101 (100//)
+Make comments
+;
+txt_102 (101//)
+Checking
+;
+txt_103 (102//)
+Test archives
+;
+txt_104 (103//)
+Virus check
+;
+txt_105 (104//)
+Delete/move not installed files
+;
+txt_ABOUT (105//)
+About
+;
+txt_TRANSLATION (106//)
+English translation by Jan Erik Olausen
+;
+txt_TESTING (107//)
+Testing: %s
+;
+txt_108 (108//)
+Move or delete not installed files from disk.
+;
+txt_109 (109//)
+Move|Delete|Cancel
+;
+txt_110 (110//)
+Updated %ld file %s
+;
+txt_111 (111//)
+size
+;
+txt_112 (112//)
+sizes
+;
+txt_113 (113//)
+Cancel
+;
+txt_114 (114//)
+Name
+;
+txt_115 (115//)
+Description
+;
+txt_116 (116//)
+Info
+;
+txt_117 (117//)
+File directories
+;
+txt_118 (118//)
+Files
+;
+txt_119 (119//)
+File name
+;
+txt_120 (120//)
+File description
+;
+txt_121 (121//)
+File info
+;
+txt_122 (122//)
+Remove conf
+;
+txt_123 (123//)
+Update size
+;
+txt_124 (124//)
+Select file-list
+;
+txt_125 (125//)
+Load
+;
+txt_126 (126//)
+Loading file-list...
+;
+txt_127 (127//)
+Converting file-list...
+;
+txt_128 (128//)
+Error in file-list!
+;
+txt_129 (129//)
+Not a text file!
+;
+txt_130 (130//)
+Not a file-list!
+;
+txt_131 (131//)
+Error loading!
+;
+txt_132 (132//)
+Do comments from '%s'?\n(Found %ld files)
+;
+txt_133 (133//)
+Scanning dir: %s
+;
+txt_134 (134//)
+Updated %ld %s with new comment.
+;
+txt_135 (135//)
+Analyzing file-list...
+;
+txt_136 (136//)
+Update preview files
+;
+txt_137 (137//)
+Updated %ld preview %s.
+;
+txt_138 (138//)
+Install files private to conference '%s'?
+;

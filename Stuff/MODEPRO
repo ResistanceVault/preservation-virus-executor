@@ -1,0 +1,10 @@
+  InsertPatch (INT_LIB, -66, 30, 0x6100fd62, VE_ModePro_Msg);
+  InsertPatch (INT_LIB, -78, 24, 0x6100fa10, VE_ModePro_Msg);
+  InsertPatch (INT_LIB, -198, 26, 0x6100211c, VE_ModePro_Msg);
+  InsertPatch (INT_LIB, -204, 28, 0x61002522, VE_ModePro_Msg);
+  InsertPatch (INT_LIB, -510, 22, 0x2f48001c, VE_ModePro_Msg);
+  InsertPatch (INT_LIB, -516, 22, 0x2f4e0014, VE_ModePro_Msg);
+  InsertPatch (INT_LIB, -606, 14, 0x2f4e0020, VE_ModePro_Msg);
+  InsertPatch (INT_LIB, -612, 52, 0x61001c86, VE_ModePro_Msg);
+
+  InsertPatch (GAD_LIB, -66, 14, 0x2f4e001c, VE_ModePro_Msg);

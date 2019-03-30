@@ -1,0 +1,9 @@
+	move.l	4.w,a6
+	move.l	10(a6),d0
+	and.l	#$ff0000,d0
+	move.l	d0,RomStart(a5)
+	add.l	#$80000,d0
+	move.l	d0,RomEnd(a5)
+
+RomStart	dc.l	0
+RomEnd		dc.l	0

@@ -1,0 +1,9 @@
+ULONG VE_CHECKSUM[6] =
+{
+  0x48e73838,
+  0x15da699d,
+  0xc0786232,
+  0xae255c48,
+  0x82d5c8c6,
+  0x4ed12f0e
+};
